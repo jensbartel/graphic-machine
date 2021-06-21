@@ -1,7 +1,13 @@
+import { drawings } from "../../data/DrawingObjects";
+
 const Drawing = () => {
     return (
         <div className='page'>
-            Drawing
+            <div className='grid-three'>
+                {drawings.map((item) => (
+                    <div key={item.id}>{item.title}</div>
+                ))}
+            </div>
         </div>
     )
 }

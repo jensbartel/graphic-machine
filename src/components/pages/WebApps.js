@@ -1,10 +1,13 @@
-import RowWithThree from '../layout/RowWithThree';
+import { webApps } from "../../data/WebAppObjects";
 
 const WebApps = () => {
     return (
         <div className='page'>
-            <p>Web Apps</p>
-            <RowWithThree />
+            <div className='grid-three'>
+                {webApps.map((item) => (
+                    <div key={item.id}>{item.title}</div>
+                ))}
+            </div>
         </div>
     );
 };

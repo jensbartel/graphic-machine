@@ -1,9 +1,15 @@
+import { webPages } from "../../data/WebPageObjects";
+
 const WebPages = () => {
     return (
         <div className='page'>
-            Web Pages
+            <div className='grid-three'>
+                {webPages.map((item) => (
+                    <div key={item.id}>{item.title}</div>
+                ))}
+            </div>
         </div>
-    )
-}
+    );
+};
 
-export default WebPages
+export default WebPages;
