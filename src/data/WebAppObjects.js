@@ -14,14 +14,14 @@ const MMAS = {
     title: 'Miyanomori Museum of Art, Sapporo',
 };
 
-const TBA1 = {
-    id: 4,
-    title: 'TBA',
-};
+// const TBA1 = {
+//     id: 4,
+//     title: 'TBA',
+// };
 
-const TBA2 = {
-    id: 5,
-    title: 'TBA',
-};
+// const TBA2 = {
+//     id: 5,
+//     title: 'TBA',
+// };
 
-export const webApps = [ResNet, ClientApp, MMAS, TBA1, TBA2];
+export const webApps = [ResNet, ClientApp, MMAS];
