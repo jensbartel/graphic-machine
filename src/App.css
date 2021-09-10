@@ -44,7 +44,6 @@ p {
 .menu {
   margin-top: 0.5rem;
 }
-
 .menu a {
   padding-left: 2rem;
   letter-spacing: 0.25rem;
@@ -55,36 +54,57 @@ p {
   padding: 2.5rem 0;
 }
 
-.grid-three {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-}
-
-.grid-three div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  height: 120px;
-  background-color: #d9d9d9;
-}
-
 .grid-two {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+  column-gap: 2rem;
+  row-gap: 3rem;
 }
-
-.grid-two div {
+.grid-two .banner-dummy {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
   width: 100%;
-  height: 120px;
+  height: 600px;
   background-color: #d9d9d9;
+}
+.grid-two .category-top div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.125rem;
+}
+.grid-two .category-top div .title {
+  transition: 0.2s;
+  cursor: pointer;
+}
+.grid-two .category-top div .title:hover {
+  color: #6b6b6b;
+}
+.grid-two .category-top div .tools {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.155rem;
+}
+.grid-two .category-top div .tools p {
+  font-size: 0.9rem;
+  margin-left: 0.8rem;
+  color: #999;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.grid-two .category-top div .tools p:hover {
+  color: #6b6b6b;
+}
+.grid-two .category-top p {
+  font-size: 0.75rem;
+  color: #999;
+  cursor: default;
+}
+.grid-two .category-top img {
+  display: block;
+  width: 100%;
+  margin-top: 0.75rem;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=App.css.map */

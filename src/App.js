@@ -12,31 +12,12 @@ import { print } from './data/PrintObjects';
 const App = () => {
     return (
         <Router>
-            <div className='container'>
+            <div className="container">
                 <Navbar />
-                <Route
-                    exact
-                    path='/webapps'
-                    render={() => <Page cssStyle='grid-two' data={webApps} />}
-                />
-                <Route
-                    exact
-                    path='/webpages'
-                    render={() => <Page cssStyle='grid-two' data={webPages} />}
-                />
-                <Route
-                    exact
-                    path='/print'
-                    render={() => <Page cssStyle='grid-two' data={print} />}
-                />
-                {/* <Route
-                    exact
-                    path='/drawing'
-                    render={() => (
-                        <Page cssStyle='grid-three' data={drawings} />
-                    )}
-                /> */}
-                <Route exact path='/about' component={About} />
+                <Route exact path="/webapps" render={() => <Page cssStyle="grid-two" data={webApps} />} />
+                <Route exact path="/webpages" render={() => <Page cssStyle="grid-two" data={webPages} />} />
+                <Route exact path="/print" render={() => <Page cssStyle="grid-two" data={print} />} />
+                <Route exact path="/about" component={About} />
             </div>
         </Router>
     );

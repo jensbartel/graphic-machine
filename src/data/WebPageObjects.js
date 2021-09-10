@@ -1,3 +1,7 @@
+import img_dummy from '../img/banner/dummy.png';
+import img_morita from '../img/banner/morita_banner.png';
+import img_lavendarium from '../img/banner/lavendarium_banner.png';
+
 const artword = {
     id: 1,
     title: 'artword',
@@ -6,17 +10,25 @@ const artword = {
 const Lavendarium = {
     id: 2,
     title: 'Lavendarium',
+    img: img_lavendarium,
+    description: 'Artist portfolio, recreating a Squarespace template in React',
+    tools: ['React', 'GCP'],
+    date: 'May 2021',
 };
 
 const MoritaShiryu = {
     id: 3,
     title: 'Morita Shiryū Exhibition',
+    img: img_morita,
+    description: 'Webpage for an exhibition on a Japanese postwar calligrapher',
+    tools: ['React', 'SASS', 'GCP'],
+    date: 'December 2020',
 };
 
-const Kuroda = {
-    id: 4,
-    title: 'Kuroda Seitarō Exhibition',
-};
+// const Kuroda = {
+//     id: 4,
+//     title: 'Kuroda Seitarō Exhibition',
+// };
 
 const Mishima = {
     id: 5,
@@ -31,6 +43,10 @@ const Kida = {
 const Toki = {
     id: 7,
     title: 'Toki no Wasuremono Mobile Page',
+    img: img_dummy,
+    description: 'Responsive layout for a webpage of a Tokyo-based gallery',
+    tools: ['HTML/CSS/JS', 'PHP', 'Visual Basic'],
+    date: 'Feb-May 2016'
 };
 
 const HPECMerger = {
@@ -48,4 +64,4 @@ const Suda = {
     title: 'Suda Kokuta Exhibition',
 };
 
-export const webPages = [MoritaShiryu, Lavendarium, Suda, artword, Kuroda, Mishima, Kida, Toki, HPECMerger];
+export const webPages = [MoritaShiryu, Lavendarium, Suda, artword, Mishima, Kida, Toki, HPECMerger];
