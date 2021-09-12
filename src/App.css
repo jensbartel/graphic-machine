@@ -30,7 +30,7 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 2.5rem 8rem;
+  padding: 2.5rem 8rem 0;
   max-width: 1280px;
   margin: auto;
 }
@@ -48,6 +48,27 @@ p {
   padding-left: 2rem;
   letter-spacing: 0.25rem;
   font-size: 0.8rem;
+}
+
+.language-switch {
+  padding: 0 8rem 2.5rem;
+}
+.language-switch button {
+  border: none;
+  background: none;
+  padding: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 0.6rem;
+  letter-spacing: 0.33rem;
+  color: #999;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.language-switch button:first-child {
+  margin-right: 1rem;
+}
+.language-switch button:hover {
+  color: #000;
 }
 
 .rowwiththree {
@@ -78,7 +99,7 @@ p {
   cursor: pointer;
 }
 .grid-two .category-top div .title:hover {
-  color: #6b6b6b;
+  color: #8f8f8f;
 }
 .grid-two .category-top div .tools {
   display: flex;
@@ -90,21 +111,38 @@ p {
   margin-left: 0.8rem;
   color: #999;
   cursor: pointer;
-  transition: 0.2s;
+  transition: 0.5s;
 }
 .grid-two .category-top div .tools p:hover {
   color: #6b6b6b;
 }
-.grid-two .category-top p {
+.grid-two .category-top .item-details {
+  display: block;
+  margin-bottom: 0.75rem;
+}
+.grid-two .category-top .item-details p {
   font-size: 0.75rem;
   color: #999;
   cursor: default;
 }
-.grid-two .category-top img {
-  display: block;
+.grid-two .category-top .img-container {
+  position: relative;
+}
+.grid-two .category-top .img-container img {
+  display: absolute;
   width: 100%;
-  margin-top: 0.75rem;
+}
+.grid-two .category-top .img-container div {
   cursor: pointer;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #808080;
+  opacity: 0;
+  transition: 0.5s;
+}
+.grid-two .category-top .img-container div:hover {
+  opacity: 0.1;
 }
 
 /*# sourceMappingURL=App.css.map */

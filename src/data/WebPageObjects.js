@@ -40,19 +40,19 @@ const Kida = {
     title: 'Kida Yasuhiko Exhibition',
 };
 
-const Toki = {
-    id: 7,
-    title: 'Toki no Wasuremono Mobile Page',
-    img: img_dummy,
-    description: 'Responsive layout for a webpage of a Tokyo-based gallery',
-    tools: ['HTML/CSS/JS', 'PHP', 'Visual Basic'],
-    date: 'Feb-May 2016'
-};
+// const Toki = {
+//     id: 7,
+//     title: 'Toki no Wasuremono Mobile Page',
+//     img: img_dummy,
+//     description: 'Responsive layout for a webpage of a Tokyo-based gallery',
+//     tools: ['HTML/CSS/JS', 'PHP', 'Visual Basic'],
+//     date: 'Feb-May 2016'
+// };
 
-const HPECMerger = {
-    id: 8,
-    title: 'Shibunkaku HP/EC Merger',
-};
+// const HPECMerger = {
+//     id: 8,
+//     title: 'Shibunkaku HP/EC Merger',
+// };
 
 // const thisPage = {
 //     id: 9,
@@ -64,4 +64,4 @@ const Suda = {
     title: 'Suda Kokuta Exhibition',
 };
 
-export const webPages = [MoritaShiryu, Lavendarium, Suda, artword, Mishima, Kida, Toki, HPECMerger];
+export const webPages = [MoritaShiryu, Lavendarium, Suda, artword, Mishima, Kida];
