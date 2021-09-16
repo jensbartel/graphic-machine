@@ -1,6 +1,21 @@
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import LangContext from '../context/langContext';
 
 const Navbar = () => {
+    const langContext = useContext(LangContext);
+    const { setLang, removeLang } = langContext;
+
+    const onEnglish = () => {
+        localStorage.removeItem('displayLanguage');
+        removeLang();
+    };
+
+    const onFrench = () => {
+        localStorage.setItem('displayLanguage', 'francais');
+        setLang();
+    };
+
     return (
         <>
             <div className='navbar'>
@@ -13,8 +28,8 @@ const Navbar = () => {
                 </div>
             </div>
             <div className='language-switch'>
-                <button>×ENGLISH</button>
-                <button>FRANÇAIS</button>
+                <button onClick={onEnglish}>ENGLISH×</button>
+                <button onClick={onFrench}>FRANÇAIS</button>
             </div>
         </>
     );

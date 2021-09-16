@@ -16,7 +16,7 @@ p {
 
 .page {
   font-family: "Source Sans Pro", sans-serif;
-  padding: 2.5rem 8rem;
+  margin: 2.5rem 8rem 6rem;
 }
 
 .container {
@@ -143,6 +143,27 @@ p {
 }
 .grid-two .category-top .img-container div:hover {
   opacity: 0.1;
+}
+
+.footer {
+  margin: 0 8rem 4rem;
+  font-size: 0.7rem;
+  color: #999;
+  text-align: center;
+}
+.footer a {
+  color: #999;
+  transition: 0.5s;
+}
+.footer a:hover {
+  color: #000;
+}
+.footer i {
+  font-size: 1.4rem;
+  margin: 0 0.2rem;
+}
+.footer p:last-child {
+  margin-top: 1rem;
 }
 
 /*# sourceMappingURL=App.css.map */

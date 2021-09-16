@@ -1,4 +1,4 @@
-import img_dummy from '../img/banner/dummy.png';
+// import img_dummy from '../img/banner/dummy.png';
 import img_morita from '../img/banner/morita_banner.png';
 import img_lavendarium from '../img/banner/lavendarium_banner.png';
 
@@ -10,19 +10,25 @@ const artword = {
 const Lavendarium = {
     id: 2,
     title: 'Lavendarium',
+    titleFR: 'Lavendarium',
     img: img_lavendarium,
     description: 'Artist portfolio, recreating a Squarespace template in React',
+    desFR: 'Portfolio artiste, inspiré par un template Squarespace, créé en React',
     tools: ['React', 'GCP'],
     date: 'May 2021',
+    dateFR: 'Mai 2021',
 };
 
 const MoritaShiryu = {
     id: 3,
     title: 'Morita Shiryū Exhibition',
+    titleFR: 'Éxposition Morita Shiryū',
     img: img_morita,
     description: 'Webpage for an exhibition on a Japanese postwar calligrapher',
+    desFR: `Présentation d'un éxposition sur un calligraphe Japonais après-guerre`,
     tools: ['React', 'SASS', 'GCP'],
     date: 'December 2020',
+    dateFR: 'Décembre 2020',
 };
 
 // const Kuroda = {

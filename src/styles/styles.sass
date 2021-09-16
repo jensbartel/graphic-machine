@@ -1,4 +1,5 @@
 $default-transition: 0.5s
+$default-grey: #999
 
 body
     margin: 0
@@ -15,7 +16,7 @@ p
 
 .page
     font-family: 'Source Sans Pro', sans-serif
-    padding: 2.5rem 8rem
+    margin: 2.5rem 8rem 6rem
 
 .container
     display: block
@@ -122,3 +123,21 @@ p
                 transition: $default-transition
                 &:hover
                     opacity: 0.1
+
+// FOOTER
+.footer
+    margin: 0 8rem 4rem
+    font-size: 0.7rem
+    color: $default-grey
+    text-align: center
+    a
+        color: $default-grey
+        transition: $default-transition
+        &:hover
+            color: #000
+    i
+        font-size: 1.4rem
+        margin: 0 0.2rem
+    p
+        &:last-child
+            margin-top: 1rem

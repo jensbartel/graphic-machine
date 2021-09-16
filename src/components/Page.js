@@ -1,5 +1,25 @@
+import { useContext } from 'react';
+import LangContext from '../context/langContext';
+
 const Page = props => {
     const { cssStyle, data } = props;
+
+    const langContext = useContext(LangContext);
+    const { lang } = langContext;
+
+    // odd: the language string is inside an object 'lang', with a key 'lang'
+    // rectify later
+
+    let titleChoice, descriptionChoice, dateChoice;
+    if (lang.lang === 'francais') {
+        titleChoice = 'titleFR';
+        descriptionChoice = 'desFR';
+        dateChoice = 'dateFR';
+    } else {
+        titleChoice = 'title';
+        descriptionChoice = 'description';
+        dateChoice = 'date';
+    }
 
     return (
         <div className='page'>
@@ -9,16 +29,16 @@ const Page = props => {
                         // fully-defined div
                         <div className='category-top' key={item.id}>
                             <div>
-                                <div className='title'>{item.title}</div>
+                                <div className='title'>{item[titleChoice]}</div>
                                 <div className='tools'>
                                     {item.tools.map(tool => (
-                                        <p>{tool}</p>
+                                        <p key={tool}>{tool}</p>
                                     ))}
                                 </div>
                             </div>
                             <div className='item-details'>
-                                <p>{item.description}</p>
-                                <p>{item.date}</p>
+                                <p>{item[descriptionChoice]}</p>
+                                <p>{item[dateChoice]}</p>
                             </div>
                             <div className='img-container'>
                                 <img src={item.img} alt='' />
