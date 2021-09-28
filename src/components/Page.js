@@ -7,11 +7,8 @@ const Page = props => {
     const langContext = useContext(LangContext);
     const { lang } = langContext;
 
-    // odd: the language string is inside an object 'lang', with a key 'lang'
-    // rectify later
-
     let titleChoice, descriptionChoice, dateChoice;
-    if (lang.lang === 'francais') {
+    if (lang.state === 'francais') {
         titleChoice = 'titleFR';
         descriptionChoice = 'desFR';
         dateChoice = 'dateFR';

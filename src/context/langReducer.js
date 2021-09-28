@@ -3,11 +3,11 @@ import { SET_LANG, REMOVE_LANG } from './types';
 const langReducer = (state, action) => {
     switch (action.type) {
         case SET_LANG:
-            console.log('francais');
-            return { ...state, lang: 'francais' };
+            // return { ...state, lang: 'francais' };
+            return { state: 'francais' };
         case REMOVE_LANG:
-            console.log('english');
-            return { ...state, lang: '' };
+            // return { ...state, lang: '' };
+            return { state: '' };
         default:
             return state;
     }

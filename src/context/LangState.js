@@ -1,7 +1,6 @@
 import { useReducer } from 'react';
 import LangContext from './langContext';
 import langReducer from './langReducer';
-
 import { SET_LANG, REMOVE_LANG } from './types';
 
 const LangState = props => {

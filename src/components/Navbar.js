@@ -4,7 +4,7 @@ import LangContext from '../context/langContext';
 
 const Navbar = () => {
     const langContext = useContext(LangContext);
-    const { setLang, removeLang } = langContext;
+    const { lang, setLang, removeLang } = langContext;
 
     const onEnglish = () => {
         localStorage.removeItem('displayLanguage');
@@ -28,8 +28,12 @@ const Navbar = () => {
                 </div>
             </div>
             <div className='language-switch'>
-                <button onClick={onEnglish}>ENGLISH×</button>
-                <button onClick={onFrench}>FRANÇAIS</button>
+                <button onClick={onEnglish}>
+                    ENGLISH{lang.state === 'francais' ? <span className='indicator-off'>×</span> : <span className='indicator-active'>×</span>}
+                </button>
+                <button onClick={onFrench}>
+                    FRANÇAIS{lang.state === 'francais' ? <span className='indicator-active'>×</span> : <span className='indicator-off'>×</span>}
+                </button>
             </div>
         </>
     );
