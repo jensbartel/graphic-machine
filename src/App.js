@@ -1,15 +1,16 @@
+import './App.css';
 import { useEffect, useContext } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import './App.css';
-import Navbar from './components/Navbar';
+
 import About from './components/About';
-import Page from './components/Page';
 import Footer from './components/Footer';
 import LangContext from './context/langContext';
+import Navbar from './components/Navbar';
+import Page from './components/Page';
+
 import { webApps } from './data/WebAppObjects';
 import { webPages } from './data/WebPageObjects';
 import { print } from './data/PrintObjects';
-import SectionIntro from './components/SectionIntro';
 
 const App = () => {
     const langContext = useContext(LangContext);
@@ -28,7 +29,6 @@ const App = () => {
         <Router>
             <div className='container'>
                 <Navbar />
-                <SectionIntro />
                 <Route exact path='/webapps' render={() => <Page cssStyle='grid-two' data={webApps} />} />
                 <Route exact path='/webpages' render={() => <Page cssStyle='grid-two' data={webPages} />} />
                 <Route exact path='/print' render={() => <Page cssStyle='grid-two' data={print} />} />

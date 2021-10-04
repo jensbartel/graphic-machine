@@ -1,6 +1,11 @@
-// import img_dummy from '../img/banner/dummy.png';
 import img_morita from '../img/banner/morita_banner.png';
 import img_lavendarium from '../img/banner/lavendarium_banner.png';
+
+const webPagesIntro = {
+    headline: 'Web Pages',
+    textEN: `When Henry Miller published his "character assassination" of Conrad Moricand in A Devil In Paradise (1956), it must have sent the then recently-deceased astrologer spinning in his grave. No longer alive to defend his reputation, Moricand has come off as a creepy, vain, poncey buffoon to readers for decades. It's fifty years later, and Moricand's corpse can stop spinning now that Karl Orend has come to his defense in The Brotherhood of Fools & Simpletons: Gods and Devils in Henry Miller's Utopia (Alyscamps Press, 2005).`,
+    textFR: `Ces quatre belles lettres du mythique dandy Conrad Moricand, au peintre Marcel Mouillot, offrent un rare témoignage de la personnalité fantasque de ce fils d'aristocrates suisses, mécène, illustrateur et astrologue, ami de Pablo Picasso, Max Jacob, Henri Michaux, et plus tard, d'Henry Miller, à qui il inspira Un Diable au Paradis et qui l'invita à Big Sur : «Excuses, délices et orgues. J'ai tout du dégueulas. Vous m'avez comblé depuis mon départ : un charmant petit poème en prose et ce mirobolant chapeau équatorial, objet de nos convoitises. `,
+};
 
 const artword = {
     id: 1,
@@ -70,4 +75,9 @@ const Suda = {
     title: 'Suda Kokuta Exhibition',
 };
 
-export const webPages = [MoritaShiryu, Lavendarium, Suda, artword, Mishima, Kida];
+const data = [MoritaShiryu, Lavendarium, Suda, artword, Mishima, Kida];
+
+export const webPages = {
+    intro: webPagesIntro,
+    projects: data,
+};

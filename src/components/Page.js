@@ -1,8 +1,12 @@
 import { useContext } from 'react';
 import LangContext from '../context/langContext';
+import SectionIntro from '../components/SectionIntro';
 
 const Page = props => {
-    const { cssStyle, data } = props;
+    const {
+        cssStyle,
+        data: { intro, projects },
+    } = props;
 
     const langContext = useContext(LangContext);
     const { lang } = langContext;
@@ -18,39 +22,44 @@ const Page = props => {
         dateChoice = 'date';
     }
 
+    // console.log(data);
+
     return (
-        <div className='page'>
-            <div className={cssStyle}>
-                {data.map(item =>
-                    item.img ? (
-                        // fully-defined div
-                        <div className='category-top' key={item.id}>
-                            <div>
-                                <div className='title'>{item[titleChoice]}</div>
-                                <div className='tools'>
-                                    {item.tools.map(tool => (
-                                        <p key={tool}>{tool}</p>
-                                    ))}
+        <>
+            <SectionIntro text={intro} />
+            <div className='page'>
+                <div className={cssStyle}>
+                    {projects.map(item =>
+                        item.img ? (
+                            // fully-defined div
+                            <div className='category-top' key={item.id}>
+                                <div>
+                                    <div className='title'>{item[titleChoice]}</div>
+                                    <div className='tools'>
+                                        {item.tools.map(tool => (
+                                            <p key={tool}>{tool}</p>
+                                        ))}
+                                    </div>
+                                </div>
+                                <div className='item-details'>
+                                    <p>{item[descriptionChoice]}</p>
+                                    <p>{item[dateChoice]}</p>
+                                </div>
+                                <div className='img-container'>
+                                    <img src={item.img} alt='' />
+                                    <div></div>
                                 </div>
                             </div>
-                            <div className='item-details'>
-                                <p>{item[descriptionChoice]}</p>
-                                <p>{item[dateChoice]}</p>
+                        ) : (
+                            // dummy div
+                            <div className='banner-dummy' key={item.id}>
+                                {item.title}
                             </div>
-                            <div className='img-container'>
-                                <img src={item.img} alt='' />
-                                <div></div>
-                            </div>
-                        </div>
-                    ) : (
-                        // dummy div
-                        <div className='banner-dummy' key={item.id}>
-                            {item.title}
-                        </div>
-                    )
-                )}
+                        )
+                    )}
+                </div>
             </div>
-        </div>
+        </>
     );
 };
 

@@ -26,4 +26,15 @@ const Yama1 = {
     // add the window decoration on item page!
 };
 
-export const print = [Suda, Hayashi, Yama2, Yama1];
+const printIntro = {
+    headline: 'Print Media',
+    textEN: 'Printed catalogs etc.',
+    textFR: 'Printed catalogs etc.',
+};
+
+const data = [Suda, Hayashi, Yama2, Yama1];
+
+export const print = {
+    intro: printIntro,
+    projects: data,
+};
