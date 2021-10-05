@@ -14,15 +14,22 @@ p {
   padding: 0;
 }
 
-.page {
-  font-family: "Source Sans Pro", sans-serif;
-  margin: 2.5rem 8rem 6rem;
+.page-container {
+  position: relative;
+  min-height: 100vh;
 }
 
-.container {
+.page {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 2.5rem 8rem 0;
+  padding-bottom: 5rem;
+}
+
+.content-container {
   display: block;
   margin: auto;
   max-width: 1280px;
+  padding-bottom: 9rem;
 }
 
 .navbar {
@@ -91,10 +98,6 @@ p {
 .section-intro p {
   font-size: 0.8rem;
   padding-right: 40%;
-}
-
-.rowwiththree {
-  padding: 2.5rem 0;
 }
 
 .grid-two {
@@ -168,7 +171,11 @@ p {
 }
 
 .footer {
-  margin: 0 8rem 4rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5rem;
+  padding: 2rem 0 2rem;
   font-size: 0.7rem;
   color: #999;
   text-align: center;

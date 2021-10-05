@@ -14,16 +14,22 @@ p
     margin: 0
     padding: 0
 
+.page-container
+    position: relative
+    min-height: 100vh
+
 .page
     font-family: 'Source Sans Pro', sans-serif
-    margin: 2.5rem 8rem 6rem
+    margin: 2.5rem 8rem 0
+    padding-bottom: 5rem
 
-.container
+.content-container
     display: block
     margin: auto
     max-width: 1280px
+    padding-bottom: 9rem
 
-// Navbar
+// NAVBAR
 .navbar
     background-color: #fff
     display: flex
@@ -80,10 +86,7 @@ p
         font-size: 0.8rem
         padding-right: 40%
 
-// Row with three
-.rowwiththree
-    padding: 2.5rem 0
-
+// GRID
 .grid-two
     display: grid
     grid-template-columns: repeat(2, 1fr)
@@ -96,6 +99,7 @@ p
         width: 100%
         height: 600px
         background-color: #d9d9d9
+        // remove the dummy later
     .category-top
         div
             display: flex
@@ -143,7 +147,11 @@ p
 
 // FOOTER
 .footer
-    margin: 0 8rem 4rem
+    position: absolute
+    bottom: 0
+    width: 100%
+    height: 5rem
+    padding: 2rem 0 2rem
     font-size: 0.7rem
     color: $default-grey
     text-align: center

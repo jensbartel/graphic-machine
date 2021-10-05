@@ -6,6 +6,7 @@ import About from './components/About';
 import Footer from './components/Footer';
 import LangContext from './context/langContext';
 import Navbar from './components/Navbar';
+import NotFound from './components/NotFound';
 import Page from './components/Page';
 
 import { webApps } from './data/WebAppObjects';
@@ -27,12 +28,15 @@ const App = () => {
 
     return (
         <Router>
-            <div className='container'>
-                <Navbar />
-                <Route exact path='/webapps' render={() => <Page cssStyle='grid-two' data={webApps} />} />
-                <Route exact path='/webpages' render={() => <Page cssStyle='grid-two' data={webPages} />} />
-                <Route exact path='/print' render={() => <Page cssStyle='grid-two' data={print} />} />
-                <Route exact path='/about' component={About} />
+            <div className='page-container'>
+                <div className='content-container'>
+                    <Navbar />
+                    <Route exact path='/webapps' render={() => <Page cssStyle='grid-two' data={webApps} />} />
+                    <Route exact path='/webpages' render={() => <Page cssStyle='grid-two' data={webPages} />} />
+                    <Route exact path='/print' render={() => <Page cssStyle='grid-two' data={print} />} />
+                    <Route exact path='/about' component={About} />
+                    <Route exact path='/' component={NotFound} />
+                </div>
                 <Footer />
             </div>
         </Router>

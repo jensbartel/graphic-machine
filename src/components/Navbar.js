@@ -19,7 +19,9 @@ const Navbar = () => {
     return (
         <>
             <div className='navbar'>
-                <div className='wordmark'>GRIFOLD STUDIO</div>
+                <div className='wordmark'>
+                    <Link to='/'>GRIFOLD STUDIO</Link>
+                </div>
                 <div className='menu'>
                     <Link to='/webapps'>WEB APPS</Link>
                     <Link to='/webpages'>WEB PAGES</Link>

@@ -26,6 +26,7 @@ const Page = props => {
 
     return (
         <>
+            {/* <Navbar /> */}
             <SectionIntro text={intro} />
             <div className='page'>
                 <div className={cssStyle}>
