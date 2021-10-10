@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ee5e1315.chunk.css",
+    "main.js": "/static/js/main.cf40a199.chunk.js",
+    "main.js.map": "/static/js/main.cf40a199.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.062b8e80.js",
+    "runtime-main.js.map": "/static/js/runtime-main.062b8e80.js.map",
+    "static/js/2.102877e3.chunk.js": "/static/js/2.102877e3.chunk.js",
+    "static/js/2.102877e3.chunk.js.map": "/static/js/2.102877e3.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.ee5e1315.chunk.css.map": "/static/css/main.ee5e1315.chunk.css.map",
+    "static/js/2.102877e3.chunk.js.LICENSE.txt": "/static/js/2.102877e3.chunk.js.LICENSE.txt",
+    "static/media/dummy.969d3db0.png": "/static/media/dummy.969d3db0.png",
+    "static/media/lavendarium_banner.debc36ce.png": "/static/media/lavendarium_banner.debc36ce.png",
+    "static/media/morita_banner.542a7956.png": "/static/media/morita_banner.542a7956.png",
+    "static/media/resnet_banner.1f803e90.png": "/static/media/resnet_banner.1f803e90.png",
+    "static/media/suda_banner.a464ca0c.png": "/static/media/suda_banner.a464ca0c.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.062b8e80.js",
+    "static/js/2.102877e3.chunk.js",
+    "static/css/main.ee5e1315.chunk.css",
+    "static/js/main.cf40a199.chunk.js"
+  ]
+}
