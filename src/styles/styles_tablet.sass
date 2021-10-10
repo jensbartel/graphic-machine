@@ -1,0 +1,49 @@
+=iPad-portrait
+    .navbar
+        margin: 4rem auto 0
+        padding: 0 10%
+    .language-switch
+        margin: 0 auto
+        padding: 0 10% 1.5rem
+    .section-intro
+        margin: 2rem auto 0
+        padding: 0 10%
+        p
+            padding-right: 33%
+    .page
+        margin: 0 auto
+        padding: 4rem 10% 4rem
+    .grid-two
+        grid-template-columns: repeat(1, 1fr)
+        row-gap: 4rem
+        .category-top
+            width: 100%
+
+// iPad Pro
+@media only screen and (min-width: 1024px) and (max-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2)
+    +iPad-portrait
+
+// @media only screen and (min-width: 1366px) and (max-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2)
+
+// iPad 7th, 8th gen
+@media only screen and (min-width: 810px) and (max-width: 810px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2)
+    +iPad-portrait
+
+// @media only screen and (min-width: 1080px) and (max-width: 1080px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2)
+
+// iPad 3rd-6th gen, iPad Pro 9.7", iPad Air 1 + 2, iPad Mini 2-4  
+@media only screen and (min-width: 768px) and (max-width: 768px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2)
+    +iPad-portrait
+    .navbar
+        flex-direction: column
+    .menu
+        margin-top: 0.25rem
+        margin-bottom: 0.25rem
+        a
+            &:first-child
+                padding-left: 0
+    .section-intro
+        p
+            padding-right: 0
+
+// @media only screen and (min-width: 1024px) and (max-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2)

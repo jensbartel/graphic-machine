@@ -1,8 +1,12 @@
 import { useContext } from 'react';
 import LangContext from '../context/langContext';
 import SectionIntro from '../components/SectionIntro';
+import FilterContext from '../context/filterContext';
 
 const Page = props => {
+    const filterContext = useContext(FilterContext);
+    const { setFilter } = filterContext;
+
     const {
         cssStyle,
         data: { intro, projects },
@@ -22,23 +26,27 @@ const Page = props => {
         dateChoice = 'date';
     }
 
-    // console.log(data);
+    const toolClick = tool => {
+        setFilter(tool);
+    };
 
     return (
         <>
-            {/* <Navbar /> */}
             <SectionIntro text={intro} />
             <div className='page'>
                 <div className={cssStyle}>
                     {projects.map(item =>
                         item.img ? (
                             // fully-defined div
+                            // refactor this into separate component
                             <div className='category-top' key={item.id}>
                                 <div>
                                     <div className='title'>{item[titleChoice]}</div>
                                     <div className='tools'>
                                         {item.tools.map(tool => (
-                                            <p key={tool}>{tool}</p>
+                                            <p key={tool} onClick={() => toolClick(tool)}>
+                                                {tool}
+                                            </p>
                                         ))}
                                     </div>
                                 </div>
@@ -52,7 +60,7 @@ const Page = props => {
                                 </div>
                             </div>
                         ) : (
-                            // dummy div
+                            // dummy div, remove later
                             <div className='banner-dummy' key={item.id}>
                                 {item.title}
                             </div>
