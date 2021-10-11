@@ -231,6 +231,7 @@ p {
   .navbar {
     margin: 4rem auto 0;
     padding: 0 10%;
+    flex-direction: column;
   }
 
   .language-switch {
@@ -238,12 +239,20 @@ p {
     padding: 0 10% 1.5rem;
   }
 
+  .menu {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+  }
+  .menu a:first-child {
+    padding-left: 0;
+  }
+
   .section-intro {
     margin: 2rem auto 0;
     padding: 0 10%;
   }
   .section-intro p {
-    padding-right: 33%;
+    padding-right: 0;
   }
 
   .page {
@@ -263,6 +272,7 @@ p {
   .navbar {
     margin: 4rem auto 0;
     padding: 0 10%;
+    flex-direction: column;
   }
 
   .language-switch {
@@ -270,12 +280,20 @@ p {
     padding: 0 10% 1.5rem;
   }
 
+  .menu {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+  }
+  .menu a:first-child {
+    padding-left: 0;
+  }
+
   .section-intro {
     margin: 2rem auto 0;
     padding: 0 10%;
   }
   .section-intro p {
-    padding-right: 33%;
+    padding-right: 0;
   }
 
   .page {
@@ -289,22 +307,6 @@ p {
   }
   .grid-two .category-top {
     width: 100%;
-  }
-
-  .navbar {
-    flex-direction: column;
-  }
-
-  .menu {
-    margin-top: 0.25rem;
-    margin-bottom: 0.25rem;
-  }
-  .menu a:first-child {
-    padding-left: 0;
-  }
-
-  .section-intro p {
-    padding-right: 0;
   }
 }
 @media only screen and (max-width: 568px) {
