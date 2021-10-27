@@ -1,5 +1,6 @@
 import img_morita from '../img/banner/morita_banner.png';
 import img_lavendarium from '../img/banner/lavendarium_banner.png';
+import img_suda from '../img/banner/suda_banner.jpg';
 
 const webPagesIntro = {
     headline: 'Web Pages',
@@ -73,6 +74,13 @@ const Kida = {
 const Suda = {
     id: 10,
     title: 'Suda Kokuta Exhibition',
+    titleFR: 'Éxposition Suda Kokuta',
+    img: img_suda,
+    description: 'Webpage for an exhibition on a Japanese postwar calligrapher',
+    desFR: `Présentation d'un éxposition sur un calligraphe Japonais après-guerre`,
+    tools: ['React', 'SASS', 'GCP'],
+    date: 'December 2020',
+    dateFR: 'Décembre 2020',
 };
 
 const data = [MoritaShiryu, Lavendarium, Suda, artword, Mishima, Kida];
