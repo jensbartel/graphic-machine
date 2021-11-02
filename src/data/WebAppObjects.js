@@ -1,5 +1,6 @@
 import img_dummy from '../img/banner/dummy.png';
 import img_resnet from '../img/banner/resnet_banner.png';
+import img_MMAS from '../img/banner/MMAS_banner-light.png';
 
 // WEBAPPS
 const ResNet = {
@@ -30,7 +31,7 @@ const MMAS = {
     id: 3,
     title: 'Miyanomori Museum of Art, Sapporo',
     titleFR: 'Miyanomori Museum of Art, Sapporo',
-    img: img_dummy,
+    img: img_MMAS,
     description: 'Collection management solution for private art museum',
     desFR: 'Collection management solution for private art museum',
     date: 'Jun 2020 (cancelled)',
@@ -59,7 +60,7 @@ const webAppsIntro = {
     textFR: `Il parle également de s'installer à Saint-Tropez : «Business est de plus en plus business, c'est-à-dire une saloperie et une simple question de gros sous m'obligera d'ici quelques jours à rallier directement St Tropez. A part, évidemment le plaisir de retrouver quelques copains [...] et le Salon d'automne que j'aurais voulu voir, je me console en somme sans grand effort. Paris devient de plus en plus un capharnaüm impossible où l'on rencontre de tout sauf ce qu'on aimait à y voir ou à y retrouver. Et c'est triste quand on aime encore, malgré tout, cette belle fille. On ne voit déjà plus que son maquillage. Dans très bientôt, ce ne sera qu'un souvenir. Un de plus. Aussi Vive le Var Vive le Var & St Tropez & le Pilon.» `,
 };
 
-const data = [ResNet, ClientApp, MMAS, SecretPriceApp];
+const data = [ResNet, MMAS, ClientApp, SecretPriceApp];
 
 export const webApps = {
     intro: webAppsIntro,

@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.f0b75ae4.chunk.css",
-    "main.js": "/static/js/main.f538eeb3.chunk.js",
-    "main.js.map": "/static/js/main.f538eeb3.chunk.js.map",
+    "main.js": "/static/js/main.b149122b.chunk.js",
+    "main.js.map": "/static/js/main.b149122b.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.062b8e80.js",
     "runtime-main.js.map": "/static/js/runtime-main.062b8e80.js.map",
     "static/js/2.102877e3.chunk.js": "/static/js/2.102877e3.chunk.js",
@@ -10,17 +10,21 @@
     "index.html": "/index.html",
     "static/css/main.f0b75ae4.chunk.css.map": "/static/css/main.f0b75ae4.chunk.css.map",
     "static/js/2.102877e3.chunk.js.LICENSE.txt": "/static/js/2.102877e3.chunk.js.LICENSE.txt",
+    "static/media/MMAS_banner-light.4f31f838.png": "/static/media/MMAS_banner-light.4f31f838.png",
     "static/media/dummy.969d3db0.png": "/static/media/dummy.969d3db0.png",
+    "static/media/hayashi_banner.df74559d.png": "/static/media/hayashi_banner.df74559d.png",
     "static/media/lavendarium_banner.debc36ce.png": "/static/media/lavendarium_banner.debc36ce.png",
     "static/media/morita_banner.542a7956.png": "/static/media/morita_banner.542a7956.png",
     "static/media/resnet_banner.1f803e90.png": "/static/media/resnet_banner.1f803e90.png",
     "static/media/suda_banner.63d37570.jpg": "/static/media/suda_banner.63d37570.jpg",
-    "static/media/suda_banner.a464ca0c.png": "/static/media/suda_banner.a464ca0c.png"
+    "static/media/suda_banner.a464ca0c.png": "/static/media/suda_banner.a464ca0c.png",
+    "static/media/yamagu1_banner.b8d759ed.png": "/static/media/yamagu1_banner.b8d759ed.png",
+    "static/media/yamagu2_banner.46bd3a43.png": "/static/media/yamagu2_banner.46bd3a43.png"
   },
   "entrypoints": [
     "static/js/runtime-main.062b8e80.js",
     "static/js/2.102877e3.chunk.js",
     "static/css/main.f0b75ae4.chunk.css",
-    "static/js/main.f538eeb3.chunk.js"
+    "static/js/main.b149122b.chunk.js"
   ]
 }
