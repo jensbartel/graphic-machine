@@ -30,13 +30,12 @@ p {
   margin: 0 8rem;
   padding-bottom: 5rem;
 }
-.project h3 {
+.project h3, .project h4 {
   margin-top: 0;
 }
 .project p {
   margin-bottom: 1rem;
 }
-
 .content-container {
   display: block;
   margin: auto;
@@ -189,7 +188,8 @@ p {
   column-gap: 4rem;
 }
 .project-grid p {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+  line-height: 1.5;
 }
 .project-grid img {
   width: 100%;
