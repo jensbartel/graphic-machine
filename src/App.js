@@ -13,6 +13,11 @@ import Page from './components/Page';
 import { webApps } from './data/WebAppObjects';
 import { webPages } from './data/WebPageObjects';
 import { print } from './data/PrintObjects';
+import MMAS from './components/projects/MMAS';
+import ResNet from './components/projects/ResNet';
+import PriceApp from './components/projects/PriceApp';
+import ClientApp from './components/projects/ClientApp';
+import Morita from './components/projects/Morita';
 
 const App = () => {
     const langContext = useContext(LangContext);
@@ -38,6 +43,11 @@ const App = () => {
                         <Route exact path='/print' render={() => <Page cssStyle='grid-two' data={print} />} />
                         <Route exact path='/about' component={About} />
                         <Route exact path='/' component={NotFound} />
+                        <Route exact path='/webapps/mmas' component={MMAS} />
+                        <Route exact path='/webapps/resourcenet' component={ResNet} />
+                        <Route exact path='/webapps/clientapp' component={ClientApp} />
+                        <Route exact path='/webapps/priceapp' component={PriceApp} />
+                        <Route exact path='/webpages/morita' component={Morita} />
                     </div>
                     <Footer />
                 </div>

@@ -35,6 +35,7 @@ const MoritaShiryu = {
     tools: ['React', 'SASS', 'GCP'],
     date: 'December 2020',
     dateFR: 'Décembre 2020',
+    url: 'webpages/morita',
 };
 
 // const Kuroda = {

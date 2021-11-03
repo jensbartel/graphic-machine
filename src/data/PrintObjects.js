@@ -10,7 +10,9 @@ const Suda = {
     titleFR: 'Suda Kokuta: Abstractions',
     img: img_suda,
     description: '28-page catalog for "Suda Kokuta: Abstractions" exhibition',
+    desFR: `28-page catalogue pour l'exposition "Suda Kokuta: Abstractions"`,
     date: 'July 2021',
+    dateFR: 'Julliet 2021',
     tools: ['InDesign', 'Photoshop'],
 };
 
@@ -20,7 +22,9 @@ const Hayashi = {
     titleFR: 'Hayashi Takeshi: She',
     img: img_hayashi,
     description: '28-page catalog for "Hayashi Takeshi: She" exhibition',
+    desFR: `28-page catalogue pour l'exposition "Hayashi Takeshi: She" exhibition`,
     date: 'July 2020',
+    dateFR: 'Juillet 2020',
     tools: ['InDesign', 'Photoshop'],
 };
 
@@ -30,16 +34,21 @@ const Yama2 = {
     titleFR: 'Yamaguchi Takeo: Watercolors (2)',
     img: img_yamagu2,
     description: '32-page catalog for "Yamaguchi Takeo: Watercolors (2)" exhibition',
+    desFR: '32-page catalog for "Yamaguchi Takeo: Watercolors (2)" exhibition',
     date: 'Extended production hell',
+    dateFR: 'Délibérément lancé dans production hell',
     tools: ['InDesign', 'Photoshop'],
 };
 
 const Yama1 = {
     id: 4,
     title: 'Yamaguchi Takeo: Watercolors',
+    titleFR: 'Yamaguchi Takeo: Watercolors',
     img: img_yamagu1,
     description: '44-page catalog for "Yamaguchi Takeo: Watercolors" exhibition',
+    desFR: '44-page catalog for "Yamaguchi Takeo: Watercolors" exhibition',
     date: 'June 2020',
+    dateFR: 'Juin 2020',
     tools: ['InDesign', 'Photoshop'],
     // add the window decoration on item page!
 };

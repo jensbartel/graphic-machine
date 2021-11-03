@@ -13,6 +13,7 @@ const ResNet = {
     date: 'Upcoming',
     dateFR: 'Upcoming',
     tools: ['MERN', 'Realm', 'Swift', 'GCP'],
+    url: '/webapps/resourcenet',
 };
 
 const ClientApp = {
@@ -24,7 +25,8 @@ const ClientApp = {
     description: 'Web app with iOS client for iPad and web backoffice to register clients',
     desFR: 'Web app with iOS client for iPad and web backoffice to register clients',
     date: 'May-August 2021',
-    dateFR: 'Mai-Auguste 2021',
+    dateFR: 'Mai-Août 2021',
+    url: '/webapps/clientapp',
 };
 
 const MMAS = {
@@ -35,7 +37,9 @@ const MMAS = {
     description: 'Collection management solution for private art museum',
     desFR: 'Collection management solution for private art museum',
     date: 'Jun 2020 (cancelled)',
+    dateFR: 'Juin 2020',
     tools: ['MERN', 'GCP'],
+    url: '/webapps/mmas',
 };
 
 const SecretPriceApp = {
@@ -47,6 +51,8 @@ const SecretPriceApp = {
     description: 'Price encryption app for art gallery',
     desFR: 'Price encryption app for art gallery',
     date: 'March 2020',
+    dateFR: 'Mars 2020',
+    url: '/webapps/priceapp',
 };
 
 // const TBA2 = {
