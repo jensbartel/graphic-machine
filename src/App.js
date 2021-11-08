@@ -1,23 +1,25 @@
 import './App.css';
-import { useEffect, useContext } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { useEffect, useContext } from 'react';
 import FilterState from './context/FilterState';
-
-import About from './components/About';
-import Footer from './components/Footer';
 import LangContext from './context/langContext';
-import Navbar from './components/Navbar';
-import NotFound from './components/NotFound';
-import Page from './components/Page';
 
-import { webApps } from './data/WebAppObjects';
-import { webPages } from './data/WebPageObjects';
-import { print } from './data/PrintObjects';
+import Footer from './components/layout/Footer';
+import Navbar from './components/layout/Navbar';
+
+import About from './components/pages/About';
+import NotFound from './components/pages/NotFound';
+import Page from './components/pages/Page';
+
 import MMAS from './components/projects/MMAS';
 import ResNet from './components/projects/ResNet';
 import PriceApp from './components/projects/PriceApp';
 import ClientApp from './components/projects/ClientApp';
 import Morita from './components/projects/Morita';
+
+import { webApps } from './data/projectOverviewData/WebAppObjects';
+import { webPages } from './data/projectOverviewData/WebPageObjects';
+import { print } from './data/projectOverviewData/PrintObjects';
 
 const App = () => {
     const langContext = useContext(LangContext);

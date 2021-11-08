@@ -1,8 +1,8 @@
 // import img_dummy from '../img/banner/dummy.png';
-import img_suda from '../img/banner/suda_banner.png';
-import img_hayashi from '../img/banner/hayashi_banner.png';
-import img_yamagu1 from '../img/banner/yamagu1_banner.png';
-import img_yamagu2 from '../img/banner/yamagu2_banner.png';
+import img_suda from '../../img/banner/suda_banner.png';
+import img_hayashi from '../../img/banner/hayashi_banner.png';
+import img_yamagu1 from '../../img/banner/yamagu1_banner.png';
+import img_yamagu2 from '../../img/banner/yamagu2_banner.png';
 
 const Suda = {
     id: 1,

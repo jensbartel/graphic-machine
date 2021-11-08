@@ -1,6 +1,6 @@
-import img_morita from '../img/banner/morita_banner.png';
-import img_lavendarium from '../img/banner/lavendarium_banner.png';
-import img_suda from '../img/banner/suda_banner.jpg';
+import img_morita from '../../img/banner/morita_banner.png';
+import img_lavendarium from '../../img/banner/lavendarium_banner.png';
+import img_suda from '../../img/banner/suda_banner.jpg';
 
 const webPagesIntro = {
     headline: 'Web Pages',

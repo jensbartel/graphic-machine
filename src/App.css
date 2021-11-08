@@ -25,17 +25,6 @@ p {
   padding-bottom: 5rem;
 }
 
-.project {
-  font-family: "Source Sans Pro", sans-serif;
-  margin: 0 8rem;
-  padding-bottom: 5rem;
-}
-.project h3, .project h4 {
-  margin-top: 0;
-}
-.project p {
-  margin-bottom: 1rem;
-}
 .content-container {
   display: block;
   margin: auto;
@@ -181,18 +170,37 @@ p {
   opacity: 0.1;
 }
 
+.project {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0 8rem;
+  padding-bottom: 5rem;
+}
+.project h3, .project h4 {
+  margin-top: 0;
+}
+.project p {
+  margin-bottom: 1rem;
+}
+
 .project-grid {
   margin: 1rem 0 0;
   display: grid;
   grid-template-columns: 60% 1fr;
-  column-gap: 4rem;
+  column-gap: 8rem;
 }
 .project-grid p {
-  font-size: 0.8rem;
-  line-height: 1.5;
+  font-size: 0.9rem;
+  line-height: 1.4;
 }
 .project-grid img {
   width: 100%;
+}
+
+.large-text-container {
+  margin-top: 6rem;
+  padding: 0 20%;
+  font-size: 0.9rem;
+  line-height: 1.4;
 }
 
 .footer {

@@ -1,0 +1,5 @@
+const testText1 = `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores soluta quasi doloremque amet earum impedit dolore repellendus commodi aperiam ad modi, explicabo eos minima optio, unde blanditiis deleniti voluptates? Odit cupiditate consequatur expedita consequuntur, eos ad quibusdam corrupti fugiat possimus! Quae ipsam labore tempore harum in quisquam animi enim dolore impedit ex, excepturi rerum odio quam reprehenderit officiis cum praesentium iusto. Nihil molestiae debitis modi, maxime, dolores corrupti eum ad porro labore necessitatibus inventore ipsa quod, error nostrum. Ad velit necessitatibus in voluptas magnam laudantium obcaecati possimus illum iusto nam, recusandae architecto at sequi dolore voluptatibus laboriosam fugiat debitis quaerat vero? Distinctio adipisci impedit facere ab, eveniet placeat accusamus, sunt numquam repellat dolor quos temporibus architecto deleniti nesciunt, incidunt vitae!`;
+
+const MoritaData = { testText1 };
+
+export default MoritaData;

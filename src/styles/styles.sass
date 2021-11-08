@@ -23,17 +23,6 @@ p
     margin: 2.5rem 8rem 0
     padding-bottom: 5rem
 
-.project
-    font-family: 'Source Sans Pro', sans-serif
-    margin: 0 8rem
-    padding-bottom: 5rem
-    h3, h4
-        margin-top: 0
-    p
-        margin-bottom: 1rem
-        &:first-child
-            // font-size: 1.4rem
-
 .content-container
     display: block
     margin: auto
@@ -156,20 +145,33 @@ p
                 &:hover
                     opacity: 0.1
 
-// PROJECT GRID
+// PROJECT
+.project
+    font-family: 'Source Sans Pro', sans-serif
+    margin: 0 8rem
+    padding-bottom: 5rem
+    h3, h4
+        margin-top: 0
+    p
+        margin-bottom: 1rem
+
 .project-grid
     margin: 1rem 0 0
     display: grid
     grid-template-columns: 60% 1fr
-    column-gap: 4rem
+    column-gap: 8rem
     p
-        // background-color: red
-        font-size: 0.8rem
-        line-height: 1.5
-        // text-align: justify
-        // letter-spacing: 0.05rem
+        font-size: 0.9rem
+        line-height: 1.4
     img
         width: 100%
+
+// project reusable components
+.large-text-container
+    margin-top: 6rem
+    padding: 0 20%
+    font-size: 0.9rem
+    line-height: 1.4
 
 // FOOTER
 .footer

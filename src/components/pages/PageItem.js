@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import FilterContext from '../context/filterContext';
-import LangContext from '../context/langContext';
+import FilterContext from '../../context/filterContext';
+import LangContext from '../../context/langContext';
 
 const PageItem = props => {
     // Note: Filter context is not used currently; remove altogether?

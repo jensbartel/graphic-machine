@@ -1,5 +1,5 @@
-import PageItem from '../components/PageItem';
-import SectionIntro from '../components/SectionIntro';
+import PageItem from './PageItem';
+import SectionIntro from './SectionIntro';
 
 const Page = props => {
     const {
