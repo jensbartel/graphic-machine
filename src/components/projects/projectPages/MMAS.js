@@ -1,4 +1,4 @@
-import MMAS_banner from '../../img/banner/MMAS_banner-light.png';
+import MMAS_banner from '../../../img/banner/MMAS_banner-light.png';
 
 const MMAS = () => {
     return (

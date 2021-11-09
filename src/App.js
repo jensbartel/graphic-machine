@@ -11,11 +11,11 @@ import About from './components/pages/About';
 import NotFound from './components/pages/NotFound';
 import Page from './components/pages/Page';
 
-import MMAS from './components/projects/MMAS';
-import ResNet from './components/projects/ResNet';
-import PriceApp from './components/projects/PriceApp';
-import ClientApp from './components/projects/ClientApp';
-import Morita from './components/projects/Morita';
+import MMAS from './components/projects/projectPages/MMAS';
+import ResNet from './components/projects/projectPages/ResNet';
+import PriceApp from './components/projects/projectPages/PriceApp';
+import ClientApp from './components/projects/projectPages/ClientApp';
+import Morita from './components/projects/projectPages/Morita';
 
 import { webApps } from './data/projectOverviewData/WebAppObjects';
 import { webPages } from './data/projectOverviewData/WebPageObjects';
@@ -38,8 +38,8 @@ const App = () => {
         <FilterState>
             <Router>
                 <div className='page-container'>
+                    <Navbar />
                     <div className='content-container'>
-                        <Navbar />
                         <Route exact path='/webapps' render={() => <Page cssStyle='grid-two' data={webApps} />} />
                         <Route exact path='/webpages' render={() => <Page cssStyle='grid-two' data={webPages} />} />
                         <Route exact path='/print' render={() => <Page cssStyle='grid-two' data={print} />} />
