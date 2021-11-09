@@ -1,7 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 body {
   margin: 0;
@@ -187,34 +184,31 @@ p {
 }
 .project p {
   margin-bottom: 1rem;
+  font-size: 0.85rem;
+  line-height: 1.4;
 }
-.project .project-links {
-  margin-bottom: 1.5rem;
-}
-.project .project-links a {
-  font-size: 0.8rem;
-  padding-right: 1rem;
-}
-.project .project-links i {
-  padding-right: 0.33rem;
-}
-
-.project-grid {
+.project .project-grid {
   margin: 1rem 0 0;
   display: grid;
   grid-template-columns: 60% 1fr;
   column-gap: 6rem;
 }
-.project-grid p {
-  font-size: 0.85rem;
-  line-height: 1.4;
-}
-.project-grid img {
+.project .project-grid img {
   width: 100%;
 }
-.project-grid .image-caption {
+.project .project-grid .image-caption {
   font-size: 0.75rem;
   font-weight: lighter;
+}
+.project .project-grid .project-links {
+  margin-bottom: 1.5rem;
+}
+.project .project-grid .project-links a {
+  font-size: 0.8rem;
+  padding-right: 1rem;
+}
+.project .project-grid .project-links i {
+  padding-right: 0.33rem;
 }
 
 .large-text-container {

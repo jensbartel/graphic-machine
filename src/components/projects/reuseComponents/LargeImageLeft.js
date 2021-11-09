@@ -4,27 +4,32 @@ import MoritaData from '../../../data/projectData/MoritaData';
 
 const LargeImageLeft = () => {
     const { outline } = MoritaData;
+    const headline = 'Morita Shiryū Exhibition';
+    const imageCaption = 'Morita page top section.';
+    const URL = 'https://moritashiryu-bokujin.com/english';
+    const github = 'https://github.com/jensbartel/morita_refactor-review';
+    const outlineHeader = 'Project Outline';
 
     return (
         <div className='project'>
-            <p>Morita Shiryū Exhibition</p>
+            <p>{headline}</p>
             <div className='project-grid'>
-                <div className='image-column'>
+                <div>
                     <img src={MMAS_banner} alt='' />
-                    <p className='image-caption'>Morita page top section.</p>
+                    <p className='image-caption'>{imageCaption}</p>
                 </div>
-                <div className='text-column'>
+                <div>
                     <div className='project-links'>
-                        <a href='https://moritashiryu-bokujin.com/english'>
+                        <a href={URL} target='_blank' rel='noreferrer'>
                             <i className='fas fa-map-marker-alt'></i>
                             <span>URL</span>
                         </a>
-                        <a href='https://github.com/jensbartel/morita_refactor-review'>
+                        <a href={github} target='_blank' rel='noreferrer'>
                             <i className='fab fa-github'></i>
                             <span>Github</span>
                         </a>
                     </div>
-                    <h2>Project Outline</h2>
+                    <h2>{outlineHeader}</h2>
                     <p>{html(outline)}</p>
                 </div>
             </div>

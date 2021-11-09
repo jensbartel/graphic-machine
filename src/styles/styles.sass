@@ -1,10 +1,7 @@
 $default-transition: 0.5s
 $default-grey: #999
 
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap')
-@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap')
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap')
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap')
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap')
 
 body
@@ -153,10 +150,6 @@ p
 
 // PROJECT
 .project
-    // font-family: 'Source Sans Pro', sans-serif
-    // font-family: 'Quicksand', sans-serif
-    // font-family: 'Nanum Gothic', sans-serif
-    // font-family: 'Maven Pro', sans-serif
     font-family: 'Nunito', sans-serif
     margin: 0 8rem
     padding-bottom: 5rem
@@ -166,29 +159,27 @@ p
         margin-top: 0
     p
         margin-bottom: 1rem
-    .project-links
-        margin-bottom: 1.5rem
-        a
-            font-size: 0.8rem
-            padding-right: 1rem
-        i
-            padding-right: 0.33rem
-
-.project-grid
-    margin: 1rem 0 0
-    display: grid
-    grid-template-columns: 60% 1fr
-    column-gap: 6rem
-    p
         font-size: 0.85rem
         line-height: 1.4
-    img
-        width: 100%
-    .image-caption
-        font-size: 0.75rem
-        font-weight: lighter
+    .project-grid
+        margin: 1rem 0 0
+        display: grid
+        grid-template-columns: 60% 1fr
+        column-gap: 6rem
+        img
+            width: 100%
+        .image-caption
+            font-size: 0.75rem
+            font-weight: lighter
+        .project-links
+            margin-bottom: 1.5rem
+            a
+                font-size: 0.8rem
+                padding-right: 1rem
+            i
+                padding-right: 0.33rem
 
-// project reusable components
+// Large text center
 .large-text-container
     margin-top: 4rem
     padding: 0 20%
@@ -202,6 +193,7 @@ p
     letter-spacing: 1px
     margin-top: 0
 
+// Large video
 .large-video
     padding: 0
 
@@ -226,3 +218,9 @@ p
     p
         &:last-child
             margin-top: 1rem
+
+// outtakes
+// font-family: 'Source Sans Pro', sans-serif
+// font-family: 'Quicksand', sans-serif
+// font-family: 'Nanum Gothic', sans-serif
+// font-family: 'Maven Pro', sans-serif
