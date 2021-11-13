@@ -14,10 +14,13 @@ const LargeImageLeft = () => {
         <div className='project'>
             <p>{headline}</p>
             <div className='project-grid'>
+                {/* left column for image */}
                 <div>
                     <img src={MMAS_banner} alt='' />
                     <p className='image-caption'>{imageCaption}</p>
                 </div>
+
+                {/* right column for text */}
                 <div>
                     <div className='project-links'>
                         <a href={URL} target='_blank' rel='noreferrer'>

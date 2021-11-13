@@ -175,7 +175,6 @@ p {
 .project {
   font-family: "Nunito", sans-serif;
   margin: 0 8rem;
-  padding-bottom: 5rem;
 }
 .project h2, .project h3, .project h4 {
   font-family: "Playfair Display", sans-serif;
@@ -213,21 +212,35 @@ p {
 
 .large-text-container {
   margin-top: 4rem;
-  padding: 0 20%;
+  padding: 0 30%;
   font-family: "Nunito", sans-serif;
   font-size: 0.9rem;
   line-height: 1.4;
 }
-
-.headline {
-  margin: 6rem 0 2rem;
+.large-text-container .headline {
+  margin: 4rem 0 2rem;
   font-family: "Playfair Display", sans-serif;
   letter-spacing: 1px;
   margin-top: 0;
 }
 
-.large-video {
-  padding: 0;
+.video-container {
+  display: flex;
+  justify-content: center;
+}
+.video-container .large-video {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+}
+.video-container .large-video video {
+  border: 1px solid #000;
+}
+.video-container .large-video p {
+  font-family: "Nunito", sans-serif;
+  font-size: 0.75rem;
+  font-weight: lighter;
+  padding-top: 0.33rem;
 }
 
 .footer {

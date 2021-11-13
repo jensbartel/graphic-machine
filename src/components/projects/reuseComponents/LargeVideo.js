@@ -1,12 +1,14 @@
-import PullquoteVideo1 from '../../../video/Morita-Pullquote1.mov';
+import PullquoteVideo1 from '../../../video/Morita-Pullquote1.mp4';
 
 const LargeVideo = () => {
     return (
-        <div className='large-video'>
-            <video loop>
-                <source src={PullquoteVideo1} type='video/mov' />
-            </video>
-            {/* <video src='../../video/video/Morita-Pullquote1.mov'></video> */}
+        <div className='video-container'>
+            <div className='large-video'>
+                <video width='640' height='400' autoPlay loop muted>
+                    <source src={PullquoteVideo1} type='video/mp4' />
+                </video>
+                <p>Pullquote animation.</p>
+            </div>
         </div>
     );
 };
