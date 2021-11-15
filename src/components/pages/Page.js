@@ -14,7 +14,7 @@ const Page = props => {
                 <div className={cssStyle}>
                     {projects.map(item =>
                         item.img ? (
-                            <PageItem item={item} />
+                            <PageItem item={item} key={item.id} />
                         ) : (
                             // dummy div, remove later
                             <div className='banner-dummy' key={item.id}>

@@ -17,8 +17,10 @@ const Navbar = () => {
     };
 
     return (
-        <>
-            <div className='navbar'>
+        <nav>
+            <div className='overlay'></div>
+
+            <section className='navbar'>
                 <div className='wordmark'>
                     <Link to='/'>GRIFOLD STUDIO</Link>
                 </div>
@@ -28,16 +30,17 @@ const Navbar = () => {
                     <Link to='/print'>PRINT</Link>
                     <Link to='/about'>ABOUT</Link>
                 </div>
-            </div>
-            <div className='language-switch'>
+            </section>
+
+            <section className='language-switch'>
                 <button onClick={onEnglish}>
                     ENGLISH{lang.state === 'francais' ? <span className='indicator-off'>×</span> : <span className='indicator-active'>×</span>}
                 </button>
                 <button onClick={onFrench}>
                     FRANÇAIS{lang.state === 'francais' ? <span className='indicator-active'>×</span> : <span className='indicator-off'>×</span>}
                 </button>
-            </div>
-        </>
+            </section>
+        </nav>
     );
 };
 

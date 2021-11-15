@@ -4,18 +4,16 @@ import { useEffect, useContext } from 'react';
 import FilterState from './context/FilterState';
 import LangContext from './context/langContext';
 
-import Footer from './components/layout/Footer';
-import Navbar from './components/layout/Navbar';
-
 import About from './components/pages/About';
+import ClientApp from './components/projects/projectPages/ClientApp';
+import Footer from './components/layout/Footer';
+import MMAS from './components/projects/projectPages/MMAS';
+import Morita from './components/projects/projectPages/Morita';
+import Navbar from './components/layout/Navbar';
 import NotFound from './components/pages/NotFound';
 import Page from './components/pages/Page';
-
-import MMAS from './components/projects/projectPages/MMAS';
-import ResNet from './components/projects/projectPages/ResNet';
 import PriceApp from './components/projects/projectPages/PriceApp';
-import ClientApp from './components/projects/projectPages/ClientApp';
-import Morita from './components/projects/projectPages/Morita';
+import ResNet from './components/projects/projectPages/ResNet';
 
 import { webApps } from './data/projectOverviewData/WebAppObjects';
 import { webPages } from './data/projectOverviewData/WebPageObjects';

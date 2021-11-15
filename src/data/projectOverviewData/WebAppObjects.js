@@ -3,6 +3,8 @@ import img_resnet from '../../img/banner/resnet_banner.png';
 import img_MMAS from '../../img/banner/MMAS_banner-light.png';
 
 // WEBAPPS
+// ResNet, ClientApp, MMAS, Secret Price Code, sbk-todoke --> Total of 5
+
 const ResNet = {
     id: 1,
     title: 'SBK-ResourceNet',

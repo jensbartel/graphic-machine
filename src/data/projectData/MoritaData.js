@@ -1,24 +1,35 @@
 // responsive
-const headline1 = `Responsive`;
+const headline1 = `Responsive Layouts`;
 
-const testText1 = `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores soluta quasi doloremque amet earum impedit dolore repellendus commodi aperiam ad modi, explicabo eos minima optio, unde blanditiis deleniti voluptates? Odit cupiditate consequatur expedita consequuntur, eos ad quibusdam corrupti fugiat possimus! Quae ipsam labore tempore harum in quisquam animi enim dolore impedit ex, excepturi rerum odio quam reprehenderit officiis cum praesentium iusto. Nihil molestiae debitis modi, maxime, dolores corrupti eum ad porro labore necessitatibus inventore ipsa quod, error nostrum. Ad velit necessitatibus in voluptas magnam laudantium obcaecati possimus illum iusto nam, recusandae architecto at sequi dolore voluptatibus laboriosam fugiat debitis quaerat vero? Distinctio adipisci impedit facere ab, eveniet placeat accusamus, sunt numquam repellat dolor quos temporibus architecto deleniti nesciunt, incidunt vitae!`;
+const testText1 = `Responsive layouts for desktop/laptop, desktop (large screens), various tablet sizes (iPad 7th/8th generation, iPad Pro; portrait and landscape orientation) and mobile phones.`;
 
-const outline = `Event page for the exhibition <em>Morita Shiryū: Bokujin</em> at Shibunkaku held January–February 2021 in Kyoto and Tokyo. The exhibition aims to give a survey-type of overview of the avant-garde calligrapher Morita Shiryū's (1912–1998) life and work. Parts of the show continue to be shown in Japan and abroad, most recently at Ogata Paris.<br><br><br>
+const outline = `Event page for the exhibition <em>Morita Shiryū: Bokujin</em> at Shibunkaku held January–February 2021 in Kyoto and Tokyo. The exhibition gives a survey-type of overview of the calligrapher Morita Shiryū's (1912–1998) work from the 1940s to 90s. Parts of the exhibition continue to be shown in Japan and abroad, most recently in Paris.<br><br>
 
-The page has a considerable amount of text and images, hence the decision to use React to capitalize on its re-usable components. Hosted independently from the client’s homepage, the design aims to make the site appear as if a part of that homepage by re-using the same header and footer and some of its design principles (homepage index page is cloned and the React part injected between header and footer elements).<br><br>
+<strong><u>Brief:</u></strong><br>Works by Morita and other artists of the postwar avant-garde calligraphy scene are a mainstay of the gallery. Exhibition represents an effort to carry the artist’s legacy to new audiences in Japan and abroad. The website is meant to serve as a <strong>reference and archive</strong> about the works, and includes a scholarly article and further relevant data such as exhibition history and a chronology. <br><br>
 
-Apart of the main exhibition page, a “VIP page” was added to introduce works in the exhibition in more detail. That page is not linked from the exhibition main page but the URL is sent directly to the gallery’s customers via mailing list. Initially planned user login was scrapped during development. `;
+<strong>Comment on the text amount:</strong> The site is extremely text-heavy, but the gallery decided to go ahead as is against developer's (my) recommendation.* <br>Prof. Ozaki, who provided the article in Part IV, was asked a certain number of characters and ended up writing twice. For the sake of Japanese-style politeness it was refrained from asking him to shorten. <span style="font-size: smaller"> * (in my other role as part of the overseas sales team) </span><br><br>
 
-const headline2 = `VIP Area`;
+The (somewhat awkward) solution is to use extensive scroll navigation to maneuver through the document, and hide about half of the article in "Read more" sections. It would have seemed more natural to me to omit Part II (or consolidate with Part I), bring Part III after the article in Part IV and shorten Part I to the essentials.
+<br><br><br>
 
-const MoritaVIPText = `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores soluta quasi doloremque amet earum impedit dolore repellendus commodi aperiam ad modi, explicabo eos minima optio, unde blanditiis deleniti voluptates? Odit cupiditate consequatur expedita consequuntur, eos ad quibusdam corrupti fugiat possimus! Quae ipsam labore tempore harum in quisquam animi enim dolore impedit ex, excepturi rerum odio quam reprehenderit officiis cum praesentium iusto. Nihil molestiae debitis modi, maxime, dolores corrupti eum ad porro labore necessitatibus inventore ipsa quod, error nostrum. Ad velit necessitatibus in voluptas magnam laudantium obcaecati possimus illum iusto nam, recusandae architecto at sequi dolore voluptatibus laboriosam fugiat debitis quaerat vero?`;
+Production time: Fall 2020<br>
+Online since: late December 2020<br>
+Tools used: React, SASS, Github, Google Cloud Platform`;
 
-const headline3 = `Footnote Animation`;
+const headline2 = `VIP Pages`;
+
+const MoritaVIPText = `The site contains a VIP area intended for prospective clients and collectors which features each work included with extensive data (exhibition history, literature, provenance etc.; add “/vip” to URL to view). The VIP area link was provided to client the client network via mailing list.
+
+<strong>Note:</strong> It is common policy among galleries to not expose ones best works to the broader public. Hence the arrangement to <em>not</em> link the VIP pages to the main (public) exhibition page.`;
+
+const headline3 = `Footnote Animation; Miscellaneous`;
 
 const FootNoteText = `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores soluta quasi doloremque amet earum impedit dolore repellendus commodi aperiam ad modi, explicabo eos minima optio, unde blanditiis deleniti voluptates? Odit cupiditate consequatur expedita consequuntur, eos ad quibusdam corrupti fugiat possimus! Quae ipsam labore tempore harum in quisquam animi enim dolore impedit ex, excepturi rerum...`;
 
-const headline4 = `Pullquote Animation`;
+const headline4 = `Pullquote Animations`;
 
-const MoritaData = { headline1, testText1, outline, headline2, MoritaVIPText, headline3, FootNoteText, headline4 };
+const MoritaPullquote = `Quotes by the artist to emphasize some of his major points. Pure CSS and JavaScript.`;
+
+const MoritaData = { headline1, testText1, outline, headline2, MoritaVIPText, headline3, FootNoteText, headline4, MoritaPullquote };
 
 export default MoritaData;

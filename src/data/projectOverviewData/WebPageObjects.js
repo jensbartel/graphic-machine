@@ -8,8 +8,13 @@ const webPagesIntro = {
     textFR: `Ces quatre belles lettres du mythique dandy Conrad Moricand, au peintre Marcel Mouillot, offrent un rare témoignage de la personnalité fantasque de ce fils d'aristocrates suisses, mécène, illustrateur et astrologue, ami de Pablo Picasso, Max Jacob, Henri Michaux, et plus tard, d'Henry Miller, à qui il inspira Un Diable au Paradis et qui l'invita à Big Sur : «Excuses, délices et orgues. J'ai tout du dégueulas. Vous m'avez comblé depuis mon départ : un charmant petit poème en prose et ce mirobolant chapeau équatorial, objet de nos convoitises. `,
 };
 
+// artword, Toki no Wasuremono, Morita Shiryū, Mishima, Kida, Kuroda, Suda, Lavendarium, HP Merger, this page --> total of 10 (TOO MUCH)
+// omit: this page, Kuroda
+// non-SBK: 4
+// SBK: 6
+
 const artword = {
-    id: 1,
+    id: 100,
     title: 'artword',
 };
 
@@ -23,10 +28,11 @@ const Lavendarium = {
     tools: ['React', 'GCP'],
     date: 'May 2021',
     dateFR: 'Mai 2021',
+    url: '/',
 };
 
 const MoritaShiryu = {
-    id: 3,
+    id: 1,
     title: 'Morita Shiryū Exhibition',
     titleFR: 'Éxposition Morita Shiryū',
     img: img_morita,
@@ -73,7 +79,7 @@ const Kida = {
 // };
 
 const Suda = {
-    id: 10,
+    id: 3,
     title: 'Suda Kokuta Exhibition',
     titleFR: 'Éxposition Suda Kokuta',
     img: img_suda,
@@ -82,6 +88,7 @@ const Suda = {
     tools: ['React', 'SASS', 'GCP'],
     date: 'December 2020',
     dateFR: 'Décembre 2020',
+    url: '/',
 };
 
 const data = [MoritaShiryu, Lavendarium, Suda, artword, Mishima, Kida];
