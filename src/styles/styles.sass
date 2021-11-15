@@ -50,7 +50,6 @@ nav
         left: 0
         width: 100%
         height: 100%
-        // z-index: 0
     .navbar
         display: flex
         flex-direction: row
@@ -72,6 +71,8 @@ nav
                 font-size: 0.8rem
     .language-switch
         padding: 0 8rem 2.5rem
+        position: relative
+        z-index: 99
         button
             border: none
             background: none
@@ -82,7 +83,6 @@ nav
             color: #999
             cursor: pointer
             transition: $default-transition
-            z-index: 99
             &:first-child
                 margin-right: 1rem
             &:hover
@@ -106,7 +106,7 @@ nav
         font-size: 0.8rem
         padding-right: 40%
 
-// GRID
+// GRID -- scrap all this
 .grid-two
     display: grid
     grid-template-columns: repeat(2, 1fr)
@@ -186,7 +186,7 @@ nav
 .banner-active
     transform: rotate(0.5deg) translateX(10px) translateY(-15px)
 
-// LARGE IMAGE LEFT
+// LARGE IMAGE LEFT -- scrap later
 .project
     font-family: 'Nunito', sans-serif
     margin: 0 8rem
@@ -229,7 +229,7 @@ nav
         letter-spacing: 1px
         margin-top: 0
 
-// LARGE VIDEO
+// LARGE VIDEO -- remove later if not needed?
 .video-container
     display: flex
     justify-content: center
@@ -248,12 +248,11 @@ nav
 // TWO VIDEOS
 .video-2-container
     display: flex
-    // grid-template-columns: 1fr 1fr
     justify-content: space-between
     margin: 0 auto
     padding: 0 12%
     .small-video
-        margin-top: 6rem
+        margin-top: 2rem
         display: flex
         flex-direction: column
         justify-content: space-between
@@ -262,7 +261,6 @@ nav
         p
             font-family: 'Nunito', sans-serif
             font-size: 0.75rem
-            font-weight: lighter
             padding-top: 0.33rem
 
 // TWO IMAGES
@@ -278,6 +276,35 @@ nav
             margin-right: 6rem
         &:nth-child(3)
             width: 12.5%
+
+// IMAGE COLLAGE 1
+.image-collage-1
+    margin: 4rem 8rem
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    grid-auto-rows: minmax(100px, auto)
+    column-gap: 3rem
+    row-gap: 2rem
+    div
+        background-color: chartreuse
+        img
+            width: 100%
+            display: block
+    #item-1
+        grid-column: 1 / 3
+        grid-row: 1 / 4
+    #item-2
+        grid-column: 3
+        grid-row: 1 / 3
+    #item-3
+        grid-column: 4
+        grid-row: 1 / 3
+    #item-4
+        grid-column: 1 / 3
+        grid-row: 4 / 6
+    #item-5
+        grid-column: 3 / 5
+        grid-row: 3 / 6
 
 // FOOTER
 .footer
