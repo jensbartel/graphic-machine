@@ -250,7 +250,7 @@ nav .language-switch button:hover {
 }
 .large-text-container .headline {
   margin: 4rem 0 2rem;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Playfair Display", serif;
   letter-spacing: 1px;
   margin-top: 0;
 }
@@ -327,6 +327,19 @@ nav .language-switch button:hover {
 .three-images-grid .element img:nth-child(2) {
   padding-right: 6rem;
 }
+.two-images {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 8rem;
+}
+.two-images div {
+  width: 47.5%;
+}
+.two-images div img {
+  width: 100%;
+  border: 1px solid #333;
+}
+
 .image-collage-1 {
   margin: 4rem 8rem;
   display: grid;
@@ -369,6 +382,7 @@ nav .language-switch button:hover {
   font-size: 0.7rem;
   color: #999;
   text-align: center;
+  font-family: "Nunito", sans-serif;
 }
 .footer a {
   color: #999;

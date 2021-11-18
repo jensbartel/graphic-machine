@@ -227,7 +227,7 @@ nav
     line-height: 1.4
     .headline
         margin: 4rem 0 2rem
-        font-family: 'Playfair Display', sans-serif
+        font-family: 'Playfair Display', serif
         letter-spacing: 1px
         margin-top: 0
 
@@ -295,6 +295,17 @@ nav
             &:nth-child(3)
                 // width: 12.5%
 
+// TWO IMAGES
+.two-images
+    display: flex
+    justify-content: space-between
+    margin: 0 8rem
+    div
+        width: 47.5%
+        img
+            width: 100%
+            border: 1px solid #333
+
 // IMAGE COLLAGE 1
 .image-collage-1
     margin: 4rem 8rem
@@ -334,9 +345,11 @@ nav
     font-size: 0.7rem
     color: $default-grey
     text-align: center
+    font-family: 'Nunito', sans-serif
     a
         color: $default-grey
         transition: $default-transition
+        // text-decoration: underline
         &:hover
             color: #000
     i
