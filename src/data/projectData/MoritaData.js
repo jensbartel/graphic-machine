@@ -24,7 +24,15 @@ const MoritaVIPText = `The site contains a VIP area intended for prospective cli
 
 const headline3 = `Navigation & Animations; Miscellaneous`;
 
-const FootNoteText = `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores soluta quasi doloremque amet earum impedit dolore repellendus commodi aperiam ad modi, explicabo eos minima optio, unde blanditiis deleniti voluptates? Odit cupiditate consequatur expedita consequuntur, eos ad quibusdam corrupti fugiat possimus! Quae ipsam labore tempore harum in quisquam animi enim dolore impedit ex, excepturi rerum...`;
+// const FootNoteText = `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores soluta quasi doloremque amet earum impedit dolore repellendus commodi aperiam ad modi, explicabo eos minima optio, unde blanditiis deleniti voluptates? Odit cupiditate consequatur expedita consequuntur, eos ad quibusdam corrupti fugiat possimus! Quae ipsam labore tempore harum in quisquam animi enim dolore impedit ex, excepturi rerum...`;
+
+const FootNoteText = `Note this page has a hideous amount of text, hence various efforts were taken to negotiate that mountain of characters, like separating it into sections and making chapters accessible by quick links. Footnotes can be previewed by hovering over them. 
+
+“VIP pages” that target art collectors are accessed by adding “/vip” to the URL. These pages are not linked from the main page for the sake of gallery discretion; URL was directly mailed to prospective clients. Media queries allow for desktop, large desktop, various tablets and mobile phone.<br><br>
+
+<span style="display: block; color: #8f8f8f; font-size: 0.7rem; line-height: 0.5 !important">Exhibition on view in January–February 2021 in Kyoto and Tokyo, Fall–Winter 2021: Paris.<br>
+Site online since December 2019. Tools: React, SASS, Git/Github. <br>Hosting: Google Cloud Platform. Installation view photo credits: Ichikawa.</span>
+`;
 
 const headline4 = `Pullquote Animations`;
 

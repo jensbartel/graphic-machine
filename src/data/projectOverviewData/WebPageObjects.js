@@ -88,10 +88,10 @@ const Suda = {
     tools: ['React', 'SASS', 'GCP'],
     date: 'December 2020',
     dateFR: 'Décembre 2020',
-    url: '/',
+    url: 'webpages/suda',
 };
 
-const data = [MoritaShiryu, Lavendarium, Suda, artword, Mishima, Kida];
+const data = [MoritaShiryu, Suda, Lavendarium, artword, Mishima, Kida];
 
 export const webPages = {
     intro: webPagesIntro,

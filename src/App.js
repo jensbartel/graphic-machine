@@ -9,6 +9,7 @@ import ClientApp from './components/projects/projectPages/ClientApp';
 import Footer from './components/layout/Footer';
 import MMAS from './components/projects/projectPages/MMAS';
 import Morita from './components/projects/projectPages/Morita';
+import Suda from './components/projects/projectPages/Suda';
 import Navbar from './components/layout/Navbar';
 import NotFound from './components/pages/NotFound';
 import Page from './components/pages/Page';
@@ -48,6 +49,7 @@ const App = () => {
                         <Route exact path='/webapps/clientapp' component={ClientApp} />
                         <Route exact path='/webapps/priceapp' component={PriceApp} />
                         <Route exact path='/webpages/morita' component={Morita} />
+                        <Route exact path='/webpages/suda' component={Suda} />
                     </div>
                     <Footer />
                 </div>

@@ -66,9 +66,11 @@ nav
             margin-top: 0.5rem
             z-index: 99
             a
-                padding-left: 2rem
+                margin-left: 2rem
+                padding-bottom: 0.5rem
                 letter-spacing: 0.25rem
                 font-size: 0.8rem
+                // border-bottom: 1px solid #333
     .language-switch
         padding: 0 8rem 2.5rem
         position: relative
@@ -174,17 +176,17 @@ nav
                     &:hover
                         opacity: 0.1
 
-.banner-active-1
-    transform: rotate(-1.75deg) translateX(-20px) translateY(-20px)
+// .banner-active-1
+//     transform: rotate(-1.75deg) translateX(-20px) translateY(-20px)
 
-.banner-active-3
-    transform: rotate(-1.5deg) translateX(20px) translateY(-20px)
+// .banner-active-3
+//     transform: rotate(-1.5deg) translateX(20px) translateY(-20px)
 
-.banner-active-2
-    transform: rotate(0.5deg) translateX(10px) translateY(-15px)
+// .banner-active-2
+//     transform: rotate(0.5deg) translateX(10px) translateY(-15px)
 
-.banner-active
-    transform: rotate(0.5deg) translateX(10px) translateY(-15px)
+// .banner-active
+//     transform: rotate(0.5deg) translateX(10px) translateY(-15px)
 
 // LARGE IMAGE LEFT -- scrap later
 .project
@@ -263,8 +265,8 @@ nav
             font-size: 0.75rem
             padding-top: 0.33rem
 
-// TWO IMAGES
-.two-images
+// THREE IMAGES
+.three-images
     display: flex
     align-items: flex-start
     margin: 4rem 8rem 0
@@ -277,6 +279,22 @@ nav
         &:nth-child(3)
             width: 12.5%
 
+.three-images-grid
+    display: flex
+    align-items: flex-start
+    justify-content: space-evenly
+    margin: 4rem 8rem 0
+    .element
+        &:nth-last-child(2)
+            margin-right: 1rem
+        img
+            width: 92%
+            // border: 2px solid red
+            &:nth-child(2)
+                padding-right: 6rem
+            &:nth-child(3)
+                // width: 12.5%
+
 // IMAGE COLLAGE 1
 .image-collage-1
     margin: 4rem 8rem
@@ -286,7 +304,7 @@ nav
     column-gap: 3rem
     row-gap: 2rem
     div
-        background-color: chartreuse
+        // background-color: chartreuse
         img
             width: 100%
             display: block

@@ -73,7 +73,8 @@ nav .navbar .menu {
   z-index: 99;
 }
 nav .navbar .menu a {
-  padding-left: 2rem;
+  margin-left: 2rem;
+  padding-bottom: 0.5rem;
   letter-spacing: 0.25rem;
   font-size: 0.8rem;
 }
@@ -202,22 +203,6 @@ nav .language-switch button:hover {
   opacity: 0.1;
 }
 
-.banner-active-1 {
-  transform: rotate(-1.75deg) translateX(-20px) translateY(-20px);
-}
-
-.banner-active-3 {
-  transform: rotate(-1.5deg) translateX(20px) translateY(-20px);
-}
-
-.banner-active-2 {
-  transform: rotate(0.5deg) translateX(10px) translateY(-15px);
-}
-
-.banner-active {
-  transform: rotate(0.5deg) translateX(10px) translateY(-15px);
-}
-
 .project {
   font-family: "Nunito", sans-serif;
   margin: 0 8rem;
@@ -310,23 +295,38 @@ nav .language-switch button:hover {
   padding-top: 0.33rem;
 }
 
-.two-images {
+.three-images {
   display: flex;
   align-items: flex-start;
   margin: 4rem 8rem 0;
 }
-.two-images img {
+.three-images img {
   width: 45%;
   margin-right: 3rem;
 }
-.two-images img:nth-child(2) {
+.three-images img:nth-child(2) {
   width: 22.5%;
   margin-right: 6rem;
 }
-.two-images img:nth-child(3) {
+.three-images img:nth-child(3) {
   width: 12.5%;
 }
 
+.three-images-grid {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  margin: 4rem 8rem 0;
+}
+.three-images-grid .element:nth-last-child(2) {
+  margin-right: 1rem;
+}
+.three-images-grid .element img {
+  width: 92%;
+}
+.three-images-grid .element img:nth-child(2) {
+  padding-right: 6rem;
+}
 .image-collage-1 {
   margin: 4rem 8rem;
   display: grid;
@@ -334,9 +334,6 @@ nav .language-switch button:hover {
   grid-auto-rows: minmax(100px, auto);
   column-gap: 3rem;
   row-gap: 2rem;
-}
-.image-collage-1 div {
-  background-color: chartreuse;
 }
 .image-collage-1 div img {
   width: 100%;
