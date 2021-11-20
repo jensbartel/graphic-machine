@@ -24,8 +24,6 @@ const MoritaVIPText = `The site contains a VIP area intended for prospective cli
 
 const headline3 = `Navigation & Animations; Miscellaneous`;
 
-// const FootNoteText = `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores soluta quasi doloremque amet earum impedit dolore repellendus commodi aperiam ad modi, explicabo eos minima optio, unde blanditiis deleniti voluptates? Odit cupiditate consequatur expedita consequuntur, eos ad quibusdam corrupti fugiat possimus! Quae ipsam labore tempore harum in quisquam animi enim dolore impedit ex, excepturi rerum...`;
-
 const FootNoteText = `Various efforts were taken to negotiate the hideous amount of text, like separating it into sections and making chapters accessible by quick links. Footnotes can be previewed by hovering over them. 
 
 “VIP pages” that target art collectors are accessed by adding “/vip” to the URL. These pages are not linked from the main page for the sake of gallery discretion; URL was directly mailed to prospective clients. Media queries allow for desktop, large desktop, various tablet types and mobile phone.<br><br>

@@ -1,7 +1,5 @@
-import imgLeft from '../../../img/suda/suda-chronology.jpg';
-import imgRight from '../../../img/suda/suda-exhibitions.jpg';
-
-const TwoImages = () => {
+const TwoImages = props => {
+    const { imgLeft, imgRight } = props;
     return (
         <div className='two-images'>
             <div className='left-img'>

@@ -327,6 +327,24 @@ nav .language-switch button:hover {
 .three-images-grid .element img:nth-child(2) {
   padding-right: 6rem;
 }
+
+.one-image {
+  margin: 0 8rem;
+  border: 1px solid #333;
+}
+.one-image img {
+  width: 100%;
+}
+
+.one-image-variant {
+  margin: -2rem 8rem 0;
+  display: flex;
+  justify-content: center;
+}
+.one-image-variant img {
+  width: 80%;
+}
+
 .two-images {
   display: flex;
   justify-content: space-between;

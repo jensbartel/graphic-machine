@@ -10,6 +10,8 @@ import Footer from './components/layout/Footer';
 import MMAS from './components/projects/projectPages/MMAS';
 import Morita from './components/projects/projectPages/Morita';
 import Suda from './components/projects/projectPages/Suda';
+import Toki from './components/projects/projectPages/Toki';
+import Mishima from './components/projects/projectPages/Mishima';
 import Navbar from './components/layout/Navbar';
 import NotFound from './components/pages/NotFound';
 import Page from './components/pages/Page';
@@ -50,6 +52,8 @@ const App = () => {
                         <Route exact path='/webapps/priceapp' component={PriceApp} />
                         <Route exact path='/webpages/morita' component={Morita} />
                         <Route exact path='/webpages/suda' component={Suda} />
+                        <Route exact path='/webpages/toki' component={Toki} />
+                        <Route exact path='/webpages/mishima' component={Mishima} />
                     </div>
                     <Footer />
                 </div>
