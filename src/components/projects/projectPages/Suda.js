@@ -12,10 +12,17 @@ import sudaExhibitions from '../../../img/suda/suda-exhibitions.jpg';
 import sudaWorksENG from '../../../img/suda/suda-work-section-ENG.jpg';
 import sudaJP from '../../../img/suda/suda-full-jp.jpg';
 
+import { webPages } from '../../../data/projectOverviewData/WebPageObjects';
+import ProjectTitle from '../reuseComponents/ProjectTitle';
+
 const SudaProject = () => {
     const { miscellaneous, miscHeadline } = SudaData;
+    const { projects } = webPages;
+    const project = projects.filter(element => element.title.includes('Suda'));
+
     return (
         <>
+            <ProjectTitle project={project} />
             <ThreeImagesGrid img1={desktopImg} img2={iphoneImg} img3={iphoneImg2} />
             <LargeTextCenter headline='Introducing the Artist' />
             <TwoImages imgLeft={sudaChronology} imgRight={sudaExhibitions} />

@@ -4,8 +4,12 @@ const introText = `Toki no Wasuremono is an art gallery in Aoyama, Tokyo, specia
 Site online since December 2019. Tools: React, SASS, Git/Github. <br>Hosting: Google Cloud Platform. Installation view photo credits: H. Ichikawa.</span>
 `;
 
-const introHeadline = `Toki no Wasuremono Gallery`;
+const introHeadline = `Toki-no-Wasuremono Gallery`;
 
-const TokiData = { introHeadline, introText };
+const caption1 = `Left to right: Landing page, "Current Exhibition" page, "Main Artists" page, "All Artists" page.`;
+
+const caption2 = `Left to right: Exhibition page, work page (below: work page with drop-down menu open), inquiry page (below: inquiry confirmation page), "Past Exhibitions" page (below: inquiry "Thank you" page).`;
+
+const TokiData = { introHeadline, introText, caption1, caption2 };
 
 export default TokiData;

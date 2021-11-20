@@ -52,6 +52,7 @@ const MoritaShiryu = {
 const Mishima = {
     id: 5,
     title: 'Mishima Ritsue Exhibition',
+    description: 'Venetian-based Japanese glass artist',
 };
 
 const Kida = {
@@ -61,9 +62,9 @@ const Kida = {
 
 const Toki = {
     id: 7,
-    title: 'Toki no Wasuremono Mobile Page',
+    title: 'Toki-no-Wasuremono Gallery',
     img: img_lavendarium,
-    description: 'Responsive layout for a webpage of a Tokyo-based gallery',
+    description: 'Mobile phone layout for a webpage of a Tokyo-based gallery',
     tools: ['HTML/CSS/JS', 'PHP', 'Visual Basic'],
     date: 'Feb-May 2016',
     url: 'webpages/toki',
@@ -84,8 +85,8 @@ const Suda = {
     title: 'Suda Kokuta Exhibition',
     titleFR: 'Éxposition Suda Kokuta',
     img: img_suda,
-    description: 'Webpage for an exhibition on a Japanese postwar calligrapher',
-    desFR: `Présentation d'un éxposition sur un calligraphe Japonais après-guerre`,
+    description: 'Webpage for an exhibition on a Japanese painter',
+    desFR: `Présentation d'un éxposition sur un peintre Japonais après-guerre`,
     tools: ['React', 'SASS', 'GCP'],
     date: 'December 2020',
     dateFR: 'Décembre 2020',

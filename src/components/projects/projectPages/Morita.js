@@ -16,13 +16,19 @@ import collage1_3 from '../../../img/morita/mortia-part4-snippet.jpg';
 import collage1_4 from '../../../img/morita/footnote.jpg';
 import collage1_5 from '../../../img/morita/morita-part3-snippet.jpg';
 
+import { webPages } from '../../../data/projectOverviewData/WebPageObjects';
+import ProjectTitle from '../reuseComponents/ProjectTitle';
+
 const MoritaProject = () => {
     const { headline2, headline3, FootNoteText } = MoritaData;
+    const { projects } = webPages;
+    const project = projects.filter(element => element.title.includes('Morita'));
 
     return (
         <>
             {/* <LargeImageLeft /> */}
             {/* <LargeTextCenter headline='Morita Shiryū Exhibition' /> */}
+            <ProjectTitle project={project} />
             <ThreeImages img1={desktopImg} img2={ipadImg} img3={iphoneImg} />
             <LargeTextCenter headline='Pullquote Animations' />
             <TwoVideos />

@@ -26,6 +26,7 @@ strong
 
 .page
     font-family: 'Source Sans Pro', sans-serif
+    // font-family: 'Nunito', sans-serif
     margin: 2.5rem 8rem 0
     padding-bottom: 5rem
 
@@ -34,7 +35,29 @@ strong
     margin: auto
     max-width: 1280px
     padding-bottom: 9rem
-    margin-top: 12rem
+    margin-top: 9rem
+
+.caption
+    margin: 0 8rem
+    font-family: 'Nunito', sans-serif
+    font-size: 0.75rem
+    padding-top: 0.33rem
+
+.project-title
+    margin: 0 8rem 1.5rem
+    p
+        font-family: 'Nunito', sans-serif
+        font-size: 0.75rem
+        padding-top: 0.33rem
+        &:first-child
+            font-family: 'Playfair Display', sans-serif
+            letter-spacing: 1px
+            font-size: 1.2rem
+            display: inline-block
+            padding-bottom: -0.15rem
+            border-bottom: 1px dotted #000
+        &:nth-child(2)
+            color: $default-grey
 
 // NAVBAR
 nav
@@ -94,7 +117,7 @@ nav
     color: #999
 
 .indicator-off
-    color: #fff
+    visibility: hidden
 
 // SECTION INTRO
 .section-intro
@@ -175,18 +198,6 @@ nav
                     transition: $default-transition
                     &:hover
                         opacity: 0.1
-
-// .banner-active-1
-//     transform: rotate(-1.75deg) translateX(-20px) translateY(-20px)
-
-// .banner-active-3
-//     transform: rotate(-1.5deg) translateX(20px) translateY(-20px)
-
-// .banner-active-2
-//     transform: rotate(0.5deg) translateX(10px) translateY(-15px)
-
-// .banner-active
-//     transform: rotate(0.5deg) translateX(10px) translateY(-15px)
 
 // LARGE IMAGE LEFT -- scrap later
 .project
@@ -269,7 +280,7 @@ nav
 .three-images
     display: flex
     align-items: flex-start
-    margin: 4rem 8rem 0
+    margin: 2rem 8rem 0
     img
         width: 45%
         margin-right: 3rem
@@ -283,7 +294,7 @@ nav
     display: flex
     align-items: flex-start
     justify-content: space-evenly
-    margin: 4rem 8rem 0
+    margin: 2rem 8rem 0
     .element
         &:nth-last-child(2)
             margin-right: 1rem
@@ -300,7 +311,7 @@ nav
         width: 100%
 
 .one-image-variant
-    margin: -2rem 8rem 0
+    margin: 2rem 8rem 0
     display: flex
     justify-content: center
     img

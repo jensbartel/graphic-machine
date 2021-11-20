@@ -1,13 +1,14 @@
 import React from 'react';
 
 const OneImage = props => {
-    const { img1, cssStyle } = props;
+    let { img1, caption, cssStyle } = props;
+    // caption = 'Hello';
     return (
         <>
             <div className={cssStyle}>
                 <img src={img1} alt='' />
             </div>
-            <p>Damn right.</p>
+            <p className='caption'>{caption}</p>
         </>
     );
 };
