@@ -1,13 +1,16 @@
 import OneImage from '../reuseComponents/OneImage';
 import tokiImg1 from '../../../img/toki/toki-overview.jpg';
 import tokiImg2 from '../../../img/toki/toki-overview-2.jpg';
+import tokiImg3 from '../../../img/toki/backend-process.jpg';
+import html from 'react-html-parser';
+
 import TokiData from '../../../data/projectData/TokiData';
 import LargeTextCenter from '../reuseComponents/LargeTextCenter';
 import ProjectTitle from '../reuseComponents/ProjectTitle';
 import { webPages } from '../../../data/projectOverviewData/WebPageObjects';
 
 const Toki = () => {
-    const { introText, introHeadline, caption1, caption2 } = TokiData;
+    const { introText, introHeadline, caption1, caption2, backendExplanation } = TokiData;
     const { projects } = webPages;
     const project = projects.filter(element => element.title.includes('Toki'));
 
@@ -17,6 +20,11 @@ const Toki = () => {
             <OneImage img1={tokiImg1} cssStyle='one-image' caption={caption1} />
             <div style={{ marginTop: '4rem' }}></div>
             <OneImage img1={tokiImg2} cssStyle='one-image' caption={caption2} />
+            <LargeTextCenter headline='Under the Hood: Migrating Legacy Content' />
+            <OneImage img1={tokiImg3} cssStyle='one-image-variant-2' />
+            <div className='toki-comment'>
+                <p>{html(backendExplanation)}</p>
+            </div>
             <LargeTextCenter headline={introHeadline} text={introText} />
 
             {/* div below: replace later */}
