@@ -48,8 +48,6 @@ strong {
 
 .project-title {
   margin: 0 8rem 1.5rem;
-  display: sticky;
-  top: 0;
 }
 .project-title p {
   font-family: "Nunito", sans-serif;
@@ -64,7 +62,7 @@ strong {
   padding-bottom: -0.15rem;
   border-bottom: 1px dotted #000;
 }
-.project-title p:nth-child(2) {
+.project-title p:last-child {
   color: #999;
 }
 
@@ -359,7 +357,6 @@ nav .language-switch button:hover {
 
 .one-image {
   margin: 0 8rem;
-  border: 1px solid #333;
 }
 .one-image img {
   width: 100%;
