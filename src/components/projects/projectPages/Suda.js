@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import LargeTextCenter from '../reuseComponents/LargeTextCenter';
 import ThreeImagesGrid from '../reuseComponents/ThreeImagesGrid';
 import TwoImages from '../reuseComponents/TwoImages';
@@ -19,6 +20,10 @@ const SudaProject = () => {
     const { miscellaneous, miscHeadline } = SudaData;
     const { projects } = webPages;
     const project = projects.filter(element => element.title.includes('Suda'));
+
+    useEffect(() => {
+        document.title = 'Suda Kokuta';
+    }, []);
 
     return (
         <>

@@ -20,8 +20,8 @@ const ResNet = {
 
 const ClientApp = {
     id: 2,
-    title: 'ClientApp',
-    titleFR: 'ClientApp',
+    title: 'SBK-Client',
+    titleFR: 'SBK-Client',
     img: img_dummy,
     tools: ['MERN', 'Realm', 'Swift', 'GCP'],
     description: 'Web app with iOS client for iPad and web backoffice to register clients',

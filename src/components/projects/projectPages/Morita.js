@@ -1,8 +1,10 @@
+import { useEffect } from 'react';
+
 import LargeTextCenter from '../reuseComponents/LargeTextCenter';
 import MoritaData from '../../../data/projectData/MoritaData';
-import TwoVideos from '../reuseComponents/TwoVideos';
+import ProjectTitle from '../reuseComponents/ProjectTitle';
 import ThreeImages from '../reuseComponents/ThreeImages';
-// import LargeImageLeft from '../reuseComponents/LargeImageLeft';
+import TwoVideos from '../reuseComponents/TwoVideos';
 
 import desktopImg from '../../../img/morita/morita_macbook.jpg';
 import ipadImg from '../../../img/morita/morita_ipad.jpg';
@@ -17,17 +19,18 @@ import collage1_4 from '../../../img/morita/footnote.jpg';
 import collage1_5 from '../../../img/morita/morita-part3-snippet.jpg';
 
 import { webPages } from '../../../data/projectOverviewData/WebPageObjects';
-import ProjectTitle from '../reuseComponents/ProjectTitle';
 
 const MoritaProject = () => {
     const { headline2, headline3, FootNoteText } = MoritaData;
     const { projects } = webPages;
     const project = projects.filter(element => element.title.includes('Morita'));
 
+    useEffect(() => {
+        document.title = 'Morita Shiryū';
+    }, []);
+
     return (
         <>
-            {/* <LargeImageLeft /> */}
-            {/* <LargeTextCenter headline='Morita Shiryū Exhibition' /> */}
             <ProjectTitle project={project} />
             <ThreeImages img1={desktopImg} img2={ipadImg} img3={iphoneImg} />
             <LargeTextCenter headline='Pullquote Animations' />

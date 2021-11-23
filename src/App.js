@@ -15,8 +15,8 @@ import Mishima from './components/projects/projectPages/Mishima';
 import Navbar from './components/layout/Navbar';
 import NotFound from './components/pages/NotFound';
 import Page from './components/pages/Page';
-import PriceApp from './components/projects/projectPages/PriceApp';
 import ResNet from './components/projects/projectPages/ResNet';
+import WebpagesOverview from './components/overviewPages/WebpagesOverview';
 
 import { webApps } from './data/projectOverviewData/WebAppObjects';
 import { webPages } from './data/projectOverviewData/WebPageObjects';
@@ -42,14 +42,14 @@ const App = () => {
                     <Navbar />
                     <div className='content-container'>
                         <Route exact path='/webapps' render={() => <Page cssStyle='grid-two' data={webApps} />} />
-                        <Route exact path='/webpages' render={() => <Page cssStyle='grid-two' data={webPages} />} />
+                        <Route exact path='/webpage' render={() => <Page cssStyle='grid-two' data={webPages} />} />
+                        <Route exact path='/webpages' component={WebpagesOverview} />
                         <Route exact path='/print' render={() => <Page cssStyle='grid-two' data={print} />} />
                         <Route exact path='/about' component={About} />
                         <Route exact path='/' component={NotFound} />
                         <Route exact path='/webapps/mmas' component={MMAS} />
                         <Route exact path='/webapps/resourcenet' component={ResNet} />
                         <Route exact path='/webapps/clientapp' component={ClientApp} />
-                        <Route exact path='/webapps/priceapp' component={PriceApp} />
                         <Route exact path='/webpages/morita' component={Morita} />
                         <Route exact path='/webpages/suda' component={Suda} />
                         <Route exact path='/webpages/toki' component={Toki} />

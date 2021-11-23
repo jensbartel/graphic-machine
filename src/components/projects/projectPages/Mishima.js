@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+
 // import OneImage from '../reuseComponents/OneImage';
 import ThreeImages from '../reuseComponents/ThreeImages';
 import TwoImages from '../reuseComponents/TwoImages';
@@ -17,6 +19,10 @@ import { webPages } from '../../../data/projectOverviewData/WebPageObjects';
 const Mishima = () => {
     const { projects } = webPages;
     const project = projects.filter(element => element.title.includes('Mishima'));
+
+    useEffect(() => {
+        document.title = 'Mishima Ritsue';
+    }, []);
 
     return (
         <div>

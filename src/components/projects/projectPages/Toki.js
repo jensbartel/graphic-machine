@@ -1,5 +1,6 @@
 import OneImage from '../reuseComponents/OneImage';
 import tokiImg1 from '../../../img/toki/toki-overview.jpg';
+import { useEffect } from 'react';
 import tokiImg2 from '../../../img/toki/toki-overview-2.jpg';
 import tokiImg3 from '../../../img/toki/backend-process.jpg';
 import html from 'react-html-parser';
@@ -14,13 +15,17 @@ const Toki = () => {
     const { projects } = webPages;
     const project = projects.filter(element => element.title.includes('Toki'));
 
+    useEffect(() => {
+        document.title = 'Toki-no-Wasuremono';
+    }, []);
+
     return (
         <div>
             <ProjectTitle project={project} />
             <OneImage img1={tokiImg1} cssStyle='one-image' caption={caption1} />
             <div style={{ marginTop: '4rem' }}></div>
             <OneImage img1={tokiImg2} cssStyle='one-image' caption={caption2} />
-            <LargeTextCenter headline='Under the Hood: Migrating Legacy Content' />
+            <LargeTextCenter headline='Migrating Old Content' />
             <OneImage img1={tokiImg3} cssStyle='one-image-variant-2' />
             <div className='toki-comment'>
                 <p>{html(backendExplanation)}</p>

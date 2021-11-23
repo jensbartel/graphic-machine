@@ -36,7 +36,7 @@ strong {
   margin: auto;
   max-width: 1280px;
   padding-bottom: 9rem;
-  margin-top: 8rem;
+  margin-top: 7rem;
 }
 
 .caption {
@@ -48,6 +48,7 @@ strong {
 
 .project-title {
   margin: 0 8rem 1.5rem;
+  padding-top: 0.66rem;
 }
 .project-title p {
   font-family: "Nunito", sans-serif;
@@ -71,6 +72,7 @@ nav {
   top: 0;
   left: 0;
   width: 100vw;
+  z-index: 999;
 }
 nav .overlay {
   background-color: #dadada;
@@ -470,6 +472,52 @@ nav .language-switch button:hover {
 }
 .footer p:last-child {
   margin-top: 1rem;
+}
+
+.parallax {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 300px;
+  z-index: 9999;
+}
+.parallax-group {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  transform-style: preserve-3d;
+  border: 1px solid #333;
+}
+.parallax-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.parallax-layer-fore {
+  transform: translateZ(100px);
+  z-index: 99;
+  opacity: 0.9;
+  background-color: chartreuse;
+  color: #000;
+  perspective-origin: 33% 50%;
+}
+.parallax-layer-back {
+  transform: translateZ(-100px) scale(0.9);
+  z-index: 98;
+  opacity: 0.6;
+  border: 3px solid red;
+  color: #000;
+}
+.parallax-layer-deep {
+  transform: translateZ(-50px);
+  border: 1px #000 dashed;
+  background-color: lightgrey;
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
