@@ -25,9 +25,9 @@ const Navbar = () => {
                     <Link to='/'>GRIFOLD STUDIO</Link>
                 </div>
                 <div className='menu'>
-                    <Link to='/webapps'>WEB APPS</Link>
                     <Link to='/webpages'>WEB PAGES</Link>
-                    <Link to='/print'>PRINT</Link>
+                    <Link to='/webapps'>WEB APPS</Link>
+                    {/* <Link to='/print'>PRINT</Link> */}
                     <Link to='/about'>ABOUT</Link>
                 </div>
             </section>

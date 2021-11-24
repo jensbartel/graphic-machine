@@ -1,7 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { useEffect, useContext } from 'react';
-import FilterState from './context/FilterState';
 import LangContext from './context/langContext';
 
 import About from './components/pages/About';
@@ -36,29 +35,31 @@ const App = () => {
     }, []);
 
     return (
-        <FilterState>
-            <Router>
-                <div className='page-container'>
-                    <Navbar />
-                    <div className='content-container'>
-                        <Route exact path='/webapps' render={() => <Page cssStyle='grid-two' data={webApps} />} />
-                        <Route exact path='/webpage' render={() => <Page cssStyle='grid-two' data={webPages} />} />
-                        <Route exact path='/webpages' component={WebpagesOverview} />
-                        <Route exact path='/print' render={() => <Page cssStyle='grid-two' data={print} />} />
-                        <Route exact path='/about' component={About} />
-                        <Route exact path='/' component={NotFound} />
-                        <Route exact path='/webapps/mmas' component={MMAS} />
-                        <Route exact path='/webapps/resourcenet' component={ResNet} />
-                        <Route exact path='/webapps/clientapp' component={ClientApp} />
-                        <Route exact path='/webpages/morita' component={Morita} />
-                        <Route exact path='/webpages/suda' component={Suda} />
-                        <Route exact path='/webpages/toki' component={Toki} />
-                        <Route exact path='/webpages/mishima' component={Mishima} />
-                    </div>
-                    <Footer />
+        <Router>
+            <div className='page-container'>
+                <Navbar />
+                <div className='content-container'>
+                    <Route exact path='/' component={NotFound} />
+                    <Route exact path='/about' component={About} />
+                    <Route exact path='/webpages' component={WebpagesOverview} />
+
+                    {/* delete later */}
+                    <Route exact path='/webapps' render={() => <Page cssStyle='grid-two' data={webApps} />} />
+                    <Route exact path='/webpage' render={() => <Page cssStyle='grid-two' data={webPages} />} />
+                    <Route exact path='/print' render={() => <Page cssStyle='grid-two' data={print} />} />
+
+                    {/* project pages */}
+                    <Route exact path='/webapps/clientapp' component={ClientApp} />
+                    <Route exact path='/webpages/mishima' component={Mishima} />
+                    <Route exact path='/webapps/mmas' component={MMAS} />
+                    <Route exact path='/webpages/morita' component={Morita} />
+                    <Route exact path='/webapps/resourcenet' component={ResNet} />
+                    <Route exact path='/webpages/suda' component={Suda} />
+                    <Route exact path='/webpages/toki' component={Toki} />
                 </div>
-            </Router>
-        </FilterState>
+                <Footer />
+            </div>
+        </Router>
     );
 };
 

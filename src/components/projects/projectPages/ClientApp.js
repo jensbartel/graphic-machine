@@ -3,7 +3,6 @@ import { useEffect } from 'react';
 import iOS1 from '../../../img/clientapp/clientapp-1.jpg';
 import iOS2 from '../../../img/clientapp/clientapp-2.jpg';
 import backoffice1 from '../../../img/clientapp/clientapp-backoffice-1.jpg';
-import bannerImg from '../../../img/banner/resnet_banner.png';
 import ProjectTitle from '../reuseComponents/ProjectTitle';
 import OneImage from '../reuseComponents/OneImage';
 
