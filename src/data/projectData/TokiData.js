@@ -1,4 +1,7 @@
-const introText = `Toki-no-Wasuremono is an art gallery in Tokyo, specializing in 20th Japanese avant-garde art, photography and prints by major Japanese architects. Featured artists include Tadao Ando, Arata Isozaki, Gutai, Onosato Toshinobu, Miyawaki Aiko, Q-Ei, Nobuo Sekine, Eikoh Hosoe, Tamiko Nishimura etc. <br><br>
+const introText = `Purpose of this project was to provide Toki-no-Wasuremono gallery (based in Tokyo) with a mobile-friendly layout for their webpage without replacing the existing pages altogether.
+<br><br>
+
+Toki-no-Wasuremono is specializing in 20th Japanese avant-garde art, photography and prints by major Japanese architects. Featured artists include Tadao Ando, Arata Isozaki, Gutai, Onosato Toshinobu, Miyawaki Aiko, Q-Ei, Nobuo Sekine, Eikoh Hosoe, Tamiko Nishimura etc. <br><br>
 
 <span style="display: block; color: #8f8f8f; font-size: 0.7rem; line-height: 0.5 !important">Concept: August 2015. Implementation: February-May 2016.<br>
 Tools: HTML/CSS/JS, PHP, Visual Basic. </span>

@@ -1,4 +1,6 @@
-const mishimaData = `Fully repsonsive page conceived as a playground for trying out a different layout from the gallery's usual shop site. Emphasis on maximum impact of the close-up images and efficient display of artwork on mobile phones and tablets. Japanese and English version.
+const mishimaData = `We believed these objects are fascinating to look at in their full details, their texture and transparency, therefore the objective was to give the close-up images maximum impact and exposure within the layout.
+
+Fully repsonsive page that arranges the works in the exhibition in layout groups according to sales value; bilingual in English and Japanese.
 
 <br><br>
 
