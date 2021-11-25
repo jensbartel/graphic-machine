@@ -17,10 +17,10 @@ const WebpagesOverview = () => {
 
     return (
         <div className='parallax'>
+            <WebpageItem data={Toki} image={tokiImage} css='parallax-layer parallax-layer-toki' />
             <WebpageItem data={MoritaShiryu} image={moritaImage} css='parallax-layer parallax-layer-morita' />
             <WebpageItem data={Suda} image={sudaImage} css='parallax-layer parallax-layer-suda' />
             <WebpageItem data={Mishima} image={mishimaImage} css='parallax-layer parallax-layer-mishima' />
-            <WebpageItem data={Toki} image={tokiImage} css='parallax-layer parallax-layer-toki' />
         </div>
     );
 };
