@@ -104,9 +104,14 @@ nav .navbar .menu {
 }
 nav .navbar .menu a {
   margin-left: 2rem;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.2rem;
   letter-spacing: 0.25rem;
   font-size: 0.8rem;
+  transition: 0.5s;
+}
+nav .navbar .menu a:hover {
+  color: #777;
+  border-bottom: 1px dotted #777;
 }
 nav .language-switch {
   padding: 0 8rem 2rem;
@@ -432,13 +437,13 @@ nav .language-switch button:hover {
   grid-row: 3/6;
 }
 
-.toki-comment {
+.caption-comment {
   margin: 0 8rem;
   font-family: "Nunito", sans-serif;
   font-size: 0.75rem;
   padding-top: 0.33rem;
 }
-.toki-comment p {
+.caption-comment p {
   width: 66%;
   margin: auto;
 }
@@ -481,7 +486,6 @@ nav .language-switch button:hover {
   top: 0;
   height: 100vh;
   transform-style: preserve-3d;
-  border: 1px solid #333;
 }
 .parallax-layer {
   position: absolute;
@@ -493,12 +497,19 @@ nav .language-switch button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: linear-gradient(to right, black 33%, rgba(255, 255, 255, 0) 0%);
+  background-position: top;
+  background-size: 3px 1px;
+  background-repeat: repeat-x;
+  background-color: #ebebeb;
 }
-.parallax-layer-fore {
-  transform: translateZ(100px);
+.parallax-layer-toki {
+  transform: translateZ(-50px) scale(1.167);
+}
+.parallax-layer-suda {
+  transform: translateZ(100px) scale(0.667);
   z-index: 99;
   opacity: 0.9;
-  background-color: chartreuse;
   color: #000;
   perspective-origin: 33% 50%;
 }
@@ -506,13 +517,61 @@ nav .language-switch button:hover {
   transform: translateZ(-100px) scale(0.9);
   z-index: 98;
   opacity: 0.6;
-  border: 3px solid red;
+  width: 100vw;
   color: #000;
 }
-.parallax-layer-deep {
-  transform: translateZ(-50px);
-  border: 1px #000 dashed;
-  background-color: lightgrey;
+.parallax-inner {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  min-width: 1000px;
+  max-width: 1000px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem 1.5rem;
+  background-image: linear-gradient(to right, black 33%, rgba(255, 255, 255, 0) 0%);
+  background-position: top;
+  background-size: 3px 1px;
+  background-repeat: repeat-x;
+}
+.parallax-inner .text-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.parallax-inner .text-container div:first-child {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 0.75rem;
+}
+.parallax-inner .text-container div:first-child h2 {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+  margin: 0 0 0.33rem 0;
+}
+.parallax-inner .text-container div:first-child p {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #999;
+  font-size: 0.85rem;
+}
+.parallax-inner .text-container div:last-child p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 0.9rem;
+  padding-top: 0.5rem;
+  color: #999;
+}
+.parallax-inner .inner-image {
+  overflow-y: hidden;
+  max-height: 87.5%;
+}
+.parallax-inner .inner-image img {
+  width: 100%;
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {

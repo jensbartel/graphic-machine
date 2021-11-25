@@ -33,8 +33,7 @@ const Mishima = () => {
             <TwoImages imgLeft={mishima4} imgRight={mishima5} />
             <LargeTextCenter headline='Parallax scroll' />
             <OneImage img1={mishima6} cssStyle='one-image-noBorder' />
-            <LargeTextCenter headline='Mishima Ritsue Exhibition' text={mishimaData} />
-            {/* <div style={{ marginTop: '4rem' }}></div> */}
+            <LargeTextCenter text={mishimaData} />
 
             {/* div below: replace later */}
             <div style={{ height: '4rem' }}></div>

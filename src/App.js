@@ -6,20 +6,20 @@ import LangContext from './context/langContext';
 import About from './components/pages/About';
 import ClientApp from './components/projects/projectPages/ClientApp';
 import Footer from './components/layout/Footer';
+import Mishima from './components/projects/projectPages/Mishima';
 import MMAS from './components/projects/projectPages/MMAS';
 import Morita from './components/projects/projectPages/Morita';
-import Suda from './components/projects/projectPages/Suda';
-import Toki from './components/projects/projectPages/Toki';
-import Mishima from './components/projects/projectPages/Mishima';
 import Navbar from './components/layout/Navbar';
 import NotFound from './components/pages/NotFound';
 import Page from './components/pages/Page';
 import ResNet from './components/projects/projectPages/ResNet';
+import Suda from './components/projects/projectPages/Suda';
+import Toki from './components/projects/projectPages/Toki';
 import WebpagesOverview from './components/overviewPages/WebpagesOverview';
 
+import { print } from './data/projectOverviewData/PrintObjects';
 import { webApps } from './data/projectOverviewData/WebAppObjects';
 import { webPages } from './data/projectOverviewData/WebPageObjects';
-import { print } from './data/projectOverviewData/PrintObjects';
 
 const App = () => {
     const langContext = useContext(LangContext);

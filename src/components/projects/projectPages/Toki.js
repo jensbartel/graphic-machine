@@ -27,7 +27,7 @@ const Toki = () => {
             <OneImage img1={tokiImg2} cssStyle='one-image' caption={caption2} />
             <LargeTextCenter headline='Migrating Old Content' />
             <OneImage img1={tokiImg3} cssStyle='one-image-variant-2' />
-            <div className='toki-comment'>
+            <div className='caption-comment'>
                 <p>{html(backendExplanation)}</p>
             </div>
             <LargeTextCenter headline={introHeadline} text={introText} />

@@ -1,5 +1,7 @@
 $default-transition: 0.5s
 $default-grey: #999
+$font-headline: 'Playfair Display', sans-serif
+$font-text: 'Source Sans Pro', sans-serif
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap')
@@ -93,10 +95,13 @@ nav
             z-index: 99
             a
                 margin-left: 2rem
-                padding-bottom: 0.5rem
+                padding-bottom: 0.2rem
                 letter-spacing: 0.25rem
                 font-size: 0.8rem
-                // border-bottom: 1px solid #333
+                transition: $default-transition
+                &:hover
+                    color: #777
+                    border-bottom: 1px dotted #777
     .language-switch
         padding: 0 8rem 2rem // was 2.5rem
         position: relative
@@ -366,7 +371,7 @@ nav
         grid-column: 3 / 5
         grid-row: 3 / 6
 
-.toki-comment
+.caption-comment
     margin: 0 8rem
     font-family: 'Nunito', sans-serif
     font-size: 0.75rem
@@ -412,7 +417,15 @@ nav
         top: 0
         height: 100vh
         transform-style: preserve-3d
-        border: 1px solid #333
+        // border-top: 1px dotted #333
+        // border-bottom: 1px dotted #333
+
+        &:nth-child(odd)
+            // background-color: #f2f2f2
+        &:nth-child(even)
+            // background-color: #c5c5c5
+        &:first-child
+            // border: none
 
     &-layer
         position: absolute
@@ -424,12 +437,23 @@ nav
         display: flex
         align-items: center
         justify-content: center
+        background-image: linear-gradient(to right, black 33%, rgba(255,255,255,0) 0%)
+        background-position: top
+        background-size: 3px 1px
+        background-repeat: repeat-x
+        // border-top: 1px dotted #333
+        // border-bottom: 1px dotted #333
+        background-color: #ebebeb
 
-    &-layer-fore
-        transform: translateZ(100px)
+    &-layer-toki
+        transform: translateZ(-50px) scale(1.167)
+
+    &-layer-suda
+        transform: translateZ(100px) scale(0.667)
         z-index: 99
         opacity: 0.9
-        background-color: chartreuse
+        // background-color: chartreuse
+        // background-color: #fff
         color: #000
         perspective-origin: 33% 50%
 
@@ -437,10 +461,53 @@ nav
         transform: translateZ(-100px) scale(0.9)
         z-index: 98
         opacity: 0.6
-        border: 3px solid red
+        width: 100vw
         color: #000
 
-    &-layer-deep
-        transform: translateZ(-50px)
-        border: 1px #000 dashed
-        background-color: lightgrey
+    &-inner
+        position: absolute
+        top: 0
+        bottom: 0
+        min-width: 1000px
+        max-width: 1000px
+        background-color: #fff
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: space-between
+        padding: 1rem 2rem 1.5rem
+        background-image: linear-gradient(to right, black 33%, rgba(255,255,255,0) 0%)
+        background-position: top
+        background-size: 3px 1px
+        background-repeat: repeat-x
+        .text-container
+            display: flex
+            justify-content: space-between
+            width: 100%
+            div
+                &:first-child
+                    width: 100%
+                    display: flex
+                    flex-direction: column
+                    align-items: flex-start
+                    padding-bottom: 0.75rem
+                    h2
+                        font-family: $font-headline
+                        font-size: 1.25rem
+                        letter-spacing: 1px
+                        margin: 0 0 0.33rem 0
+                    p
+                        font-family: $font-text
+                        color: $default-grey
+                        font-size: 0.85rem
+                &:last-child
+                    p
+                        font-family: $font-text
+                        font-size: 0.9rem
+                        padding-top: 0.5rem
+                        color: $default-grey
+        .inner-image
+            overflow-y: hidden
+            max-height: 87.5%
+            img
+                width: 100%
