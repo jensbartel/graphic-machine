@@ -1,5 +1,5 @@
 const ProjectTitle = props => {
-    const project = props.project[0];
+    const project = props.project;
     const { title, description } = project;
     return (
         <div className='project-title'>

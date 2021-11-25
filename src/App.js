@@ -17,8 +17,8 @@ import Suda from './components/projects/projectPages/Suda';
 import Toki from './components/projects/projectPages/Toki';
 import WebpagesOverview from './components/overviewPages/WebpagesOverview';
 
-import { print } from './data/projectOverviewData/PrintObjects';
-import { webApps } from './data/projectOverviewData/WebAppObjects';
+// import { print } from './data/projectOverviewData/PrintObjects';
+// import { webApps } from './data/projectOverviewData/WebAppObjects';
 import { webPages } from './data/projectOverviewData/WebPageObjects';
 
 const App = () => {
@@ -44,9 +44,9 @@ const App = () => {
                     <Route exact path='/webpages' component={WebpagesOverview} />
 
                     {/* delete later */}
-                    <Route exact path='/webapps' render={() => <Page cssStyle='grid-two' data={webApps} />} />
+                    {/* <Route exact path='/webapps' render={() => <Page cssStyle='grid-two' data={webApps} />} /> */}
                     <Route exact path='/webpage' render={() => <Page cssStyle='grid-two' data={webPages} />} />
-                    <Route exact path='/print' render={() => <Page cssStyle='grid-two' data={print} />} />
+                    {/* <Route exact path='/print' render={() => <Page cssStyle='grid-two' data={print} />} /> */}
 
                     {/* project pages */}
                     <Route exact path='/webapps/clientapp' component={ClientApp} />

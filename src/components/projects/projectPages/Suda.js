@@ -19,7 +19,8 @@ import ProjectTitle from '../reuseComponents/ProjectTitle';
 const SudaProject = () => {
     const { miscellaneous, miscHeadline } = SudaData;
     const { projects } = webPages;
-    const project = projects.filter(element => element.title.includes('Suda'));
+    // const project = projects.filter(element => element.title.includes('Suda'));
+    const project = projects.Suda;
 
     useEffect(() => {
         document.title = 'Suda Kokuta';

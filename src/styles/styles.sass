@@ -411,6 +411,8 @@ nav
     overflow-y: auto
     perspective: 300px
     z-index: 9999
+    margin-top: 7rem
+    padding-top: -7rem
 
     &-group
         position: sticky
@@ -437,53 +439,63 @@ nav
         display: flex
         align-items: center
         justify-content: center
-        background-image: linear-gradient(to right, black 33%, rgba(255,255,255,0) 0%)
-        background-position: top
-        background-size: 3px 1px
-        background-repeat: repeat-x
+        // background-image: linear-gradient(to right, black 33%, rgba(255,255,255,0) 0%)
+        // background-position: top
+        // background-size: 3px 1px
+        // background-repeat: repeat-x
         // border-top: 1px dotted #333
         // border-bottom: 1px dotted #333
-        background-color: #ebebeb
+        // background-color: #ebebeb
 
     &-layer-toki
-        transform: translateZ(-50px) scale(1.167)
+        // transform: translateZ(-50px) scale(1.167)
+        // left: -2rem
 
     &-layer-suda
-        transform: translateZ(100px) scale(0.667)
+        // transform: translateZ(100px) scale(0.667)
         z-index: 99
-        opacity: 0.9
-        // background-color: chartreuse
-        // background-color: #fff
+        // opacity: 0.9
         color: #000
         perspective-origin: 33% 50%
 
     &-layer-back
-        transform: translateZ(-100px) scale(0.9)
+        // transform: translateZ(-100px) scale(0.9)
         z-index: 98
         opacity: 0.6
         width: 100vw
         color: #000
 
+    &-layer-morita
+        // left: -10rem
+
+    &-layer-mishima
+        // left: 8rem
+
     &-inner
+        margin: 0 8rem
         position: absolute
         top: 0
         bottom: 0
         min-width: 1000px
-        max-width: 1000px
+        // width: 100vw
+        // max-width: 1000px
         background-color: #fff
+        // opacity: 0.8
         display: flex
         flex-direction: column
         align-items: center
         justify-content: space-between
-        padding: 1rem 2rem 1.5rem
-        background-image: linear-gradient(to right, black 33%, rgba(255,255,255,0) 0%)
-        background-position: top
-        background-size: 3px 1px
-        background-repeat: repeat-x
+        // padding: 1rem 2rem 1.5rem
+        padding: 1rem 0 1.5rem
+        // background-image: linear-gradient(to right, black 33%, rgba(255,255,255,0) 0%)
+        // background-position: top
+        // background-size: 3px 1px
+        // background-repeat: repeat-x
         .text-container
             display: flex
             justify-content: space-between
             width: 100%
+            margin-top: 0.25rem
             div
                 &:first-child
                     width: 100%
@@ -491,21 +503,32 @@ nav
                     flex-direction: column
                     align-items: flex-start
                     padding-bottom: 0.75rem
-                    h2
+                    text-align: left
+                    .title
                         font-family: $font-headline
-                        font-size: 1.25rem
+                        font-size: 1.2rem
                         letter-spacing: 1px
                         margin: 0 0 0.33rem 0
                     p
-                        font-family: $font-text
-                        color: $default-grey
-                        font-size: 0.85rem
+                        &:nth-child(2), &:nth-child(3)
+                            font-family: $font-text
+                            color: $default-grey
+                            font-size: 0.75rem
                 &:last-child
+                    min-width: 300px
+                    display: flex
+                    flex-direction: row
+                    justify-content: flex-end
                     p
                         font-family: $font-text
                         font-size: 0.9rem
                         padding-top: 0.5rem
                         color: $default-grey
+                        padding-left: 1rem
+                        transition: $default-transition
+                        &:hover
+                            color: #333
+                            cursor: pointer
         .inner-image
             overflow-y: hidden
             max-height: 87.5%

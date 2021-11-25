@@ -23,7 +23,8 @@ import { webPages } from '../../../data/projectOverviewData/WebPageObjects';
 const MoritaProject = () => {
     const { headline2, headline3, FootNoteText } = MoritaData;
     const { projects } = webPages;
-    const project = projects.filter(element => element.title.includes('Morita'));
+    // const project = projects.filter(element => element.title.includes('Morita'));
+    const project = projects.MoritaShiryu;
 
     useEffect(() => {
         document.title = 'Morita Shiryū';

@@ -18,7 +18,8 @@ import { webPages } from '../../../data/projectOverviewData/WebPageObjects';
 
 const Mishima = () => {
     const { projects } = webPages;
-    const project = projects.filter(element => element.title.includes('Mishima'));
+    // const project = projects.filter(element => element.title.includes('Mishima'));
+    const project = projects.Mishima;
 
     useEffect(() => {
         document.title = 'Mishima Ritsue';

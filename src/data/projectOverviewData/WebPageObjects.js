@@ -52,7 +52,13 @@ const MoritaShiryu = {
 const Mishima = {
     id: 5,
     title: 'Mishima Ritsue Exhibition',
+    titleFR: 'Éxposition Mishima Ritsue',
     description: 'Venetian-based Japanese glass artist',
+    desFR: 'Artiste Japonaise du glasse situé à Venise',
+    tools: ['HTML/CSS/JS'],
+    date: 'May 2020',
+    dateFR: 'Mai 2020',
+    url: 'webpages/mishima',
 };
 
 const Kida = {
@@ -63,10 +69,13 @@ const Kida = {
 const Toki = {
     id: 7,
     title: 'Toki-no-Wasuremono Gallery',
+    titleFR: 'Galerie Toki-no-Wasuremono',
     img: img_lavendarium,
     description: 'Mobile phone layout for a webpage of a Tokyo-based gallery',
+    desFR: `Layout de téléphone portable d'un page d'un galerie situé à Tokyo`,
     tools: ['HTML/CSS/JS', 'PHP', 'Visual Basic'],
-    date: 'Feb-May 2016',
+    date: 'February-May 2016',
+    dateFR: 'Février-Mai 2016',
     url: 'webpages/toki',
 };
 
@@ -82,18 +91,18 @@ const Toki = {
 
 const Suda = {
     id: 3,
-    title: 'Suda Kokuta Exhibition',
-    titleFR: 'Éxposition Suda Kokuta',
+    title: 'Suda Kokuta: Abstractions',
+    titleFR: 'Suda Kokuta: Abstractions ',
     img: img_suda,
     description: 'Webpage for an exhibition on a Japanese painter',
     desFR: `Présentation d'un éxposition sur un peintre Japonais après-guerre`,
-    tools: ['React', 'SASS', 'GCP'],
+    tools: ['HTML/CSS/JS'],
     date: 'December 2020',
     dateFR: 'Décembre 2020',
     url: 'webpages/suda',
 };
 
-const data = [MoritaShiryu, Suda, Lavendarium, Toki, Mishima, Kida];
+const data = { MoritaShiryu, Suda, Lavendarium, Toki, Mishima, Kida };
 
 export const webPages = {
     intro: webPagesIntro,

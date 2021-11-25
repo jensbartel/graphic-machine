@@ -13,7 +13,8 @@ import { webPages } from '../../../data/projectOverviewData/WebPageObjects';
 const Toki = () => {
     const { introText, introHeadline, caption1, caption2, backendExplanation } = TokiData;
     const { projects } = webPages;
-    const project = projects.filter(element => element.title.includes('Toki'));
+    // const project = projects.filter(element => element.title.includes('Toki'));
+    const project = projects.Toki;
 
     useEffect(() => {
         document.title = 'Toki-no-Wasuremono';
