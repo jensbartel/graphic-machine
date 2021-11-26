@@ -21,7 +21,7 @@ const Toki = () => {
     }, []);
 
     return (
-        <div>
+        <>
             <ProjectTitle project={project} />
             <OneImage img1={tokiImg1} cssStyle='one-image' caption={caption1} />
             <div style={{ marginTop: '4rem' }}></div>
@@ -35,7 +35,7 @@ const Toki = () => {
 
             {/* div below: replace later */}
             <div style={{ height: '4rem' }}></div>
-        </div>
+        </>
     );
 };
 

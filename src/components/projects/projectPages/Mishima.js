@@ -26,7 +26,7 @@ const Mishima = () => {
     }, []);
 
     return (
-        <div>
+        <>
             <ProjectTitle project={project} />
             {/* <OneImage img1={mishima1} cssStyle='one-image-variant' /> */}
             <ThreeImages img1={mishima1} img2={mishima2} img3={mishima3} />
@@ -38,7 +38,7 @@ const Mishima = () => {
 
             {/* div below: replace later */}
             <div style={{ height: '4rem' }}></div>
-        </div>
+        </>
     );
 };
 
