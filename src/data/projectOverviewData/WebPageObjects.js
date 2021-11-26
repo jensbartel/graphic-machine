@@ -104,7 +104,10 @@ const Suda = {
 
 const data = { MoritaShiryu, Suda, Lavendarium, Toki, Mishima, Kida };
 
+const dataArray = [MoritaShiryu, Suda, Lavendarium, Toki, Mishima, Kida];
+
 export const webPages = {
     intro: webPagesIntro,
     projects: data,
+    projectsArray: dataArray,
 };

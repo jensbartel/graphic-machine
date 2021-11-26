@@ -475,7 +475,7 @@ nav .language-switch button:hover {
 }
 
 .parallax {
-  height: 100vh;
+  height: 90vh;
   overflow-x: hidden;
   overflow-y: auto;
   perspective: 300px;
@@ -486,7 +486,7 @@ nav .language-switch button:hover {
 .parallax-group {
   position: sticky;
   top: 0;
-  height: 100vh;
+  height: 90vh;
   transform-style: preserve-3d;
 }
 .parallax-layer {

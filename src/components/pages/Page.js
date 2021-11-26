@@ -4,15 +4,19 @@ import SectionIntro from './SectionIntro';
 const Page = props => {
     const {
         cssStyle,
-        data: { intro, projects },
+        data: { intro, projectsArray },
     } = props;
+
+    // const projArray = Array.of(projects);
+    // console.log(projects);
+    // console.log(projArray);
 
     return (
         <>
             <SectionIntro text={intro} />
             <div className='page'>
                 <div className={cssStyle}>
-                    {projects.map(item =>
+                    {projectsArray.map(item =>
                         item.img ? (
                             <PageItem item={item} key={item.id} />
                         ) : (
