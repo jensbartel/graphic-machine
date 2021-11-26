@@ -32,7 +32,7 @@ const SudaProject = () => {
             <ThreeImagesGrid img1={desktopImg} img2={iphoneImg} img3={iphoneImg2} />
             <LargeTextCenter headline='Introducing the Artist' />
             <TwoImages imgLeft={sudaChronology} imgRight={sudaExhibitions} />
-            <LargeTextCenter headline='Bilingual: English & Japanese Pages' />
+            <LargeTextCenter headline='Bilingual: English &#38; Japanese Pages' />
             <TwoImages imgLeft={sudaWorksENG} imgRight={sudaJP} />
             <LargeTextCenter headline={miscHeadline} text={miscellaneous} />
 

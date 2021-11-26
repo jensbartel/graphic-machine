@@ -104,6 +104,7 @@ const Suda = {
 
 const data = { MoritaShiryu, Suda, Lavendarium, Toki, Mishima, Kida };
 
+// removie later - this is just to keep the earlier overview page layout alive for now
 const dataArray = [MoritaShiryu, Suda, Lavendarium, Toki, Mishima, Kida];
 
 export const webPages = {

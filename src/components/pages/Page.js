@@ -7,10 +7,6 @@ const Page = props => {
         data: { intro, projectsArray },
     } = props;
 
-    // const projArray = Array.of(projects);
-    // console.log(projects);
-    // console.log(projArray);
-
     return (
         <>
             <SectionIntro text={intro} />

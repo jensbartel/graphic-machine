@@ -44,8 +44,8 @@ const App = () => {
                     <Route exact path='/webpages' component={WebpagesOverview} />
 
                     {/* delete later */}
-                    {/* <Route exact path='/webapps' render={() => <Page cssStyle='grid-two' data={webApps} />} /> */}
                     <Route exact path='/webpage' render={() => <Page cssStyle='grid-two' data={webPages} />} />
+                    {/* <Route exact path='/webapps' render={() => <Page cssStyle='grid-two' data={webApps} />} /> */}
                     {/* <Route exact path='/print' render={() => <Page cssStyle='grid-two' data={print} />} /> */}
 
                     {/* project pages */}

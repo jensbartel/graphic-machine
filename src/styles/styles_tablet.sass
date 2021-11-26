@@ -1,10 +1,11 @@
 =iPadPro-portrait
-    .navbar
-        margin: 4rem auto 0
-        padding: 0 10%
-    .language-switch
-        margin: 0 auto
-        padding: 0 10% 1.5rem
+    nav
+        .navbar
+            margin: 2rem auto 0
+            padding: 0 10%
+        .language-switch
+            margin: 0 auto
+            padding: 0 10% 1.5rem
     .section-intro
         margin: 2rem auto 0
         padding: 0 10%
@@ -20,19 +21,26 @@
             width: 100%
 
 =iPad-portrait
-    .navbar
-        margin: 3rem auto 0
-        padding: 0 10%
-        flex-direction: column
-    .language-switch
-        margin: 0 auto
-        padding: 0 10% 1.5rem
-    .menu
-        margin-top: 0.25rem
-        margin-bottom: 0.25rem
-        a
-            &:first-child
-                padding-left: 0
+    .content-container
+        margin-top: 7.5rem
+        .project-title
+            margin: 0 7.5% 1.5rem
+    nav
+        .navbar
+            margin: 1.5rem auto 0
+            padding: 0 7.5%
+            .menu
+                margin-top: 0rem
+                display: flex
+                align-items: flex-end
+                a
+                    margin-left: 1.25rem
+                    font-size: 0.75rem
+                    &:first-child
+                        margin-left: 0
+        .language-switch
+            margin: 0 auto
+            padding: 0 7.5% 1.5rem
     .section-intro
         margin: 2rem auto 0
         padding: 0 10%
@@ -46,6 +54,13 @@
         row-gap: 4rem
         .category-top
             width: 100%
+    .two-images
+        margin: 0 7.5%
+    .three-images-grid // misleading class name!
+        margin: 2rem 7.5%
+
+    .large-text-container
+        padding: 0 25%
 
 // iPad Pro
 @media only screen and (min-width: 1024px) and (max-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2)
