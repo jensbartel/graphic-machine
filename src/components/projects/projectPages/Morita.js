@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 
+import Headline from '../reuseComponents/Headline';
 import LargeTextCenter from '../reuseComponents/LargeTextCenter';
-import MoritaData from '../../../data/projectData/MoritaData';
 import ProjectTitle from '../reuseComponents/ProjectTitle';
 import ThreeImages from '../reuseComponents/ThreeImages';
 import TwoVideos from '../reuseComponents/TwoVideos';
@@ -18,12 +18,12 @@ import collage1_3 from '../../../img/morita/mortia-part4-snippet.jpg';
 import collage1_4 from '../../../img/morita/footnote.jpg';
 import collage1_5 from '../../../img/morita/morita-part3-snippet.jpg';
 
+import MoritaData from '../../../data/projectData/MoritaData';
 import { webPages } from '../../../data/projectOverviewData/WebPageObjects';
 
 const MoritaProject = () => {
     const { headline2, headline3, FootNoteText } = MoritaData;
     const { projects } = webPages;
-    // const project = projects.filter(element => element.title.includes('Morita'));
     const project = projects.MoritaShiryu;
 
     useEffect(() => {
@@ -34,9 +34,9 @@ const MoritaProject = () => {
         <>
             <ProjectTitle project={project} />
             <ThreeImages img1={desktopImg} img2={ipadImg} img3={iphoneImg} />
-            <LargeTextCenter headline='Pullquote Animations' />
+            <Headline headline='Pullquote Animations' />
             <TwoVideos />
-            <LargeTextCenter headline={headline2} />
+            <Headline headline={headline2} />
             <ImageCollage1 img1={collage1_1} img2={collage1_2} img3={collage1_3} img4={collage1_4} img5={collage1_5} />
             <LargeTextCenter headline={headline3} text={FootNoteText} />
 

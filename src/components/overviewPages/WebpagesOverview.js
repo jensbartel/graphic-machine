@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
-import tokiImage from '../../img/overview/toki.png';
-import sudaImage from '../../img/overview/suda.png';
-import moritaImage from '../../img/overview/morita.png';
-import mishimaImage from '../../img/overview/mishima.png';
+import tokiImage from '../../img/overview/toki.jpg';
+import sudaImage from '../../img/overview/suda.jpg';
+import moritaImage from '../../img/overview/morita.jpg';
+import mishimaImage from '../../img/overview/mishima.jpg';
 
 // data
 import { webPages } from '../../data/projectOverviewData/WebPageObjects';

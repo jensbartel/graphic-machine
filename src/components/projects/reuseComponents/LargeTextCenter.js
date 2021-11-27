@@ -5,7 +5,7 @@ const LargeTextCenter = props => {
     return (
         <>
             <div className='large-text-container'>
-                <h2 className='headline'>{headline}</h2>
+                <h2>{headline}</h2>
                 {html(text)}
             </div>
         </>

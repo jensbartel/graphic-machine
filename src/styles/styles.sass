@@ -1,7 +1,10 @@
 $default-transition: 0.5s
 $default-grey: #999
 $font-headline: 'Playfair Display', sans-serif
-$font-text: 'Source Sans Pro', sans-serif
+$font-text: 'Nunito', sans-serif
+
+// remove Source Sans
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap')
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap')
@@ -28,7 +31,7 @@ strong
     min-height: 100vh
 
 .page
-    font-family: 'Source Sans Pro', sans-serif
+    font-family: 'Nunito', sans-serif
     margin: 2.5rem 8rem 0
     padding-bottom: 5rem
 
@@ -109,7 +112,7 @@ nav
             border: none
             background: none
             padding: 0
-            font-family: 'Source Sans Pro', sans-serif
+            font-family: 'Nunito', sans-serif
             font-size: 0.6rem
             letter-spacing: 0.33rem
             color: #999
@@ -128,13 +131,13 @@ nav
 
 // R E U S E  C O M P O N E N T S 
 // LARGE TEXT CENTER
-.large-text-container
+.large-text-container, .headline
     margin-top: 4rem
     padding: 0 30%
     font-family: 'Nunito', sans-serif
     font-size: 0.9rem
     line-height: 1.4
-    .headline
+    h2
         margin: 4rem 0 2rem
         font-family: 'Playfair Display', serif
         letter-spacing: 1px
