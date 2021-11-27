@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import BackToTop from '../projects/reuseComponents/BackToTop';
 
 const Footer = () => {
     return (
@@ -20,6 +21,7 @@ const Footer = () => {
                     <i className='fab fa-instagram'></i>
                 </a>
             </p>
+            <BackToTop />
         </div>
     );
 };

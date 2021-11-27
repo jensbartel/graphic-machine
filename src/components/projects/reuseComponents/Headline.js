@@ -1,5 +1,3 @@
-import html from 'react-html-parser';
-
 const Headline = props => {
     const { headline } = props;
     return (

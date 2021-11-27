@@ -400,6 +400,7 @@ nav .language-switch button:hover {
 .image-collage-1 div img {
   width: 100%;
   display: block;
+  border: 1px solid #000;
 }
 .image-collage-1 #item-1 {
   grid-column: 1/3;
@@ -437,8 +438,8 @@ nav .language-switch button:hover {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 5rem;
   padding: 2rem 0 2rem;
+  height: 5rem;
   font-size: 0.7rem;
   color: #999;
   text-align: center;
@@ -558,6 +559,25 @@ nav .language-switch button:hover {
 }
 .parallax-inner .inner-image img {
   width: 100%;
+}
+
+.back-to-top {
+  position: absolute;
+  bottom: 4.5rem;
+  right: 2rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.back-to-top:hover {
+  opacity: 0.4;
+}
+.back-to-top i {
+  padding: 1rem;
+  margin: 0;
+  color: #000;
+  font-size: 0.8rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid #333;
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
