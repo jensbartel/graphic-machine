@@ -151,6 +151,11 @@ strong {
   font-weight: 900;
 }
 
+#pagetop {
+  padding-top: 7rem;
+  margin-top: -7rem;
+}
+
 .page-container {
   position: relative;
   min-height: 100vh;
@@ -158,7 +163,7 @@ strong {
 
 .page {
   font-family: "Nunito", sans-serif;
-  margin: 2.5rem 8rem 0;
+  margin: 0.66rem 8rem 0;
   padding-bottom: 5rem;
 }
 
@@ -167,7 +172,7 @@ strong {
   margin: auto;
   max-width: 1280px;
   padding-bottom: 9rem;
-  margin-top: 7rem;
+  padding-top: 7rem;
 }
 
 .caption {
@@ -238,6 +243,9 @@ nav .navbar .menu a {
   letter-spacing: 0.25rem;
   font-size: 0.8rem;
   transition: 0.5s;
+}
+nav .navbar .menu a span {
+  letter-spacing: 0;
 }
 nav .navbar .menu a:hover {
   color: #777;
@@ -456,7 +464,7 @@ nav .language-switch button:hover {
   font-size: 1.4rem;
   margin: 0 0.2rem;
 }
-.footer p:last-child {
+.footer p:nth-last-child(2) {
   margin-top: 1rem;
 }
 
@@ -466,8 +474,6 @@ nav .language-switch button:hover {
   overflow-y: auto;
   perspective: 300px;
   z-index: 9999;
-  margin-top: 7rem;
-  padding-top: -7rem;
 }
 .parallax-group {
   position: sticky;

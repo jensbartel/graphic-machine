@@ -1,17 +1,12 @@
-import React from 'react';
+import { Link } from 'react-scroll';
 
 const BackToTop = () => {
-    const toTop = () => {
-        window.scroll({
-            top: 0,
-            left: 0,
-            behavior: 'smooth',
-        });
-    };
     return (
-        <div className='back-to-top' onClick={() => toTop()}>
-            <i className='fas fa-chevron-up'></i>
-        </div>
+        <Link to='pagetop' smooth={true}>
+            <div className='back-to-top'>
+                <i className='fas fa-chevron-up'></i>
+            </div>
+        </Link>
     );
 };
 

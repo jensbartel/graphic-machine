@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import LangContext from '../../context/langContext';
 
 const Navbar = () => {
@@ -22,12 +22,18 @@ const Navbar = () => {
 
             <section className='navbar'>
                 <div className='wordmark'>
-                    <Link to='/'>GRIFOLD STUDIO</Link>
+                    <NavLink to='/'>GRIFOLD STUDIO</NavLink>
                 </div>
                 <div className='menu'>
-                    <Link to='/webpages'>WEB PAGES</Link>
-                    <Link to='/webapps'>WEB APPS</Link>
-                    <Link to='/about'>ABOUT</Link>
+                    <NavLink to='/webpages' activeStyle={active}>
+                        WEB PAGE<span>S</span>
+                    </NavLink>
+                    <NavLink to='/webapps' activeStyle={active}>
+                        WEB APP<span>S</span>
+                    </NavLink>
+                    <NavLink to='/about' activeStyle={active}>
+                        ABOU<span>T</span>
+                    </NavLink>
                 </div>
             </section>
 
@@ -44,3 +50,8 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+const active = {
+    color: '#777',
+    borderBottom: '1px dotted #777',
+};

@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { useEffect, useContext } from 'react';
 import LangContext from './context/langContext';
 
@@ -36,26 +36,32 @@ const App = () => {
 
     return (
         <Router>
+            <div id='pagetop'></div>
             <div className='page-container'>
                 <Navbar />
+
                 <div className='content-container'>
-                    <Route exact path='/' component={NotFound} />
-                    <Route exact path='/about' component={About} />
-                    <Route exact path='/webpages' component={WebpagesOverview} />
+                    <Switch>
+                        <Route exact path='/' component={WebpagesOverview} />
+                        <Route exact path='/webpages' component={WebpagesOverview} />
+                        <Route exact path='/about' component={About} />
 
-                    {/* delete later */}
-                    <Route exact path='/webpage' render={() => <Page cssStyle='grid-two' data={webPages} />} />
-                    {/* <Route exact path='/webapps' render={() => <Page cssStyle='grid-two' data={webApps} />} /> */}
-                    {/* <Route exact path='/print' render={() => <Page cssStyle='grid-two' data={print} />} /> */}
+                        {/* delete later */}
+                        <Route exact path='/webpage' render={() => <Page cssStyle='grid-two' data={webPages} />} />
+                        {/* <Route exact path='/webapps' render={() => <Page cssStyle='grid-two' data={webApps} />} /> */}
+                        {/* <Route exact path='/print' render={() => <Page cssStyle='grid-two' data={print} />} /> */}
 
-                    {/* project pages */}
-                    <Route exact path='/webapps/clientapp' component={ClientApp} />
-                    <Route exact path='/webpages/mishima' component={Mishima} />
-                    <Route exact path='/webapps/mmas' component={MMAS} />
-                    <Route exact path='/webpages/morita' component={Morita} />
-                    <Route exact path='/webapps/resourcenet' component={ResNet} />
-                    <Route exact path='/webpages/suda' component={Suda} />
-                    <Route exact path='/webpages/toki' component={Toki} />
+                        {/* project pages */}
+                        <Route exact path='/webapps/clientapp' component={ClientApp} />
+                        <Route exact path='/webpages/mishima' component={Mishima} />
+                        <Route exact path='/webapps/mmas' component={MMAS} />
+                        <Route exact path='/webpages/morita' component={Morita} />
+                        <Route exact path='/webapps/resourcenet' component={ResNet} />
+                        <Route exact path='/webpages/suda' component={Suda} />
+                        <Route exact path='/webpages/toki' component={Toki} />
+
+                        <Route component={NotFound} />
+                    </Switch>
                 </div>
                 <Footer />
             </div>

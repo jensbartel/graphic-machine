@@ -26,13 +26,17 @@ p
 strong
     font-weight: 900
 
+#pagetop
+    padding-top: 7rem
+    margin-top: -7rem
+
 .page-container
     position: relative
     min-height: 100vh
 
 .page
     font-family: 'Nunito', sans-serif
-    margin: 2.5rem 8rem 0
+    margin: 0.66rem 8rem 0
     padding-bottom: 5rem
 
 .content-container
@@ -40,7 +44,8 @@ strong
     margin: auto
     max-width: 1280px
     padding-bottom: 9rem
-    margin-top: 7rem
+    // margin-top: 7rem
+    padding-top: 7rem
 
 .caption
     margin: 0 8rem
@@ -101,6 +106,8 @@ nav
                 letter-spacing: 0.25rem
                 font-size: 0.8rem
                 transition: $default-transition
+                span
+                    letter-spacing: 0
                 &:hover
                     color: #777
                     border-bottom: 1px dotted #777
@@ -271,12 +278,10 @@ nav
     width: 100%
     padding: 2rem 0 2rem
     height: 5rem
-    // margin: 2rem 8rem
     font-size: 0.7rem
     color: $default-grey
     text-align: center
     font-family: 'Nunito', sans-serif
-    // background-color: pink
     a
         color: $default-grey
         transition: $default-transition
@@ -286,7 +291,7 @@ nav
         font-size: 1.4rem
         margin: 0 0.2rem
     p
-        &:last-child
+        &:nth-last-child(2)
             margin-top: 1rem
 
 // PARALLAX STYLES
@@ -296,8 +301,6 @@ nav
     overflow-y: auto
     perspective: 300px
     z-index: 9999
-    margin-top: 7rem
-    padding-top: -7rem
 
     &-group
         position: sticky
