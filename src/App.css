@@ -629,6 +629,7 @@ nav .language-switch button:hover {
   }
   .content-container .project-title {
     margin: 0 7.5% 1.5rem;
+    padding: 0.66rem 0 0 0;
   }
 
   nav .navbar {
@@ -742,6 +743,7 @@ nav .language-switch button:hover {
   }
   .content-container .project-title {
     margin: 0 7.5% 1.5rem;
+    padding: 0.66rem 0 0 0;
   }
 
   nav .navbar {
