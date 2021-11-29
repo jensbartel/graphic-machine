@@ -1,6 +1,6 @@
 import { useContext } from 'react';
-import { Link } from 'react-router-dom';
 import LangContext from '../../context/langContext';
+import { Link } from 'react-router-dom';
 
 const WebpageItem = props => {
     const {
@@ -31,6 +31,8 @@ const WebpageItem = props => {
                         <div>
                             <Link to={url}>
                                 <p className='title'>{titleChoice}</p>
+                            </Link>
+                            <Link to={url}>
                                 <p>{descriptionChoice}</p>
                                 <p>{dateChoice}</p>
                             </Link>

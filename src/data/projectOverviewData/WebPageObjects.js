@@ -42,6 +42,8 @@ const MoritaShiryu = {
     date: 'December 2020',
     dateFR: 'Décembre 2020',
     url: 'webpages/morita',
+    livePage: 'https://moritashiryu-bokujin.com/english',
+    github: 'https://github.com/jensbartel/morita_refactor-review',
 };
 
 // const Kuroda = {

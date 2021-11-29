@@ -45,7 +45,7 @@ strong
     max-width: 1280px
     padding-bottom: 9rem
     // margin-top: 7rem
-    padding-top: 7rem
+    padding-top: 6rem
 
 .caption
     margin: 0 8rem
@@ -56,16 +56,26 @@ strong
 .project-title
     margin: 0 8rem 1.5rem
     padding-top: 0.66rem
+    a
+        font-size: 0.8rem
+        font-weight: 500
+        color: #444
+        padding-right: 0.66rem
+        transition: $default-transition
+        &:hover
+            color: #777
+        i
+            padding-right: 0.33rem
     p
         font-family: 'Nunito', sans-serif
         font-size: 0.75rem
         padding-top: 0.33rem
+        margin-right: 1.25rem
         &:first-child
             font-family: 'Playfair Display', sans-serif
             letter-spacing: 1px
             font-size: 1.2rem
             display: inline-block
-            padding-bottom: -0.15rem
             border-bottom: 1px dotted #000
         &:last-child
             color: $default-grey
@@ -89,7 +99,7 @@ nav
         display: flex
         flex-direction: row
         justify-content: space-between
-        padding: 2rem 8rem 0
+        padding: 1.5rem 8rem 0
         max-width: 1280px
         margin: auto
         .wordmark
@@ -112,7 +122,7 @@ nav
                     color: #777
                     border-bottom: 1px dotted #777
     .language-switch
-        padding: 0 8rem 2rem
+        padding: 0 8rem 1.5rem
         position: relative
         z-index: 99
         button
@@ -274,6 +284,7 @@ nav
 // FOOTER
 .footer
     position: absolute
+    // position: sticky
     bottom: 0
     width: 100%
     padding: 2rem 0 2rem
@@ -319,10 +330,7 @@ nav
         align-items: center
         justify-content: center
 
-    // &-layer-toki
-
     &-layer-suda
-        // transform: translateZ(100px) scale(0.667)
         z-index: 99
         color: #000
         perspective-origin: 33% 50%
@@ -358,16 +366,19 @@ nav
                     align-items: flex-start
                     padding-bottom: 0.75rem
                     text-align: left
-                    .title
-                        font-family: $font-headline
-                        font-size: 1.2rem
-                        letter-spacing: 1px
-                        margin: 0 0 0.33rem 0
-                    p
-                        &:nth-child(2), &:nth-child(3)
-                            font-family: $font-text
-                            color: $default-grey
-                            font-size: 0.75rem
+                    a
+                        p
+                            &:not(.title)
+                                font-family: $font-text
+                                color: $default-grey
+                                font-size: 0.75rem
+                        .title
+                            display: inline-block
+                            font-family: $font-headline
+                            font-size: 1.2rem
+                            letter-spacing: 1px
+                            margin: 0 0 0.33rem 0
+                            border-bottom: 1px dotted #000
                 &:last-child
                     min-width: 300px
                     display: flex

@@ -172,7 +172,7 @@ strong {
   margin: auto;
   max-width: 1280px;
   padding-bottom: 9rem;
-  padding-top: 7rem;
+  padding-top: 6rem;
 }
 
 .caption {
@@ -186,17 +186,30 @@ strong {
   margin: 0 8rem 1.5rem;
   padding-top: 0.66rem;
 }
+.project-title a {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #444;
+  padding-right: 0.66rem;
+  transition: 0.5s;
+}
+.project-title a:hover {
+  color: #777;
+}
+.project-title a i {
+  padding-right: 0.33rem;
+}
 .project-title p {
   font-family: "Nunito", sans-serif;
   font-size: 0.75rem;
   padding-top: 0.33rem;
+  margin-right: 1.25rem;
 }
 .project-title p:first-child {
   font-family: "Playfair Display", sans-serif;
   letter-spacing: 1px;
   font-size: 1.2rem;
   display: inline-block;
-  padding-bottom: -0.15rem;
   border-bottom: 1px dotted #000;
 }
 .project-title p:last-child {
@@ -223,7 +236,7 @@ nav .navbar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 2rem 8rem 0;
+  padding: 1.5rem 8rem 0;
   max-width: 1280px;
   margin: auto;
 }
@@ -252,7 +265,7 @@ nav .navbar .menu a:hover {
   border-bottom: 1px dotted #777;
 }
 nav .language-switch {
-  padding: 0 8rem 2rem;
+  padding: 0 8rem 1.5rem;
   position: relative;
   z-index: 99;
 }
@@ -530,16 +543,18 @@ nav .language-switch button:hover {
   padding-bottom: 0.75rem;
   text-align: left;
 }
-.parallax-inner .text-container div:first-child .title {
+.parallax-inner .text-container div:first-child a p:not(.title) {
+  font-family: "Nunito", sans-serif;
+  color: #999;
+  font-size: 0.75rem;
+}
+.parallax-inner .text-container div:first-child a .title {
+  display: inline-block;
   font-family: "Playfair Display", sans-serif;
   font-size: 1.2rem;
   letter-spacing: 1px;
   margin: 0 0 0.33rem 0;
-}
-.parallax-inner .text-container div:first-child p:nth-child(2), .parallax-inner .text-container div:first-child p:nth-child(3) {
-  font-family: "Nunito", sans-serif;
-  color: #999;
-  font-size: 0.75rem;
+  border-bottom: 1px dotted #000;
 }
 .parallax-inner .text-container div:last-child {
   min-width: 300px;
