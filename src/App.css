@@ -507,35 +507,32 @@ nav .language-switch button:hover {
 }
 
 .parallax {
-  height: 90vh;
+  height: 100vh;
+  margin-top: -5rem;
+  padding-top: 5rem;
   overflow-x: hidden;
-  overflow-y: auto;
   z-index: 9999;
 }
 .parallax-group {
   position: sticky;
+  height: 100%;
   top: 0;
-  height: 90vh;
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
-  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .parallax-inner {
-  margin: 0 8rem;
   position: absolute;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
+  margin: 0 8rem;
+  padding: 1rem 0 0;
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 0 1.5rem;
+  justify-content: flex-start;
 }
 .parallax-inner .text-container {
   display: flex;
@@ -582,12 +579,17 @@ nav .language-switch button:hover {
   color: #333;
   cursor: pointer;
 }
-.parallax-inner .inner-image {
-  overflow-y: hidden;
-  max-height: 87.5%;
+.parallax-inner .image-container {
+  display: flex;
+  justify-content: center;
+  margin-top: -6rem;
+  padding-top: 6rem;
+  overflow: hidden;
+  max-height: 100%;
 }
-.parallax-inner .inner-image img {
-  width: 100%;
+.parallax-inner .image-container img {
+  display: block;
+  height: 100%;
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {

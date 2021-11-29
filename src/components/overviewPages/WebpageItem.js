@@ -24,7 +24,6 @@ const WebpageItem = props => {
 
     return (
         <div className='parallax-group'>
-            {/* <div className='parallax-layer'> */}
             <div className='parallax-inner'>
                 <div className='text-container'>
                     <div>
@@ -42,13 +41,12 @@ const WebpageItem = props => {
                         ))}
                     </div>
                 </div>
-                <div className='inner-image'>
+                <div className='image-container'>
                     <Link to={url}>
                         <img src={image} alt='' />
                     </Link>
                 </div>
             </div>
-            {/* </div> */}
         </div>
     );
 };
