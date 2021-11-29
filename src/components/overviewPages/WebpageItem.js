@@ -6,7 +6,6 @@ const WebpageItem = props => {
     const {
         data: { title, titleFR, description, desFR, date, dateFR, tools, url },
         image,
-        css,
     } = props;
 
     const langContext = useContext(LangContext);
@@ -25,31 +24,31 @@ const WebpageItem = props => {
 
     return (
         <div className='parallax-group'>
-            <div className={css}>
-                <div className='parallax-inner'>
-                    <div className='text-container'>
-                        <div>
-                            <Link to={url}>
-                                <p className='title'>{titleChoice}</p>
-                            </Link>
-                            <Link to={url}>
-                                <p>{descriptionChoice}</p>
-                                <p>{dateChoice}</p>
-                            </Link>
-                        </div>
-                        <div>
-                            {tools.map(tool => (
-                                <p key={tool}>{tool}</p>
-                            ))}
-                        </div>
-                    </div>
-                    <div className='inner-image'>
+            {/* <div className='parallax-layer'> */}
+            <div className='parallax-inner'>
+                <div className='text-container'>
+                    <div>
                         <Link to={url}>
-                            <img src={image} alt='' />
+                            <p className='title'>{titleChoice}</p>
+                        </Link>
+                        <Link to={url}>
+                            <p>{descriptionChoice}</p>
+                            <p>{dateChoice}</p>
                         </Link>
                     </div>
+                    <div>
+                        {tools.map(tool => (
+                            <p key={tool}>{tool}</p>
+                        ))}
+                    </div>
+                </div>
+                <div className='inner-image'>
+                    <Link to={url}>
+                        <img src={image} alt='' />
+                    </Link>
                 </div>
             </div>
+            {/* </div> */}
         </div>
     );
 };

@@ -39,7 +39,6 @@ const App = () => {
             <div id='pagetop'></div>
             <div className='page-container'>
                 <Navbar />
-
                 <div className='content-container'>
                     <Switch>
                         <Route exact path='/' component={WebpagesOverview} />
