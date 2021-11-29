@@ -634,7 +634,7 @@ nav .language-switch button:hover {
 }
 @media only screen and (min-width: 810px) and (max-width: 810px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
   .content-container {
-    margin-top: 7.5rem;
+    margin-top: 0.5rem;
   }
   .content-container .project-title {
     margin: 0 7.5% 1.5rem;
@@ -742,7 +742,7 @@ nav .language-switch button:hover {
 }
 @media only screen and (min-width: 768px) and (max-width: 768px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
   .content-container {
-    margin-top: 7.5rem;
+    margin-top: 0.5rem;
   }
   .content-container .project-title {
     margin: 0 7.5% 1.5rem;
