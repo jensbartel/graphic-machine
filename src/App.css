@@ -924,22 +924,28 @@ nav .language-switch button:hover {
   }
 }
 @media only screen and (max-width: 568px) {
-  .navbar {
-    flex-direction: column;
-    margin: 2rem auto 0;
-    padding: 0 10%;
+  .overview {
+    margin: 0 5%;
   }
 
-  .menu {
+  .content-container {
+    margin-top: 7rem;
+  }
+
+  nav .navbar {
+    flex-direction: column;
+    margin: 2rem auto 0;
+    padding: 0 5%;
+  }
+  nav .navbar .menu {
     display: flex;
     flex-direction: column;
   }
-  .menu a {
+  nav .navbar .menu a {
     font-size: 0.7rem;
-    padding-left: 0;
+    margin-left: 0;
   }
-
-  .language-switch {
+  nav .language-switch {
     margin: 1rem auto;
     padding: 0 10%;
   }
