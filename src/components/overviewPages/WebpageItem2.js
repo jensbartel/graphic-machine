@@ -23,27 +23,29 @@ const WebpageItem = props => {
     }
 
     return (
-        <div className='overview-group'>
-            <div className='text-container'>
-                <div>
+        <div className='parallax-group'>
+            <div className='parallax-inner'>
+                <div className='text-container'>
+                    <div>
+                        <Link to={url}>
+                            <p className='title'>{titleChoice}</p>
+                        </Link>
+                        <Link to={url}>
+                            <p>{descriptionChoice}</p>
+                            <p>{dateChoice}</p>
+                        </Link>
+                    </div>
+                    <div>
+                        {tools.map(tool => (
+                            <p key={tool}>{tool}</p>
+                        ))}
+                    </div>
+                </div>
+                <div className='image-container'>
                     <Link to={url}>
-                        <p className='title'>{titleChoice}</p>
-                    </Link>
-                    <Link to={url}>
-                        <p>{descriptionChoice}</p>
-                        <p>{dateChoice}</p>
+                        <img src={image} alt='' />
                     </Link>
                 </div>
-                <div>
-                    {tools.map(tool => (
-                        <p key={tool}>{tool}</p>
-                    ))}
-                </div>
-            </div>
-            <div className='image-container'>
-                <Link to={url}>
-                    <img src={image} alt='' />
-                </Link>
             </div>
         </div>
     );

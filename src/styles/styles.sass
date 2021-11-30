@@ -328,7 +328,7 @@ nav
         padding: 0.9rem 1rem
         border: 1px solid #333
 
-// PARALLAX STYLES
+// OVERVIEW PAGES
 .parallax
     height: 100vh
     margin-top: -5rem
@@ -341,14 +341,11 @@ nav
         position: relative
         height: 100%
         top: 0
-        // border-top: 1px solid #000
-        // border-bottom: 1px solid #000
         display: flex
         align-items: center
         justify-content: center
 
     &-inner
-        // background-color: pink
         position: absolute
         top: 0
         bottom: 0
@@ -412,3 +409,56 @@ nav
             img
                 display: block
                 width: 100%
+
+// OVERVIEW NEW
+.overview
+    margin: 0 8rem
+
+.overview-group
+    &:not(&:first-child)
+        margin-top: 2.5rem // distance to top
+    &:first-child
+        margin-top: 1rem // dist.to top only first element
+    .text-container
+        display: flex
+        justify-content: space-between
+        width: 100%
+        div
+            &:first-child // text on the left: title, description, date
+                width: 100%
+                display: flex
+                flex-direction: column
+                align-items: flex-start
+                padding-bottom: 0.75rem
+                text-align: left
+                a
+                    p
+                        &:not(.title)
+                            font-family: $font-text
+                            color: $default-grey
+                            font-size: 0.75rem
+                    .title
+                        display: inline-block
+                        font-size: 1.2rem
+                        font-family: $font-headline
+                        letter-spacing: 1px
+                        margin: 0 0 0.33rem 0
+                        border-bottom: 1px dotted #000
+            &:last-child // text on the right: tools used
+                min-width: 300px
+                display: flex
+                flex-direction: row
+                justify-content: flex-end
+                p
+                    font-family: $font-text
+                    font-size: 0.9rem
+                    color: $default-grey
+                    padding: 0.5rem 0 0 1rem
+                    transition: $default-transition
+                    &:hover
+                        color: #333
+                        cursor: pointer
+    .image-container
+        img
+            display: block
+            width: 100%

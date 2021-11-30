@@ -16,7 +16,8 @@ const WebpagesOverview = () => {
     const { Toki, Suda, MoritaShiryu, Mishima } = webPages.projects;
 
     return (
-        <div className='parallax'>
+        <div className='overview'>
+            {/* <div className='parallax'> */}
             <WebpageItem data={MoritaShiryu} image={moritaImage} />
             <WebpageItem data={Toki} image={tokiImage} />
             <WebpageItem data={Suda} image={sudaImage} />
