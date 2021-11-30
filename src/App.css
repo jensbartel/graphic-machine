@@ -791,6 +791,10 @@ nav .language-switch button:hover {
     margin: 0;
     padding: 0 7.5%;
   }
+
+  .overview {
+    margin: 0 7.5%;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 768px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
   .content-container {
@@ -904,6 +908,10 @@ nav .language-switch button:hover {
   .parallax-inner {
     margin: 0;
     padding: 0 7.5%;
+  }
+
+  .overview {
+    margin: 0 7.5%;
   }
 }
 @media only screen and (max-width: 568px) {
