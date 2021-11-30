@@ -186,6 +186,11 @@ strong {
   padding-top: 0.33rem;
 }
 
+.caption-no-margin {
+  font-family: "Nunito", sans-serif;
+  font-size: 0.75rem;
+}
+
 nav {
   position: fixed;
   top: 0;
@@ -369,6 +374,10 @@ nav .language-switch button:hover {
 .one-image-variant-2 img {
   border: 1px solid #333;
   width: 66%;
+}
+
+.img-border img {
+  border: 1px solid #333;
 }
 
 .two-images {
