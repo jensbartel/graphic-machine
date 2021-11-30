@@ -8,7 +8,8 @@ import { webApps } from '../../../data/projectOverviewData/WebAppObjects';
 
 const ResNet = () => {
     const { projects } = webApps;
-    const project = projects.filter(element => element.title.includes('SBK-ResourceNet'));
+    const project = projects.ResNet;
+
     useEffect(() => {
         document.title = 'ResNet';
     }, []);

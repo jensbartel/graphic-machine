@@ -1,14 +1,25 @@
 import { useEffect } from 'react';
-// import MMAS_banner from '../../../img/banner/MMAS_banner-light.png';
+
+import OneImage from '../reuseComponents/OneImage';
+import ProjectTitle from '../reuseComponents/ProjectTitle';
+
+import bannerImg from '../../../img/overview/dummy.jpg';
+
+import { webApps } from '../../../data/projectOverviewData/WebAppObjects';
 
 const MMAS = () => {
+    const { projects } = webApps;
+    const project = projects.MMAS;
+
     useEffect(() => {
         document.title = 'MMAS';
     }, []);
+
     return (
-        <div className='project'>
-            <p>Miyanomori Museum of Art, Sapporo</p>
-        </div>
+        <>
+            <ProjectTitle project={project} />
+            <OneImage img1={bannerImg} cssStyle='one-image-variant-2' />
+        </>
     );
 };
 

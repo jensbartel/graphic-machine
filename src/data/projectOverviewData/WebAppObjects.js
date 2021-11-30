@@ -7,21 +7,21 @@ import img_MMAS from '../../img/banner/MMAS_banner-light.png';
 
 const ResNet = {
     id: 1,
-    title: 'SBK-ResourceNet',
-    titleFR: 'SBK-ResourceNet',
+    title: 'ResourceNet',
+    titleFR: 'ResourceNet',
     img: img_resnet,
     description: 'In-house library management app for publishing company',
     desFR: `Système librairie pour une maison d'édition`,
     date: 'Upcoming',
-    dateFR: 'Upcoming',
+    dateFR: 'Projecté',
     tools: ['MERN', 'Realm', 'Swift', 'GCP'],
     url: '/webapps/resourcenet',
 };
 
 const ClientApp = {
     id: 2,
-    title: 'SBK-Client',
-    titleFR: 'SBK-Client',
+    title: 'ClientApp',
+    titleFR: 'ClientApp',
     img: img_dummy,
     tools: ['MERN', 'Realm', 'Swift', 'GCP'],
     description: 'Web app with iOS client for iPad and web backoffice to register clients',
@@ -37,25 +37,25 @@ const MMAS = {
     titleFR: 'Miyanomori Museum of Art, Sapporo',
     img: img_MMAS,
     description: 'Collection management solution for private art museum',
-    desFR: 'Collection management solution for private art museum',
+    desFR: `Système de management de collection pour un musée d'art moderne`,
     date: 'Jun 2020 (cancelled)',
-    dateFR: 'Juin 2020',
+    dateFR: 'Juin 2020 (abandonné)',
     tools: ['MERN', 'GCP'],
     url: '/webapps/mmas',
 };
 
-const SecretPriceApp = {
-    id: 4,
-    title: 'Secret Price App',
-    titleFR: 'Secret Price App',
-    img: img_dummy,
-    tools: ['Objective-C'],
-    description: 'Price encryption app for art gallery',
-    desFR: 'Price encryption app for art gallery',
-    date: 'March 2020',
-    dateFR: 'Mars 2020',
-    url: '/webapps/priceapp',
-};
+// const SecretPriceApp = {
+//     id: 4,
+//     title: 'Secret Price App',
+//     titleFR: 'Secret Price App',
+//     img: img_dummy,
+//     tools: ['Objective-C'],
+//     description: 'Price encryption app for art gallery',
+//     desFR: 'Price encryption app for art gallery',
+//     date: 'March 2020',
+//     dateFR: 'Mars 2020',
+//     url: '/webapps/priceapp',
+// };
 
 // const TBA2 = {
 //     id: 5,
@@ -68,9 +68,12 @@ const webAppsIntro = {
     textFR: `Il parle également de s'installer à Saint-Tropez : «Business est de plus en plus business, c'est-à-dire une saloperie et une simple question de gros sous m'obligera d'ici quelques jours à rallier directement St Tropez. A part, évidemment le plaisir de retrouver quelques copains [...] et le Salon d'automne que j'aurais voulu voir, je me console en somme sans grand effort. Paris devient de plus en plus un capharnaüm impossible où l'on rencontre de tout sauf ce qu'on aimait à y voir ou à y retrouver. Et c'est triste quand on aime encore, malgré tout, cette belle fille. On ne voit déjà plus que son maquillage. Dans très bientôt, ce ne sera qu'un souvenir. Un de plus. Aussi Vive le Var Vive le Var & St Tropez & le Pilon.» `,
 };
 
-const data = [ResNet, MMAS, ClientApp, SecretPriceApp];
+const dataArray = [ResNet, MMAS, ClientApp];
+
+const data = { ResNet, MMAS, ClientApp };
 
 export const webApps = {
     intro: webAppsIntro,
     projects: data,
+    projectsArray: dataArray,
 };

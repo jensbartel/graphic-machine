@@ -16,6 +16,7 @@ import ResNet from './components/projects/projectPages/ResNet';
 import Suda from './components/projects/projectPages/Suda';
 import Toki from './components/projects/projectPages/Toki';
 import WebpagesOverview from './components/overviewPages/WebpagesOverview';
+import WebappsOverview from './components/overviewPages/WebappsOverview';
 
 // import { print } from './data/projectOverviewData/PrintObjects';
 // import { webApps } from './data/projectOverviewData/WebAppObjects';
@@ -43,6 +44,7 @@ const App = () => {
                     <Switch>
                         <Route exact path='/' component={WebpagesOverview} />
                         <Route exact path='/webpages' component={WebpagesOverview} />
+                        <Route exact path='/webapps' component={WebappsOverview} />
                         <Route exact path='/about' component={About} />
 
                         {/* delete later */}
