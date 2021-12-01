@@ -277,6 +277,10 @@ nav .language-switch button:hover {
   margin: 0 0 1.5rem;
   padding: 0.66rem 8rem 0;
 }
+.project-title .title-and-links {
+  display: flex;
+  align-items: baseline;
+}
 .project-title a {
   font-size: 0.8rem;
   font-weight: 500;
@@ -978,6 +982,31 @@ nav .language-switch button:hover {
   }
   .overview-group .text-container div:last-child p:first-child {
     padding-left: 0;
+  }
+
+  .project-title {
+    padding: 1.5rem 5% 0;
+  }
+  .project-title .title-and-links {
+    flex-direction: column-reverse;
+  }
+  .project-title p {
+    padding-top: 0.125rem;
+  }
+
+  .large-text-container, .headline {
+    padding: 0 5%;
+  }
+
+  .two-images {
+    margin: 0 5%;
+    flex-direction: column;
+  }
+  .two-images div {
+    width: 100%;
+  }
+  .two-images div:first-child {
+    margin-bottom: 1rem;
   }
 
   .grid-two {
