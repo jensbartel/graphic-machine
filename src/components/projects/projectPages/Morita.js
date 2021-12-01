@@ -41,7 +41,7 @@ const MoritaProject = () => {
             <LargeTextCenter headline={headline3} text={FootNoteText} />
 
             {/* div below: replace later */}
-            <div style={{ height: '4rem' }}></div>
+            {/* <div style={{ height: '4rem' }}></div> */}
         </>
     );
 };
