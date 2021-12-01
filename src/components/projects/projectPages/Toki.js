@@ -26,17 +26,12 @@ const Toki = () => {
         <>
             <ProjectTitle project={project} />
             <OneImage img1={tokiImg1} cssStyle='one-image' caption={caption1} />
-            <div style={{ marginTop: '4rem' }}></div>
+
             <OneImage img1={tokiImg2} cssStyle='one-image' caption={caption2} />
             <Headline headline='Migrating Old Content' />
-            <OneImage img1={tokiImg3} cssStyle='one-image-variant-2' />
-            <div className='caption-comment'>
-                <p>{html(backendExplanation)}</p>
-            </div>
-            <LargeTextCenter headline={introHeadline} text={introText} />
+            <OneImage img1={tokiImg3} cssStyle='one-image-variant-2' caption={html(backendExplanation)} />
 
-            {/* div below: replace later */}
-            <div style={{ height: '4rem' }}></div>
+            <LargeTextCenter headline={introHeadline} text={introText} />
         </>
     );
 };

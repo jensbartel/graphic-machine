@@ -1,9 +1,12 @@
+$default-phone-margin: 0 5%
+
 @media only screen and (max-width: 568px)
     .overview
         margin: 0 5%
 
     .content-container
         margin-top: 5rem
+        margin-bottom: 0
 
     nav
         .navbar
@@ -57,6 +60,16 @@
     .large-text-container, .headline
         padding: 0 5%
 
+    .headline
+        margin: 0
+        h2
+            margin: 2rem 0 1rem
+
+    .large-text-container
+        margin-top: 2rem
+        h2
+            margin: 2rem 0 1rem
+
     .two-images
         margin: 0 5%
         flex-direction: column
@@ -64,6 +77,21 @@
             width: 100%
             &:first-child
                 margin-bottom: 1rem
+
+    .one-image, .caption, .one-image-variant-2
+        margin: $default-phone-margin
+
+    .caption
+        margin-bottom: 2rem
+
+    .one-image-variant-2
+        img
+            width: 100%
+
+    .caption-comment
+        margin: $default-phone-margin
+        p
+            width: 100%
 
     // below: discard
     .grid-two

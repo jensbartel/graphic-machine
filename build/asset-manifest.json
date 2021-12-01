@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.e9331834.chunk.css",
-    "main.js": "/static/js/main.6254cd4e.chunk.js",
-    "main.js.map": "/static/js/main.6254cd4e.chunk.js.map",
+    "main.css": "/static/css/main.2d3aa1e3.chunk.css",
+    "main.js": "/static/js/main.54e15f52.chunk.js",
+    "main.js.map": "/static/js/main.54e15f52.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.062b8e80.js",
     "runtime-main.js.map": "/static/js/runtime-main.062b8e80.js.map",
     "static/js/2.02380b21.chunk.js": "/static/js/2.02380b21.chunk.js",
     "static/js/2.02380b21.chunk.js.map": "/static/js/2.02380b21.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.e9331834.chunk.css.map": "/static/css/main.e9331834.chunk.css.map",
+    "static/css/main.2d3aa1e3.chunk.css.map": "/static/css/main.2d3aa1e3.chunk.css.map",
     "static/js/2.02380b21.chunk.js.LICENSE.txt": "/static/js/2.02380b21.chunk.js.LICENSE.txt",
     "static/media/MMAS_banner-light.4f31f838.png": "/static/media/MMAS_banner-light.4f31f838.png",
     "static/media/Morita-Pullquote1.53433f2a.mp4": "/static/media/Morita-Pullquote1.53433f2a.mp4",
@@ -56,7 +56,7 @@
   "entrypoints": [
     "static/js/runtime-main.062b8e80.js",
     "static/js/2.02380b21.chunk.js",
-    "static/css/main.e9331834.chunk.css",
-    "static/js/main.6254cd4e.chunk.js"
+    "static/css/main.2d3aa1e3.chunk.css",
+    "static/js/main.54e15f52.chunk.js"
   ]
 }

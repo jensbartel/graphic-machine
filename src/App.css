@@ -934,6 +934,7 @@ nav .language-switch button:hover {
 
   .content-container {
     margin-top: 5rem;
+    margin-bottom: 0;
   }
 
   nav .navbar {
@@ -998,6 +999,20 @@ nav .language-switch button:hover {
     padding: 0 5%;
   }
 
+  .headline {
+    margin: 0;
+  }
+  .headline h2 {
+    margin: 2rem 0 1rem;
+  }
+
+  .large-text-container {
+    margin-top: 2rem;
+  }
+  .large-text-container h2 {
+    margin: 2rem 0 1rem;
+  }
+
   .two-images {
     margin: 0 5%;
     flex-direction: column;
@@ -1007,6 +1022,25 @@ nav .language-switch button:hover {
   }
   .two-images div:first-child {
     margin-bottom: 1rem;
+  }
+
+  .one-image, .caption, .one-image-variant-2 {
+    margin: 0 5%;
+  }
+
+  .caption {
+    margin-bottom: 2rem;
+  }
+
+  .one-image-variant-2 img {
+    width: 100%;
+  }
+
+  .caption-comment {
+    margin: 0 5%;
+  }
+  .caption-comment p {
+    width: 100%;
   }
 
   .grid-two {
