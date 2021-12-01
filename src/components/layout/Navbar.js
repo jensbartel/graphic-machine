@@ -54,5 +54,4 @@ export default Navbar;
 const active = {
     color: '#777',
     borderBottom: '1px dotted #777',
-    // marginTop: '1px',
 };

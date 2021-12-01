@@ -929,7 +929,7 @@ nav .language-switch button:hover {
   }
 
   .content-container {
-    margin-top: 7rem;
+    margin-top: 5rem;
   }
 
   nav .navbar {
@@ -944,10 +944,11 @@ nav .language-switch button:hover {
   nav .navbar .menu a {
     font-size: 0.7rem;
     margin-left: 0;
+    display: inline;
   }
   nav .language-switch {
     margin: 1rem auto;
-    padding: 0 10%;
+    padding: 0 5%;
   }
 
   .section-intro {
@@ -963,6 +964,22 @@ nav .language-switch button:hover {
     padding: 4rem 10% 0;
   }
 
+  .overview-group .text-container {
+    flex-direction: column-reverse;
+  }
+  .overview-group .text-container div:first-child a:nth-child(2) p {
+    padding-right: 33%;
+  }
+  .overview-group .text-container div:last-child {
+    justify-content: flex-start;
+  }
+  .overview-group .text-container div:last-child p {
+    padding-left: 0.5rem;
+  }
+  .overview-group .text-container div:last-child p:first-child {
+    padding-left: 0;
+  }
+
   .grid-two {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -976,7 +993,12 @@ nav .language-switch button:hover {
 
   .footer {
     font-size: 0.6rem;
-    padding-bottom: 1rem;
+    padding: 0 25% 1rem;
+  }
+
+  .back-to-top {
+    right: 5%;
+    bottom: 1rem;
   }
 }
 
