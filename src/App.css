@@ -386,7 +386,7 @@ nav .language-switch button:hover {
 }
 
 .mato {
-  margin-top: 2rem;
+  margin-top: 1rem !important;
 }
 
 .two-images {
