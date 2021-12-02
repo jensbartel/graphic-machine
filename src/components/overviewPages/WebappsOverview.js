@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import dummy from '../../img/overview/dummy.jpg';
 import clientAppImg from '../../img/clientapp/clientApp-visual-02.png';
-// import mmas from '../../img/mmas/miyanomori-outside-01.jpg';
+import mmas from '../../img/overview/mmas.jpg';
 
 // data
 import { webApps } from '../../data/projectOverviewData/WebAppObjects';
@@ -18,7 +18,7 @@ const WebappsOverview = () => {
         <div className='overview'>
             <WebpageItem data={ClientApp} image={clientAppImg} />
             <WebpageItem data={ResNet} image={dummy} />
-            <WebpageItem data={MMAS} image={dummy} />
+            <WebpageItem data={MMAS} image={mmas} />
         </div>
     );
 };

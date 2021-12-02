@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.35fddea6.chunk.css",
-    "main.js": "/static/js/main.b2f36bac.chunk.js",
-    "main.js.map": "/static/js/main.b2f36bac.chunk.js.map",
+    "main.js": "/static/js/main.f925110b.chunk.js",
+    "main.js.map": "/static/js/main.f925110b.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.062b8e80.js",
     "runtime-main.js.map": "/static/js/runtime-main.062b8e80.js.map",
     "static/js/2.3a082386.chunk.js": "/static/js/2.3a082386.chunk.js",
@@ -35,6 +35,7 @@
     "static/media/mmas-mainview-2.639160a5.jpg": "/static/media/mmas-mainview-2.639160a5.jpg",
     "static/media/mmas-mainview-3.23dd1fd1.jpg": "/static/media/mmas-mainview-3.23dd1fd1.jpg",
     "static/media/mmas-mainview-4.fa26b91d.jpg": "/static/media/mmas-mainview-4.fa26b91d.jpg",
+    "static/media/mmas.cd4e8224.jpg": "/static/media/mmas.cd4e8224.jpg",
     "static/media/morita-part3-snippet.170a19d1.jpg": "/static/media/morita-part3-snippet.170a19d1.jpg",
     "static/media/morita.6702330f.jpg": "/static/media/morita.6702330f.jpg",
     "static/media/morita_banner.542a7956.png": "/static/media/morita_banner.542a7956.png",
@@ -63,6 +64,6 @@
     "static/js/runtime-main.062b8e80.js",
     "static/js/2.3a082386.chunk.js",
     "static/css/main.35fddea6.chunk.css",
-    "static/js/main.b2f36bac.chunk.js"
+    "static/js/main.f925110b.chunk.js"
   ]
 }

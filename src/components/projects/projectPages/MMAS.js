@@ -31,7 +31,7 @@ const MMAS = () => {
             <TwoImages imgLeft={miya1} captionLeft={exterior1} imgRight={miya2} captionRight={exterior2} />
             <OneImage img1={miya3} cssStyle='one-image mato' caption={html(mainView)} />
             <TwoImages imgLeft={miya4} imgRight={miya5} captionLeft={searchMask} captionRight={html(assistantEditor)} />
-            <TwoImages imgLeft={miya6} imgRight={miya3} captionLeft={searchWorkView} captionRight={searchWorkView} />
+            <TwoImages imgLeft={miya6} imgRight={miya3} captionLeft={searchResults} captionRight={searchWorkView} />
             <LargeTextCenter headline={headline1} text={text1} />
         </>
     );
