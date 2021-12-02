@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.d87f2c8d.chunk.css",
-    "main.js": "/static/js/main.7708dce2.chunk.js",
-    "main.js.map": "/static/js/main.7708dce2.chunk.js.map",
+    "main.js": "/static/js/main.96807266.chunk.js",
+    "main.js.map": "/static/js/main.96807266.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.062b8e80.js",
     "runtime-main.js.map": "/static/js/runtime-main.062b8e80.js.map",
     "static/js/2.02380b21.chunk.js": "/static/js/2.02380b21.chunk.js",
@@ -29,6 +29,8 @@
     "static/media/mishima-layout-rows-2.261e3b19.jpg": "/static/media/mishima-layout-rows-2.261e3b19.jpg",
     "static/media/mishima-macbook.70873800.jpg": "/static/media/mishima-macbook.70873800.jpg",
     "static/media/mishima.d6049d4c.jpg": "/static/media/mishima.d6049d4c.jpg",
+    "static/media/miyanomori-outside-01.29b6d26f.jpg": "/static/media/miyanomori-outside-01.29b6d26f.jpg",
+    "static/media/miyanomori-outside-02.ce504dfb.jpg": "/static/media/miyanomori-outside-02.ce504dfb.jpg",
     "static/media/morita-part3-snippet.170a19d1.jpg": "/static/media/morita-part3-snippet.170a19d1.jpg",
     "static/media/morita.6702330f.jpg": "/static/media/morita.6702330f.jpg",
     "static/media/morita_banner.542a7956.png": "/static/media/morita_banner.542a7956.png",
@@ -57,6 +59,6 @@
     "static/js/runtime-main.062b8e80.js",
     "static/js/2.02380b21.chunk.js",
     "static/css/main.d87f2c8d.chunk.css",
-    "static/js/main.7708dce2.chunk.js"
+    "static/js/main.96807266.chunk.js"
   ]
 }

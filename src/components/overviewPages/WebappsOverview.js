@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import dummy from '../../img/overview/dummy.jpg';
 import clientAppImg from '../../img/clientapp/clientApp-visual-02.png';
+// import mmas from '../../img/mmas/miyanomori-outside-01.jpg';
 
 // data
 import { webApps } from '../../data/projectOverviewData/WebAppObjects';
