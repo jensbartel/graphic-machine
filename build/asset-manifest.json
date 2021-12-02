@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.d87f2c8d.chunk.css",
-    "main.js": "/static/js/main.96807266.chunk.js",
-    "main.js.map": "/static/js/main.96807266.chunk.js.map",
+    "main.css": "/static/css/main.9d365b38.chunk.css",
+    "main.js": "/static/js/main.19594264.chunk.js",
+    "main.js.map": "/static/js/main.19594264.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.062b8e80.js",
     "runtime-main.js.map": "/static/js/runtime-main.062b8e80.js.map",
-    "static/js/2.02380b21.chunk.js": "/static/js/2.02380b21.chunk.js",
-    "static/js/2.02380b21.chunk.js.map": "/static/js/2.02380b21.chunk.js.map",
+    "static/js/2.c5f83adb.chunk.js": "/static/js/2.c5f83adb.chunk.js",
+    "static/js/2.c5f83adb.chunk.js.map": "/static/js/2.c5f83adb.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.d87f2c8d.chunk.css.map": "/static/css/main.d87f2c8d.chunk.css.map",
-    "static/js/2.02380b21.chunk.js.LICENSE.txt": "/static/js/2.02380b21.chunk.js.LICENSE.txt",
+    "static/css/main.9d365b38.chunk.css.map": "/static/css/main.9d365b38.chunk.css.map",
+    "static/js/2.c5f83adb.chunk.js.LICENSE.txt": "/static/js/2.c5f83adb.chunk.js.LICENSE.txt",
     "static/media/MMAS_banner-light.4f31f838.png": "/static/media/MMAS_banner-light.4f31f838.png",
     "static/media/Morita-Pullquote1.53433f2a.mp4": "/static/media/Morita-Pullquote1.53433f2a.mp4",
     "static/media/Morita-Pullquote2.08528d59.mp4": "/static/media/Morita-Pullquote2.08528d59.mp4",
@@ -31,6 +31,9 @@
     "static/media/mishima.d6049d4c.jpg": "/static/media/mishima.d6049d4c.jpg",
     "static/media/miyanomori-outside-01.29b6d26f.jpg": "/static/media/miyanomori-outside-01.29b6d26f.jpg",
     "static/media/miyanomori-outside-02.ce504dfb.jpg": "/static/media/miyanomori-outside-02.ce504dfb.jpg",
+    "static/media/mmas-mainview-2.639160a5.jpg": "/static/media/mmas-mainview-2.639160a5.jpg",
+    "static/media/mmas-mainview-3.23dd1fd1.jpg": "/static/media/mmas-mainview-3.23dd1fd1.jpg",
+    "static/media/mmas-mainview-4.212da4e5.jpg": "/static/media/mmas-mainview-4.212da4e5.jpg",
     "static/media/morita-part3-snippet.170a19d1.jpg": "/static/media/morita-part3-snippet.170a19d1.jpg",
     "static/media/morita.6702330f.jpg": "/static/media/morita.6702330f.jpg",
     "static/media/morita_banner.542a7956.png": "/static/media/morita_banner.542a7956.png",
@@ -57,8 +60,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.062b8e80.js",
-    "static/js/2.02380b21.chunk.js",
-    "static/css/main.d87f2c8d.chunk.css",
-    "static/js/main.96807266.chunk.js"
+    "static/js/2.c5f83adb.chunk.js",
+    "static/css/main.9d365b38.chunk.css",
+    "static/js/main.19594264.chunk.js"
   ]
 }
