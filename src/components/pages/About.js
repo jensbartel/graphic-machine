@@ -1,14 +1,19 @@
 import portrait from '../../img/portrait-1.jpg';
+import Bio from './Bio';
 import Inquiry from './Inquiry';
 
 const About = () => {
     return (
-        <div className='page'>
+        <>
             <section className='portrait-and-bio'>
-                <img src={portrait} alt='' />
+                <figure>
+                    <img src={portrait} alt='' />
+                    <figcaption>New York, fall 2019.</figcaption>
+                </figure>
+                <Bio />
             </section>
             <Inquiry />
-        </div>
+        </>
     );
 };
 

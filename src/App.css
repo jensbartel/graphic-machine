@@ -146,7 +146,7 @@ a {
   color: #000;
 }
 
-p {
+p, figure {
   margin: 0;
   padding: 0;
 }
@@ -665,8 +665,81 @@ nav .language-switch button:hover {
   width: 100%;
 }
 
-.portrait-and-bio img {
+.portrait-and-bio {
+  margin: 1rem 8rem 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.portrait-and-bio figure {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
   width: 25%;
+  margin-right: 4rem;
+}
+.portrait-and-bio figure img {
+  width: 100%;
+}
+.portrait-and-bio figure figcaption {
+  font-family: "Nunito", sans-serif;
+  font-size: 0.75rem;
+}
+
+.bio {
+  font-family: "Nunito", sans-serif;
+  font-size: 0.9rem;
+}
+.bio strong {
+  display: block;
+  margin-bottom: 1rem;
+  font-family: "Playfair Display", sans-serif;
+  letter-spacing: 1px;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.bio .bio-item {
+  display: flex;
+  flex-direction: row;
+}
+.bio .bio-item .bio-dates {
+  width: 25%;
+}
+.bio .bio-item .bio-contents {
+  width: 75%;
+}
+
+form {
+  margin: 0 8rem;
+  font-family: "Nunito", sans-serif;
+  font-size: 0.9rem;
+}
+form .form-for-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+form .form-for-name div {
+  width: 48%;
+}
+form .form-for-name div input {
+  width: 100%;
+}
+form .form-group {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+form .form-group input {
+  width: 100%;
+}
+form .form-group:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+}
+form input[type=submit] {
+  margin-top: 0.5rem;
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
@@ -1142,6 +1215,22 @@ nav .language-switch button:hover {
   .back-to-top {
     right: 5%;
     bottom: 1rem;
+  }
+
+  .portrait-and-bio {
+    margin: 1rem 5% 0;
+    flex-direction: column;
+  }
+  .portrait-and-bio figure {
+    width: 100%;
+  }
+
+  .bio {
+    margin-top: 1rem;
+  }
+
+  form {
+    margin: 4rem 5% 0;
   }
 }
 

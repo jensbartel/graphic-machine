@@ -17,28 +17,28 @@ const Inquiry = () => {
         <form>
             <div className='form-for-name'>
                 <div>
-                    <label htmlFor='name'>First Name*</label>
+                    <label htmlFor='name'>First Name</label>
                     <br />
                     <input type='text' name='firstname' value={firstname} onChange={onChange} />
                 </div>
                 <div className='form-group'>
-                    <label htmlFor='name'>Last Name*</label>
+                    <label htmlFor='name'>Last Name</label>
                     <br />
                     <input type='text' name='lastname' value={lastname} onChange={onChange} />
                 </div>
             </div>
             <div className='form-group'>
-                <label htmlFor='name'>Email Address*</label>
+                <label htmlFor='name'>Email Address</label>
                 <br />
                 <input type='text' name='email' value={email} onChange={onChange} />
             </div>
             <div className='form-group'>
-                <label htmlFor='message'>Message*</label>
+                <label htmlFor='message'>Message</label>
                 <textarea type='text' name='message' value={message} onChange={onChange}>
                     Enter text here...
                 </textarea>
             </div>
-            <p>* = required</p>
+            <p>All fields are required.</p>
             {alert !== '' && <h4>{alert}</h4>}
             <input type='submit' value='Submit' className='submit' />
         </form>
