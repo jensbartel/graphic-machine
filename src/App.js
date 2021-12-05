@@ -11,17 +11,12 @@ import MMAS from './components/projects/projectPages/MMAS';
 import Morita from './components/projects/projectPages/Morita';
 import Navbar from './components/layout/Navbar';
 import NotFound from './components/pages/NotFound';
-import Page from './components/pages/Page';
 import ResNet from './components/projects/projectPages/ResNet';
 import ScrollToTop from './components/layout/Scroll';
 import Suda from './components/projects/projectPages/Suda';
 import Toki from './components/projects/projectPages/Toki';
 import WebpagesOverview from './components/overviewPages/WebpagesOverview';
 import WebappsOverview from './components/overviewPages/WebappsOverview';
-
-// import { print } from './data/projectOverviewData/PrintObjects';
-// import { webApps } from './data/projectOverviewData/WebAppObjects';
-import { webPages } from './data/projectOverviewData/WebPageObjects';
 
 const App = () => {
     const langContext = useContext(LangContext);
@@ -48,11 +43,6 @@ const App = () => {
                         <Route exact path='/webpages' component={WebpagesOverview} />
                         <Route exact path='/webapps' component={WebappsOverview} />
                         <Route exact path='/about' component={About} />
-
-                        {/* delete later */}
-                        <Route exact path='/webpage' render={() => <Page cssStyle='grid-two' data={webPages} />} />
-                        {/* <Route exact path='/webapps' render={() => <Page cssStyle='grid-two' data={webApps} />} /> */}
-                        {/* <Route exact path='/print' render={() => <Page cssStyle='grid-two' data={print} />} /> */}
 
                         {/* project pages */}
                         <Route exact path='/webapps/clientapp' component={ClientApp} />

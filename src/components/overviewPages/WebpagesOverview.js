@@ -6,7 +6,7 @@ import mishimaImage from '../../img/overview/mishima.jpg';
 
 // data
 import { webPages } from '../../data/projectOverviewData/WebPageObjects';
-import WebpageItem from './WebpageItem';
+import OverviewpageItem from './OverviewPageItem';
 
 const WebpagesOverview = () => {
     useEffect(() => {
@@ -18,10 +18,10 @@ const WebpagesOverview = () => {
     return (
         <div className='overview'>
             {/* <div className='parallax'> */}
-            <WebpageItem data={MoritaShiryu} image={moritaImage} />
-            <WebpageItem data={Toki} image={tokiImage} />
-            <WebpageItem data={Suda} image={sudaImage} />
-            <WebpageItem data={Mishima} image={mishimaImage} />
+            <OverviewpageItem data={MoritaShiryu} image={moritaImage} />
+            <OverviewpageItem data={Toki} image={tokiImage} />
+            <OverviewpageItem data={Suda} image={sudaImage} />
+            <OverviewpageItem data={Mishima} image={mishimaImage} />
         </div>
     );
 };

@@ -5,7 +5,7 @@ import mmas from '../../img/overview/mmas.jpg';
 
 // data
 import { webApps } from '../../data/projectOverviewData/WebAppObjects';
-import WebpageItem from './WebpageItem';
+import OverviewpageItem from './OverviewPageItem';
 
 const WebappsOverview = () => {
     useEffect(() => {
@@ -16,9 +16,9 @@ const WebappsOverview = () => {
 
     return (
         <div className='overview'>
-            <WebpageItem data={ClientApp} image={clientAppImg} />
-            <WebpageItem data={ResNet} image={dummy} />
-            <WebpageItem data={MMAS} image={mmas} />
+            <OverviewpageItem data={ClientApp} image={clientAppImg} />
+            <OverviewpageItem data={ResNet} image={dummy} />
+            <OverviewpageItem data={MMAS} image={mmas} />
         </div>
     );
 };
