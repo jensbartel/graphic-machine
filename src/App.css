@@ -195,6 +195,7 @@ nav .language-switch button:hover {
 .large-text-container h2, .headline h2 {
   margin: 4rem 0 2rem;
   font-family: "Playfair Display", serif;
+  font-weight: 400;
   letter-spacing: 1px;
   margin-top: 0;
 }
@@ -1007,6 +1008,7 @@ form input[type=submit] {
 
   .project-title {
     padding: 1.5rem 5% 0;
+    margin-bottom: 1rem;
   }
   .project-title .title-and-links {
     flex-direction: column-reverse;
@@ -1016,6 +1018,9 @@ form input[type=submit] {
   }
   .project-title a:hover {
     color: #444;
+  }
+  .project-title .project-links {
+    margin-top: 0.25rem;
   }
 
   .large-text-container, .headline {
