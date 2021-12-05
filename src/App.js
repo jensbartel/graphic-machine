@@ -13,6 +13,7 @@ import Navbar from './components/layout/Navbar';
 import NotFound from './components/pages/NotFound';
 import Page from './components/pages/Page';
 import ResNet from './components/projects/projectPages/ResNet';
+import ScrollToTop from './components/layout/Scroll';
 import Suda from './components/projects/projectPages/Suda';
 import Toki from './components/projects/projectPages/Toki';
 import WebpagesOverview from './components/overviewPages/WebpagesOverview';
@@ -37,6 +38,7 @@ const App = () => {
 
     return (
         <Router>
+            <ScrollToTop />
             <div id='pagetop'></div>
             <div className='page-container'>
                 <Navbar />
