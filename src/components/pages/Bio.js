@@ -1,8 +1,14 @@
 const Bio = () => {
     return (
         <>
+            {/* refactor to use data array and map through it? */}
+
             <div className='bio'>
                 <strong>Bio</strong>
+                <p>
+                    Disclaimer: This page doesn’t represent a company, but my personal portfolio. If you’re interested in collaborating with me kindly use the
+                    form below to get in touch. Thank you.
+                </p>
 
                 <div className='bio-item'>
                     <div className='bio-dates'>1978</div>

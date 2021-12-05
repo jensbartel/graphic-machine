@@ -487,7 +487,7 @@ nav
         display: flex
         flex-direction: column
         align-items: flex-start
-        justify-content: space-between
+        justify-content: flex-start //space-between
         width: 25%
         margin-right: 4rem
         img
@@ -496,7 +496,16 @@ nav
             font-family: $font-text
             font-size: 0.75rem
 
+.further-projects
+    margin: 0 8rem
+    strong
+        font-family: $font-headline
+        font-size: 1.2rem
+        letter-spacing: 1px
+        font-weight: 400
+
 .bio
+    width: 75%
     font-family: $font-text
     font-size: 0.9rem
     strong
@@ -506,6 +515,12 @@ nav
         letter-spacing: 1px
         font-size: 1.4rem
         font-weight: 400
+        &:last-child
+            font-size: 1.2rem
+            margin-top: 2rem
+    p
+        display: block
+        margin-bottom: 2rem
     .bio-item
         display: flex
         flex-direction: row
@@ -515,7 +530,7 @@ nav
             width: 75%
 
 form
-    margin: 0 8rem
+    margin: 2rem 8rem 0
     font-family: $font-text
     font-size: 0.9rem
     .form-for-name

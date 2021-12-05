@@ -675,7 +675,7 @@ nav .language-switch button:hover {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: flex-start;
   width: 25%;
   margin-right: 4rem;
 }
@@ -687,7 +687,18 @@ nav .language-switch button:hover {
   font-size: 0.75rem;
 }
 
+.further-projects {
+  margin: 0 8rem;
+}
+.further-projects strong {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
 .bio {
+  width: 75%;
   font-family: "Nunito", sans-serif;
   font-size: 0.9rem;
 }
@@ -698,6 +709,14 @@ nav .language-switch button:hover {
   letter-spacing: 1px;
   font-size: 1.4rem;
   font-weight: 400;
+}
+.bio strong:last-child {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
+.bio p {
+  display: block;
+  margin-bottom: 2rem;
 }
 .bio .bio-item {
   display: flex;
@@ -711,7 +730,7 @@ nav .language-switch button:hover {
 }
 
 form {
-  margin: 0 8rem;
+  margin: 2rem 8rem 0;
   font-family: "Nunito", sans-serif;
   font-size: 0.9rem;
 }
@@ -890,6 +909,33 @@ form input[type=submit] {
   .overview {
     margin: 0 7.5%;
   }
+
+  .portrait-and-bio {
+    margin: 1rem 7.5% 0;
+  }
+  .portrait-and-bio figure {
+    width: 33%;
+    margin-right: 2rem;
+  }
+  .portrait-and-bio figure img {
+    width: 100%;
+  }
+
+  .further-projects {
+    margin: 2rem 7.5% 0;
+  }
+
+  .bio {
+    width: 66%;
+    font-size: 0.85rem;
+  }
+  .bio .bio-item {
+    font-size: 0.8rem;
+  }
+
+  form {
+    margin: 2rem 7.5% 0;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 768px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
   .content-container {
@@ -1007,6 +1053,33 @@ form input[type=submit] {
 
   .overview {
     margin: 0 7.5%;
+  }
+
+  .portrait-and-bio {
+    margin: 1rem 7.5% 0;
+  }
+  .portrait-and-bio figure {
+    width: 33%;
+    margin-right: 2rem;
+  }
+  .portrait-and-bio figure img {
+    width: 100%;
+  }
+
+  .further-projects {
+    margin: 2rem 7.5% 0;
+  }
+
+  .bio {
+    width: 66%;
+    font-size: 0.85rem;
+  }
+  .bio .bio-item {
+    font-size: 0.8rem;
+  }
+
+  form {
+    margin: 2rem 7.5% 0;
   }
 }
 @media only screen and (max-width: 568px) {
@@ -1225,12 +1298,35 @@ form input[type=submit] {
     width: 100%;
   }
 
+  .further-projects {
+    margin: 2rem 5% 0;
+  }
+
   .bio {
+    width: 100%;
     margin-top: 1rem;
+  }
+  .bio .bio-item {
+    font-size: 0.85rem;
+  }
+  .bio .bio-item .bio-dates {
+    width: 30%;
+  }
+  .bio .bio-item .bio-content {
+    width: 70%;
   }
 
   form {
     margin: 4rem 5% 0;
+  }
+  form .form-for-name {
+    flex-direction: column;
+  }
+  form .form-for-name div {
+    width: 100%;
+  }
+  form .form-for-name div:first-child {
+    margin-bottom: 1rem;
   }
 }
 

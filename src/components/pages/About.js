@@ -12,6 +12,12 @@ const About = () => {
                 </figure>
                 <Bio />
             </section>
+
+            <section className='further-projects'>
+                <strong>Further Projects</strong>
+                <p>...</p>
+            </section>
+
             <Inquiry />
         </>
     );
