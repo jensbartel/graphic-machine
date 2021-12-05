@@ -156,8 +156,8 @@ strong {
 }
 
 #pagetop {
-  padding-top: 7rem;
-  margin-top: -7rem;
+  padding-top: 6rem;
+  margin-top: -6rem;
 }
 
 .page-container {
@@ -228,17 +228,20 @@ nav .navbar .menu {
   margin-top: 0.5rem;
   z-index: 99;
 }
-nav .navbar .menu a {
+nav .navbar .menu div {
+  display: inline;
   margin-left: 2rem;
+}
+nav .navbar .menu div a {
   padding-bottom: 0.2rem;
   letter-spacing: 0.25rem;
   font-size: 0.8rem;
   transition: 0.5s;
 }
-nav .navbar .menu a span {
+nav .navbar .menu div a span {
   letter-spacing: 0;
 }
-nav .navbar .menu a:hover {
+nav .navbar .menu div a:hover {
   color: #777;
   border-bottom: 1px dotted #777;
 }
@@ -810,11 +813,13 @@ form input[type=submit] {
     display: flex;
     align-items: flex-end;
   }
-  nav .navbar .menu a {
+  nav .navbar .menu div {
     margin-left: 1.25rem;
+  }
+  nav .navbar .menu div a {
     font-size: 0.75rem;
   }
-  nav .navbar .menu a:first-child {
+  nav .navbar .menu div a:first-child {
     margin-left: 0;
   }
   nav .language-switch {
@@ -955,11 +960,13 @@ form input[type=submit] {
     display: flex;
     align-items: flex-end;
   }
-  nav .navbar .menu a {
+  nav .navbar .menu div {
     margin-left: 1.25rem;
+  }
+  nav .navbar .menu div a {
     font-size: 0.75rem;
   }
-  nav .navbar .menu a:first-child {
+  nav .navbar .menu div a:first-child {
     margin-left: 0;
   }
   nav .language-switch {
@@ -1100,11 +1107,15 @@ form input[type=submit] {
   nav .navbar .menu {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
   }
-  nav .navbar .menu a {
-    font-size: 0.7rem;
+  nav .navbar .menu div {
     margin-left: 0;
+  }
+  nav .navbar .menu div a {
+    font-size: 0.7rem;
     display: inline;
+    padding-bottom: 0.05rem;
   }
   nav .language-switch {
     margin: 1rem auto;

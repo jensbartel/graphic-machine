@@ -30,8 +30,8 @@ strong
     font-weight: 900
 
 #pagetop
-    padding-top: 7rem
-    margin-top: -7rem
+    padding-top: 6rem
+    margin-top: -6rem
 
 .page-container
     position: relative
@@ -91,17 +91,19 @@ nav
         .menu
             margin-top: 0.5rem
             z-index: 99
-            a
+            div
+                display: inline
                 margin-left: 2rem
-                padding-bottom: 0.2rem
-                letter-spacing: 0.25rem
-                font-size: 0.8rem
-                transition: $default-transition
-                span
-                    letter-spacing: 0
-                &:hover
-                    color: #777
-                    border-bottom: 1px dotted #777
+                a
+                    padding-bottom: 0.2rem
+                    letter-spacing: 0.25rem
+                    font-size: 0.8rem
+                    transition: $default-transition
+                    span
+                        letter-spacing: 0
+                    &:hover
+                        color: #777
+                        border-bottom: 1px dotted #777
     .language-switch
         padding: 0 8rem 1.5rem
         position: relative
@@ -126,6 +128,10 @@ nav
 
 .indicator-off
     visibility: hidden
+
+// .active
+//     color: #777
+//     border-bottom: 1px dotted #777
 
 // PROJECT TITLE
 .project-title

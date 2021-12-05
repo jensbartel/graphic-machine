@@ -25,15 +25,21 @@ const Navbar = () => {
                     <NavLink to='/'>GRIFOLD STUDIO</NavLink>
                 </div>
                 <div className='menu'>
-                    <NavLink to='/webpages' activeStyle={active}>
-                        WEB PAGE<span>S</span>
-                    </NavLink>
-                    <NavLink to='/webapps' activeStyle={active}>
-                        WEB APP<span>S</span>
-                    </NavLink>
-                    <NavLink to='/about' activeStyle={active}>
-                        ABOU<span>T</span>
-                    </NavLink>
+                    <div>
+                        <NavLink to='/webpages' activeStyle={active}>
+                            WEB PAGE<span>S</span>
+                        </NavLink>
+                    </div>
+                    <div>
+                        <NavLink to='/webapps' activeStyle={active}>
+                            WEB APP<span>S</span>
+                        </NavLink>
+                    </div>
+                    <div>
+                        <NavLink to='/about' activeStyle={active}>
+                            ABOU<span>T</span>
+                        </NavLink>
+                    </div>
                 </div>
             </section>
 
@@ -54,4 +60,6 @@ export default Navbar;
 const active = {
     color: '#777',
     borderBottom: '1px dotted #777',
+    // lineHeight: '0.95',
+    // paddingTop: '0.2rem',
 };
