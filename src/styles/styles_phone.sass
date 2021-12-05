@@ -1,3 +1,7 @@
+$default-transition: 0.5s
+$default-grey: #999
+$font-headline: 'Playfair Display', sans-serif
+$font-text: 'Nunito', sans-serif
 $default-phone-margin: 0 5%
 
 @media only screen and (max-width: 568px)
@@ -23,9 +27,15 @@ $default-phone-margin: 0 5%
                         font-size: 0.7rem
                         display: inline
                         padding-bottom: 0.05rem
+                        &:hover
+                            color: #000
+                            border-bottom: none
         .language-switch
             margin: 1rem auto
             padding: 0 5%
+            button
+                &:hover
+                    color: #999
 
     .section-intro
         margin: 3rem auto 0
@@ -46,12 +56,17 @@ $default-phone-margin: 0 5%
                         &:nth-child(2)
                             p
                                 padding-right: 33%
+                        .title
+                            &:hover
+                                color: #000
                 &:last-child // = tools
                     justify-content: flex-start
                     p
                         padding-left: 0.5rem
                         &:first-child
                             padding-left: 0
+                        &:hover
+                            color: $default-grey
 
     .project-title
         padding: 1.5rem 5% 0
@@ -59,6 +74,9 @@ $default-phone-margin: 0 5%
             flex-direction: column-reverse
         p
             padding-top: 0.125rem
+        a
+            &:hover
+                color: #444
 
     .large-text-container, .headline
         padding: 0 5%
@@ -168,10 +186,16 @@ $default-phone-margin: 0 5%
     .footer
         font-size: 0.6rem
         padding: 0 25% 1rem
+        p
+            a
+                &:hover
+                    color: $default-grey
 
     .back-to-top
         right: 5%
         bottom: 1rem
+        &:hover
+            opacity: 1
 
     .portrait-and-bio
         margin: 1rem 5% 0

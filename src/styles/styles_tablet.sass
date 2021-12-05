@@ -1,3 +1,8 @@
+$default-transition: 0.5s
+$default-grey: #999
+$font-headline: 'Playfair Display', sans-serif
+$font-text: 'Nunito', sans-serif
+
 =iPadPro-portrait
     nav
         .navbar
@@ -24,9 +29,11 @@
     .content-container
         margin-top: 0.5rem
         .project-title
-            // margin: 0 0 1.5rem
             margin: 0 7.5% 1.5rem
             padding: 0.66rem 0 0 0
+            a
+                &:hover
+                    color: #444
     nav
         .navbar
             margin: 1.5rem auto 0
@@ -41,9 +48,16 @@
                         font-size: 0.75rem
                         &:first-child
                             margin-left: 0
+                        &:hover
+                            color: #000
+                            border-bottom: none
         .language-switch
             margin: 0 auto
             padding: 0 7.5% 1.5rem
+            button
+                &:hover
+                    color: #999
+
     .section-intro
         margin: 2rem auto 0
         padding: 0 10%
@@ -78,7 +92,7 @@
                 width: 24%
             &:nth-child(3)
                 width: 15%
-    .three-images-grid // misleading class name!
+    .three-images-2
         margin: 2rem 7.5%
     .large-text-container
         padding: 0 22.5%
@@ -99,6 +113,19 @@
     .overview
         margin: 0 7.5%
 
+    .overview-group
+        .text-container
+            div
+                &:first-child
+                    a
+                        .title
+                            &:hover
+                                color: #000
+                &:last-child
+                    p
+                        &:hover
+                            color: $default-grey
+
     .portrait-and-bio
         margin: 1rem 7.5% 0
         figure
@@ -116,6 +143,16 @@
             font-size: 0.8rem
     form
         margin: 2rem 7.5% 0
+
+    .footer
+        p
+            a
+                &:hover
+                    color: $default-grey
+
+    .back-to-top
+        &:hover
+            opacity: 1
 
 // iPad Pro
 @media only screen and (min-width: 1024px) and (max-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2)

@@ -310,12 +310,10 @@ nav
 
 // FOOTER
 .footer
-    // background-color: pink
     position: absolute
     bottom: 0
     width: 100%
     padding: 2rem 0 2rem
-    // height: 5rem
     font-size: 0.7rem
     color: $default-grey
     text-align: center
@@ -347,88 +345,6 @@ nav
         font-size: 0.8rem
         padding: 0.9rem 1rem
         border: 1px solid #333
-
-// OVERVIEW PAGES -- PARALLAX VERSION --> discard later
-.parallax
-    height: 100vh
-    margin-top: -5rem
-    padding-top: 5rem
-    overflow-x: hidden
-    z-index: 9999
-
-    &-group
-        // position: sticky
-        position: relative
-        height: 100%
-        top: 0
-        display: flex
-        align-items: center
-        justify-content: center
-
-    &-inner
-        position: absolute
-        top: 0
-        bottom: 0
-        right: 0
-        left: 0
-        margin: 0 8rem
-        padding: 1rem 0 0
-        background-color: #fff
-        display: flex
-        flex-direction: column
-        justify-content: flex-start
-        .text-container
-            display: flex
-            justify-content: space-between
-            width: 100%
-            margin-top: 0.25rem
-            div
-                &:first-child
-                    width: 100%
-                    display: flex
-                    flex-direction: column
-                    align-items: flex-start
-                    padding-bottom: 0.75rem
-                    text-align: left
-                    a
-                        p
-                            &:not(.title)
-                                font-family: $font-text
-                                color: $default-grey
-                                font-size: 0.75rem
-                        .title
-                            display: inline-block
-                            font-family: $font-headline
-                            font-size: 1.2rem
-                            letter-spacing: 1px
-                            margin: 0 0 0.33rem 0
-                            border-bottom: 1px dotted #000
-                &:last-child
-                    min-width: 300px
-                    display: flex
-                    flex-direction: row
-                    justify-content: flex-end
-                    p
-                        font-family: $font-text
-                        font-size: 0.9rem
-                        padding-top: 0.5rem
-                        color: $default-grey
-                        padding-left: 1rem
-                        transition: $default-transition
-                        &:hover
-                            color: #333
-                            cursor: pointer
-        .image-container
-            display: flex
-            justify-content: flex-start
-            align-items: center
-            // margin-top: -6rem
-            // padding-top: 6rem
-            // // overflow: hidden
-            // max-height: 100%
-            img
-                display: block
-                width: 100%
 
 // OVERVIEW NEW
 .overview
@@ -464,6 +380,8 @@ nav
                         letter-spacing: 1px
                         margin: 0 0 0.33rem 0
                         border-bottom: 1px dotted #000
+                        &:hover
+                            color: #333
             &:last-child // text on the right: tools used
                 min-width: 300px
                 display: flex
@@ -493,7 +411,7 @@ nav
         display: flex
         flex-direction: column
         align-items: flex-start
-        justify-content: flex-start //space-between
+        justify-content: flex-start // space-between
         width: 25%
         margin-right: 4rem
         img
