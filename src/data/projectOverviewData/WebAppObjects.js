@@ -1,5 +1,5 @@
 import img_dummy from '../../img/banner/dummy.png';
-import img_resnet from '../../img/banner/resnet_banner.png';
+import img_resnet from '../../img/overview/resnet.jpg';
 import img_MMAS from '../../img/banner/MMAS_banner-light.png';
 
 // WEBAPPS

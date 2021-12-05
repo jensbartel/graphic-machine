@@ -1,4 +1,4 @@
-import portrait from '../../img/portrait-1.jpg';
+import portrait from '../../img/about/portrait-1.jpg';
 import Bio from './Bio';
 import Inquiry from './Inquiry';
 

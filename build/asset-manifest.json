@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.150dd412.chunk.css",
-    "main.js": "/static/js/main.986ff663.chunk.js",
-    "main.js.map": "/static/js/main.986ff663.chunk.js.map",
+    "main.js": "/static/js/main.9bcbb239.chunk.js",
+    "main.js.map": "/static/js/main.9bcbb239.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.062b8e80.js",
     "runtime-main.js.map": "/static/js/runtime-main.062b8e80.js.map",
     "static/js/2.9af02a88.chunk.js": "/static/js/2.9af02a88.chunk.js",
@@ -19,7 +19,6 @@
     "static/media/clientapp-1.416ec4e0.jpg": "/static/media/clientapp-1.416ec4e0.jpg",
     "static/media/clientapp-2.aabb9d4f.jpg": "/static/media/clientapp-2.aabb9d4f.jpg",
     "static/media/clientapp-backoffice-1.90719378.jpg": "/static/media/clientapp-backoffice-1.90719378.jpg",
-    "static/media/dummy.68770aa3.jpg": "/static/media/dummy.68770aa3.jpg",
     "static/media/dummy.969d3db0.png": "/static/media/dummy.969d3db0.png",
     "static/media/footnote.bc68975f.jpg": "/static/media/footnote.bc68975f.jpg",
     "static/media/lavendarium_banner.debc36ce.png": "/static/media/lavendarium_banner.debc36ce.png",
@@ -47,7 +46,7 @@
     "static/media/mortia-part4-snippet.df082657.jpg": "/static/media/mortia-part4-snippet.df082657.jpg",
     "static/media/parallax-visuals1.32219242.jpg": "/static/media/parallax-visuals1.32219242.jpg",
     "static/media/portrait-1.a2a123ef.jpg": "/static/media/portrait-1.a2a123ef.jpg",
-    "static/media/resnet_banner.1f803e90.png": "/static/media/resnet_banner.1f803e90.png",
+    "static/media/resnet.e59a7206.jpg": "/static/media/resnet.e59a7206.jpg",
     "static/media/suda-chronology.1142f265.jpg": "/static/media/suda-chronology.1142f265.jpg",
     "static/media/suda-exhibitions.d3ccb524.jpg": "/static/media/suda-exhibitions.d3ccb524.jpg",
     "static/media/suda-full-jp.d6b17f89.jpg": "/static/media/suda-full-jp.d6b17f89.jpg",
@@ -65,6 +64,6 @@
     "static/js/runtime-main.062b8e80.js",
     "static/js/2.9af02a88.chunk.js",
     "static/css/main.150dd412.chunk.css",
-    "static/js/main.986ff663.chunk.js"
+    "static/js/main.9bcbb239.chunk.js"
   ]
 }

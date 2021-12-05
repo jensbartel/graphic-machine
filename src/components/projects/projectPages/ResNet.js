@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-import bannerImg from '../../../img/banner/resnet_banner.png';
+import bannerImg from '../../../img/overview/resnet.jpg';
 import ProjectTitle from '../reuseComponents/ProjectTitle';
 import OneImage from '../reuseComponents/OneImage';
 
