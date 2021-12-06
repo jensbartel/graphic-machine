@@ -1222,5 +1222,10 @@ form input[type=submit] {
     margin-bottom: 1rem;
   }
 }
+@media only screen and (max-device-width: 480px) {
+  nav .navbar .wordmark {
+    font-size: 1.3rem;
+  }
+}
 
 /*# sourceMappingURL=App.css.map */
