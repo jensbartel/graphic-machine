@@ -5,7 +5,7 @@ Fully repsonsive page that arranges the works in the exhibition in layout groups
 <br><br>-->
 
 <span style="display: block; color: #8f8f8f; font-size: 0.7rem; line-height: 0.5 !important">Exhibition on limited view in Summer 2020 in Kyoto and Tokyo.<br>
-Tools: HTML/CSS/JS. Note: Page was taken offline after exhibition sold out.<br>
+Tools: HTML/CSS/JS. Note: Page was taken offline after exhibition sold out.
 Installation view photo credits: H. Ichikawa.</span>
 `;
 
