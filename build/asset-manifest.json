@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.b37fca17.chunk.css",
-    "main.js": "/static/js/main.9bcbb239.chunk.js",
-    "main.js.map": "/static/js/main.9bcbb239.chunk.js.map",
+    "main.js": "/static/js/main.6cd00d22.chunk.js",
+    "main.js.map": "/static/js/main.6cd00d22.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.062b8e80.js",
     "runtime-main.js.map": "/static/js/runtime-main.062b8e80.js.map",
     "static/js/2.9af02a88.chunk.js": "/static/js/2.9af02a88.chunk.js",
@@ -34,7 +34,7 @@
     "static/media/mmas-mainview-2.639160a5.jpg": "/static/media/mmas-mainview-2.639160a5.jpg",
     "static/media/mmas-mainview-3.23dd1fd1.jpg": "/static/media/mmas-mainview-3.23dd1fd1.jpg",
     "static/media/mmas-mainview-4.fa26b91d.jpg": "/static/media/mmas-mainview-4.fa26b91d.jpg",
-    "static/media/mmas.cd4e8224.jpg": "/static/media/mmas.cd4e8224.jpg",
+    "static/media/mockup-test.3d6f87eb.jpg": "/static/media/mockup-test.3d6f87eb.jpg",
     "static/media/morita-part3-snippet.170a19d1.jpg": "/static/media/morita-part3-snippet.170a19d1.jpg",
     "static/media/morita.6702330f.jpg": "/static/media/morita.6702330f.jpg",
     "static/media/morita_banner.542a7956.png": "/static/media/morita_banner.542a7956.png",
@@ -46,7 +46,7 @@
     "static/media/mortia-part4-snippet.df082657.jpg": "/static/media/mortia-part4-snippet.df082657.jpg",
     "static/media/parallax-visuals1.32219242.jpg": "/static/media/parallax-visuals1.32219242.jpg",
     "static/media/portrait-1.a2a123ef.jpg": "/static/media/portrait-1.a2a123ef.jpg",
-    "static/media/resnet.e59a7206.jpg": "/static/media/resnet.e59a7206.jpg",
+    "static/media/resnet.445b5a0b.jpg": "/static/media/resnet.445b5a0b.jpg",
     "static/media/suda-chronology.1142f265.jpg": "/static/media/suda-chronology.1142f265.jpg",
     "static/media/suda-exhibitions.d3ccb524.jpg": "/static/media/suda-exhibitions.d3ccb524.jpg",
     "static/media/suda-full-jp.d6b17f89.jpg": "/static/media/suda-full-jp.d6b17f89.jpg",
@@ -64,6 +64,6 @@
     "static/js/runtime-main.062b8e80.js",
     "static/js/2.9af02a88.chunk.js",
     "static/css/main.b37fca17.chunk.css",
-    "static/js/main.9bcbb239.chunk.js"
+    "static/js/main.6cd00d22.chunk.js"
   ]
 }

@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import clientAppImg from '../../img/clientapp/clientApp-visual-02.png';
-import mmas from '../../img/overview/mmas.jpg';
+import mmas from '../../img/overview/mockup-test.jpg';
+// import mmas from '../../img/overview/mmas.jpg';
 import resnet from '../../img/overview/resnet.jpg';
 
 // data
