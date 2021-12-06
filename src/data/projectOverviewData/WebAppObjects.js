@@ -29,6 +29,7 @@ const ClientApp = {
     date: 'May-August 2021',
     dateFR: 'Mai-Août 2021',
     url: '/webapps/clientapp',
+    github: 'https://github.com/jensbartel/clientapp-backoffice.git',
 };
 
 const MMAS = {

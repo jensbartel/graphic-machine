@@ -61,6 +61,8 @@ const Mishima = {
     date: 'May 2020',
     dateFR: 'Mai 2020',
     url: 'webpages/mishima',
+    livePage: 'https://storage.googleapis.com/mishima-332813/mishima_eng.html',
+    github: 'https://github.com/jensbartel/mishimaritsue-exhibition',
 };
 
 const Kida = {
@@ -102,6 +104,8 @@ const Suda = {
     date: 'December 2020',
     dateFR: 'Décembre 2020',
     url: 'webpages/suda',
+    livePage: 'https://shop.shibunkaku.co.jp/english/shop/pages/suda.aspx',
+    github: 'https://github.com/jensbartel',
 };
 
 const data = { MoritaShiryu, Suda, Lavendarium, Toki, Mishima, Kida };
