@@ -422,12 +422,16 @@ nav
             font-size: 0.75rem
 
 .further-projects
-    margin: 0 8rem
+    margin: 4rem 8rem 0
     strong
         font-family: $font-headline
         font-size: 1.2rem
         letter-spacing: 1px
         font-weight: 400
+    p
+        padding-top: 0.5rem
+        font-family: $font-text
+        font-size: 0.9rem
 
 .bio
     width: 75%
@@ -455,25 +459,29 @@ nav
             width: 75%
 
 form
-    margin: 2rem 8rem 0
+    margin: 4rem 8rem 2rem
     font-family: $font-text
     font-size: 0.9rem
     .form-for-name
         display: flex
         flex-direction: row
         justify-content: space-between
-        margin-bottom: 0.5rem
+        margin-bottom: 0.25rem
         div
             width: 48%
             input
                 width: 100%
+                height: 3rem
     .form-group
         width: 100%
         margin-bottom: 0.5rem
         input
             width: 100%
+            height: 3rem
         &:nth-child(3)
             display: flex
             flex-direction: column
+        textarea
+            height: 6rem
     input[type="submit"]
         margin-top: 0.5rem

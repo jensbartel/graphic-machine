@@ -483,13 +483,18 @@ nav .language-switch button:hover {
 }
 
 .further-projects {
-  margin: 0 8rem;
+  margin: 4rem 8rem 0;
 }
 .further-projects strong {
   font-family: "Playfair Display", sans-serif;
   font-size: 1.2rem;
   letter-spacing: 1px;
   font-weight: 400;
+}
+.further-projects p {
+  padding-top: 0.5rem;
+  font-family: "Nunito", sans-serif;
+  font-size: 0.9rem;
 }
 
 .bio {
@@ -525,7 +530,7 @@ nav .language-switch button:hover {
 }
 
 form {
-  margin: 2rem 8rem 0;
+  margin: 4rem 8rem 2rem;
   font-family: "Nunito", sans-serif;
   font-size: 0.9rem;
 }
@@ -533,13 +538,14 @@ form .form-for-name {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
 }
 form .form-for-name div {
   width: 48%;
 }
 form .form-for-name div input {
   width: 100%;
+  height: 3rem;
 }
 form .form-group {
   width: 100%;
@@ -547,10 +553,14 @@ form .form-group {
 }
 form .form-group input {
   width: 100%;
+  height: 3rem;
 }
 form .form-group:nth-child(3) {
   display: flex;
   flex-direction: column;
+}
+form .form-group textarea {
+  height: 6rem;
 }
 form input[type=submit] {
   margin-top: 0.5rem;
