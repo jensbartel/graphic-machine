@@ -6,8 +6,13 @@ const Bio = () => {
             <div className='bio'>
                 <strong>Bio</strong>
                 <p>
-                    Disclaimer: This page doesn’t represent a company, but my personal portfolio. If you’re interested in collaborating with me kindly use the
-                    form below to get in touch. Thank you.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, ea veniam. Labore quis consectetur hic aut iusto quam! Molestias,
+                    laboriosam, eligendi officia nostrum sapiente, rerum facere minima sit fuga distinctio vero aperiam laborum! Illo architecto cum enim
+                    adipisci dolor tenetur veritatis esse vero quibusdam nulla, sit, ea atque! Ipsam at voluptate debitis inventore eum, consequuntur blanditiis
+                    fugiat! Hic quidem similique reprehenderit! Animi accusamus aspernatur autem ab repellat cumque voluptatibus voluptate beatae dolorem
+                    ducimus quis labore fugit id, deleniti distinctio praesentium voluptates recusandae atque esse eligendi, numquam nemo sequi inventore
+                    asperiores? Distinctio libero laborum sed fugit maxime nisi earum explicabo omnis enim alias! Ea perspiciatis earum provident porro
+                    temporibus blanditiis error exercitationem, dolorum reprehenderit, delectus harum necessitatibus vel architecto cum totam.
                 </p>
 
                 <div className='bio-item'>
