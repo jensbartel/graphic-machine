@@ -40,7 +40,7 @@ strong {
 }
 
 .page {
-  font-family: "Nunito", sans-serif;
+  font-family: "Archivo", sans-serif;
   margin: 0.66rem 8rem 0;
   padding-bottom: 5rem;
 }
@@ -55,13 +55,13 @@ strong {
 
 .caption {
   margin: 0 8rem;
-  font-family: "Nunito", sans-serif;
+  font-family: "Archivo", sans-serif;
   font-size: 0.75rem;
   padding-top: 0.33rem;
 }
 
 .caption-no-margin {
-  font-family: "Nunito", sans-serif;
+  font-family: "Archivo", sans-serif;
   font-size: 0.75rem;
 }
 
@@ -128,7 +128,7 @@ nav .language-switch button {
   border: none;
   background: none;
   padding: 0;
-  font-family: "Nunito", sans-serif;
+  font-family: "Archivo", sans-serif;
   font-size: 0.6rem;
   letter-spacing: 0.33rem;
   color: #999;
@@ -172,7 +172,7 @@ nav .language-switch button:hover {
   padding-right: 0.33rem;
 }
 .project-title p {
-  font-family: "Nunito", sans-serif;
+  font-family: "Archivo", sans-serif;
   font-size: 0.75rem;
   padding-top: 0.33rem;
   margin-right: 1.25rem;
@@ -191,7 +191,7 @@ nav .language-switch button:hover {
 .large-text-container, .headline {
   margin-top: 4rem;
   padding: 0 30%;
-  font-family: "Nunito", sans-serif;
+  font-family: "Archivo", sans-serif;
   font-size: 0.9rem;
   line-height: 1.4;
 }
@@ -219,7 +219,7 @@ nav .language-switch button:hover {
   border: 1px solid #000;
 }
 .video-2-container .small-video p {
-  font-family: "Nunito", sans-serif;
+  font-family: "Archivo", sans-serif;
   font-size: 0.75rem;
   padding-top: 0.33rem;
 }
@@ -350,7 +350,7 @@ nav .language-switch button:hover {
 
 .caption-comment {
   margin: 0 8rem;
-  font-family: "Nunito", sans-serif;
+  font-family: "Archivo", sans-serif;
   font-size: 0.75rem;
   padding-top: 0.33rem;
 }
@@ -367,7 +367,7 @@ nav .language-switch button:hover {
   font-size: 0.7rem;
   color: #999;
   text-align: center;
-  font-family: "Nunito", sans-serif;
+  font-family: "Archivo", sans-serif;
 }
 .footer p a {
   color: #999;
