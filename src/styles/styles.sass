@@ -1,7 +1,10 @@
 $default-transition: 0.5s
 $default-grey: #999
+// $font-text: 'Nunito', sans-serif
+$font-text: 'Archivo', sans-serif
 $font-headline: 'Playfair Display', sans-serif
-$font-text: 'Nunito', sans-serif
+// $font-headline: 'Oswald', sans-serif
+// $font-headline: 'Archivo', sans-serif
 
 // remove Source Sans
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap')
@@ -9,6 +12,10 @@ $font-text: 'Nunito', sans-serif
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap')
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap')
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700&display=swap')
 
 *
     box-sizing: border-box
@@ -156,7 +163,7 @@ nav
         padding-top: 0.33rem
         margin-right: 1.25rem
         &:first-child
-            font-family: 'Playfair Display', sans-serif
+            font-family: $font-headline
             letter-spacing: 1px
             font-size: 1.2rem
             display: inline-block
@@ -174,7 +181,7 @@ nav
     line-height: 1.4
     h2
         margin: 4rem 0 2rem
-        font-family: 'Playfair Display', serif
+        font-family: $font-headline
         font-weight: 400
         letter-spacing: 1px
         margin-top: 0
@@ -379,6 +386,7 @@ nav
                         display: inline-block
                         font-size: 1.2rem
                         font-family: $font-headline
+                        // font-weight: 800 // test
                         letter-spacing: 1px
                         margin: 0 0 0.33rem 0
                         border-bottom: 1px dotted #000
@@ -438,6 +446,7 @@ nav
     width: 75%
     font-family: $font-text
     font-size: 0.9rem
+    // font-weight: 800 // tes
     strong
         display: block
         margin-bottom: 1rem

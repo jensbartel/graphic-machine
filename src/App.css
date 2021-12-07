@@ -2,6 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -194,7 +197,7 @@ nav .language-switch button:hover {
 }
 .large-text-container h2, .headline h2 {
   margin: 4rem 0 2rem;
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", sans-serif;
   font-weight: 400;
   letter-spacing: 1px;
   margin-top: 0;
@@ -424,7 +427,7 @@ nav .language-switch button:hover {
   text-align: left;
 }
 .overview-group .text-container div:first-child a p:not(.title) {
-  font-family: "Nunito", sans-serif;
+  font-family: "Archivo", sans-serif;
   color: #999;
   font-size: 0.75rem;
 }
@@ -446,7 +449,7 @@ nav .language-switch button:hover {
   justify-content: flex-end;
 }
 .overview-group .text-container div:last-child p {
-  font-family: "Nunito", sans-serif;
+  font-family: "Archivo", sans-serif;
   font-size: 0.9rem;
   color: #999;
   padding: 0.5rem 0 0 1rem;
@@ -479,7 +482,7 @@ nav .language-switch button:hover {
   width: 100%;
 }
 .portrait-and-bio figure figcaption {
-  font-family: "Nunito", sans-serif;
+  font-family: "Archivo", sans-serif;
   font-size: 0.75rem;
 }
 
@@ -494,13 +497,13 @@ nav .language-switch button:hover {
 }
 .further-projects p {
   padding-top: 0.5rem;
-  font-family: "Nunito", sans-serif;
+  font-family: "Archivo", sans-serif;
   font-size: 0.9rem;
 }
 
 .bio {
   width: 75%;
-  font-family: "Nunito", sans-serif;
+  font-family: "Archivo", sans-serif;
   font-size: 0.9rem;
 }
 .bio strong {
@@ -532,7 +535,7 @@ nav .language-switch button:hover {
 
 form {
   margin: 4rem 8rem 2rem;
-  font-family: "Nunito", sans-serif;
+  font-family: "Archivo", sans-serif;
   font-size: 0.9rem;
 }
 form .form-for-name {
