@@ -250,6 +250,7 @@ nav .language-switch button:hover {
   margin: 2rem 8rem 0;
   display: flex;
   justify-content: center;
+  align-items: flex-start;
 }
 .one-image-variant-2 img {
   border: 1px solid #333;
@@ -1103,7 +1104,6 @@ form input[type=submit] {
     height: inherit;
     overflow-x: hidden;
     border: 1px solid #000;
-    border-bottom: 2px solid #000;
   }
 
   .image-collage-1 {
