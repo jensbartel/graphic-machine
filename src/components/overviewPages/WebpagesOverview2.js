@@ -9,7 +9,7 @@ import { webPages } from '../../data/projectOverviewData/WebPageObjects';
 import OverviewpageItem from './OverviewPageItem';
 import OverviewpageItem2 from './OverviewPageItem2';
 
-const WebpagesOverview = () => {
+const WebpagesOverview2 = () => {
     useEffect(() => {
         document.title = 'Web Pages';
     }, []);
@@ -19,13 +19,13 @@ const WebpagesOverview = () => {
     return (
         <div className='overview'>
             {/* <div className='parallax'> */}
-            {/* <OverviewpageItem2 data={MoritaShiryu} image={moritaImage} /> */}
-            <OverviewpageItem data={MoritaShiryu} image={moritaImage} />
+            <OverviewpageItem2 data={MoritaShiryu} image={moritaImage} />
+            {/* <OverviewpageItem data={MoritaShiryu} image={moritaImage} />
             <OverviewpageItem data={Toki} image={tokiImage} />
             <OverviewpageItem data={Suda} image={sudaImage} />
-            <OverviewpageItem data={Mishima} image={mishimaImage} />
+            <OverviewpageItem data={Mishima} image={mishimaImage} /> */}
         </div>
     );
 };
 
-export default WebpagesOverview;
+export default WebpagesOverview2;

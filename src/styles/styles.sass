@@ -24,6 +24,7 @@ body
     margin: 0
     padding: 0
     font-family: 'Montserrat', sans-serif
+    overflow-x: hidden
 
 a
     text-decoration: none
@@ -495,3 +496,60 @@ form
             height: 6rem
     input[type="submit"]
         margin-top: 0.5rem
+
+// NEW OVERVIEW
+.overview-item-container
+    // background-color: azure
+    // border: 1px solid #000
+    .overview-inner
+        width: auto
+        // border: 1px dotted #000
+        &:not(&:first-child)
+            margin-top: 2.5rem
+        &:first-child
+            margin-top: 4rem
+        .text-container
+            display: flex
+            justify-content: space-between
+            width: 100%
+            div
+                width: 100%
+                display: flex
+                flex-direction: column
+                align-items: flex-start
+                padding-bottom: 0.75rem
+                text-align: left
+                a
+                    // background-color: chartreuse
+                    p
+                        &:not(.title)
+                            font-family: $font-text
+                            color: $default-grey
+                            font-size: 0.7rem
+                            transform: translateX(350px)
+                    .title
+                        display: inline-block
+                        font-size: 1.6rem
+                        font-family: $font-headline
+                        letter-spacing: 1px
+                        color: #222
+                        margin: 0 0 0.33rem 0
+                        border-bottom: 1px dotted #000
+                        transform: translateX(12rem)
+                        &:hover
+                            color: #333
+        .image-container
+            margin: 1rem 0 20rem
+            // position: relative
+            .first-image
+                position: relative
+                z-index: 99
+            .second-image
+                position: relative
+                z-index: 0
+                transform: translateX(175px) translateY(-350px)
+                opacity: 0.33
+            a
+                img
+                    display: block
+                    width: 60%

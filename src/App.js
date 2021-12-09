@@ -17,6 +17,7 @@ import Suda from './components/projects/projectPages/Suda';
 import Toki from './components/projects/projectPages/Toki';
 import WebpagesOverview from './components/overviewPages/WebpagesOverview';
 import WebappsOverview from './components/overviewPages/WebappsOverview';
+import WebpagesOverview2 from './components/overviewPages/WebpagesOverview2';
 
 const App = () => {
     const langContext = useContext(LangContext);
@@ -27,7 +28,7 @@ const App = () => {
             setLang();
         } else {
             removeLang();
-        }
+        } 
         // eslint-disable-next-line
     }, []);
 
@@ -39,7 +40,7 @@ const App = () => {
                 <Navbar />
                 <div className='content-container'>
                     <Switch>
-                        <Route exact path='/' component={WebpagesOverview} />
+                        <Route exact path='/' component={WebpagesOverview2} />
                         <Route exact path='/webpages' component={WebpagesOverview} />
                         <Route exact path='/webapps' component={WebappsOverview} />
                         <Route exact path='/about' component={About} />

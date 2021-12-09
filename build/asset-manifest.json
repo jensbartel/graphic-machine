@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.1314d47b.chunk.css",
-    "main.js": "/static/js/main.e820b6e9.chunk.js",
-    "main.js.map": "/static/js/main.e820b6e9.chunk.js.map",
+    "main.css": "/static/css/main.b4ea48e5.chunk.css",
+    "main.js": "/static/js/main.fec979c6.chunk.js",
+    "main.js.map": "/static/js/main.fec979c6.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.062b8e80.js",
     "runtime-main.js.map": "/static/js/runtime-main.062b8e80.js.map",
-    "static/js/2.9af02a88.chunk.js": "/static/js/2.9af02a88.chunk.js",
-    "static/js/2.9af02a88.chunk.js.map": "/static/js/2.9af02a88.chunk.js.map",
+    "static/js/2.29090775.chunk.js": "/static/js/2.29090775.chunk.js",
+    "static/js/2.29090775.chunk.js.map": "/static/js/2.29090775.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.1314d47b.chunk.css.map": "/static/css/main.1314d47b.chunk.css.map",
-    "static/js/2.9af02a88.chunk.js.LICENSE.txt": "/static/js/2.9af02a88.chunk.js.LICENSE.txt",
+    "static/css/main.b4ea48e5.chunk.css.map": "/static/css/main.b4ea48e5.chunk.css.map",
+    "static/js/2.29090775.chunk.js.LICENSE.txt": "/static/js/2.29090775.chunk.js.LICENSE.txt",
     "static/media/MMAS_banner-light.4f31f838.png": "/static/media/MMAS_banner-light.4f31f838.png",
     "static/media/Morita-Pullquote1.53433f2a.mp4": "/static/media/Morita-Pullquote1.53433f2a.mp4",
     "static/media/Morita-Pullquote2.08528d59.mp4": "/static/media/Morita-Pullquote2.08528d59.mp4",
@@ -47,6 +47,7 @@
     "static/media/parallax-visuals1.32219242.jpg": "/static/media/parallax-visuals1.32219242.jpg",
     "static/media/portrait-1.a2a123ef.jpg": "/static/media/portrait-1.a2a123ef.jpg",
     "static/media/resnet.8a89d9f2.jpg": "/static/media/resnet.8a89d9f2.jpg",
+    "static/media/roundtable.b740f5f3.png": "/static/media/roundtable.b740f5f3.png",
     "static/media/suda-chronology.1142f265.jpg": "/static/media/suda-chronology.1142f265.jpg",
     "static/media/suda-exhibitions.d3ccb524.jpg": "/static/media/suda-exhibitions.d3ccb524.jpg",
     "static/media/suda-full-jp.d6b17f89.jpg": "/static/media/suda-full-jp.d6b17f89.jpg",
@@ -62,8 +63,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.062b8e80.js",
-    "static/js/2.9af02a88.chunk.js",
-    "static/css/main.1314d47b.chunk.css",
-    "static/js/main.e820b6e9.chunk.js"
+    "static/js/2.29090775.chunk.js",
+    "static/css/main.b4ea48e5.chunk.css",
+    "static/js/main.fec979c6.chunk.js"
   ]
 }
