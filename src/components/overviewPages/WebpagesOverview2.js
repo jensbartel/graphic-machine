@@ -1,29 +1,22 @@
 import { useEffect } from 'react';
-import tokiImage from '../../img/overview/toki.jpg';
-import sudaImage from '../../img/overview/suda.jpg';
 import moritaImage from '../../img/overview/morita.jpg';
-import mishimaImage from '../../img/overview/mishima.jpg';
-
-// data
-import { webPages } from '../../data/projectOverviewData/WebPageObjects';
-import OverviewpageItem from './OverviewPageItem';
+import sudaImage from '../../img/overview/suda.jpg';
 import OverviewpageItem2 from './OverviewPageItem2';
+import { webPages } from '../../data/projectOverviewData/WebPageObjects';
 
 const WebpagesOverview2 = () => {
     useEffect(() => {
-        document.title = 'Web Pages';
+        document.title = 'Grifold Studio | Web Pages';
     }, []);
 
-    const { Toki, Suda, MoritaShiryu, Mishima } = webPages.projects;
+    const { MoritaShiryu, Suda } = webPages.projects;
 
     return (
-        <div className='overview'>
-            {/* <div className='parallax'> */}
+        <div className='overview2'>
             <OverviewpageItem2 data={MoritaShiryu} image={moritaImage} />
-            {/* <OverviewpageItem data={MoritaShiryu} image={moritaImage} />
-            <OverviewpageItem data={Toki} image={tokiImage} />
-            <OverviewpageItem data={Suda} image={sudaImage} />
-            <OverviewpageItem data={Mishima} image={mishimaImage} /> */}
+            <OverviewpageItem2 data={Suda} image={sudaImage} />
+            <OverviewpageItem2 data={Suda} image={sudaImage} />
+            <OverviewpageItem2 data={Suda} image={sudaImage} />
         </div>
     );
 };

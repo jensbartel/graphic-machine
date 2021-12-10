@@ -359,6 +359,9 @@ nav
 // OVERVIEW NEW
 .overview
     margin: 0 8rem
+    // below alternate styles
+    // display: flex
+    // justify-content: center
 
 .overview-group
     &:not(&:first-child)
@@ -498,58 +501,70 @@ form
         margin-top: 0.5rem
 
 // NEW OVERVIEW
+.overview2
+    margin: 0 8rem
+    // display: flex
+    // justify-content: center
+    // flex-direction: column
+
 .overview-item-container
-    // background-color: azure
-    // border: 1px solid #000
+    &:not(&:first-child)
+        margin-top: -28% // the 2nd image is up 25rem, this here is the "up" minus 5rem for spacing
+    &:first-child
+        margin-top: 1rem // this is what comes below the navbar
     .overview-inner
-        width: auto
-        // border: 1px dotted #000
-        &:not(&:first-child)
-            margin-top: 2.5rem
-        &:first-child
-            margin-top: 4rem
-        .text-container
-            display: flex
-            justify-content: space-between
-            width: 100%
-            div
+        display: flex
+        flex-direction: column
+        // background-color: pink
+        a
+            &:first-child
                 width: 100%
+                // background-color: salmon
+                text-align: center
+            &:nth-child(2)
+                // background-color: salmon
+                text-align: left
+                padding-left: 50%
+
+            .title
+                display: inline-block
+                font-size: 2rem
+                font-family: $font-headline
+                letter-spacing: 1px
+                color: #222
+                margin: 0 0 0.33rem 0
+                border-bottom: 1px dotted #000
+                margin-bottom: 0.5rem
+                &:hover
+                    color: #333
+                    margin: 1rem 0 20rem
+            p
+                &:not(.title)
+                    font-family: $font-text
+                    color: #333
+                    font-size: 0.7rem
+                    &:last-child
+                        margin-bottom: 0.75rem
+        .first-image
+            position: relative
+            z-index: 99
+            img
+                box-sizing: content-box
+                // background-color: chartreuse
+                padding-right: 4rem
+        .second-image
+            transform: translateY(-80%)
+            opacity: 0.33
+            img
+                box-sizing: content-box
+                padding-left: 12rem
+        div
+            // background-color: khaki
+            a
                 display: flex
                 flex-direction: column
-                align-items: flex-start
-                padding-bottom: 0.75rem
-                text-align: left
-                a
-                    // background-color: chartreuse
-                    p
-                        &:not(.title)
-                            font-family: $font-text
-                            color: $default-grey
-                            font-size: 0.7rem
-                            transform: translateX(350px)
-                    .title
-                        display: inline-block
-                        font-size: 1.6rem
-                        font-family: $font-headline
-                        letter-spacing: 1px
-                        color: #222
-                        margin: 0 0 0.33rem 0
-                        border-bottom: 1px dotted #000
-                        transform: translateX(12rem)
-                        &:hover
-                            color: #333
-        .image-container
-            margin: 1rem 0 20rem
-            // position: relative
-            .first-image
-                position: relative
-                z-index: 99
-            .second-image
-                position: relative
-                z-index: 0
-                transform: translateX(175px) translateY(-350px)
-                opacity: 0.33
-            a
+                justify-content: center
+                align-items: center
                 img
                     display: block
-                    width: 60%
+                    width: 70%

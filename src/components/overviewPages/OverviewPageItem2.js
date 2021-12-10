@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import LangContext from '../../context/langContext';
 import { Link } from 'react-router-dom';
-import roundtable from '../../img/overview/roundtable.png'
+import roundtable from '../../img/overview/roundtable.jpg';
 
 const OverviewpageItem2 = props => {
     const {
@@ -26,28 +26,25 @@ const OverviewpageItem2 = props => {
     return (
         <div className='overview-item-container'>
             <div className='overview-inner'>
-                <div className='text-container'>
-                    <div>
-                        <Link to={url}>
-                            <p className='title'>{titleChoice}</p>
-                        </Link>
-                        <Link to={url}>
-                            <p>{descriptionChoice}</p>
-                            <p>{dateChoice}</p>
-                        </Link>
-                    </div>              
+                <Link to={url}>
+                    <p className='title'>{titleChoice}</p>
+                </Link>
+
+                <Link to={url}>
+                    <p>{descriptionChoice}</p>
+                    <p>{dateChoice}</p>
+                </Link>
+
+                <div className='first-image'>
+                    <Link to={url}>
+                        <img src={image} alt='' className='first-image' />
+                    </Link>
                 </div>
-                <div className='image-container'>
-                    <div className="first-image">
-                        <Link to={url} >
-                            <img src={image} alt='' className='first-image'/>
-                        </Link>
-                    </div>
-                    <div className='second-image'>
-                        <Link to={url}>
-                            <img src={roundtable} alt='' />
-                        </Link>
-                    </div>
+
+                <div className='second-image'>
+                    <Link to={url}>
+                        <img src={roundtable} alt='' />
+                    </Link>
                 </div>
             </div>
         </div>
