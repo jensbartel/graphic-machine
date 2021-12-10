@@ -39,12 +39,11 @@ const OverviewpageItem2 = props => {
                     <Link to={url}>
                         <img src={image} alt='' className='first-image' />
                     </Link>
-                </div>
-
-                <div className='second-image'>
-                    <Link to={url}>
-                        <img src={roundtable} alt='' />
-                    </Link>
+                    <div className='second-image'>
+                        <Link to={url}>
+                            <img src={roundtable} alt='' />
+                        </Link>
+                    </div>
                 </div>
             </div>
         </div>

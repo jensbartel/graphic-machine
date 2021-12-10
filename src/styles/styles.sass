@@ -509,7 +509,7 @@ form
 
 .overview-item-container
     &:not(&:first-child)
-        margin-top: -28% // the 2nd image is up 25rem, this here is the "up" minus 5rem for spacing
+        // margin-top: -28% // the 2nd image is up 25rem, this here is the "up" minus 5rem for spacing
     &:first-child
         margin-top: 1rem // this is what comes below the navbar
     .overview-inner
@@ -552,8 +552,12 @@ form
                 box-sizing: content-box
                 // background-color: chartreuse
                 padding-right: 4rem
+                margin-bottom: 10%
         .second-image
-            transform: translateY(-80%)
+            // transform: translateY(-80%)
+            position: absolute
+            top: 10%
+            // width: 70%
             opacity: 0.33
             img
                 box-sizing: content-box
