@@ -1125,7 +1125,7 @@ form input[type=submit] {
   }
 
   nav {
-    position: static;
+    position: relative;
   }
   nav .navbar {
     flex-direction: column;
