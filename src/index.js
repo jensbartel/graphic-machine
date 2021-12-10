@@ -4,10 +4,10 @@ import App from './App';
 import LangState from './context/LangState';
 
 ReactDOM.render(
-    <React.StrictMode>
-        <LangState>
-            <App />
-        </LangState>
-    </React.StrictMode>,
+    // <React.StrictMode>
+    <LangState>
+        <App />
+    </LangState>,
+    // </React.StrictMode>,
     document.getElementById('root')
 );

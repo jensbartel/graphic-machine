@@ -511,7 +511,7 @@ form
     &:not(&:first-child)
         // margin-top: -28% // the 2nd image is up 25rem, this here is the "up" minus 5rem for spacing
     &:first-child
-        margin-top: 1rem // this is what comes below the navbar
+        margin-top: 2rem // this is what comes below the navbar
     .overview-inner
         display: flex
         flex-direction: column
@@ -525,7 +525,8 @@ form
                 // background-color: salmon
                 text-align: left
                 padding-left: 50%
-
+                .description
+                    width: 100%
             .title
                 display: inline-block
                 font-size: 2rem
@@ -572,3 +573,47 @@ form
                 img
                     display: block
                     width: 70%
+
+// Transitions
+$trans-duration: 500ms
+
+.transition-enter
+    opacity: 0
+    transform: translateY(2rem)
+.transition-enter-active
+    transform: translateY(0)
+    opacity: 1
+    transition: opacity $trans-duration ease-in-out, transform $trans-duration ease-in-out
+.transition-enter-done
+    transform: translateY(0)
+    opacity: 1
+
+.trans-2-enter
+    opacity: 0
+.trans-2-enter-active
+    opacity: 1
+    transition: opacity $trans-duration ease-in-out $trans-duration
+.trans-2-enter-done
+    opacity: 1
+
+.trans-3-enter
+    opacity: 0
+    transform: scale(0.95)
+.trans-3-enter-active
+    opacity: 1
+    transform: scale(1)
+    transition: opacity $trans-duration ease-in-out 1000ms, transform 500ms ease-in-out 1000ms
+.trans-3-enter-done
+    opacity: 1
+    transform: scale(1)
+
+.trans-4-enter
+    opacity: 0
+    transform: scale(0.95)
+.trans-4-enter-active
+    opacity: 1
+    transform: scale(1)
+    transition: opacity $trans-duration ease-in-out 1500ms, transform $trans-duration ease-in-out 1500ms
+.trans-4-enter-done
+    opacity: 1
+    transform: scale(1)

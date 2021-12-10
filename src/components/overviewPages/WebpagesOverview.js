@@ -7,7 +7,7 @@ import mishimaImage from '../../img/overview/mishima.jpg';
 // data
 import { webPages } from '../../data/projectOverviewData/WebPageObjects';
 import OverviewpageItem from './OverviewPageItem';
-import OverviewpageItem2 from './OverviewPageItem2';
+// import OverviewpageItem2 from './OverviewPageItem2';
 
 const WebpagesOverview = () => {
     useEffect(() => {

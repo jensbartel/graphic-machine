@@ -576,7 +576,7 @@ form input[type=submit] {
 }
 
 .overview-item-container:first-child {
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 .overview-item-container .overview-inner {
   display: flex;
@@ -589,6 +589,9 @@ form input[type=submit] {
 .overview-item-container .overview-inner a:nth-child(2) {
   text-align: left;
   padding-left: 50%;
+}
+.overview-item-container .overview-inner a:nth-child(2) .description {
+  width: 100%;
 }
 .overview-item-container .overview-inner a .title {
   display: inline-block;
@@ -639,6 +642,67 @@ form input[type=submit] {
 .overview-item-container .overview-inner div a img {
   display: block;
   width: 70%;
+}
+
+.transition-enter {
+  opacity: 0;
+  transform: translateY(2rem);
+}
+
+.transition-enter-active {
+  transform: translateY(0);
+  opacity: 1;
+  transition: opacity 500ms ease-in-out, transform 500ms ease-in-out;
+}
+
+.transition-enter-done {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.trans-2-enter {
+  opacity: 0;
+}
+
+.trans-2-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in-out 500ms;
+}
+
+.trans-2-enter-done {
+  opacity: 1;
+}
+
+.trans-3-enter {
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+.trans-3-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 500ms ease-in-out 1000ms, transform 500ms ease-in-out 1000ms;
+}
+
+.trans-3-enter-done {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.trans-4-enter {
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+.trans-4-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 500ms ease-in-out 1500ms, transform 500ms ease-in-out 1500ms;
+}
+
+.trans-4-enter-done {
+  opacity: 1;
+  transform: scale(1);
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
