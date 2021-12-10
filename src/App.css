@@ -599,9 +599,8 @@ form input[type=submit] {
   font-family: "Playfair Display", sans-serif;
   letter-spacing: 1px;
   color: #222;
-  margin: 0 0 0.33rem 0;
+  margin: 0 0 0.5rem 0;
   border-bottom: 1px dotted #000;
-  margin-bottom: 0.5rem;
 }
 .overview-item-container .overview-inner a .title:hover {
   color: #333;
@@ -619,7 +618,7 @@ form input[type=submit] {
   position: relative;
   z-index: 99;
 }
-.overview-item-container .overview-inner .first-image img {
+.overview-item-container .overview-inner .first-image > a > img {
   box-sizing: content-box;
   padding-right: 4rem;
   margin-bottom: 10%;
@@ -652,7 +651,7 @@ form input[type=submit] {
 .transition-enter-active {
   transform: translateY(0);
   opacity: 1;
-  transition: opacity 500ms ease-in-out, transform 500ms ease-in-out;
+  transition: opacity 350ms ease-in-out, transform 350ms ease-in-out;
 }
 
 .transition-enter-done {
@@ -666,7 +665,7 @@ form input[type=submit] {
 
 .trans-2-enter-active {
   opacity: 1;
-  transition: opacity 500ms ease-in-out 500ms;
+  transition: opacity 350ms ease-in-out 350ms;
 }
 
 .trans-2-enter-done {
@@ -681,7 +680,7 @@ form input[type=submit] {
 .trans-3-enter-active {
   opacity: 1;
   transform: scale(1);
-  transition: opacity 500ms ease-in-out 1000ms, transform 500ms ease-in-out 1000ms;
+  transition: opacity 350ms ease-in-out 700ms, transform 350ms ease-in-out 700ms;
 }
 
 .trans-3-enter-done {
@@ -697,7 +696,7 @@ form input[type=submit] {
 .trans-4-enter-active {
   opacity: 1;
   transform: scale(1);
-  transition: opacity 500ms ease-in-out 1500ms, transform 500ms ease-in-out 1500ms;
+  transition: opacity 350ms ease-in-out 1050ms, transform 350ms ease-in-out 1050ms;
 }
 
 .trans-4-enter-done {
@@ -1120,14 +1119,18 @@ form input[type=submit] {
   }
 
   .content-container {
-    margin-top: 5rem;
+    margin-top: 0;
     margin-bottom: 0;
+    padding-top: 0;
   }
 
+  nav {
+    position: static;
+  }
   nav .navbar {
     flex-direction: column;
-    margin: 2rem auto 0;
-    padding: 0 5%;
+    margin: 0 auto 0;
+    padding: 2rem 5% 0;
   }
   nav .navbar .menu {
     display: flex;
@@ -1148,7 +1151,7 @@ form input[type=submit] {
   }
   nav .language-switch {
     margin: 1rem auto;
-    padding: 0 5%;
+    padding: 0 5% 2rem;
   }
   nav .language-switch button:hover {
     color: #999;
@@ -1396,6 +1399,38 @@ form input[type=submit] {
   }
   form .form-for-name div:first-child {
     margin-bottom: 1rem;
+  }
+
+  .overview2 {
+    margin: 0 5%;
+  }
+
+  .overview-item-container:not(.overview-item-container:first-child) {
+    margin-top: 2rem;
+  }
+  .overview-item-container .overview-inner a .title {
+    margin: 0 auto 0.5rem;
+  }
+  .overview-item-container .overview-inner a p:not(.title):last-child {
+    margin-bottom: 1.25rem;
+  }
+  .overview-item-container .overview-inner a:first-child {
+    margin: 0 auto;
+  }
+  .overview-item-container .overview-inner .second-image {
+    padding-right: 0;
+  }
+  .overview-item-container .overview-inner .second-image a {
+    align-items: flex-end;
+  }
+  div .overview-item-container .overview-inner a {
+    align-items: flex-start;
+  }
+  div .overview-item-container .overview-inner a img {
+    width: 85%;
+  }
+  .overview-item-container .overview-inner div > div > a img {
+    padding-left: 0;
   }
 }
 @media only screen and (max-device-width: 480px) {

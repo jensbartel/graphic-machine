@@ -9,14 +9,17 @@ $default-phone-margin: 0 5%
         margin: 0 5%
 
     .content-container
-        margin-top: 5rem
+        margin-top: 0 // 5rem
         margin-bottom: 0
+        padding-top: 0
 
     nav
+        position: static
+        // background-color: pink
         .navbar
             flex-direction: column
-            margin: 2rem auto 0
-            padding: 0 5%
+            margin: 0 auto 0
+            padding: 2rem 5% 0
             .menu
                 display: flex
                 flex-direction: column
@@ -32,7 +35,7 @@ $default-phone-margin: 0 5%
                             border-bottom: none
         .language-switch
             margin: 1rem auto
-            padding: 0 5%
+            padding: 0 5% 2rem
             button
                 &:hover
                     color: #999
@@ -232,6 +235,37 @@ $default-phone-margin: 0 5%
                 width: 100%
                 &:first-child
                     margin-bottom: 1rem
+
+    .overview2
+        margin: 0 5%
+    .overview-item-container
+        &:not(&:first-child)
+            margin-top: 2rem
+        .overview-inner
+            a
+                .title
+                    margin: 0 auto 0.5rem
+                p
+                    &:not(.title)
+                        &:last-child
+                            margin-bottom: 1.25rem
+                &:first-child
+                    margin: 0 auto
+            .second-image
+                padding-right: 0
+                a
+                    align-items: flex-end
+            div &
+                a
+                    align-items: flex-start
+                    img
+                        width: 85%
+            div >
+                div >
+                    a
+                        // align-items: flex-end
+                        img
+                            padding-left: 0
 
 @media only screen and (max-device-width: 480px)
     nav .navbar .wordmark

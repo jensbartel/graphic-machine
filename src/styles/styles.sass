@@ -503,9 +503,6 @@ form
 // NEW OVERVIEW
 .overview2
     margin: 0 8rem
-    // display: flex
-    // justify-content: center
-    // flex-direction: column
 
 .overview-item-container
     &:not(&:first-child)
@@ -515,14 +512,11 @@ form
     .overview-inner
         display: flex
         flex-direction: column
-        // background-color: pink
         a
             &:first-child
                 width: 100%
-                // background-color: salmon
                 text-align: center
             &:nth-child(2)
-                // background-color: salmon
                 text-align: left
                 padding-left: 50%
                 .description
@@ -533,9 +527,8 @@ form
                 font-family: $font-headline
                 letter-spacing: 1px
                 color: #222
-                margin: 0 0 0.33rem 0
+                margin: 0 0 0.5rem 0
                 border-bottom: 1px dotted #000
-                margin-bottom: 0.5rem
                 &:hover
                     color: #333
                     margin: 1rem 0 20rem
@@ -549,22 +542,20 @@ form
         .first-image
             position: relative
             z-index: 99
-            img
-                box-sizing: content-box
-                // background-color: chartreuse
-                padding-right: 4rem
-                margin-bottom: 10%
+        .first-image >
+            a >
+                img
+                    box-sizing: content-box
+                    padding-right: 4rem
+                    margin-bottom: 10%
         .second-image
-            // transform: translateY(-80%)
             position: absolute
             top: 10%
-            // width: 70%
             opacity: 0.33
             img
                 box-sizing: content-box
                 padding-left: 12rem
         div
-            // background-color: khaki
             a
                 display: flex
                 flex-direction: column
@@ -575,7 +566,7 @@ form
                     width: 70%
 
 // Transitions
-$trans-duration: 500ms
+$trans-duration: 350ms
 
 .transition-enter
     opacity: 0
@@ -602,7 +593,7 @@ $trans-duration: 500ms
 .trans-3-enter-active
     opacity: 1
     transform: scale(1)
-    transition: opacity $trans-duration ease-in-out 1000ms, transform 500ms ease-in-out 1000ms
+    transition: opacity $trans-duration ease-in-out $trans-duration*2, transform $trans-duration ease-in-out $trans-duration*2
 .trans-3-enter-done
     opacity: 1
     transform: scale(1)
@@ -613,7 +604,7 @@ $trans-duration: 500ms
 .trans-4-enter-active
     opacity: 1
     transform: scale(1)
-    transition: opacity $trans-duration ease-in-out 1500ms, transform $trans-duration ease-in-out 1500ms
+    transition: opacity $trans-duration ease-in-out $trans-duration*3, transform $trans-duration ease-in-out $trans-duration*3
 .trans-4-enter-done
     opacity: 1
     transform: scale(1)
