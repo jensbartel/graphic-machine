@@ -726,7 +726,6 @@ form input[type=submit] {
 }
 .overview-toki-container .overview-toki-inner .title:hover {
   color: #333;
-  margin: 1rem 0 20rem;
 }
 .overview-toki-container .overview-toki-inner p:not(.title) {
   font-family: "Archivo", sans-serif;
@@ -739,7 +738,7 @@ form input[type=submit] {
 .overview-toki-container .overview-toki-inner .description {
   width: 100%;
   padding-left: 50%;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
 }
 .overview-toki-container .overview-toki-inner .overview-toki-images {
   width: 100%;
@@ -759,6 +758,95 @@ form input[type=submit] {
   width: 80%;
   display: block;
 }
+.transition-toki-1-enter {
+  opacity: 0;
+  transform: translateY(2rem);
+}
+
+.transition-toki-1-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 350ms ease-in-out, transform 350ms ease-in-out;
+}
+
+.transition-toki-1-enter-done {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.transition-toki-2-enter {
+  opacity: 0;
+}
+
+.transition-toki-2-enter-active {
+  opacity: 1;
+  transition: opacity 350ms ease-in-out 700ms;
+}
+
+.transition-toki-2-enter-done {
+  opacity: 1;
+}
+
+.transition-toki-3-enter {
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+.transition-toki-3-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 250ms ease-in-out 1000ms, transform 250ms ease-in-out 1000ms;
+}
+
+.transition-toki-3-enter-done {
+  opacity: 1;
+}
+
+.transition-toki-4-enter {
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+.transition-toki-4-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 250ms ease-in-out 1250ms, transform 250ms ease-in-out 1250ms;
+}
+
+.transition-toki-4-enter-done {
+  opacity: 1;
+}
+
+.transition-toki-5-enter {
+  transform: scale(0.95);
+  opacity: 0;
+}
+
+.transition-toki-5-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 250ms ease-in-out 1500ms, transform 250ms ease-in-out 1500ms;
+}
+
+.transition-toki-5-enter-done {
+  opacity: 1;
+}
+
+.transition-toki-6-enter {
+  transform: scale(0.95);
+  opacity: 0;
+}
+
+.transition-toki-6-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 250ms ease-in-out 1750ms, transform 250ms ease-in-out 1750ms;
+}
+
+.transition-toki-6-enter-done {
+  opacity: 1;
+}
+
 @media only screen and (min-width: 1024px) and (max-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
   nav .navbar {
     margin: 2rem auto 0;

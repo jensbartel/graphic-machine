@@ -32,10 +32,12 @@ const WebpagesOverview2 = () => {
         <div className='overview2'>
             {animate.webpage1 === true ? <OverviewpageItem2 data={MoritaShiryu} image={moritaImage} image2={moritaImage2} /> : null}
             {animate.webpage2 === true ? <OverviewpageItem2 data={Suda} image={sudaImage} image2={sudaImage2} /> : null}
-            {/* {animate.webpage3 === true ? <OverviewpageItem2 data={Toki} image={tokiImage} /> : null} */}
-            {animate.webpage4 === true ? <OverviewpageItem2 data={Mishima} image={mishimaImage} image2={mishimaImage2} /> : null}
 
-            <OverviewpageItemToki data={Toki} image1={tokiImage} />
+            {animate.webpage3 === true ? <OverviewpageItemToki data={Toki} image1={tokiImage} /> : null}
+            {/* {animate.webpage3 === true ? <OverviewpageItem2 data={Toki} image={tokiImage} /> : null} */}
+            {/* <OverviewpageItemToki data={Toki} image1={tokiImage} /> */}
+
+            {animate.webpage4 === true ? <OverviewpageItem2 data={Mishima} image={mishimaImage} image2={mishimaImage2} /> : null}
         </div>
     );
 };

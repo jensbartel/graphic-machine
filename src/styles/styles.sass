@@ -556,6 +556,7 @@ form
             img
                 box-sizing: content-box
                 padding-left: 12rem
+
         div
             a
                 display: flex
@@ -626,7 +627,7 @@ $trans-duration: 350ms
             border-bottom: 1px dotted #000
             &:hover
                 color: #333
-                margin: 1rem 0 20rem
+                // margin: 1rem 0 20rem
         p
             &:not(.title)
                 font-family: $font-text
@@ -637,7 +638,7 @@ $trans-duration: 350ms
         .description
             width: 100%
             padding-left: 50%
-            margin-bottom: 0.25rem
+            margin-bottom: 0.5rem
         .overview-toki-images
             width: 100%
             display: flex
@@ -656,3 +657,66 @@ $trans-duration: 350ms
                 .second-image
                 .third-image
                 .fourth-image
+
+$trans-duration-long: $trans-duration * 2
+$trans-duration-short: 250ms
+
+.transition-toki-1-enter
+    opacity: 0
+    transform: translateY(2rem)
+.transition-toki-1-enter-active
+    opacity: 1
+    transform: translateY(0)
+    transition: opacity $trans-duration ease-in-out, transform $trans-duration ease-in-out
+.transition-toki-1-enter-done
+    opacity: 1
+    transform: translateY(0)
+
+.transition-toki-2-enter
+    opacity: 0
+.transition-toki-2-enter-active
+    opacity: 1
+    transition: opacity $trans-duration ease-in-out $trans-duration-long
+.transition-toki-2-enter-done
+    opacity: 1
+
+// four images
+.transition-toki-3-enter
+    opacity: 0
+    transform: scale(0.95)
+.transition-toki-3-enter-active
+    opacity: 1
+    transform: scale(1)
+    transition: opacity $trans-duration-short ease-in-out 1000ms, transform $trans-duration-short ease-in-out 1000ms
+.transition-toki-3-enter-done
+    opacity: 1
+
+.transition-toki-4-enter
+    opacity: 0
+    transform: scale(0.95)
+.transition-toki-4-enter-active
+    opacity: 1
+    transform: scale(1)
+    transition: opacity $trans-duration-short ease-in-out 1250ms, transform $trans-duration-short ease-in-out 1250ms
+.transition-toki-4-enter-done
+    opacity: 1
+
+.transition-toki-5-enter
+    transform: scale(0.95)
+    opacity: 0
+.transition-toki-5-enter-active
+    opacity: 1
+    transform: scale(1)
+    transition: opacity $trans-duration-short ease-in-out 1500ms, transform $trans-duration-short ease-in-out 1500ms
+.transition-toki-5-enter-done
+    opacity: 1
+
+.transition-toki-6-enter
+    transform: scale(0.95)
+    opacity: 0
+.transition-toki-6-enter-active
+    opacity: 1
+    transform: scale(1)
+    transition: opacity $trans-duration-short ease-in-out 1750ms,transform $trans-duration-short ease-in-out 1750ms
+.transition-toki-6-enter-done
+    opacity: 1

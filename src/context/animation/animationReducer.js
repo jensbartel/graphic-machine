@@ -5,7 +5,7 @@ const animationReducer = (state, action) => {
         case SET_TRIGGER:
             const id = action.payload;
             let trigger = state.animate;
-            // console.log('trigger', trigger);
+
             switch (id) {
                 case 1:
                     trigger = { webpage1: true, webpage2: true, webpage3: false, webpage4: false };

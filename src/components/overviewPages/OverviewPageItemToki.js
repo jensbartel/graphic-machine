@@ -45,31 +45,64 @@ const OverviewpageItemToki = props => {
 
     return (
         <div className='overview-toki-container'>
-            <div className='overview-toki-inner'>
-                <p className='title'>{titleChoice}</p>
+            <Link to='./webpages/toki'>
+                <div className='overview-toki-inner'>
+                    <CSSTransition key={1} in={show} appear={true} timeout={500} classNames='transition-toki-1'>
+                        <p className='title'>{titleChoice}</p>
+                    </CSSTransition>
 
-                <div className='description'>
-                    <p>{descriptionChoice}</p>
-                    <p>{dateChoice}</p>
-                </div>
+                    <div className='description'>
+                        <CSSTransition key={1} in={show} appear={true} timeout={1000} classNames='transition-toki-2'>
+                            <div className='descript'>
+                                <p>{descriptionChoice}</p>
+                                <p>{dateChoice}</p>
+                            </div>
+                        </CSSTransition>
+                    </div>
 
-                <div className='overview-toki-images'>
-                    <div className='overview-toki-images-inner'>
-                        <div className='first-image'>
-                            <img src={toki1} alt='' className='first-image' />
-                        </div>
-                        <div className='second-image'>
-                            <img src={toki2} alt='' />
-                        </div>
-                        <div className='third-image'>
-                            <img src={toki3} alt='' className='first-image' />
-                        </div>
-                        <div className='fourth-image'>
-                            <img src={toki4} alt='' />
+                    <div className='overview-toki-images'>
+                        <div className='overview-toki-images-inner'>
+                            <div className='first-image'>
+                                <CSSTransition key={1} in={show} appear={true} timeout={1250} classNames='transition-toki-3'>
+                                    <img src={toki1} alt='' className='first-image' />
+                                </CSSTransition>
+                            </div>
+                            <div className='second-image'>
+                                <CSSTransition key={1} in={show} appear={true} timeout={1500} classNames='transition-toki-4'>
+                                    <img src={toki2} alt='' />
+                                </CSSTransition>
+                            </div>
+                            <div className='third-image'>
+                                <CSSTransition key={1} in={show} appear={true} timeout={1750} classNames='transition-toki-5'>
+                                    <img src={toki3} alt='' className='first-image' />
+                                </CSSTransition>
+                            </div>
+                            <div className='fourth-image'>
+                                <CSSTransition
+                                    key={1}
+                                    in={show}
+                                    appear={true}
+                                    timeout={2000}
+                                    classNames='transition-toki-6'
+                                    addEndListener={node => {
+                                        node.addEventListener(
+                                            'transitionend',
+                                            () => {
+                                                setTimeout(() => {
+                                                    setAnimation(id);
+                                                }, 500);
+                                            },
+                                            false
+                                        );
+                                    }}
+                                >
+                                    <img src={toki4} alt='' />
+                                </CSSTransition>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </Link>
         </div>
     );
 };
