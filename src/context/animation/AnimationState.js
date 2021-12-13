@@ -16,12 +16,11 @@ const AnimationState = props => {
     const [state, dispatch] = useReducer(animationReducer, initialState);
 
     const setAnimation = item => {
-        // console.log(`Value at State ${item}`);
         dispatch({ type: SET_TRIGGER, payload: item });
     };
 
-    const removeAnimation = item => {
-        dispatch({ type: REMOVE_TRIGGER, payload: item });
+    const clearAnimation = () => {
+        dispatch({ type: REMOVE_TRIGGER, payload: initialState.animate });
     };
 
     return (
@@ -29,7 +28,7 @@ const AnimationState = props => {
             value={{
                 animate: state.animate,
                 setAnimation,
-                removeAnimation,
+                clearAnimation,
             }}
         >
             {props.children}

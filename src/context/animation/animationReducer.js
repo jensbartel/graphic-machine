@@ -23,7 +23,7 @@ const animationReducer = (state, action) => {
                 animate: trigger,
             };
         case REMOVE_TRIGGER:
-            return { state: null };
+            return { animate: action.payload };
         default:
             return state;
     }

@@ -1,20 +1,24 @@
-// import React, { useContext } from 'react';
 import React, { useEffect, useContext } from 'react';
-import moritaImage from '../../img/overview/morita.jpg';
 import OverviewpageItem2 from './OverviewPageItem2';
-import { webPages } from '../../data/projectOverviewData/WebPageObjects';
+
+import mishimaImage from '../../img/overview/mishima.jpg';
+import moritaImage from '../../img/overview/morita.jpg';
 import sudaImage from '../../img/overview/suda.jpg';
 import tokiImage from '../../img/overview/toki.jpg';
-import mishimaImage from '../../img/overview/mishima.jpg';
+import { webPages } from '../../data/projectOverviewData/WebPageObjects';
 
 import AnimationContext from '../../context/animation/animationContext';
 
 const WebpagesOverview2 = () => {
     const animationContext = useContext(AnimationContext);
-    const { animate } = animationContext;
+    let { animate, clearAnimation } = animationContext;
 
     useEffect(() => {
         document.title = 'Grifold Studio | Web Pages';
+        // note: returning a function means that function mimics componentWillUnmount
+        return () => {
+            clearAnimation();
+        };
         // eslint-disable-next-line
     }, []);
 

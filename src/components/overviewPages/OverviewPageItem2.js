@@ -1,8 +1,6 @@
 import { useContext } from 'react';
 import { useState, useEffect } from 'react';
-// import { useInView } from 'react-intersection-observer';
 import { CSSTransition } from 'react-transition-group';
-// import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { Link } from 'react-router-dom';
 
 import LangContext from '../../context/langContext';
@@ -12,8 +10,7 @@ import AnimationContext from '../../context/animation/animationContext';
 
 const OverviewpageItem2 = props => {
     const animationContext = useContext(AnimationContext);
-    const { setAnimation, animate } = animationContext;
-    // console.log('animate:', animate);
+    const { setAnimation } = animationContext;
 
     const {
         data: { id, title, titleFR, description, desFR, date, dateFR, url },
@@ -81,8 +78,6 @@ const OverviewpageItem2 = props => {
                                             setTimeout(() => {
                                                 setAnimation(id);
                                             }, 500);
-                                            console.log('here my id', id);
-                                            // setAnimation(id);
                                         },
                                         false
                                     );
