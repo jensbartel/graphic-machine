@@ -552,7 +552,7 @@ form
         .second-image
             position: absolute
             top: 10%
-            opacity: 0.33
+            opacity: 0.5
             img
                 box-sizing: content-box
                 padding-left: 12rem
@@ -609,3 +609,50 @@ $trans-duration: 350ms
 .trans-4-enter-done
     opacity: 1
     transform: scale(1)
+
+.overview-toki-container
+    margin-top: 4rem
+    .overview-toki-inner
+        display: flex
+        align-items: center
+        flex-direction: column
+        .title
+            display: inline-block
+            font-size: 2rem
+            font-family: $font-headline
+            letter-spacing: 1px
+            color: #222
+            margin: 0 0 0.5rem 0
+            border-bottom: 1px dotted #000
+            &:hover
+                color: #333
+                margin: 1rem 0 20rem
+        p
+            &:not(.title)
+                font-family: $font-text
+                color: #333
+                font-size: 0.7rem
+                &:last-child
+                    margin-bottom: 0.75rem
+        .description
+            width: 100%
+            padding-left: 50%
+            margin-bottom: 0.25rem
+        .overview-toki-images
+            width: 100%
+            display: flex
+            justify-content: center
+            .overview-toki-images-inner
+                width: 90%
+                display: flex
+                justify-content: space-evenly
+                div
+                    display: flex
+                    justify-content: center
+                    img
+                        width: 80%
+                        display: block
+                .first-image
+                .second-image
+                .third-image
+                .fourth-image

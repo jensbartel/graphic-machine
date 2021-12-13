@@ -15,6 +15,7 @@ const OverviewpageItem2 = props => {
     const {
         data: { id, title, titleFR, description, desFR, date, dateFR, url },
         image,
+        image2,
     } = props;
 
     const langContext = useContext(LangContext);
@@ -83,7 +84,7 @@ const OverviewpageItem2 = props => {
                                     );
                                 }}
                             >
-                                <img src={roundtable} alt='' />
+                                <img src={image2} alt='' />
                             </CSSTransition>
                         </Link>
                     </div>
