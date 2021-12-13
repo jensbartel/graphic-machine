@@ -2,6 +2,7 @@ import img_morita from '../../img/banner/morita_banner.png';
 import img_lavendarium from '../../img/banner/lavendarium_banner.png';
 import img_suda from '../../img/banner/suda_banner.png';
 
+// delete intro later and simplify object structure
 const webPagesIntro = {
     headline: 'Web Pages',
     textEN: `When Henry Miller published his "character assassination" of Conrad Moricand in A Devil In Paradise (1956), it must have sent the then recently-deceased astrologer spinning in his grave. No longer alive to defend his reputation, Moricand has come off as a creepy, vain, poncey buffoon to readers for decades. It's fifty years later, and Moricand's corpse can stop spinning now that Karl Orend has come to his defense in The Brotherhood of Fools & Simpletons: Gods and Devils in Henry Miller's Utopia (Alyscamps Press, 2005).`,
@@ -12,24 +13,6 @@ const webPagesIntro = {
 // omit: this page, Kuroda
 // non-SBK: 4
 // SBK: 6
-
-// const artword = {
-//     id: 100,
-//     title: 'artword',
-// };
-
-const Lavendarium = {
-    id: 2,
-    title: 'Lavendarium',
-    titleFR: 'Lavendarium',
-    img: img_lavendarium,
-    description: 'Artist portfolio, recreating a Squarespace template in React',
-    desFR: 'Portfolio artiste, inspiré par un template Squarespace, créé en React',
-    tools: ['React', 'GCP'],
-    date: 'May 2021',
-    dateFR: 'Mai 2021',
-    url: '/',
-};
 
 const MoritaShiryu = {
     id: 1,
@@ -46,32 +29,8 @@ const MoritaShiryu = {
     github: 'https://github.com/jensbartel/morita_refactor-review',
 };
 
-// const Kuroda = {
-//     id: 4,
-//     title: 'Kuroda Seitarō Exhibition',
-// };
-
-const Mishima = {
-    id: 5,
-    title: 'Mishima Ritsue Exhibition',
-    titleFR: 'Éxposition Mishima Ritsue',
-    description: 'Venetian-based Japanese glass artist',
-    desFR: 'Artiste Japonaise du glasse situé à Venise',
-    tools: ['HTML/CSS/JS'],
-    date: 'May 2020',
-    dateFR: 'Mai 2020',
-    url: 'webpages/mishima',
-    livePage: 'https://storage.googleapis.com/mishima-332813/mishima_eng.html',
-    github: 'https://github.com/jensbartel/mishimaritsue-exhibition',
-};
-
-const Kida = {
-    id: 6,
-    title: 'Kida Yasuhiko Exhibition',
-};
-
 const Toki = {
-    id: 7,
+    id: 3,
     title: 'Toki-no-Wasuremono Gallery',
     titleFR: 'Galerie Toki-no-Wasuremono',
     img: img_lavendarium,
@@ -83,18 +42,8 @@ const Toki = {
     url: 'webpages/toki',
 };
 
-// const HPECMerger = {
-//     id: 8,
-//     title: 'Shibunkaku HP/EC Merger',
-// };
-
-// const thisPage = {
-//     id: 9,
-//     title: 'Grifold Studio (this page)',
-// };
-
 const Suda = {
-    id: 3,
+    id: 2,
     title: 'Suda Kokuta: Abstractions',
     titleFR: 'Suda Kokuta: Abstractions ',
     img: img_suda,
@@ -108,10 +57,42 @@ const Suda = {
     github: 'https://github.com/jensbartel',
 };
 
-const data = { MoritaShiryu, Suda, Lavendarium, Toki, Mishima, Kida };
+const Mishima = {
+    id: 4,
+    title: 'Mishima Ritsue Exhibition',
+    titleFR: 'Éxposition Mishima Ritsue',
+    description: 'Venetian-based Japanese glass artist',
+    desFR: 'Artiste Japonaise du glasse situé à Venise',
+    tools: ['HTML/CSS/JS'],
+    date: 'May 2020',
+    dateFR: 'Mai 2020',
+    url: 'webpages/mishima',
+    livePage: 'https://storage.googleapis.com/mishima-332813/mishima_eng.html',
+    github: 'https://github.com/jensbartel/mishimaritsue-exhibition',
+};
+
+const Kida = {
+    id: 20,
+    title: 'Kida Yasuhiko Exhibition',
+};
+
+const Lavendarium = {
+    id: 21,
+    title: 'Lavendarium',
+    titleFR: 'Lavendarium',
+    img: img_lavendarium,
+    description: 'Artist portfolio, recreating a Squarespace template in React',
+    desFR: 'Portfolio artiste, inspiré par un template Squarespace, créé en React',
+    tools: ['React', 'GCP'],
+    date: 'May 2021',
+    dateFR: 'Mai 2021',
+    url: '/',
+};
+
+const data = { MoritaShiryu, Toki, Suda, Mishima, Kida, Lavendarium };
 
 // removie later - this is just to keep the earlier overview page layout alive for now
-const dataArray = [MoritaShiryu, Suda, Lavendarium, Toki, Mishima, Kida];
+const dataArray = [MoritaShiryu, Suda, Toki, Mishima, Lavendarium, Kida];
 
 export const webPages = {
     intro: webPagesIntro,

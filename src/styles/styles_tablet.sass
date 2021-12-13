@@ -158,6 +158,11 @@ $font-text: 'Nunito', sans-serif
     .overview2
         margin: 0 7.5%
     .overview-item-container
+        &:not(&:first-child)
+            margin-top: 4rem
+        &:first-child
+            margin-top: 2rem
+
         .overview-inner
             a
                 p
@@ -170,6 +175,11 @@ $font-text: 'Nunito', sans-serif
             .first-image
                 img
                     margin-bottom: 15%
+            .second-image
+                a
+                    align-items: flex-end
+                    img
+                        padding-left: 0
 
 // iPad Pro
 @media only screen and (min-width: 1024px) and (max-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2)

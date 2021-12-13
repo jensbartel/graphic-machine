@@ -1,14 +1,22 @@
 import { useContext } from 'react';
 import { useState, useEffect } from 'react';
+// import { useInView } from 'react-intersection-observer';
+import { CSSTransition } from 'react-transition-group';
+// import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import { Link } from 'react-router-dom';
 
 import LangContext from '../../context/langContext';
-import { Link } from 'react-router-dom';
 import roundtable from '../../img/overview/roundtable.jpg';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
+
+import AnimationContext from '../../context/animation/animationContext';
 
 const OverviewpageItem2 = props => {
+    const animationContext = useContext(AnimationContext);
+    const { setAnimation, animate } = animationContext;
+    // console.log('animate:', animate);
+
     const {
-        data: { title, titleFR, description, desFR, date, dateFR, tools, url },
+        data: { id, title, titleFR, description, desFR, date, dateFR, url },
         image,
     } = props;
 
@@ -28,10 +36,6 @@ const OverviewpageItem2 = props => {
 
     const [show, setShow] = useState(false);
 
-    const buttonClicked = () => {
-        setShow(!show);
-    };
-
     useEffect(() => {
         setShow(!show);
         // eslint-disable-next-line
@@ -40,37 +44,56 @@ const OverviewpageItem2 = props => {
     return (
         <div className='overview-item-container'>
             <div className='overview-inner'>
-                <TransitionGroup>
+                {/* <TransitionGroup> */}
+                <Link to={url}>
+                    <CSSTransition key={1} in={show} appear={true} timeout={500} classNames='transition'>
+                        <p className='title'>{titleChoice}</p>
+                    </CSSTransition>
+                </Link>
+
+                <Link to={url}>
+                    <CSSTransition key={2} in={show} appear={true} timeout={1000} classNames='trans-2'>
+                        <div className='description'>
+                            <p>{descriptionChoice}</p>
+                            <p>{dateChoice}</p>
+                        </div>
+                    </CSSTransition>
+                </Link>
+
+                <div className='first-image'>
                     <Link to={url}>
-                        <CSSTransition key={1} in={show} appear={true} timeout={500} classNames='transition'>
-                            <p className='title'>{titleChoice}</p>
+                        <CSSTransition key={3} in={show} appear={true} timeout={1500} classNames='trans-3'>
+                            <img src={image} alt='' className='first-image' />
                         </CSSTransition>
                     </Link>
-
-                    <Link to={url}>
-                        <CSSTransition key={2} in={show} appear={true} timeout={1000} classNames='trans-2'>
-                            <div className='description'>
-                                <p>{descriptionChoice}</p>
-                                <p>{dateChoice}</p>
-                            </div>
-                        </CSSTransition>
-                    </Link>
-
-                    <div className='first-image'>
+                    <div className='second-image'>
                         <Link to={url}>
-                            <CSSTransition key={3} in={show} appear={true} timeout={1500} classNames='trans-3'>
-                                <img src={image} alt='' className='first-image' />
+                            <CSSTransition
+                                key={4}
+                                in={show}
+                                appear={true}
+                                timeout={2000}
+                                classNames='trans-4'
+                                addEndListener={node => {
+                                    node.addEventListener(
+                                        'transitionend',
+                                        () => {
+                                            setTimeout(() => {
+                                                setAnimation(id);
+                                            }, 500);
+                                            console.log('here my id', id);
+                                            // setAnimation(id);
+                                        },
+                                        false
+                                    );
+                                }}
+                            >
+                                <img src={roundtable} alt='' />
                             </CSSTransition>
                         </Link>
-                        <div className='second-image'>
-                            <Link to={url}>
-                                <CSSTransition key={4} in={show} appear={true} timeout={2000} classNames='trans-4'>
-                                    <img src={roundtable} alt='' />
-                                </CSSTransition>
-                            </Link>
-                        </div>
                     </div>
-                </TransitionGroup>
+                </div>
+                {/* </TransitionGroup> */}
             </div>
         </div>
     );

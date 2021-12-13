@@ -19,47 +19,53 @@ import WebpagesOverview from './components/overviewPages/WebpagesOverview';
 import WebappsOverview from './components/overviewPages/WebappsOverview';
 import WebpagesOverview2 from './components/overviewPages/WebpagesOverview2';
 
+import AnimationState from './context/animation/AnimationState';
+
 const App = () => {
     const langContext = useContext(LangContext);
-    const { setLang, removeLang } = langContext;
+    const { setLang } = langContext;
+    // const { setLang, removeLang } = langContext;
 
     useEffect(() => {
         if (localStorage.getItem('displayLanguage')) {
             setLang();
-        } else {
-            removeLang();
-        } 
+        }
+        // else {
+        //     removeLang();
+        // }
         // eslint-disable-next-line
     }, []);
 
     return (
-        <Router>
-            <ScrollToTop />
-            <div id='pagetop'></div>
-            <div className='page-container'>
-                <Navbar />
-                <div className='content-container'>
-                    <Switch>
-                        <Route exact path='/' component={WebpagesOverview2} />
-                        <Route exact path='/webpages' component={WebpagesOverview} />
-                        <Route exact path='/webapps' component={WebappsOverview} />
-                        <Route exact path='/about' component={About} />
+        <AnimationState>
+            <Router>
+                <ScrollToTop />
+                <div id='pagetop'></div>
+                <div className='page-container'>
+                    <Navbar />
+                    <div className='content-container'>
+                        <Switch>
+                            <Route exact path='/' component={WebpagesOverview2} />
+                            <Route exact path='/webpages' component={WebpagesOverview} />
+                            <Route exact path='/webapps' component={WebappsOverview} />
+                            <Route exact path='/about' component={About} />
 
-                        {/* project pages */}
-                        <Route exact path='/webapps/clientapp' component={ClientApp} />
-                        <Route exact path='/webpages/mishima' component={Mishima} />
-                        <Route exact path='/webapps/mmas' component={MMAS} />
-                        <Route exact path='/webpages/morita' component={Morita} />
-                        <Route exact path='/webapps/resourcenet' component={ResNet} />
-                        <Route exact path='/webpages/suda' component={Suda} />
-                        <Route exact path='/webpages/toki' component={Toki} />
+                            {/* project pages */}
+                            <Route exact path='/webapps/clientapp' component={ClientApp} />
+                            <Route exact path='/webpages/mishima' component={Mishima} />
+                            <Route exact path='/webapps/mmas' component={MMAS} />
+                            <Route exact path='/webpages/morita' component={Morita} />
+                            <Route exact path='/webapps/resourcenet' component={ResNet} />
+                            <Route exact path='/webpages/suda' component={Suda} />
+                            <Route exact path='/webpages/toki' component={Toki} />
 
-                        <Route component={NotFound} />
-                    </Switch>
+                            <Route component={NotFound} />
+                        </Switch>
+                    </div>
+                    {/* <Footer /> */}
                 </div>
-                <Footer />
-            </div>
-        </Router>
+            </Router>
+        </AnimationState>
     );
 };
 
