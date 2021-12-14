@@ -17,9 +17,7 @@ const OverviewpageItemToki = props => {
     const { setAnimation } = animationContext;
 
     const {
-        data: { id, title, titleFR, description, desFR, date, dateFR, url },
-        image,
-        image2,
+        data: { id, title, titleFR, description, desFR, date, dateFR },
     } = props;
 
     const langContext = useContext(LangContext);

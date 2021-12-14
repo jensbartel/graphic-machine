@@ -4,7 +4,7 @@ import OverviewpageItem2 from './OverviewPageItem2';
 import mishimaImage from '../../img/overview/mishima.jpg';
 import mishimaImage2 from '../../img/overview/mishima2.jpg';
 import moritaImage from '../../img/overview/morita.jpg';
-import moritaImage2 from '../../img/overview/roundtable.jpg';
+import moritaImage2 from '../../img/overview/morita2.jpg';
 import sudaImage from '../../img/overview/suda.jpg';
 import sudaImage2 from '../../img/overview/suda2.jpg';
 import tokiImage from '../../img/overview/toki.jpg';
