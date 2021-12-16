@@ -709,8 +709,14 @@ form input[type=submit] {
 
 .overview-toki-container {
   margin-top: 4rem;
+  padding-bottom: 75%;
+  position: relative;
+  background-color: #9dacc0;
 }
 .overview-toki-container .overview-toki-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -758,6 +764,23 @@ form input[type=submit] {
   width: 80%;
   display: block;
 }
+
+.overview3 {
+  margin: 2.5rem 8rem 0;
+  font-family: "Archivo", sans-serif;
+  color: #333;
+  font-size: 0.7rem;
+}
+.overview3 .overview3-container {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-bottom: 50%;
+  background-color: lightgrey;
+}
+.overview3 .active {
+  background-color: pink;
+}
+
 .transition-toki-1-enter {
   opacity: 0;
   transform: translateY(2rem);

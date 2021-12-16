@@ -4,7 +4,7 @@ import { CSSTransition } from 'react-transition-group';
 import { Link } from 'react-router-dom';
 
 import LangContext from '../../context/langContext';
-import roundtable from '../../img/overview/roundtable.jpg';
+// import roundtable from '../../img/overview/roundtable.jpg';
 
 import AnimationContext from '../../context/animation/animationContext';
 

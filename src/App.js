@@ -5,7 +5,7 @@ import LangContext from './context/langContext';
 
 import About from './components/pages/About';
 import ClientApp from './components/projects/projectPages/ClientApp';
-import Footer from './components/layout/Footer';
+// import Footer from './components/layout/Footer';
 import Mishima from './components/projects/projectPages/Mishima';
 import MMAS from './components/projects/projectPages/MMAS';
 import Morita from './components/projects/projectPages/Morita';
@@ -17,7 +17,8 @@ import Suda from './components/projects/projectPages/Suda';
 import Toki from './components/projects/projectPages/Toki';
 import WebpagesOverview from './components/overviewPages/WebpagesOverview';
 import WebappsOverview from './components/overviewPages/WebappsOverview';
-import WebpagesOverview2 from './components/overviewPages/WebpagesOverview2';
+// import WebpagesOverview2 from './components/overviewPages/WebpagesOverview2';
+import WebpagesOverview3 from './components/overviewPages/WebpagesOverview3';
 
 import AnimationState from './context/animation/AnimationState';
 
@@ -45,7 +46,8 @@ const App = () => {
                     <Navbar />
                     <div className='content-container'>
                         <Switch>
-                            <Route exact path='/' component={WebpagesOverview2} />
+                            <Route exact path='/' component={WebpagesOverview3} />
+                            {/* <Route exact path='/' component={WebpagesOverview2} /> */}
                             <Route exact path='/webpages' component={WebpagesOverview} />
                             <Route exact path='/webapps' component={WebappsOverview} />
                             <Route exact path='/about' component={About} />
