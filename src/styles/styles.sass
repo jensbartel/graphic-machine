@@ -615,7 +615,7 @@ $trans-duration: 350ms
     margin-top: 4rem
     padding-bottom: 75%
     position: relative
-    background-color: #9dacc0
+    // background-color: #9dacc0
     .overview-toki-inner
         position: absolute
         width: 100%
@@ -659,10 +659,6 @@ $trans-duration: 350ms
                     img
                         width: 80%
                         display: block
-                // .first-image
-                // .second-image
-                // .third-image
-                // .fourth-image
 
 .overview3
     margin: 2.5rem 8rem 0
@@ -674,8 +670,102 @@ $trans-duration: 350ms
         margin-bottom: 2rem
         padding-bottom: 50%
         background-color: lightgrey
+        .container-inner
+            position: absolute
+            inset: 0
+            display: flex
+            flex-direction: column
+            .title, .description
+                height: 40px
+                background-color: yellow
+                margin: 1rem 20%
+            .title
+                // opacity: 0
+            .image
+                height: 300px
+                background-color: lightgrey
+                margin: 2rem 10% 0
+        button
+            position: absolute
+            &:hover
+                cursor: pointer
     .active
         background-color: pink
+
+// anim-1
+.anim-1-appear
+    opacity: 0
+.anim-1-appear-active
+    opacity: 1
+    transition: opacity 1000ms ease-in-out
+.anim-1-appear-done
+    opacity: 1
+
+.anim-1-exit
+    opacity: 1
+.anim-1-exit-active
+    opacity: 0
+    transition: opacity 1000ms ease-in-out
+.anim-1-exit-done
+    opacity: 0
+
+.anim-1-enter
+    opacity: 0
+.anim-1-enter-active
+    opacity: 1
+    transition: opacity 1000ms ease-in-out
+.anim-1-enter-done
+    opacity: 1
+
+// anim 2
+.anim-2-appear
+    opacity: 0
+.anim-2-appear-active
+    opacity: 1
+    transition: opacity 1000ms ease-in-out 1000ms
+.anim-2-appear-done
+    opacity: 1
+
+.anim-2-exit
+    opacity: 1
+.anim-2-exit-active
+    opacity: 0
+    transition: opacity 1000ms ease-in-out 1000ms
+.anim-2-exit-done
+    opacity: 0
+
+.anim-2-enter
+    opacity: 0
+.anim-2-enter-active
+    opacity: 1
+    transition: opacity 1000ms ease-in-out 1000ms
+.anim-2-enter-done
+    opacity: 1
+
+// anim 3
+.anim-3-appear
+    opacity: 0
+.anim-3-appear-active
+    opacity: 1
+    transition: opacity 1000ms ease-in-out 2000ms
+.anim-3-appear-done
+    opacity: 1
+
+.anim-3-exit
+    opacity: 1
+.anim-3-exit-active
+    opacity: 0
+    transition: opacity 1000ms ease-in-out 2000ms
+.anim-3-exit-done
+    opacity: 0
+
+.anim-3-enter
+    opacity: 0
+.anim-3-enter-active
+    opacity: 1
+    transition: opacity 1000ms ease-in-out 2000ms
+.anim-3-enter-done
+    opacity: 1
 
 // ALL THIS IS LOTS OF LINES. ANY WAYS TO SIMPLIFY??
 $trans-duration-long: $trans-duration * 2

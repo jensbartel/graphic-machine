@@ -711,7 +711,6 @@ form input[type=submit] {
   margin-top: 4rem;
   padding-bottom: 75%;
   position: relative;
-  background-color: #9dacc0;
 }
 .overview-toki-container .overview-toki-inner {
   position: absolute;
@@ -777,8 +776,147 @@ form input[type=submit] {
   padding-bottom: 50%;
   background-color: lightgrey;
 }
+.overview3 .overview3-container .container-inner {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+}
+.overview3 .overview3-container .container-inner .title, .overview3 .overview3-container .container-inner .description {
+  height: 40px;
+  background-color: yellow;
+  margin: 1rem 20%;
+}
+.overview3 .overview3-container .container-inner .image {
+  height: 300px;
+  background-color: lightgrey;
+  margin: 2rem 10% 0;
+}
+.overview3 .overview3-container button {
+  position: absolute;
+}
+.overview3 .overview3-container button:hover {
+  cursor: pointer;
+}
 .overview3 .active {
   background-color: pink;
+}
+
+.anim-1-appear {
+  opacity: 0;
+}
+
+.anim-1-appear-active {
+  opacity: 1;
+  transition: opacity 1000ms ease-in-out;
+}
+
+.anim-1-appear-done {
+  opacity: 1;
+}
+
+.anim-1-exit {
+  opacity: 1;
+}
+
+.anim-1-exit-active {
+  opacity: 0;
+  transition: opacity 1000ms ease-in-out;
+}
+
+.anim-1-exit-done {
+  opacity: 0;
+}
+
+.anim-1-enter {
+  opacity: 0;
+}
+
+.anim-1-enter-active {
+  opacity: 1;
+  transition: opacity 1000ms ease-in-out;
+}
+
+.anim-1-enter-done {
+  opacity: 1;
+}
+
+.anim-2-appear {
+  opacity: 0;
+}
+
+.anim-2-appear-active {
+  opacity: 1;
+  transition: opacity 1000ms ease-in-out 1000ms;
+}
+
+.anim-2-appear-done {
+  opacity: 1;
+}
+
+.anim-2-exit {
+  opacity: 1;
+}
+
+.anim-2-exit-active {
+  opacity: 0;
+  transition: opacity 1000ms ease-in-out 1000ms;
+}
+
+.anim-2-exit-done {
+  opacity: 0;
+}
+
+.anim-2-enter {
+  opacity: 0;
+}
+
+.anim-2-enter-active {
+  opacity: 1;
+  transition: opacity 1000ms ease-in-out 1000ms;
+}
+
+.anim-2-enter-done {
+  opacity: 1;
+}
+
+.anim-3-appear {
+  opacity: 0;
+}
+
+.anim-3-appear-active {
+  opacity: 1;
+  transition: opacity 1000ms ease-in-out 2000ms;
+}
+
+.anim-3-appear-done {
+  opacity: 1;
+}
+
+.anim-3-exit {
+  opacity: 1;
+}
+
+.anim-3-exit-active {
+  opacity: 0;
+  transition: opacity 1000ms ease-in-out 2000ms;
+}
+
+.anim-3-exit-done {
+  opacity: 0;
+}
+
+.anim-3-enter {
+  opacity: 0;
+}
+
+.anim-3-enter-active {
+  opacity: 1;
+  transition: opacity 1000ms ease-in-out 2000ms;
+}
+
+.anim-3-enter-done {
+  opacity: 1;
 }
 
 .transition-toki-1-enter {

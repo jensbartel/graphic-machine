@@ -15,9 +15,9 @@ import ResNet from './components/projects/projectPages/ResNet';
 import ScrollToTop from './components/layout/Scroll';
 import Suda from './components/projects/projectPages/Suda';
 import Toki from './components/projects/projectPages/Toki';
-import WebpagesOverview from './components/overviewPages/WebpagesOverview';
+// import WebpagesOverview from './components/overviewPages/WebpagesOverview';
 import WebappsOverview from './components/overviewPages/WebappsOverview';
-// import WebpagesOverview2 from './components/overviewPages/WebpagesOverview2';
+import WebpagesOverview2 from './components/overviewPages/WebpagesOverview2';
 import WebpagesOverview3 from './components/overviewPages/WebpagesOverview3';
 
 import AnimationState from './context/animation/AnimationState';
@@ -48,7 +48,7 @@ const App = () => {
                         <Switch>
                             <Route exact path='/' component={WebpagesOverview3} />
                             {/* <Route exact path='/' component={WebpagesOverview2} /> */}
-                            <Route exact path='/webpages' component={WebpagesOverview} />
+                            <Route exact path='/webpages' component={WebpagesOverview2} />
                             <Route exact path='/webapps' component={WebappsOverview} />
                             <Route exact path='/about' component={About} />
 

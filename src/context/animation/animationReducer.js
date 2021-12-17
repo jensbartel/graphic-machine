@@ -5,6 +5,7 @@ const animationReducer = (state, action) => {
         case SET_TRIGGER:
             const id = action.payload;
             let trigger = state.animate;
+            console.log('id, Reducer:', id);
 
             switch (id) {
                 case 1:
@@ -19,6 +20,7 @@ const animationReducer = (state, action) => {
                 default:
                     break;
             }
+            console.log('trigger', trigger);
             return {
                 animate: trigger,
             };

@@ -16,6 +16,7 @@ const AnimationState = props => {
     const [state, dispatch] = useReducer(animationReducer, initialState);
 
     const setAnimation = item => {
+        // console.log('animState:', item);
         dispatch({ type: SET_TRIGGER, payload: item });
     };
 
