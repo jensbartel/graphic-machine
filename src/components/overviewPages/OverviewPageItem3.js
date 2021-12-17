@@ -4,7 +4,10 @@ import { CSSTransition } from 'react-transition-group';
 import AnimationContext from '../../context/animation/animationContext';
 
 const OverviewPageItem3 = props => {
-    const { id } = props;
+    const {
+        id,
+        data: { title, description },
+    } = props;
     const { ref, inView } = useInView({
         threshold: 0.5, // 1: element is fully visible, 0: element is not visible
         triggerOnce: true,
@@ -32,16 +35,29 @@ const OverviewPageItem3 = props => {
         default:
             break;
     }
-    console.log('Trigger, id after switch:', trigger, id);
 
     return (
         <div ref={ref} className={inView ? 'overview3-container active' : 'overview3-container'}>
             <div className='container-inner'>
-                <CSSTransition key={1} in={inView && trigger} appear={true} timeout={1000} classNames='anim-1' unmountOnExit>
-                    <div className='title'>Title {id}</div>
+                <CSSTransition
+                    key={1}
+                    in={inView && trigger}
+                    appear={true}
+                    timeout={1000}
+                    classNames='anim-1'
+                    unmountOnExit
+                >
+                    <div className='title'>{title}</div>
                 </CSSTransition>
-                <CSSTransition key={2} in={inView && trigger} appear={true} timeout={2000} classNames='anim-2' unmountOnExit>
-                    <div className='description'>Description</div>
+                <CSSTransition
+                    key={2}
+                    in={inView && trigger}
+                    appear={true}
+                    timeout={2000}
+                    classNames='anim-2'
+                    unmountOnExit
+                >
+                    <div className='description'>{description}</div>
                 </CSSTransition>
                 <CSSTransition
                     key={3}

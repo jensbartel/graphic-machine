@@ -767,13 +767,12 @@ form input[type=submit] {
 .overview3 {
   margin: 2.5rem 8rem 0;
   font-family: "Archivo", sans-serif;
-  color: #333;
   font-size: 0.7rem;
 }
 .overview3 .overview3-container {
   position: relative;
   margin-bottom: 2rem;
-  padding-bottom: 50%;
+  padding-bottom: 80%;
   background-color: lightgrey;
 }
 .overview3 .overview3-container .container-inner {
@@ -786,6 +785,15 @@ form input[type=submit] {
   height: 40px;
   background-color: yellow;
   margin: 1rem 20%;
+}
+.overview3 .overview3-container .container-inner .title {
+  display: inline-block;
+  font-size: 2rem;
+  font-family: "Playfair Display", sans-serif;
+  letter-spacing: 1px;
+  color: #222;
+  margin: 0 0 0.5rem 0;
+  border-bottom: 1px dotted #000;
 }
 .overview3 .overview3-container .container-inner .image {
   height: 300px;
