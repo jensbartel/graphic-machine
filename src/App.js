@@ -5,7 +5,7 @@ import LangContext from './context/langContext';
 
 import About from './components/pages/About';
 import ClientApp from './components/projects/projectPages/ClientApp';
-// import Footer from './components/layout/Footer';
+import Footer from './components/layout/Footer';
 import Mishima from './components/projects/projectPages/Mishima';
 import MMAS from './components/projects/projectPages/MMAS';
 import Morita from './components/projects/projectPages/Morita';
@@ -64,7 +64,7 @@ const App = () => {
                             <Route component={NotFound} />
                         </Switch>
                     </div>
-                    {/* <Footer /> */}
+                    <Footer />
                 </div>
             </Router>
         </AnimationState>

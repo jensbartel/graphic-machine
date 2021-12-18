@@ -72,7 +72,9 @@ const OverviewPageItem3 = props => {
                     timeout={1050}
                     classNames='anim-3'
                     onEntered={() => {
+                        // setTimeout(() => {
                         setAnimation(id);
+                        // }, 350);
                     }}
                     unmountOnExit
                 >
