@@ -667,110 +667,97 @@ $trans-duration: 350ms
     .overview3-container
         position: relative
         margin-bottom: 2rem
-        padding-bottom: 80%
-        background-color: lightgrey
+        padding-bottom: 60%
+        // background-color: lightgrey
         .container-inner
             position: absolute
             inset: 0
             display: flex
             flex-direction: column
-            .title, .description
-                height: 40px
-                background-color: yellow
-                margin: 1rem 20%
             .title
-                display: inline-block
+                display: flex
+                justify-content: center
                 font-size: 2rem
                 font-family: $font-headline
                 letter-spacing: 1px
                 color: #222
                 margin: 0 0 0.5rem 0
-                border-bottom: 1px dotted #000
+                p
+                    border-bottom: 1px dotted #000
+            .description
+                display: flex
+                justify-content: flex-start
+                p
+                    padding-left: 50%
             .image
-                height: 300px
-                background-color: lightgrey
+                // height: 300px
+                min-height: 250px
+                // background-color: lightgrey
                 margin: 2rem 10% 0
+                display: flex
+                justify-content: center
+                align-items: flex-start
+                img
+                    width: 80%
         button
             position: absolute
             &:hover
                 cursor: pointer
-    .active
-        background-color: pink
+    // .active
+    //     background-color: pink
 
 // anim-1
-.anim-1-appear
+.anim-1-appear, .anim-1-enter
     opacity: 0
-.anim-1-appear-active
+    transform: translateY(2rem)
+.anim-1-appear-active, .anim-1-enter-active
     opacity: 1
-    transition: opacity 1000ms ease-in-out
-.anim-1-appear-done
+    transform: translateY(0)
+    transition: opacity $trans-duration ease-in-out, transform $trans-duration ease-in-out
+.anim-1-appear-done, .anim-1-enter-done
     opacity: 1
 
 .anim-1-exit
     opacity: 1
 .anim-1-exit-active
     opacity: 0
-    transition: opacity 1000ms ease-in-out
+    transition: opacity $trans-duration ease-in-out
 .anim-1-exit-done
     opacity: 0
 
-.anim-1-enter
-    opacity: 0
-.anim-1-enter-active
-    opacity: 1
-    transition: opacity 1000ms ease-in-out
-.anim-1-enter-done
-    opacity: 1
-
 // anim 2
-.anim-2-appear
+.anim-2-appear, .anim-2-enter
     opacity: 0
-.anim-2-appear-active
+.anim-2-appear-active, .anim-2-enter-active
     opacity: 1
-    transition: opacity 1000ms ease-in-out 1000ms
-.anim-2-appear-done
+    transition: opacity $trans-duration ease-in-out $trans-duration
+.anim-2-appear-done, .anim-2-enter-done
     opacity: 1
 
 .anim-2-exit
     opacity: 1
 .anim-2-exit-active
     opacity: 0
-    transition: opacity 1000ms ease-in-out 1000ms
+    transition: opacity $trans-duration ease-in-out $trans-duration
 .anim-2-exit-done
     opacity: 0
 
-.anim-2-enter
-    opacity: 0
-.anim-2-enter-active
-    opacity: 1
-    transition: opacity 1000ms ease-in-out 1000ms
-.anim-2-enter-done
-    opacity: 1
-
 // anim 3
-.anim-3-appear
+.anim-3-appear, .anim-3-enter
     opacity: 0
-.anim-3-appear-active
+.anim-3-appear-active, .anim-3-enter-active
     opacity: 1
-    transition: opacity 1000ms ease-in-out 2000ms
-.anim-3-appear-done
+    transition: opacity $trans-duration ease-in-out $trans-duration*2
+.anim-3-appear-done, .anim-3-enter-done
     opacity: 1
 
 .anim-3-exit
     opacity: 1
 .anim-3-exit-active
     opacity: 0
-    transition: opacity 1000ms ease-in-out 2000ms
+    transition: opacity $trans-duration ease-in-out $trans-duration*2
 .anim-3-exit-done
     opacity: 0
-
-.anim-3-enter
-    opacity: 0
-.anim-3-enter-active
-    opacity: 1
-    transition: opacity 1000ms ease-in-out 2000ms
-.anim-3-enter-done
-    opacity: 1
 
 // ALL THIS IS LOTS OF LINES. ANY WAYS TO SIMPLIFY??
 $trans-duration-long: $trans-duration * 2

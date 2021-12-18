@@ -772,8 +772,7 @@ form input[type=submit] {
 .overview3 .overview3-container {
   position: relative;
   margin-bottom: 2rem;
-  padding-bottom: 80%;
-  background-color: lightgrey;
+  padding-bottom: 60%;
 }
 .overview3 .overview3-container .container-inner {
   position: absolute;
@@ -781,24 +780,34 @@ form input[type=submit] {
   display: flex;
   flex-direction: column;
 }
-.overview3 .overview3-container .container-inner .title, .overview3 .overview3-container .container-inner .description {
-  height: 40px;
-  background-color: yellow;
-  margin: 1rem 20%;
-}
 .overview3 .overview3-container .container-inner .title {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   font-size: 2rem;
   font-family: "Playfair Display", sans-serif;
   letter-spacing: 1px;
   color: #222;
   margin: 0 0 0.5rem 0;
+}
+.overview3 .overview3-container .container-inner .title p {
   border-bottom: 1px dotted #000;
 }
+.overview3 .overview3-container .container-inner .description {
+  display: flex;
+  justify-content: flex-start;
+}
+.overview3 .overview3-container .container-inner .description p {
+  padding-left: 50%;
+}
 .overview3 .overview3-container .container-inner .image {
-  height: 300px;
-  background-color: lightgrey;
+  min-height: 250px;
   margin: 2rem 10% 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.overview3 .overview3-container .container-inner .image img {
+  width: 80%;
 }
 .overview3 .overview3-container button {
   position: absolute;
@@ -806,20 +815,19 @@ form input[type=submit] {
 .overview3 .overview3-container button:hover {
   cursor: pointer;
 }
-.overview3 .active {
-  background-color: pink;
-}
 
-.anim-1-appear {
+.anim-1-appear, .anim-1-enter {
   opacity: 0;
+  transform: translateY(2rem);
 }
 
-.anim-1-appear-active {
+.anim-1-appear-active, .anim-1-enter-active {
   opacity: 1;
-  transition: opacity 1000ms ease-in-out;
+  transform: translateY(0);
+  transition: opacity 350ms ease-in-out, transform 350ms ease-in-out;
 }
 
-.anim-1-appear-done {
+.anim-1-appear-done, .anim-1-enter-done {
   opacity: 1;
 }
 
@@ -829,36 +837,23 @@ form input[type=submit] {
 
 .anim-1-exit-active {
   opacity: 0;
-  transition: opacity 1000ms ease-in-out;
+  transition: opacity 350ms ease-in-out;
 }
 
 .anim-1-exit-done {
   opacity: 0;
 }
 
-.anim-1-enter {
+.anim-2-appear, .anim-2-enter {
   opacity: 0;
 }
 
-.anim-1-enter-active {
+.anim-2-appear-active, .anim-2-enter-active {
   opacity: 1;
-  transition: opacity 1000ms ease-in-out;
+  transition: opacity 350ms ease-in-out 350ms;
 }
 
-.anim-1-enter-done {
-  opacity: 1;
-}
-
-.anim-2-appear {
-  opacity: 0;
-}
-
-.anim-2-appear-active {
-  opacity: 1;
-  transition: opacity 1000ms ease-in-out 1000ms;
-}
-
-.anim-2-appear-done {
+.anim-2-appear-done, .anim-2-enter-done {
   opacity: 1;
 }
 
@@ -868,36 +863,23 @@ form input[type=submit] {
 
 .anim-2-exit-active {
   opacity: 0;
-  transition: opacity 1000ms ease-in-out 1000ms;
+  transition: opacity 350ms ease-in-out 350ms;
 }
 
 .anim-2-exit-done {
   opacity: 0;
 }
 
-.anim-2-enter {
+.anim-3-appear, .anim-3-enter {
   opacity: 0;
 }
 
-.anim-2-enter-active {
+.anim-3-appear-active, .anim-3-enter-active {
   opacity: 1;
-  transition: opacity 1000ms ease-in-out 1000ms;
+  transition: opacity 350ms ease-in-out 700ms;
 }
 
-.anim-2-enter-done {
-  opacity: 1;
-}
-
-.anim-3-appear {
-  opacity: 0;
-}
-
-.anim-3-appear-active {
-  opacity: 1;
-  transition: opacity 1000ms ease-in-out 2000ms;
-}
-
-.anim-3-appear-done {
+.anim-3-appear-done, .anim-3-enter-done {
   opacity: 1;
 }
 
@@ -907,24 +889,11 @@ form input[type=submit] {
 
 .anim-3-exit-active {
   opacity: 0;
-  transition: opacity 1000ms ease-in-out 2000ms;
+  transition: opacity 350ms ease-in-out 700ms;
 }
 
 .anim-3-exit-done {
   opacity: 0;
-}
-
-.anim-3-enter {
-  opacity: 0;
-}
-
-.anim-3-enter-active {
-  opacity: 1;
-  transition: opacity 1000ms ease-in-out 2000ms;
-}
-
-.anim-3-enter-done {
-  opacity: 1;
 }
 
 .transition-toki-1-enter {

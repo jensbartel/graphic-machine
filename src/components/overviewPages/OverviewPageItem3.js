@@ -7,9 +7,10 @@ const OverviewPageItem3 = props => {
     const {
         id,
         data: { title, description },
+        image,
     } = props;
     const { ref, inView } = useInView({
-        threshold: 0.5, // 1: element is fully visible, 0: element is not visible
+        threshold: 0.25, // 1: element is fully visible, 0: element is not visible
         triggerOnce: true,
     });
 
@@ -37,40 +38,48 @@ const OverviewPageItem3 = props => {
     }
 
     return (
+        // remove the 'active' class later
         <div ref={ref} className={inView ? 'overview3-container active' : 'overview3-container'}>
             <div className='container-inner'>
                 <CSSTransition
                     key={1}
                     in={inView && trigger}
                     appear={true}
-                    timeout={1000}
+                    timeout={350}
                     classNames='anim-1'
                     unmountOnExit
                 >
-                    <div className='title'>{title}</div>
+                    <div className='title'>
+                        <p>{title}</p>
+                    </div>
                 </CSSTransition>
                 <CSSTransition
                     key={2}
                     in={inView && trigger}
                     appear={true}
-                    timeout={2000}
+                    timeout={700}
                     classNames='anim-2'
                     unmountOnExit
                 >
-                    <div className='description'>{description}</div>
+                    <div className='description'>
+                        <p>{description}</p>
+                    </div>
                 </CSSTransition>
                 <CSSTransition
                     key={3}
                     in={inView && trigger}
                     appear={true}
-                    timeout={3000}
+                    timeout={1050}
                     classNames='anim-3'
                     onEntered={() => {
                         setAnimation(id);
                     }}
                     unmountOnExit
                 >
-                    <div className='image'>Image</div>
+                    <div className='image'>
+                        {/* Image */}
+                        <img src={image} alt='' />
+                    </div>
                 </CSSTransition>
                 {/* <div className='description'>Description</div> */}
                 {/* <div className='image'>Image</div> */}
