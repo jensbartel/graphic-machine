@@ -1,12 +1,15 @@
 import { useContext } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { CSSTransition } from 'react-transition-group';
+import { Link } from 'react-router-dom';
+
 import AnimationContext from '../../context/animation/animationContext';
+import LangContext from '../../context/langContext';
 
 const OverviewPageItem3 = props => {
     const {
         id,
-        data: { title, description },
+        data: { title, titleFR, description, desFR, date, dateFR, url },
         image,
     } = props;
     const { ref, inView } = useInView({
@@ -16,6 +19,20 @@ const OverviewPageItem3 = props => {
 
     const animationContext = useContext(AnimationContext);
     const { setAnimation, animate } = animationContext;
+
+    const langContext = useContext(LangContext);
+    const { lang } = langContext;
+
+    let titleChoice, descriptionChoice, dateChoice;
+    if (lang.state === 'francais') {
+        titleChoice = titleFR;
+        descriptionChoice = desFR;
+        dateChoice = dateFR;
+    } else {
+        titleChoice = title;
+        descriptionChoice = description;
+        dateChoice = date;
+    }
 
     // the approach seems awkward but it appears to work
     let trigger = true;
@@ -50,7 +67,9 @@ const OverviewPageItem3 = props => {
                     unmountOnExit
                 >
                     <div className='title'>
-                        <p>{title}</p>
+                        <Link to={url}>
+                            <p>{titleChoice}</p>
+                        </Link>
                     </div>
                 </CSSTransition>
                 <CSSTransition
@@ -62,7 +81,10 @@ const OverviewPageItem3 = props => {
                     unmountOnExit
                 >
                     <div className='description'>
-                        <p>{description}</p>
+                        <Link to={url}>
+                            <p>{descriptionChoice}</p>
+                            <p>{dateChoice}</p>
+                        </Link>
                     </div>
                 </CSSTransition>
                 <CSSTransition
@@ -79,12 +101,11 @@ const OverviewPageItem3 = props => {
                     unmountOnExit
                 >
                     <div className='image'>
-                        {/* Image */}
-                        <img src={image} alt='' />
+                        <Link to={url}>
+                            <img src={image} alt='' />
+                        </Link>
                     </div>
                 </CSSTransition>
-                {/* <div className='description'>Description</div> */}
-                {/* <div className='image'>Image</div> */}
             </div>
         </div>
     );

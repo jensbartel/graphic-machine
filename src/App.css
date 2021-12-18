@@ -772,7 +772,7 @@ form input[type=submit] {
 .overview3 .overview3-container {
   position: relative;
   margin-bottom: 2rem;
-  padding-bottom: 60%;
+  padding-bottom: 55%;
 }
 .overview3 .overview3-container .container-inner {
   position: absolute;
@@ -792,21 +792,21 @@ form input[type=submit] {
 .overview3 .overview3-container .container-inner .title p {
   border-bottom: 1px dotted #000;
 }
-.overview3 .overview3-container .container-inner .description {
-  display: flex;
-  justify-content: flex-start;
-}
 .overview3 .overview3-container .container-inner .description p {
   padding-left: 50%;
 }
 .overview3 .overview3-container .container-inner .image {
   min-height: 250px;
-  margin: 2rem 10% 0;
+  margin: 1rem 10% 0;
   display: flex;
   justify-content: center;
   align-items: flex-start;
 }
-.overview3 .overview3-container .container-inner .image img {
+.overview3 .overview3-container .container-inner .image a {
+  display: flex;
+  justify-content: center;
+}
+.overview3 .overview3-container .container-inner .image a img {
   width: 80%;
 }
 .overview3 .overview3-container button {
@@ -1461,7 +1461,7 @@ form input[type=submit] {
   nav .navbar {
     flex-direction: column;
     margin: 0 auto 0;
-    padding: 2rem 5% 0;
+    padding: 1rem 5% 0;
   }
   nav .navbar .menu {
     display: flex;
@@ -1482,7 +1482,7 @@ form input[type=submit] {
   }
   nav .language-switch {
     margin: 1rem auto;
-    padding: 0 5% 2rem;
+    padding: 0 5% 1rem;
   }
   nav .language-switch button:hover {
     color: #999;
@@ -1773,6 +1773,9 @@ form input[type=submit] {
   }
   .overview3 .overview3-container .container-inner .title {
     text-align: center;
+  }
+  .overview3 .overview3-container .container-inner .description {
+    display: block;
   }
   .overview3 .overview3-container .container-inner .image {
     margin: 1rem 0 0 0;
