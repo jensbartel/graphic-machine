@@ -764,6 +764,25 @@ form input[type=submit] {
   display: block;
 }
 
+.toki2-images {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.toki2-images .toki2-images-inner {
+  display: flex;
+  justify-content: center;
+  width: 75%;
+}
+.toki2-images .toki2-images-inner .toki2-one-image {
+  display: flex;
+  justify-content: center;
+}
+.toki2-images .toki2-images-inner .toki2-one-image img {
+  width: 85%;
+}
+
 .overview3 {
   margin: 2.5rem 8rem 0;
   font-family: "Archivo", sans-serif;
@@ -918,7 +937,7 @@ form input[type=submit] {
 
 .transition-toki-2-enter-active {
   opacity: 1;
-  transition: opacity 350ms ease-in-out 700ms;
+  transition: opacity 350ms ease-in-out 350ms;
 }
 
 .transition-toki-2-enter-done {
@@ -933,7 +952,7 @@ form input[type=submit] {
 .transition-toki-3-enter-active {
   opacity: 1;
   transform: scale(1);
-  transition: opacity 250ms ease-in-out 1000ms, transform 250ms ease-in-out 1000ms;
+  transition: opacity 250ms ease-in-out 700ms, transform 250ms ease-in-out 700ms;
 }
 
 .transition-toki-3-enter-done {
@@ -948,7 +967,7 @@ form input[type=submit] {
 .transition-toki-4-enter-active {
   opacity: 1;
   transform: scale(1);
-  transition: opacity 250ms ease-in-out 1250ms, transform 250ms ease-in-out 1250ms;
+  transition: opacity 250ms ease-in-out 950ms, transform 250ms ease-in-out 950ms;
 }
 
 .transition-toki-4-enter-done {
@@ -963,7 +982,7 @@ form input[type=submit] {
 .transition-toki-5-enter-active {
   opacity: 1;
   transform: scale(1);
-  transition: opacity 250ms ease-in-out 1500ms, transform 250ms ease-in-out 1500ms;
+  transition: opacity 250ms ease-in-out 1200ms, transform 250ms ease-in-out 1200ms;
 }
 
 .transition-toki-5-enter-done {
@@ -978,7 +997,7 @@ form input[type=submit] {
 .transition-toki-6-enter-active {
   opacity: 1;
   transform: scale(1);
-  transition: opacity 250ms ease-in-out 1750ms, transform 250ms ease-in-out 1750ms;
+  transition: opacity 250ms ease-in-out 1450ms, transform 250ms ease-in-out 1450ms;
 }
 
 .transition-toki-6-enter-done {

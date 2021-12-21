@@ -8,17 +8,16 @@ import toki2 from '../../img/overview/toki2.jpg';
 import toki3 from '../../img/overview/toki3.jpg';
 import toki4 from '../../img/overview/toki4.jpg';
 
+import AnimationContext from '../../context/animation/animationContext';
 import LangContext from '../../context/langContext';
 
-import AnimationContext from '../../context/animation/animationContext';
-
 const OverviewpageItemToki = props => {
-    const animationContext = useContext(AnimationContext);
-    const { setAnimation } = animationContext;
-
     const {
         data: { id, title, titleFR, description, desFR, date, dateFR },
     } = props;
+
+    const animationContext = useContext(AnimationContext);
+    const { setAnimation } = animationContext;
 
     const langContext = useContext(LangContext);
     const { lang } = langContext;
@@ -61,17 +60,35 @@ const OverviewpageItemToki = props => {
                     <div className='overview-toki-images'>
                         <div className='overview-toki-images-inner'>
                             <div className='first-image'>
-                                <CSSTransition key={1} in={show} appear={true} timeout={1250} classNames='transition-toki-3'>
+                                <CSSTransition
+                                    key={1}
+                                    in={show}
+                                    appear={true}
+                                    timeout={1250}
+                                    classNames='transition-toki-3'
+                                >
                                     <img src={toki1} alt='' className='first-image' />
                                 </CSSTransition>
                             </div>
                             <div className='second-image'>
-                                <CSSTransition key={1} in={show} appear={true} timeout={1500} classNames='transition-toki-4'>
+                                <CSSTransition
+                                    key={1}
+                                    in={show}
+                                    appear={true}
+                                    timeout={1500}
+                                    classNames='transition-toki-4'
+                                >
                                     <img src={toki2} alt='' />
                                 </CSSTransition>
                             </div>
                             <div className='third-image'>
-                                <CSSTransition key={1} in={show} appear={true} timeout={1750} classNames='transition-toki-5'>
+                                <CSSTransition
+                                    key={1}
+                                    in={show}
+                                    appear={true}
+                                    timeout={1750}
+                                    classNames='transition-toki-5'
+                                >
                                     <img src={toki3} alt='' className='first-image' />
                                 </CSSTransition>
                             </div>

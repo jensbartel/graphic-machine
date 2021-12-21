@@ -21,7 +21,6 @@ import WebpagesOverview3 from './components/overviewPages/WebpagesOverview3';
 // import WebpagesOverview2 from './components/overviewPages/WebpagesOverview2';
 
 import AnimationState from './context/animation/AnimationState';
-import AnimateAppsState from './context/animation/AnimateAppsState';
 import WebappsOverview2 from './components/overviewPages/WebappsOverview2';
 
 const App = () => {
@@ -40,40 +39,38 @@ const App = () => {
     }, []);
 
     return (
-        <AnimateAppsState>
-            <AnimationState>
-                <Router>
-                    <ScrollToTop />
-                    <div id='pagetop'></div>
-                    <div className='page-container'>
-                        <Navbar />
-                        <div className='content-container'>
-                            <Switch>
-                                <Route exact path='/'>
-                                    <Redirect to='./webpages' />
-                                </Route>
-                                {/* <Route exact path='/' component={WebpagesOverview2} /> */}
-                                <Route exact path='/webpages' component={WebpagesOverview3} />
-                                <Route exact path='/webapps' component={WebappsOverview2} />
-                                <Route exact path='/about' component={About} />
+        <AnimationState>
+            <Router>
+                <ScrollToTop />
+                <div id='pagetop'></div>
+                <div className='page-container'>
+                    <Navbar />
+                    <div className='content-container'>
+                        <Switch>
+                            <Route exact path='/'>
+                                <Redirect to='./webpages' />
+                            </Route>
+                            {/* <Route exact path='/' component={WebpagesOverview2} /> */}
+                            <Route exact path='/webpages' component={WebpagesOverview3} />
+                            <Route exact path='/webapps' component={WebappsOverview2} />
+                            <Route exact path='/about' component={About} />
 
-                                {/* project pages */}
-                                <Route exact path='/webapps/clientapp' component={ClientApp} />
-                                <Route exact path='/webpages/mishima' component={Mishima} />
-                                <Route exact path='/webapps/mmas' component={MMAS} />
-                                <Route exact path='/webpages/morita' component={Morita} />
-                                <Route exact path='/webapps/resourcenet' component={ResNet} />
-                                <Route exact path='/webpages/suda' component={Suda} />
-                                <Route exact path='/webpages/toki' component={Toki} />
+                            {/* project pages */}
+                            <Route exact path='/webapps/clientapp' component={ClientApp} />
+                            <Route exact path='/webpages/mishima' component={Mishima} />
+                            <Route exact path='/webapps/mmas' component={MMAS} />
+                            <Route exact path='/webpages/morita' component={Morita} />
+                            <Route exact path='/webapps/resourcenet' component={ResNet} />
+                            <Route exact path='/webpages/suda' component={Suda} />
+                            <Route exact path='/webpages/toki' component={Toki} />
 
-                                <Route component={NotFound} />
-                            </Switch>
-                        </div>
-                        <Footer />
+                            <Route component={NotFound} />
+                        </Switch>
                     </div>
-                </Router>
-            </AnimationState>
-        </AnimateAppsState>
+                    <Footer />
+                </div>
+            </Router>
+        </AnimationState>
     );
 };
 

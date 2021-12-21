@@ -12,6 +12,7 @@ const OverviewPageItem3 = props => {
         data: { title, titleFR, description, desFR, date, dateFR, url },
         image,
     } = props;
+
     const { ref, inView } = useInView({
         threshold: 0.25, // 1: element is fully visible, 0: element is not visible
         triggerOnce: true,
