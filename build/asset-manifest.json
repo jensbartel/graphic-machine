@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.210d86e1.chunk.css",
-    "main.js": "/static/js/main.04ae3a97.chunk.js",
-    "main.js.map": "/static/js/main.04ae3a97.chunk.js.map",
+    "main.js": "/static/js/main.2db7e6d1.chunk.js",
+    "main.js.map": "/static/js/main.2db7e6d1.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.062b8e80.js",
     "runtime-main.js.map": "/static/js/runtime-main.062b8e80.js.map",
-    "static/js/2.57342531.chunk.js": "/static/js/2.57342531.chunk.js",
-    "static/js/2.57342531.chunk.js.map": "/static/js/2.57342531.chunk.js.map",
+    "static/js/2.01e86a72.chunk.js": "/static/js/2.01e86a72.chunk.js",
+    "static/js/2.01e86a72.chunk.js.map": "/static/js/2.01e86a72.chunk.js.map",
     "index.html": "/index.html",
     "static/css/main.210d86e1.chunk.css.map": "/static/css/main.210d86e1.chunk.css.map",
-    "static/js/2.57342531.chunk.js.LICENSE.txt": "/static/js/2.57342531.chunk.js.LICENSE.txt",
+    "static/js/2.01e86a72.chunk.js.LICENSE.txt": "/static/js/2.01e86a72.chunk.js.LICENSE.txt",
     "static/media/MMAS_banner-light.4f31f838.png": "/static/media/MMAS_banner-light.4f31f838.png",
     "static/media/Morita-Pullquote1.53433f2a.mp4": "/static/media/Morita-Pullquote1.53433f2a.mp4",
     "static/media/Morita-Pullquote2.08528d59.mp4": "/static/media/Morita-Pullquote2.08528d59.mp4",
@@ -28,7 +28,6 @@
     "static/media/mishima-layout-rows-2.261e3b19.jpg": "/static/media/mishima-layout-rows-2.261e3b19.jpg",
     "static/media/mishima-macbook.70873800.jpg": "/static/media/mishima-macbook.70873800.jpg",
     "static/media/mishima.d6049d4c.jpg": "/static/media/mishima.d6049d4c.jpg",
-    "static/media/mishima2.720c7017.jpg": "/static/media/mishima2.720c7017.jpg",
     "static/media/miyanomori-outside-01.29b6d26f.jpg": "/static/media/miyanomori-outside-01.29b6d26f.jpg",
     "static/media/miyanomori-outside-02.93bb3d19.jpg": "/static/media/miyanomori-outside-02.93bb3d19.jpg",
     "static/media/mmas-mainview-1.9271f961.jpg": "/static/media/mmas-mainview-1.9271f961.jpg",
@@ -38,7 +37,6 @@
     "static/media/mockup-test.3d6f87eb.jpg": "/static/media/mockup-test.3d6f87eb.jpg",
     "static/media/morita-part3-snippet.170a19d1.jpg": "/static/media/morita-part3-snippet.170a19d1.jpg",
     "static/media/morita.6702330f.jpg": "/static/media/morita.6702330f.jpg",
-    "static/media/morita2.91a3f556.jpg": "/static/media/morita2.91a3f556.jpg",
     "static/media/morita_banner.542a7956.png": "/static/media/morita_banner.542a7956.png",
     "static/media/morita_ipad.9844e2d0.jpg": "/static/media/morita_ipad.9844e2d0.jpg",
     "static/media/morita_iphone.9335fcb8.jpg": "/static/media/morita_iphone.9335fcb8.jpg",
@@ -54,23 +52,18 @@
     "static/media/suda-full-jp.d6b17f89.jpg": "/static/media/suda-full-jp.d6b17f89.jpg",
     "static/media/suda-work-section-ENG.45c691f3.jpg": "/static/media/suda-work-section-ENG.45c691f3.jpg",
     "static/media/suda.e5e190eb.jpg": "/static/media/suda.e5e190eb.jpg",
-    "static/media/suda2.8e720b84.jpg": "/static/media/suda2.8e720b84.jpg",
     "static/media/suda_banner.3e14cb84.png": "/static/media/suda_banner.3e14cb84.png",
     "static/media/suda_iphone-2.bfb13b33.jpg": "/static/media/suda_iphone-2.bfb13b33.jpg",
     "static/media/suda_iphone.712d0d5e.jpg": "/static/media/suda_iphone.712d0d5e.jpg",
     "static/media/suda_macbook.1742bdba.jpg": "/static/media/suda_macbook.1742bdba.jpg",
     "static/media/toki-overview-2.2c49cda4.jpg": "/static/media/toki-overview-2.2c49cda4.jpg",
     "static/media/toki-overview.2f9cf860.jpg": "/static/media/toki-overview.2f9cf860.jpg",
-    "static/media/toki.67203c9e.jpg": "/static/media/toki.67203c9e.jpg",
-    "static/media/toki1.35d85954.jpg": "/static/media/toki1.35d85954.jpg",
-    "static/media/toki2.0755bd8d.jpg": "/static/media/toki2.0755bd8d.jpg",
-    "static/media/toki3.bfe5e575.jpg": "/static/media/toki3.bfe5e575.jpg",
-    "static/media/toki4.1085753f.jpg": "/static/media/toki4.1085753f.jpg"
+    "static/media/toki.67203c9e.jpg": "/static/media/toki.67203c9e.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.062b8e80.js",
-    "static/js/2.57342531.chunk.js",
+    "static/js/2.01e86a72.chunk.js",
     "static/css/main.210d86e1.chunk.css",
-    "static/js/main.04ae3a97.chunk.js"
+    "static/js/main.2db7e6d1.chunk.js"
   ]
 }

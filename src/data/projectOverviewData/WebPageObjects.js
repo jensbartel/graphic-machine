@@ -20,7 +20,7 @@ const MoritaShiryu = {
     titleFR: 'Éxposition Morita Shiryū',
     img: img_morita,
     description: 'Webpage for an exhibition on a Japanese postwar calligrapher',
-    desFR: `Présentation d'un éxposition sur un calligraphe Japonais après-guerre`,
+    desFR: `Présentation d'un éxposition sur un calligraphe Japonais`,
     tools: ['React', 'SASS', 'GCP'],
     date: 'December 2020',
     dateFR: 'Décembre 2020',
