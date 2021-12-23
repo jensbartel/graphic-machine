@@ -3,15 +3,15 @@ import { useInView } from 'react-intersection-observer';
 import { CSSTransition } from 'react-transition-group';
 import { Link } from 'react-router-dom';
 
-import toki1 from '../../img/overview/toki1.jpg';
-import toki2 from '../../img/overview/toki2.jpg';
-import toki3 from '../../img/overview/toki3.jpg';
-import toki4 from '../../img/overview/toki4.jpg';
+import resnet1 from '../../img/overview/resnet2-1.jpg';
+import resnet2 from '../../img/overview/resnet2-2.jpg';
+import resnet3 from '../../img/overview/resnet2-3.jpg';
+import resnet4 from '../../img/overview/resnet2-4.jpg';
 
 import AnimationContext from '../../context/animation/animationContext';
 import LangContext from '../../context/langContext';
 
-const OverviewPageItemToki2 = props => {
+const OverviewPageItemResNet = props => {
     const {
         id,
         data: { title, titleFR, description, desFR, date, dateFR, url },
@@ -106,7 +106,7 @@ const OverviewPageItemToki2 = props => {
                             unmountOnExit
                         >
                             <div className='toki2-one-image'>
-                                <img src={toki1} alt='' />
+                                <img src={resnet1} alt='' />
                             </div>
                         </CSSTransition>
 
@@ -119,7 +119,7 @@ const OverviewPageItemToki2 = props => {
                             unmountOnExit
                         >
                             <div className='toki2-one-image'>
-                                <img src={toki2} alt='' />
+                                <img src={resnet2} alt='' />
                             </div>
                         </CSSTransition>
 
@@ -132,7 +132,7 @@ const OverviewPageItemToki2 = props => {
                             unmountOnExit
                         >
                             <div className='toki2-one-image'>
-                                <img src={toki3} alt='' />
+                                <img src={resnet3} alt='' />
                             </div>
                         </CSSTransition>
 
@@ -148,7 +148,7 @@ const OverviewPageItemToki2 = props => {
                             unmountOnExit
                         >
                             <div className='toki2-one-image'>
-                                <img src={toki4} alt='' />
+                                <img src={resnet4} alt='' />
                             </div>
                         </CSSTransition>
                     </div>
@@ -158,4 +158,4 @@ const OverviewPageItemToki2 = props => {
     );
 };
 
-export default OverviewPageItemToki2;
+export default OverviewPageItemResNet;

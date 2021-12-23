@@ -1,27 +1,35 @@
-import { useEffect } from 'react';
+import { useEffect, useContext } from 'react';
+import { webApps } from '../../data/projectOverviewData/WebAppObjects';
+import AnimationContext from '../../context/animation/animationContext';
+
+import OverviewPageItem from './OverviewPageItem';
+
 import clientAppImg from '../../img/clientapp/clientApp-visual-02.png';
 import mmas from '../../img/overview/mockup-test.jpg';
-// import mmas from '../../img/overview/mmas.jpg';
-import resnet from '../../img/overview/resnet.jpg';
+import OverviewPageItemResNet from './OverviewPageItemResNet';
 
-// data
-import { webApps } from '../../data/projectOverviewData/WebAppObjects';
-import OverviewpageItem from './OverviewPageItem';
+const WebappsOverview2 = () => {
+    const animationContext = useContext(AnimationContext);
+    let { clearAnimation } = animationContext;
 
-const WebappsOverview = () => {
+    const { ClientApp, ResNet, MMAS } = webApps.projects;
+
     useEffect(() => {
         document.title = 'Grifold Studio | Web Apps';
+        return () => {
+            clearAnimation();
+        };
+        // eslint-disable-next-line
     }, []);
 
-    const { ResNet, MMAS, ClientApp } = webApps.projects;
-
     return (
-        <div className='overview'>
-            <OverviewpageItem data={ClientApp} image={clientAppImg} />
-            <OverviewpageItem data={ResNet} image={resnet} />
-            <OverviewpageItem data={MMAS} image={mmas} />
+        <div className='overview3'>
+            <OverviewPageItem id={1} data={ClientApp} image={clientAppImg} />
+            {/* <OverviewPageItem id={2} data={ResNet} image={resnet} /> */}
+            <OverviewPageItemResNet id={2} data={ResNet} />
+            <OverviewPageItem id={3} data={MMAS} image={mmas} />
         </div>
     );
 };
 
-export default WebappsOverview;
+export default WebappsOverview2;

@@ -1,31 +1,36 @@
-import { useEffect } from 'react';
-import tokiImage from '../../img/overview/toki.jpg';
-import sudaImage from '../../img/overview/suda.jpg';
+import { useEffect, useContext } from 'react';
+import { webPages } from '../../data/projectOverviewData/WebPageObjects';
+import AnimationContext from '../../context/animation/animationContext';
+
+import OverviewPageItem from './OverviewPageItem';
+import OverviewPageItemToki from './OverviewPageItemToki';
+
 import moritaImage from '../../img/overview/morita.jpg';
+import sudaImage from '../../img/overview/suda.jpg';
 import mishimaImage from '../../img/overview/mishima.jpg';
 
-// data
-import { webPages } from '../../data/projectOverviewData/WebPageObjects';
-import OverviewpageItem from './OverviewPageItem';
-// import OverviewpageItem2 from './OverviewPageItem2';
+const WebpagesOverview3 = () => {
+    const animationContext = useContext(AnimationContext);
+    let { clearAnimation } = animationContext;
 
-const WebpagesOverview = () => {
+    const { MoritaShiryu, Toki, Suda, Mishima } = webPages.projects;
+
     useEffect(() => {
-        document.title = 'Web Pages';
+        document.title = 'Grifold Studio | Web Pages';
+        // note: returning a function means that function mimics componentWillUnmount
+        return () => {
+            clearAnimation();
+        };
+        // eslint-disable-next-line
     }, []);
-
-    const { Toki, Suda, MoritaShiryu, Mishima } = webPages.projects;
-
     return (
-        <div className='overview'>
-            {/* <div className='parallax'> */}
-            {/* <OverviewpageItem2 data={MoritaShiryu} image={moritaImage} /> */}
-            <OverviewpageItem data={MoritaShiryu} image={moritaImage} />
-            <OverviewpageItem data={Toki} image={tokiImage} />
-            <OverviewpageItem data={Suda} image={sudaImage} />
-            <OverviewpageItem data={Mishima} image={mishimaImage} />
+        <div className='overview3'>
+            <OverviewPageItem id={1} data={MoritaShiryu} image={moritaImage} />
+            <OverviewPageItemToki id={2} data={Toki} />
+            <OverviewPageItem id={3} data={Suda} image={sudaImage} />
+            <OverviewPageItem id={4} data={Mishima} image={mishimaImage} />
         </div>
     );
 };
 
-export default WebpagesOverview;
+export default WebpagesOverview3;

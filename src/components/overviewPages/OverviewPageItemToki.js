@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { useState, useEffect } from 'react';
+import { useInView } from 'react-intersection-observer';
 import { CSSTransition } from 'react-transition-group';
 import { Link } from 'react-router-dom';
 
@@ -11,13 +11,19 @@ import toki4 from '../../img/overview/toki4.jpg';
 import AnimationContext from '../../context/animation/animationContext';
 import LangContext from '../../context/langContext';
 
-const OverviewpageItemToki = props => {
+const OverviewPageItemToki = props => {
     const {
-        data: { id, title, titleFR, description, desFR, date, dateFR },
+        id,
+        data: { title, titleFR, description, desFR, date, dateFR, url },
     } = props;
 
+    const { ref, inView } = useInView({
+        threshold: 0.25, // 1: element is fully visible, 0: element is not visible
+        triggerOnce: true,
+    });
+
     const animationContext = useContext(AnimationContext);
-    const { setAnimation } = animationContext;
+    const { setAnimation, animate } = animationContext;
 
     const langContext = useContext(LangContext);
     const { lang } = langContext;
@@ -33,93 +39,123 @@ const OverviewpageItemToki = props => {
         dateChoice = date;
     }
 
-    const [show, setShow] = useState(false);
-
-    useEffect(() => {
-        setShow(!show);
-        // eslint-disable-next-line
-    }, []);
+    let trigger = true;
+    const animateArray = Object.values(animate);
+    switch (id) {
+        case 1:
+            trigger = animateArray[0];
+            break;
+        case 2:
+            trigger = animateArray[1];
+            break;
+        case 3:
+            trigger = animateArray[2];
+            break;
+        case 4:
+            trigger = animateArray[3];
+            break;
+        default:
+            break;
+    }
 
     return (
-        <div className='overview-toki-container'>
-            <Link to='./webpages/toki'>
-                <div className='overview-toki-inner'>
-                    <CSSTransition key={1} in={show} appear={true} timeout={500} classNames='transition-toki-1'>
-                        <p className='title'>{titleChoice}</p>
-                    </CSSTransition>
+        <div ref={ref} className='overview3-container' style={{ paddingBottom: '67.5%' }}>
+            <div className='container-inner'>
+                {/* headline */}
+                <CSSTransition
+                    key={1}
+                    in={inView && trigger}
+                    appear={true}
+                    timeout={350}
+                    classNames='transition-toki-1'
+                    unmountOnExit
+                >
+                    <div className='title'>
+                        <Link to={url}>
+                            <p>{titleChoice}</p>
+                        </Link>
+                    </div>
+                </CSSTransition>
 
+                {/* description & date */}
+                <CSSTransition
+                    key={2}
+                    in={inView && trigger}
+                    appear={true}
+                    timeout={700}
+                    classNames='transition-toki-2'
+                    unmountOnExit
+                >
                     <div className='description'>
-                        <CSSTransition key={1} in={show} appear={true} timeout={1000} classNames='transition-toki-2'>
-                            <div className='descript'>
-                                <p>{descriptionChoice}</p>
-                                <p>{dateChoice}</p>
+                        <Link to={url}>
+                            <p>{descriptionChoice}</p>
+                            <p>{dateChoice}</p>
+                        </Link>
+                    </div>
+                </CSSTransition>
+
+                {/* images */}
+                <div className='toki2-images'>
+                    <div className='toki2-images-inner'>
+                        <CSSTransition
+                            key={3}
+                            in={inView && trigger}
+                            appear={true}
+                            timeout={950}
+                            classNames='transition-toki-3'
+                            unmountOnExit
+                        >
+                            <div className='toki2-one-image'>
+                                <img src={toki1} alt='' />
+                            </div>
+                        </CSSTransition>
+
+                        <CSSTransition
+                            key={4}
+                            in={inView && trigger}
+                            appear={true}
+                            timeout={1200}
+                            classNames='transition-toki-4'
+                            unmountOnExit
+                        >
+                            <div className='toki2-one-image'>
+                                <img src={toki2} alt='' />
+                            </div>
+                        </CSSTransition>
+
+                        <CSSTransition
+                            key={5}
+                            in={inView && trigger}
+                            appear={true}
+                            timeout={1450}
+                            classNames='transition-toki-5'
+                            unmountOnExit
+                        >
+                            <div className='toki2-one-image'>
+                                <img src={toki3} alt='' />
+                            </div>
+                        </CSSTransition>
+
+                        <CSSTransition
+                            key={6}
+                            in={inView && trigger}
+                            appear={true}
+                            timeout={1700}
+                            classNames='transition-toki-6'
+                            onEntered={() => {
+                                setAnimation(id);
+                            }}
+                            unmountOnExit
+                        >
+                            <div className='toki2-one-image'>
+                                <img src={toki4} alt='' />
                             </div>
                         </CSSTransition>
                     </div>
-
-                    <div className='overview-toki-images'>
-                        <div className='overview-toki-images-inner'>
-                            <div className='first-image'>
-                                <CSSTransition
-                                    key={1}
-                                    in={show}
-                                    appear={true}
-                                    timeout={1250}
-                                    classNames='transition-toki-3'
-                                >
-                                    <img src={toki1} alt='' className='first-image' />
-                                </CSSTransition>
-                            </div>
-                            <div className='second-image'>
-                                <CSSTransition
-                                    key={1}
-                                    in={show}
-                                    appear={true}
-                                    timeout={1500}
-                                    classNames='transition-toki-4'
-                                >
-                                    <img src={toki2} alt='' />
-                                </CSSTransition>
-                            </div>
-                            <div className='third-image'>
-                                <CSSTransition
-                                    key={1}
-                                    in={show}
-                                    appear={true}
-                                    timeout={1750}
-                                    classNames='transition-toki-5'
-                                >
-                                    <img src={toki3} alt='' className='first-image' />
-                                </CSSTransition>
-                            </div>
-                            <div className='fourth-image'>
-                                <CSSTransition
-                                    key={1}
-                                    in={show}
-                                    appear={true}
-                                    timeout={2000}
-                                    classNames='transition-toki-6'
-                                    addEndListener={node => {
-                                        node.addEventListener(
-                                            'transitionend',
-                                            () => {
-                                                setTimeout(() => {
-                                                    setAnimation(id);
-                                                }, 500);
-                                            },
-                                            false
-                                        );
-                                    }}
-                                >
-                                    <img src={toki4} alt='' />
-                                </CSSTransition>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-            </Link>
+            </div>
         </div>
     );
 };
 
-export default OverviewpageItemToki;
+export default OverviewPageItemToki;

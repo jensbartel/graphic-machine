@@ -15,13 +15,10 @@ import ResNet from './components/projects/projectPages/ResNet';
 import ScrollToTop from './components/layout/Scroll';
 import Suda from './components/projects/projectPages/Suda';
 import Toki from './components/projects/projectPages/Toki';
-// import WebappsOverview from './components/overviewPages/WebappsOverview';
-import WebpagesOverview3 from './components/overviewPages/WebpagesOverview3';
-// import WebpagesOverview from './components/overviewPages/WebpagesOverview';
-// import WebpagesOverview2 from './components/overviewPages/WebpagesOverview2';
+import WebpagesOverview from './components/overviewPages/WebpagesOverview';
 
 import AnimationState from './context/animation/AnimationState';
-import WebappsOverview2 from './components/overviewPages/WebappsOverview2';
+import WebappsOverview from './components/overviewPages/WebappsOverview';
 
 const App = () => {
     const langContext = useContext(LangContext);
@@ -51,8 +48,8 @@ const App = () => {
                                 <Redirect to='./webpages' />
                             </Route>
                             {/* <Route exact path='/' component={WebpagesOverview2} /> */}
-                            <Route exact path='/webpages' component={WebpagesOverview3} />
-                            <Route exact path='/webapps' component={WebappsOverview2} />
+                            <Route exact path='/webpages' component={WebpagesOverview} />
+                            <Route exact path='/webapps' component={WebappsOverview} />
                             <Route exact path='/about' component={About} />
 
                             {/* project pages */}

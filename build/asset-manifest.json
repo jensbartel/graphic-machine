@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.68a09493.chunk.css",
-    "main.js": "/static/js/main.2e1fe3ce.chunk.js",
-    "main.js.map": "/static/js/main.2e1fe3ce.chunk.js.map",
+    "main.js": "/static/js/main.567afb85.chunk.js",
+    "main.js.map": "/static/js/main.567afb85.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.062b8e80.js",
     "runtime-main.js.map": "/static/js/runtime-main.062b8e80.js.map",
-    "static/js/2.b2919ffe.chunk.js": "/static/js/2.b2919ffe.chunk.js",
-    "static/js/2.b2919ffe.chunk.js.map": "/static/js/2.b2919ffe.chunk.js.map",
+    "static/js/2.27e3be66.chunk.js": "/static/js/2.27e3be66.chunk.js",
+    "static/js/2.27e3be66.chunk.js.map": "/static/js/2.27e3be66.chunk.js.map",
     "index.html": "/index.html",
     "static/css/main.68a09493.chunk.css.map": "/static/css/main.68a09493.chunk.css.map",
-    "static/js/2.b2919ffe.chunk.js.LICENSE.txt": "/static/js/2.b2919ffe.chunk.js.LICENSE.txt",
+    "static/js/2.27e3be66.chunk.js.LICENSE.txt": "/static/js/2.27e3be66.chunk.js.LICENSE.txt",
     "static/media/MMAS_banner-light.4f31f838.png": "/static/media/MMAS_banner-light.4f31f838.png",
     "static/media/Morita-Pullquote1.53433f2a.mp4": "/static/media/Morita-Pullquote1.53433f2a.mp4",
     "static/media/Morita-Pullquote2.08528d59.mp4": "/static/media/Morita-Pullquote2.08528d59.mp4",
@@ -47,6 +47,10 @@
     "static/media/parallax-visuals1.32219242.jpg": "/static/media/parallax-visuals1.32219242.jpg",
     "static/media/portrait-1.a2a123ef.jpg": "/static/media/portrait-1.a2a123ef.jpg",
     "static/media/resnet.8a89d9f2.jpg": "/static/media/resnet.8a89d9f2.jpg",
+    "static/media/resnet2-1.d23723a8.jpg": "/static/media/resnet2-1.d23723a8.jpg",
+    "static/media/resnet2-2.5a898666.jpg": "/static/media/resnet2-2.5a898666.jpg",
+    "static/media/resnet2-3.e704830c.jpg": "/static/media/resnet2-3.e704830c.jpg",
+    "static/media/resnet2-4.16a17724.jpg": "/static/media/resnet2-4.16a17724.jpg",
     "static/media/suda-chronology.1142f265.jpg": "/static/media/suda-chronology.1142f265.jpg",
     "static/media/suda-exhibitions.d3ccb524.jpg": "/static/media/suda-exhibitions.d3ccb524.jpg",
     "static/media/suda-full-jp.d6b17f89.jpg": "/static/media/suda-full-jp.d6b17f89.jpg",
@@ -58,7 +62,6 @@
     "static/media/suda_macbook.1742bdba.jpg": "/static/media/suda_macbook.1742bdba.jpg",
     "static/media/toki-overview-2.2c49cda4.jpg": "/static/media/toki-overview-2.2c49cda4.jpg",
     "static/media/toki-overview.2f9cf860.jpg": "/static/media/toki-overview.2f9cf860.jpg",
-    "static/media/toki.67203c9e.jpg": "/static/media/toki.67203c9e.jpg",
     "static/media/toki1.35d85954.jpg": "/static/media/toki1.35d85954.jpg",
     "static/media/toki2.0755bd8d.jpg": "/static/media/toki2.0755bd8d.jpg",
     "static/media/toki3.bfe5e575.jpg": "/static/media/toki3.bfe5e575.jpg",
@@ -66,8 +69,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.062b8e80.js",
-    "static/js/2.b2919ffe.chunk.js",
+    "static/js/2.27e3be66.chunk.js",
     "static/css/main.68a09493.chunk.css",
-    "static/js/main.2e1fe3ce.chunk.js"
+    "static/js/main.567afb85.chunk.js"
   ]
 }

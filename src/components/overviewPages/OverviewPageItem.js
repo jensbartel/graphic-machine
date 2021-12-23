@@ -1,12 +1,25 @@
 import { useContext } from 'react';
-import LangContext from '../../context/langContext';
+import { useInView } from 'react-intersection-observer';
+import { CSSTransition } from 'react-transition-group';
 import { Link } from 'react-router-dom';
 
-const OverviewpageItem = props => {
+import AnimationContext from '../../context/animation/animationContext';
+import LangContext from '../../context/langContext';
+
+const OverviewPageItem3 = props => {
     const {
-        data: { title, titleFR, description, desFR, date, dateFR, tools, url },
+        id,
+        data: { title, titleFR, description, desFR, date, dateFR, url },
         image,
     } = props;
+
+    const { ref, inView } = useInView({
+        threshold: 0.25, // 1: element is fully visible, 0: element is not visible
+        triggerOnce: true,
+    });
+
+    const animationContext = useContext(AnimationContext);
+    const { setAnimation, animate } = animationContext;
 
     const langContext = useContext(LangContext);
     const { lang } = langContext;
@@ -22,31 +35,81 @@ const OverviewpageItem = props => {
         dateChoice = date;
     }
 
+    // the approach seems awkward but it appears to work
+    let trigger = true;
+    const animateArray = Object.values(animate);
+    switch (id) {
+        case 1:
+            trigger = animateArray[0];
+            break;
+        case 2:
+            trigger = animateArray[1];
+            break;
+        case 3:
+            trigger = animateArray[2];
+            break;
+        case 4:
+            trigger = animateArray[3];
+            break;
+        default:
+            break;
+    }
+
     return (
-        <div className='overview-group'>
-            <div className='text-container'>
-                <div>
-                    <Link to={url}>
-                        <p className='title'>{titleChoice}</p>
-                    </Link>
-                    <Link to={url}>
-                        <p>{descriptionChoice}</p>
-                        <p>{dateChoice}</p>
-                    </Link>
-                </div>
-                <div>
-                    {tools.map(tool => (
-                        <p key={tool}>{tool}</p>
-                    ))}
-                </div>
-            </div>
-            <div className='image-container'>
-                <Link to={url}>
-                    <img src={image} alt='' />
-                </Link>
+        // remove the 'active' class later
+        <div ref={ref} className={inView ? 'overview3-container active' : 'overview3-container'}>
+            <div className='container-inner'>
+                <CSSTransition
+                    key={1}
+                    in={inView && trigger}
+                    appear={true}
+                    timeout={350}
+                    classNames='anim-1'
+                    unmountOnExit
+                >
+                    <div className='title'>
+                        <Link to={url}>
+                            <p>{titleChoice}</p>
+                        </Link>
+                    </div>
+                </CSSTransition>
+                <CSSTransition
+                    key={2}
+                    in={inView && trigger}
+                    appear={true}
+                    timeout={700}
+                    classNames='anim-2'
+                    unmountOnExit
+                >
+                    <div className='description'>
+                        <Link to={url}>
+                            <p>{descriptionChoice}</p>
+                            <p>{dateChoice}</p>
+                        </Link>
+                    </div>
+                </CSSTransition>
+                <CSSTransition
+                    key={3}
+                    in={inView && trigger}
+                    appear={true}
+                    timeout={1050}
+                    classNames='anim-3'
+                    onEntered={() => {
+                        // setTimeout(() => {
+                        setAnimation(id);
+                        // }, 350);
+                    }}
+                    unmountOnExit
+                >
+                    <div className='image'>
+                        <Link to={url}>
+                            <img src={image} alt='' />
+                        </Link>
+                    </div>
+                </CSSTransition>
             </div>
         </div>
     );
 };
 
-export default OverviewpageItem;
+export default OverviewPageItem3;
