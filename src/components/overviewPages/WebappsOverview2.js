@@ -1,7 +1,9 @@
 import { useEffect, useContext } from 'react';
-import OverviewPageItem3 from './OverviewPageItem3';
-import AnimationContext from '../../context/animation/animationContext';
 import { webApps } from '../../data/projectOverviewData/WebAppObjects';
+import AnimationContext from '../../context/animation/animationContext';
+
+import OverviewPageItem3 from './OverviewPageItem3';
+
 import clientAppImg from '../../img/clientapp/clientApp-visual-02.png';
 import resnet from '../../img/overview/resnet.jpg';
 import mmas from '../../img/overview/mockup-test.jpg';
