@@ -783,6 +783,39 @@ form input[type=submit] {
   width: 85%;
 }
 
+.suda-images {
+  margin-top: 3.5rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.suda-images .suda-inner {
+  width: 80%;
+  height: 20rem;
+  position: relative;
+  padding-bottom: 45%;
+}
+.suda-images .suda-inner .suda-left-container {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  right: 50%;
+}
+.suda-images .suda-inner .suda-left-container img {
+  width: 100%;
+}
+.suda-images .suda-inner .suda-right-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+}
+.suda-images .suda-inner .suda-right-container img {
+  width: 100%;
+}
+
 .overview3 {
   margin: 2.5rem 8rem 0;
   font-family: "Archivo", sans-serif;

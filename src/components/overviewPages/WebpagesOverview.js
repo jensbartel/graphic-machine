@@ -8,6 +8,7 @@ import OverviewPageItemToki from './OverviewPageItemToki';
 import moritaImage from '../../img/overview/morita.jpg';
 import sudaImage from '../../img/overview/suda.jpg';
 import mishimaImage from '../../img/overview/mishima.jpg';
+import OverviewPageItemSuda from './OverviewPageItemSuda';
 
 const WebpagesOverview3 = () => {
     const animationContext = useContext(AnimationContext);
@@ -27,7 +28,8 @@ const WebpagesOverview3 = () => {
         <div className='overview3'>
             <OverviewPageItem id={1} data={MoritaShiryu} image={moritaImage} />
             <OverviewPageItemToki id={2} data={Toki} />
-            <OverviewPageItem id={3} data={Suda} image={sudaImage} />
+            {/* <OverviewPageItem id={3} data={Suda} image={sudaImage} /> */}
+            <OverviewPageItemSuda id={3} data={Suda} />
             <OverviewPageItem id={4} data={Mishima} image={mishimaImage} />
         </div>
     );

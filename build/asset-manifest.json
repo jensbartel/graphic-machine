@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.68a09493.chunk.css",
-    "main.js": "/static/js/main.567afb85.chunk.js",
-    "main.js.map": "/static/js/main.567afb85.chunk.js.map",
+    "main.css": "/static/css/main.975a4314.chunk.css",
+    "main.js": "/static/js/main.0e91978a.chunk.js",
+    "main.js.map": "/static/js/main.0e91978a.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.062b8e80.js",
     "runtime-main.js.map": "/static/js/runtime-main.062b8e80.js.map",
-    "static/js/2.27e3be66.chunk.js": "/static/js/2.27e3be66.chunk.js",
-    "static/js/2.27e3be66.chunk.js.map": "/static/js/2.27e3be66.chunk.js.map",
+    "static/js/2.16f4b8b2.chunk.js": "/static/js/2.16f4b8b2.chunk.js",
+    "static/js/2.16f4b8b2.chunk.js.map": "/static/js/2.16f4b8b2.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.68a09493.chunk.css.map": "/static/css/main.68a09493.chunk.css.map",
-    "static/js/2.27e3be66.chunk.js.LICENSE.txt": "/static/js/2.27e3be66.chunk.js.LICENSE.txt",
+    "static/css/main.975a4314.chunk.css.map": "/static/css/main.975a4314.chunk.css.map",
+    "static/js/2.16f4b8b2.chunk.js.LICENSE.txt": "/static/js/2.16f4b8b2.chunk.js.LICENSE.txt",
     "static/media/MMAS_banner-light.4f31f838.png": "/static/media/MMAS_banner-light.4f31f838.png",
     "static/media/Morita-Pullquote1.53433f2a.mp4": "/static/media/Morita-Pullquote1.53433f2a.mp4",
     "static/media/Morita-Pullquote2.08528d59.mp4": "/static/media/Morita-Pullquote2.08528d59.mp4",
@@ -54,6 +54,8 @@
     "static/media/suda-chronology.1142f265.jpg": "/static/media/suda-chronology.1142f265.jpg",
     "static/media/suda-exhibitions.d3ccb524.jpg": "/static/media/suda-exhibitions.d3ccb524.jpg",
     "static/media/suda-full-jp.d6b17f89.jpg": "/static/media/suda-full-jp.d6b17f89.jpg",
+    "static/media/suda-left.f7e44127.jpg": "/static/media/suda-left.f7e44127.jpg",
+    "static/media/suda-right.53e7dc16.jpg": "/static/media/suda-right.53e7dc16.jpg",
     "static/media/suda-work-section-ENG.45c691f3.jpg": "/static/media/suda-work-section-ENG.45c691f3.jpg",
     "static/media/suda.e5e190eb.jpg": "/static/media/suda.e5e190eb.jpg",
     "static/media/suda_banner.3e14cb84.png": "/static/media/suda_banner.3e14cb84.png",
@@ -69,8 +71,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.062b8e80.js",
-    "static/js/2.27e3be66.chunk.js",
-    "static/css/main.68a09493.chunk.css",
-    "static/js/main.567afb85.chunk.js"
+    "static/js/2.16f4b8b2.chunk.js",
+    "static/css/main.975a4314.chunk.css",
+    "static/js/main.0e91978a.chunk.js"
   ]
 }
