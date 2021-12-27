@@ -59,7 +59,7 @@ const OverviewPageItemToki = props => {
     }
 
     return (
-        <div ref={ref} className='overview3-container' style={{ paddingBottom: '67.5%' }}>
+        <div ref={ref} className='overview3-container overview-toki-container'>
             <div className='container-inner'>
                 {/* headline */}
                 <CSSTransition

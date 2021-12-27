@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.975a4314.chunk.css",
-    "main.js": "/static/js/main.0e91978a.chunk.js",
-    "main.js.map": "/static/js/main.0e91978a.chunk.js.map",
+    "main.css": "/static/css/main.b68bf7a3.chunk.css",
+    "main.js": "/static/js/main.9ff1bc04.chunk.js",
+    "main.js.map": "/static/js/main.9ff1bc04.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.062b8e80.js",
     "runtime-main.js.map": "/static/js/runtime-main.062b8e80.js.map",
     "static/js/2.16f4b8b2.chunk.js": "/static/js/2.16f4b8b2.chunk.js",
     "static/js/2.16f4b8b2.chunk.js.map": "/static/js/2.16f4b8b2.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.975a4314.chunk.css.map": "/static/css/main.975a4314.chunk.css.map",
+    "static/css/main.b68bf7a3.chunk.css.map": "/static/css/main.b68bf7a3.chunk.css.map",
     "static/js/2.16f4b8b2.chunk.js.LICENSE.txt": "/static/js/2.16f4b8b2.chunk.js.LICENSE.txt",
     "static/media/MMAS_banner-light.4f31f838.png": "/static/media/MMAS_banner-light.4f31f838.png",
     "static/media/Morita-Pullquote1.53433f2a.mp4": "/static/media/Morita-Pullquote1.53433f2a.mp4",
@@ -57,7 +57,6 @@
     "static/media/suda-left.f7e44127.jpg": "/static/media/suda-left.f7e44127.jpg",
     "static/media/suda-right.53e7dc16.jpg": "/static/media/suda-right.53e7dc16.jpg",
     "static/media/suda-work-section-ENG.45c691f3.jpg": "/static/media/suda-work-section-ENG.45c691f3.jpg",
-    "static/media/suda.e5e190eb.jpg": "/static/media/suda.e5e190eb.jpg",
     "static/media/suda_banner.3e14cb84.png": "/static/media/suda_banner.3e14cb84.png",
     "static/media/suda_iphone-2.bfb13b33.jpg": "/static/media/suda_iphone-2.bfb13b33.jpg",
     "static/media/suda_iphone.712d0d5e.jpg": "/static/media/suda_iphone.712d0d5e.jpg",
@@ -72,7 +71,7 @@
   "entrypoints": [
     "static/js/runtime-main.062b8e80.js",
     "static/js/2.16f4b8b2.chunk.js",
-    "static/css/main.975a4314.chunk.css",
-    "static/js/main.0e91978a.chunk.js"
+    "static/css/main.b68bf7a3.chunk.css",
+    "static/js/main.9ff1bc04.chunk.js"
   ]
 }

@@ -6,7 +6,7 @@ import OverviewPageItem from './OverviewPageItem';
 import OverviewPageItemToki from './OverviewPageItemToki';
 
 import moritaImage from '../../img/overview/morita.jpg';
-import sudaImage from '../../img/overview/suda.jpg';
+// import sudaImage from '../../img/overview/suda.jpg';
 import mishimaImage from '../../img/overview/mishima.jpg';
 import OverviewPageItemSuda from './OverviewPageItemSuda';
 

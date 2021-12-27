@@ -658,53 +658,6 @@ $trans-duration: 350ms
                         width: 80%
                         display: block
 
-.toki2-images
-    margin-top: 1.5rem
-    display: flex
-    justify-content: center
-    width: 100%
-    .toki2-images-inner
-        display: flex
-        justify-content: center
-        width: 75%
-        .toki2-one-image
-            display: flex
-            justify-content: center
-            img
-                width: 85%
-
-.suda-images
-    margin-top: 3.5rem
-    display: flex
-    justify-content: center
-    width: 100%
-    // background-color: pink
-    // height: 20rem
-    .suda-inner
-        width: 80%
-        // background-color: azure
-        height: 20rem
-        position: relative
-        padding-bottom: 45%
-        .suda-left-container
-            position: absolute
-            width: 50%
-            height: 100%
-            top: 0
-            right: 50%
-            // background-color: yellow
-            img
-                width: 100%
-        .suda-right-container
-            position: absolute
-            top: 0
-            left: 50%
-            width: 50%
-            height: 100%
-            // background-color: lightgray
-            img
-                width: 100%
-
 .overview3 // WebpageOverview3
     margin: 2.5rem 8rem 0
     font-family: $font-text
@@ -742,11 +695,58 @@ $trans-duration: 350ms
                     justify-content: center
                     img
                         width: 80%
-
         button
             position: absolute
             &:hover
                 cursor: pointer
+
+.toki2-images
+    margin-top: 1.5rem
+    display: flex
+    justify-content: center
+    width: 100%
+    .toki2-images-inner
+        display: flex
+        justify-content: center
+        width: 75%
+        .toki2-one-image
+            display: flex
+            justify-content: center
+            img
+                width: 85%
+
+.suda-images
+    margin-top: 5rem
+    display: flex
+    justify-content: center
+    width: 100%
+    .suda-inner
+        width: 80%
+        height: 20rem
+        position: relative
+        padding-bottom: 35%
+        .suda-left-container
+            position: absolute
+            width: 50%
+            height: 100%
+            top: 0
+            right: 50%
+            img
+                width: 100%
+        .suda-right-container
+            position: absolute
+            top: 0
+            left: 50%
+            width: 50%
+            height: 100%
+            img
+                width: 100%
+
+.overview-suda-container
+    padding-bottom: 65% !important // not v elegant
+
+.overview-toki-container
+    padding-bottom: 67.5% !important
 
 // anim-1
 .anim-1-appear, .anim-1-enter

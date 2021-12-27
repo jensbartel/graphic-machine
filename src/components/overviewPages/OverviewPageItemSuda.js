@@ -57,7 +57,7 @@ const OverviewPageItemSuda = props => {
     }
 
     return (
-        <div ref={ref} className='overview3-container' style={{ paddingBottom: '67.5%' }}>
+        <div ref={ref} className='overview3-container overview-suda-container'>
             <div className='container-inner'>
                 {/* headline */}
                 <CSSTransition
@@ -95,13 +95,34 @@ const OverviewPageItemSuda = props => {
                 {/* images */}
                 <div className='suda-images'>
                     <div className='suda-inner'>
-                        {/* hi */}
-                        <div className='suda-left-container'>
-                            <img src={sudaLeft} alt='' />
-                        </div>
-                        <div className='suda-right-container'>
-                            <img src={sudaRight} alt='' />
-                        </div>
+                        <CSSTransition
+                            key={3}
+                            in={inView && trigger}
+                            appear={true}
+                            timeout={950}
+                            classNames='transition-toki-3'
+                            unmountOnExit
+                        >
+                            <div className='suda-left-container'>
+                                <img src={sudaLeft} alt='' />
+                            </div>
+                        </CSSTransition>
+
+                        <CSSTransition
+                            key={4}
+                            in={inView && trigger}
+                            appear={true}
+                            timeout={1200}
+                            classNames='transition-toki-4'
+                            onEntered={() => {
+                                setAnimation(id);
+                            }}
+                            unmountOnExit
+                        >
+                            <div className='suda-right-container'>
+                                <img src={sudaRight} alt='' />
+                            </div>
+                        </CSSTransition>
                     </div>
                 </div>
             </div>

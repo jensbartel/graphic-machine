@@ -764,58 +764,6 @@ form input[type=submit] {
   display: block;
 }
 
-.toki2-images {
-  margin-top: 1.5rem;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-.toki2-images .toki2-images-inner {
-  display: flex;
-  justify-content: center;
-  width: 75%;
-}
-.toki2-images .toki2-images-inner .toki2-one-image {
-  display: flex;
-  justify-content: center;
-}
-.toki2-images .toki2-images-inner .toki2-one-image img {
-  width: 85%;
-}
-
-.suda-images {
-  margin-top: 3.5rem;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-.suda-images .suda-inner {
-  width: 80%;
-  height: 20rem;
-  position: relative;
-  padding-bottom: 45%;
-}
-.suda-images .suda-inner .suda-left-container {
-  position: absolute;
-  width: 50%;
-  height: 100%;
-  top: 0;
-  right: 50%;
-}
-.suda-images .suda-inner .suda-left-container img {
-  width: 100%;
-}
-.suda-images .suda-inner .suda-right-container {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 50%;
-  height: 100%;
-}
-.suda-images .suda-inner .suda-right-container img {
-  width: 100%;
-}
-
 .overview3 {
   margin: 2.5rem 8rem 0;
   font-family: "Archivo", sans-serif;
@@ -866,6 +814,66 @@ form input[type=submit] {
 }
 .overview3 .overview3-container button:hover {
   cursor: pointer;
+}
+
+.toki2-images {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.toki2-images .toki2-images-inner {
+  display: flex;
+  justify-content: center;
+  width: 75%;
+}
+.toki2-images .toki2-images-inner .toki2-one-image {
+  display: flex;
+  justify-content: center;
+}
+.toki2-images .toki2-images-inner .toki2-one-image img {
+  width: 85%;
+}
+
+.suda-images {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.suda-images .suda-inner {
+  width: 80%;
+  height: 20rem;
+  position: relative;
+  padding-bottom: 35%;
+}
+.suda-images .suda-inner .suda-left-container {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  right: 50%;
+}
+.suda-images .suda-inner .suda-left-container img {
+  width: 100%;
+}
+.suda-images .suda-inner .suda-right-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+}
+.suda-images .suda-inner .suda-right-container img {
+  width: 100%;
+}
+
+.overview-suda-container {
+  padding-bottom: 65% !important;
+}
+
+.overview-toki-container {
+  padding-bottom: 67.5% !important;
 }
 
 .anim-1-appear, .anim-1-enter {
@@ -1833,6 +1841,25 @@ form input[type=submit] {
     margin: 1rem 0 0 0;
   }
   .overview3 .overview3-container .container-inner .image a img {
+    width: 100%;
+  }
+
+  .overview-suda-container {
+    padding-bottom: 105% !important;
+  }
+
+  .overview-toki-container {
+    padding-bottom: 120% !important;
+  }
+
+  .toki2-images .toki2-images-inner {
+    width: 100%;
+  }
+
+  .suda-images {
+    margin-top: 2.5rem;
+  }
+  .suda-images .suda-inner {
     width: 100%;
   }
 }
