@@ -1,21 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.b68bf7a3.chunk.css",
-    "main.js": "/static/js/main.9ff1bc04.chunk.js",
-    "main.js.map": "/static/js/main.9ff1bc04.chunk.js.map",
+    "main.css": "/static/css/main.e3e43594.chunk.css",
+    "main.js": "/static/js/main.1c10fa20.chunk.js",
+    "main.js.map": "/static/js/main.1c10fa20.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.062b8e80.js",
     "runtime-main.js.map": "/static/js/runtime-main.062b8e80.js.map",
-    "static/js/2.16f4b8b2.chunk.js": "/static/js/2.16f4b8b2.chunk.js",
-    "static/js/2.16f4b8b2.chunk.js.map": "/static/js/2.16f4b8b2.chunk.js.map",
+    "static/js/2.3a561a50.chunk.js": "/static/js/2.3a561a50.chunk.js",
+    "static/js/2.3a561a50.chunk.js.map": "/static/js/2.3a561a50.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.b68bf7a3.chunk.css.map": "/static/css/main.b68bf7a3.chunk.css.map",
-    "static/js/2.16f4b8b2.chunk.js.LICENSE.txt": "/static/js/2.16f4b8b2.chunk.js.LICENSE.txt",
+    "static/css/main.e3e43594.chunk.css.map": "/static/css/main.e3e43594.chunk.css.map",
+    "static/js/2.3a561a50.chunk.js.LICENSE.txt": "/static/js/2.3a561a50.chunk.js.LICENSE.txt",
     "static/media/MMAS_banner-light.4f31f838.png": "/static/media/MMAS_banner-light.4f31f838.png",
     "static/media/Morita-Pullquote1.53433f2a.mp4": "/static/media/Morita-Pullquote1.53433f2a.mp4",
     "static/media/Morita-Pullquote2.08528d59.mp4": "/static/media/Morita-Pullquote2.08528d59.mp4",
     "static/media/backend-process.51e435f3.jpg": "/static/media/backend-process.51e435f3.jpg",
+    "static/media/clientApp-1.8f0ebda5.jpg": "/static/media/clientApp-1.8f0ebda5.jpg",
+    "static/media/clientApp-2.3a65a379.jpg": "/static/media/clientApp-2.3a65a379.jpg",
+    "static/media/clientApp-3.b103b4aa.png": "/static/media/clientApp-3.b103b4aa.png",
+    "static/media/clientApp-4.191c59bf.jpg": "/static/media/clientApp-4.191c59bf.jpg",
     "static/media/clientApp-visual-01.5bd87524.png": "/static/media/clientApp-visual-01.5bd87524.png",
-    "static/media/clientApp-visual-02.9f5fb3bb.png": "/static/media/clientApp-visual-02.9f5fb3bb.png",
     "static/media/clientapp-1.416ec4e0.jpg": "/static/media/clientapp-1.416ec4e0.jpg",
     "static/media/clientapp-2.aabb9d4f.jpg": "/static/media/clientapp-2.aabb9d4f.jpg",
     "static/media/clientapp-backoffice-1.90719378.jpg": "/static/media/clientapp-backoffice-1.90719378.jpg",
@@ -70,8 +73,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.062b8e80.js",
-    "static/js/2.16f4b8b2.chunk.js",
-    "static/css/main.b68bf7a3.chunk.css",
-    "static/js/main.9ff1bc04.chunk.js"
+    "static/js/2.3a561a50.chunk.js",
+    "static/css/main.e3e43594.chunk.css",
+    "static/js/main.1c10fa20.chunk.js"
   ]
 }

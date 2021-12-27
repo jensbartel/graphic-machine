@@ -1,12 +1,14 @@
 import { useEffect, useContext } from 'react';
 import { webApps } from '../../data/projectOverviewData/WebAppObjects';
+
 import AnimationContext from '../../context/animation/animationContext';
 
 import OverviewPageItem from './OverviewPageItem';
-
-import clientAppImg from '../../img/clientapp/clientApp-visual-02.png';
-import mmas from '../../img/overview/mockup-test.jpg';
+import OverviewwPageItemClientApp from './OverviewPageItemClientApp';
 import OverviewPageItemResNet from './OverviewPageItemResNet';
+
+// import clientAppImg from '../../img/clientapp/clientApp-visual-02.png';
+import mmas from '../../img/overview/mockup-test.jpg';
 
 const WebappsOverview2 = () => {
     const animationContext = useContext(AnimationContext);
@@ -24,8 +26,8 @@ const WebappsOverview2 = () => {
 
     return (
         <div className='overview3'>
-            <OverviewPageItem id={1} data={ClientApp} image={clientAppImg} />
-            {/* <OverviewPageItem id={2} data={ResNet} image={resnet} /> */}
+            {/* <OverviewPageItem id={1} data={ClientApp} image={clientAppImg} /> */}
+            <OverviewwPageItemClientApp id={1} data={ClientApp} />
             <OverviewPageItemResNet id={2} data={ResNet} />
             <OverviewPageItem id={3} data={MMAS} image={mmas} />
         </div>

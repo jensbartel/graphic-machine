@@ -876,6 +876,10 @@ form input[type=submit] {
   padding-bottom: 67.5% !important;
 }
 
+.client-app-images {
+  margin-top: 0 !important;
+}
+
 .anim-1-appear, .anim-1-enter {
   opacity: 0;
   transform: translateY(2rem);

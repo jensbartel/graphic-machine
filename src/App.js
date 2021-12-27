@@ -47,7 +47,6 @@ const App = () => {
                             <Route exact path='/'>
                                 <Redirect to='./webpages' />
                             </Route>
-                            {/* <Route exact path='/' component={WebpagesOverview2} /> */}
                             <Route exact path='/webpages' component={WebpagesOverview} />
                             <Route exact path='/webapps' component={WebappsOverview} />
                             <Route exact path='/about' component={About} />
