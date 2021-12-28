@@ -95,8 +95,8 @@ const OverviewPageItemToki = props => {
                 </CSSTransition>
 
                 {/* images */}
-                <div className='toki2-images'>
-                    <div className='toki2-images-inner'>
+                <div className='toki-images'>
+                    <div className='toki-images-inner'>
                         <CSSTransition
                             key={3}
                             in={inView && trigger}
@@ -105,7 +105,7 @@ const OverviewPageItemToki = props => {
                             classNames='transition-toki-3'
                             unmountOnExit
                         >
-                            <div className='toki2-one-image'>
+                            <div className='toki-one-image'>
                                 <img src={toki1} alt='' />
                             </div>
                         </CSSTransition>
@@ -118,7 +118,7 @@ const OverviewPageItemToki = props => {
                             classNames='transition-toki-4'
                             unmountOnExit
                         >
-                            <div className='toki2-one-image'>
+                            <div className='toki-one-image'>
                                 <img src={toki2} alt='' />
                             </div>
                         </CSSTransition>
@@ -131,7 +131,7 @@ const OverviewPageItemToki = props => {
                             classNames='transition-toki-5'
                             unmountOnExit
                         >
-                            <div className='toki2-one-image'>
+                            <div className='toki-one-image'>
                                 <img src={toki3} alt='' />
                             </div>
                         </CSSTransition>
@@ -147,7 +147,7 @@ const OverviewPageItemToki = props => {
                             }}
                             unmountOnExit
                         >
-                            <div className='toki2-one-image'>
+                            <div className='toki-one-image'>
                                 <img src={toki4} alt='' />
                             </div>
                         </CSSTransition>

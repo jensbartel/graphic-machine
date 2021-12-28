@@ -1,21 +1,10 @@
 $default-transition: 0.5s
 $default-grey: #999
-// $font-text: 'Nunito', sans-serif
 $font-text: 'Archivo', sans-serif
 $font-headline: 'Playfair Display', sans-serif
-// $font-headline: 'Oswald', sans-serif
-// $font-headline: 'Archivo', sans-serif
-
-// remove Source Sans
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap')
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap')
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap')
-
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap')
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap')
-@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700&display=swap')
 
 *
     box-sizing: border-box
@@ -137,10 +126,6 @@ nav
 .indicator-off
     visibility: hidden
 
-// .active
-//     color: #777
-//     border-bottom: 1px dotted #777
-
 // PROJECT TITLE
 .project-title
     margin: 0 0 1.5rem
@@ -206,7 +191,7 @@ nav
             padding-top: 0.33rem
 
 // ONE IMAGE
-// below not smart, use helper classes instead
+// below not smart, use helper classes instead?
 .one-image
     margin: 0 8rem
     border: 1px solid #333
@@ -356,65 +341,6 @@ nav
         padding: 0.9rem 1rem
         border: 1px solid #333
 
-// OVERVIEW NEW
-.overview
-    margin: 0 8rem
-    // below alternate styles
-    // display: flex
-    // justify-content: center
-
-.overview-group
-    &:not(&:first-child)
-        margin-top: 2.5rem // distance to top
-    &:first-child
-        margin-top: 1rem // dist.to top only first element
-    .text-container
-        display: flex
-        justify-content: space-between
-        width: 100%
-        div
-            &:first-child // text on the left: title, description, date
-                width: 100%
-                display: flex
-                flex-direction: column
-                align-items: flex-start
-                padding-bottom: 0.75rem
-                text-align: left
-                a
-                    p
-                        &:not(.title)
-                            font-family: $font-text
-                            color: $default-grey
-                            font-size: 0.75rem
-                    .title
-                        display: inline-block
-                        font-size: 1.2rem
-                        font-family: $font-headline
-                        // font-weight: 800 // test
-                        letter-spacing: 1px
-                        margin: 0 0 0.33rem 0
-                        border-bottom: 1px dotted #000
-                        &:hover
-                            color: #333
-            &:last-child // text on the right: tools used
-                min-width: 300px
-                display: flex
-                flex-direction: row
-                justify-content: flex-end
-                p
-                    font-family: $font-text
-                    font-size: 0.9rem
-                    color: $default-grey
-                    padding: 0.5rem 0 0 1rem
-                    transition: $default-transition
-                    &:hover
-                        color: #333
-                        cursor: pointer
-    .image-container
-        img
-            display: block
-            width: 100%
-
 // ABOUT
 .portrait-and-bio
     margin: 1rem 8rem 2rem
@@ -450,7 +376,6 @@ nav
     width: 75%
     font-family: $font-text
     font-size: 0.9rem
-    // font-weight: 800 // tes
     strong
         display: block
         margin-bottom: 1rem
@@ -500,116 +425,50 @@ form
     input[type="submit"]
         margin-top: 0.5rem
 
-// NEW OVERVIEW
-.overview2
-    margin: 0 8rem
-
-.overview-item-container
-    &:not(&:first-child)
-        // margin-top: -28% // the 2nd image is up 25rem, this here is the "up" minus 5rem for spacing
-        margin-top: 4rem
-    &:first-child
-        margin-top: 4rem // this is what comes below the navbar
-    .overview-inner
-        display: flex
-        flex-direction: column
-        a
-            &:first-child
-                width: 100%
-                text-align: center
-            &:nth-child(2)
-                text-align: left
-                padding-left: 50%
-                .description
-                    width: 100%
+//
+//
+// OVERVIEW NEW
+.overview3
+    margin: 2.5rem 8rem 0
+    font-family: $font-text
+    font-size: 0.7rem
+    .overview3-container // all below: OverviewPageItem3
+        position: relative
+        margin-bottom: 2rem
+        padding-bottom: 55%
+        .container-inner
+            position: absolute
+            inset: 0
+            display: flex
+            flex-direction: column
             .title
-                display: inline-block
+                display: flex
+                justify-content: center
                 font-size: 2rem
                 font-family: $font-headline
                 letter-spacing: 1px
                 color: #222
                 margin: 0 0 0.5rem 0
-                border-bottom: 1px dotted #000
-                &:hover
-                    color: #333
-                    margin: 1rem 0 20rem
-            p
-                &:not(.title)
-                    font-family: $font-text
-                    color: #333
-                    font-size: 0.7rem
-                    &:last-child
-                        margin-bottom: 0.75rem
-        .first-image
-            position: relative
-            z-index: 99
-        .first-image >
-            a >
-                img
-                    box-sizing: content-box
-                    padding-right: 4rem
-                    margin-bottom: 10%
-        .second-image
-            position: absolute
-            top: 10%
-            opacity: 0.5
-            img
-                box-sizing: content-box
-                padding-left: 12rem
-
-        div
-            a
+                p
+                    border-bottom: 1px dotted #000
+            .description
+                p
+                    padding-left: 50%
+            .image
+                min-height: 250px
+                margin: 1rem 10% 0
                 display: flex
-                flex-direction: column
                 justify-content: center
-                align-items: center
-                img
-                    display: block
-                    width: 70%
-
-// Transitions
-$trans-duration: 350ms
-
-.transition-enter
-    opacity: 0
-    transform: translateY(2rem)
-.transition-enter-active
-    transform: translateY(0)
-    opacity: 1
-    transition: opacity $trans-duration ease-in-out, transform $trans-duration ease-in-out
-.transition-enter-done
-    transform: translateY(0)
-    opacity: 1
-
-.trans-2-enter
-    opacity: 0
-.trans-2-enter-active
-    opacity: 1
-    transition: opacity $trans-duration ease-in-out $trans-duration
-.trans-2-enter-done
-    opacity: 1
-
-.trans-3-enter
-    opacity: 0
-    transform: scale(0.95)
-.trans-3-enter-active
-    opacity: 1
-    transform: scale(1)
-    transition: opacity $trans-duration ease-in-out $trans-duration*2, transform $trans-duration ease-in-out $trans-duration*2
-.trans-3-enter-done
-    opacity: 1
-    transform: scale(1)
-
-.trans-4-enter
-    opacity: 0
-    transform: scale(0.95)
-.trans-4-enter-active
-    opacity: 1
-    transform: scale(1)
-    transition: opacity $trans-duration ease-in-out $trans-duration*3, transform $trans-duration ease-in-out $trans-duration*3
-.trans-4-enter-done
-    opacity: 1
-    transform: scale(1)
+                align-items: flex-start
+                a
+                    display: flex
+                    justify-content: center
+                    img
+                        width: 80%
+        button
+            position: absolute
+            &:hover
+                cursor: pointer
 
 .overview-toki-container
     margin-top: 4rem
@@ -658,58 +517,16 @@ $trans-duration: 350ms
                         width: 80%
                         display: block
 
-.overview3 // WebpageOverview3
-    margin: 2.5rem 8rem 0
-    font-family: $font-text
-    font-size: 0.7rem
-    .overview3-container // all below: OverviewPageItem3
-        position: relative
-        margin-bottom: 2rem
-        padding-bottom: 55%
-        .container-inner
-            position: absolute
-            inset: 0
-            display: flex
-            flex-direction: column
-            .title
-                display: flex
-                justify-content: center
-                font-size: 2rem
-                font-family: $font-headline
-                letter-spacing: 1px
-                color: #222
-                margin: 0 0 0.5rem 0
-                p
-                    border-bottom: 1px dotted #000
-            .description
-                p
-                    padding-left: 50%
-            .image
-                min-height: 250px
-                margin: 1rem 10% 0
-                display: flex
-                justify-content: center
-                align-items: flex-start
-                a
-                    display: flex
-                    justify-content: center
-                    img
-                        width: 80%
-        button
-            position: absolute
-            &:hover
-                cursor: pointer
-
-.toki2-images
+.toki-images
     margin-top: 1.5rem
     display: flex
     justify-content: center
     width: 100%
-    .toki2-images-inner
+    .toki-images-inner
         display: flex
         justify-content: center
         width: 75%
-        .toki2-one-image
+        .toki-one-image
             display: flex
             justify-content: center
             img
@@ -749,9 +566,53 @@ $trans-duration: 350ms
     padding-bottom: 67.5% !important
 
 .client-app-images
-    margin-top: 0 !important
+    margin-top: 0
+    display: flex
+    justify-content: center
+    width: 100%
+    .client-app-inner
+        width: 80%
+        height: 20rem
+        position: relative
+        padding-bottom: 35%
+        .client-app-left-container
+            position: absolute
+            width: 50%
+            height: 100%
+            top: 0
+            right: 50%
+            img
+                width: 100%
+        .client-app-right-container
+            position: absolute
+            top: 0
+            left: 50%
+            width: 50%
+            height: 100%
+            img
+                width: 100%
+        .client-app-top
+            position: absolute
+            top: 0
+            left: 0
+            z-index: 99
+            img
+                width: 100%
+        .client-app-right
+            position: absolute
+            top: 0
+            right: 0
+            z-index: 100
+            img
+                width: 100%
 
-// anim-1
+//
+//
+// TRANSITIONS
+$trans-duration: 350ms
+$trans-duration-long: $trans-duration * 2
+$trans-duration-short: 250ms
+
 .anim-1-appear, .anim-1-enter
     opacity: 0
     transform: translateY(2rem)
@@ -804,10 +665,6 @@ $trans-duration: 350ms
 .anim-3-exit-done
     opacity: 0
 
-// ALL THIS IS LOTS OF LINES. ANY WAYS TO SIMPLIFY??
-$trans-duration-long: $trans-duration * 2
-$trans-duration-short: 250ms
-
 .transition-toki-1-enter
     opacity: 0
     transform: translateY(2rem)
@@ -828,42 +685,61 @@ $trans-duration-short: 250ms
     opacity: 1
 
 // four images
-.transition-toki-3-enter
+.transition-toki-3-enter,
+.transition-toki-4-enter,
+.transition-toki-5-enter,
+.transition-toki-6-enter
     opacity: 0
     transform: scale(0.95)
+
 .transition-toki-3-enter-active
     opacity: 1
     transform: scale(1)
     transition: opacity $trans-duration-short ease-in-out 700ms, transform $trans-duration-short ease-in-out 700ms
-.transition-toki-3-enter-done
-    opacity: 1
 
-.transition-toki-4-enter
-    opacity: 0
-    transform: scale(0.95)
 .transition-toki-4-enter-active
     opacity: 1
     transform: scale(1)
     transition: opacity $trans-duration-short ease-in-out 950ms, transform $trans-duration-short ease-in-out 950ms
-.transition-toki-4-enter-done
-    opacity: 1
 
-.transition-toki-5-enter
-    transform: scale(0.95)
-    opacity: 0
 .transition-toki-5-enter-active
     opacity: 1
     transform: scale(1)
     transition: opacity $trans-duration-short ease-in-out 1200ms, transform $trans-duration-short ease-in-out 1200ms
-.transition-toki-5-enter-done
-    opacity: 1
 
-.transition-toki-6-enter
-    transform: scale(0.95)
-    opacity: 0
 .transition-toki-6-enter-active
     opacity: 1
     transform: scale(1)
     transition: opacity $trans-duration-short ease-in-out 1450ms,transform $trans-duration-short ease-in-out 1450ms
+
+.transition-toki-3-enter-done
+.transition-toki-4-enter-done,
+.transition-toki-5-enter-done,
 .transition-toki-6-enter-done
+    opacity: 1
+
+.transition-toki-7-enter
+    opacity: 0
+.transition-toki-7-enter-active
+    opacity: 1
+    transition: opacity $trans-duration-short ease-in-out 950ms
+.transition-toki-7-enter-done
+    opacity: 1
+
+.transition-toki-8-enter
+    opacity: 0
+    transform: scale(0.95)
+.transition-toki-8-enter-active
+    opacity: 1
+    transform: scale(1)
+    transition: opacity $trans-duration-short ease-in-out 1200ms, transform $trans-duration-short ease-in-out 1200ms
+.transition-toki-8-enter-done
+    opacity: 1
+
+.transition-toki-9-enter
+    opacity: 0
+.transition-toki-9-enter-active
+    opacity: 1
+    transition: opacity $trans-duration-short ease-in-out 1450ms
+.transition-toki-9-enter-done
     opacity: 1

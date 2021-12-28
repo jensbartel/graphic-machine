@@ -1,17 +1,15 @@
 import { useEffect } from 'react';
-
-import bannerImg from '../../../img/overview/resnet.jpg';
+import { webApps } from '../../../data/projectOverviewData/WebAppObjects';
 import ProjectTitle from '../reuseComponents/ProjectTitle';
 import OneImage from '../reuseComponents/OneImage';
-
-import { webApps } from '../../../data/projectOverviewData/WebAppObjects';
+import bannerImg from '../../../img/overview/resnet.jpg';
 
 const ResNet = () => {
     const { projects } = webApps;
     const project = projects.ResNet;
 
     useEffect(() => {
-        document.title = 'ResNet';
+        document.title = 'Grifold Studio | ResNet';
     }, []);
 
     return (

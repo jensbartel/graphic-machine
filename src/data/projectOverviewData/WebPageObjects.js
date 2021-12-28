@@ -1,7 +1,3 @@
-import img_morita from '../../img/banner/morita_banner.png';
-import img_lavendarium from '../../img/banner/lavendarium_banner.png';
-import img_suda from '../../img/banner/suda_banner.png';
-
 // delete intro later and simplify object structure
 const webPagesIntro = {
     headline: 'Web Pages',
@@ -18,7 +14,6 @@ const MoritaShiryu = {
     id: 1,
     title: 'Morita Shiryū Exhibition',
     titleFR: 'Éxposition Morita Shiryū',
-    img: img_morita,
     description: 'Webpage for an exhibition on a Japanese postwar calligrapher',
     desFR: `Présentation d'un éxposition sur un calligraphe Japonais`,
     tools: ['React', 'SASS', 'GCP'],
@@ -33,7 +28,6 @@ const Toki = {
     id: 3,
     title: 'Toki-no-Wasuremono Gallery',
     titleFR: 'Galerie Toki-no-Wasuremono',
-    img: img_lavendarium,
     description: 'Mobile phone layout for a webpage of a Tokyo-based gallery',
     desFR: `Layout de téléphone portable d'un page d'un galerie situé à Tokyo`,
     tools: ['HTML/CSS/JS', 'PHP', 'Visual Basic'],
@@ -46,7 +40,6 @@ const Suda = {
     id: 2,
     title: 'Suda Kokuta: Abstractions',
     titleFR: 'Suda Kokuta: Abstractions ',
-    img: img_suda,
     description: 'Webpage for an exhibition on a Japanese painter',
     desFR: `Présentation d'un éxposition sur un peintre Japonais après-guerre`,
     tools: ['HTML/CSS/JS'],
@@ -80,7 +73,6 @@ const Lavendarium = {
     id: 21,
     title: 'Lavendarium',
     titleFR: 'Lavendarium',
-    img: img_lavendarium,
     description: 'Artist portfolio, recreating a Squarespace template in React',
     desFR: 'Portfolio artiste, inspiré par un template Squarespace, créé en React',
     tools: ['React', 'GCP'],

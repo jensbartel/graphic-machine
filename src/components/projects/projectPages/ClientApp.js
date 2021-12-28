@@ -1,5 +1,7 @@
 import { useEffect } from 'react';
+import { webApps } from '../../../data/projectOverviewData/WebAppObjects';
 
+import Headline from '../reuseComponents/Headline';
 import OneImage from '../reuseComponents/OneImage';
 import ProjectTitle from '../reuseComponents/ProjectTitle';
 import TwoImages from '../reuseComponents/TwoImages';
@@ -9,12 +11,9 @@ import systemArchitecture from '../../../img/clientapp/clientApp-visual-01.png';
 import iOS1 from '../../../img/clientapp/clientapp-1.jpg';
 import iOS2 from '../../../img/clientapp/clientapp-2.jpg';
 
-import { webApps } from '../../../data/projectOverviewData/WebAppObjects';
-import Headline from '../reuseComponents/Headline';
-
 const ClientApp = () => {
     useEffect(() => {
-        document.title = 'Client App';
+        document.title = 'Grifold Studio | Client App';
     }, []);
 
     const { projects } = webApps;

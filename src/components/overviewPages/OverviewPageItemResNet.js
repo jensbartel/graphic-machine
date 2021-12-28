@@ -95,8 +95,8 @@ const OverviewPageItemResNet = props => {
                 </CSSTransition>
 
                 {/* images */}
-                <div className='toki2-images'>
-                    <div className='toki2-images-inner'>
+                <div className='toki-images'>
+                    <div className='toki-images-inner'>
                         <CSSTransition
                             key={3}
                             in={inView && trigger}
@@ -105,7 +105,7 @@ const OverviewPageItemResNet = props => {
                             classNames='transition-toki-3'
                             unmountOnExit
                         >
-                            <div className='toki2-one-image'>
+                            <div className='toki-one-image'>
                                 <img src={resnet1} alt='' />
                             </div>
                         </CSSTransition>
@@ -118,7 +118,7 @@ const OverviewPageItemResNet = props => {
                             classNames='transition-toki-4'
                             unmountOnExit
                         >
-                            <div className='toki2-one-image'>
+                            <div className='toki-one-image'>
                                 <img src={resnet2} alt='' />
                             </div>
                         </CSSTransition>
@@ -131,7 +131,7 @@ const OverviewPageItemResNet = props => {
                             classNames='transition-toki-5'
                             unmountOnExit
                         >
-                            <div className='toki2-one-image'>
+                            <div className='toki-one-image'>
                                 <img src={resnet3} alt='' />
                             </div>
                         </CSSTransition>
@@ -147,7 +147,7 @@ const OverviewPageItemResNet = props => {
                             }}
                             unmountOnExit
                         >
-                            <div className='toki2-one-image'>
+                            <div className='toki-one-image'>
                                 <img src={resnet4} alt='' />
                             </div>
                         </CSSTransition>

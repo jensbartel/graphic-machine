@@ -23,7 +23,7 @@ const SudaProject = () => {
     const project = projects.Suda;
 
     useEffect(() => {
-        document.title = 'Suda Kokuta';
+        document.title = 'Grifold Studio | Suda Kokuta';
     }, []);
 
     return (

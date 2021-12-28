@@ -1,7 +1,3 @@
-import img_dummy from '../../img/banner/dummy.png';
-import img_resnet from '../../img/overview/resnet.jpg';
-import img_MMAS from '../../img/banner/MMAS_banner-light.png';
-
 // WEBAPPS
 // ResNet, ClientApp, MMAS, Secret Price Code, sbk-todoke --> Total of 5
 
@@ -15,7 +11,6 @@ const ClientApp = {
     id: 1,
     title: 'ClientApp',
     titleFR: 'ClientApp',
-    img: img_dummy,
     description: 'Web app with iOS client for iPad and web backoffice to register clients',
     desFR: 'Web app with iOS client for iPad and web backoffice to register clients',
     tools: ['MERN', 'Realm', 'Swift', 'GCP'],
@@ -29,7 +24,6 @@ const ResNet = {
     id: 2,
     title: 'ResourceNet',
     titleFR: 'ResourceNet',
-    img: img_resnet,
     description: 'In-house library management app for publishing company',
     desFR: `Système librairie pour une maison d'édition`,
     tools: ['MERN', 'Realm', 'Swift', 'GCP'],
@@ -43,7 +37,6 @@ const MMAS = {
     id: 3,
     title: 'Miyanomori Museum of Art, Sapporo',
     titleFR: 'Miyanomori Museum of Art, Sapporo',
-    img: img_MMAS,
     description: 'Collection management solution for private art museum',
     desFR: `Système de management de collection pour un musée d'art moderne`,
     tools: ['MERN', 'GCP'],
@@ -52,19 +45,6 @@ const MMAS = {
     url: '/webapps/mmas',
     github: '',
 };
-
-// const SecretPriceApp = {
-//     id: 4,
-//     title: 'Secret Price App',
-//     titleFR: 'Secret Price App',
-//     img: img_dummy,
-//     tools: ['Objective-C'],
-//     description: 'Price encryption app for art gallery',
-//     desFR: 'Price encryption app for art gallery',
-//     date: 'March 2020',
-//     dateFR: 'Mars 2020',
-//     url: '/webapps/priceapp',
-// };
 
 const dataArray = [ClientApp, ResNet, MMAS];
 
