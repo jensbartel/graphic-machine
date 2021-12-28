@@ -111,7 +111,7 @@ const OverviewPageItemSuda = props => {
                         </CSSTransition>
 
                         <CSSTransition
-                            key={5}
+                            key={4}
                             in={inView && trigger}
                             appear={true}
                             timeout={1200}
@@ -124,7 +124,7 @@ const OverviewPageItemSuda = props => {
                         </CSSTransition>
 
                         <CSSTransition
-                            key={4}
+                            key={5}
                             in={inView && trigger}
                             appear={true}
                             timeout={1450}
@@ -137,7 +137,7 @@ const OverviewPageItemSuda = props => {
                         </CSSTransition>
 
                         <CSSTransition
-                            key={5}
+                            key={6}
                             in={inView && trigger}
                             appear={true}
                             timeout={1700}
