@@ -6,7 +6,7 @@ import OverviewPageItem from './OverviewPageItem';
 import OverviewwPageItemClientApp from './OverviewPageItemClientApp';
 import OverviewPageItemResNet from './OverviewPageItemResNet';
 
-import mmas from '../../img/overview/mockup-test.jpg';
+import mmas from '../../img/overview/mmas-macbook.jpg';
 
 const WebappsOverview2 = () => {
     const animationContext = useContext(AnimationContext);

@@ -59,7 +59,7 @@ const OverviewPageItemResNet = props => {
     }
 
     return (
-        <div ref={ref} className='overview3-container' style={{ paddingBottom: '67.5%' }}>
+        <div ref={ref} className='overview3-container'>
             <div className='container-inner'>
                 {/* headline */}
                 <CSSTransition

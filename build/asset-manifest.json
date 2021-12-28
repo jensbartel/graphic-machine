@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.663394fb.chunk.css",
-    "main.js": "/static/js/main.cf9aa567.chunk.js",
-    "main.js.map": "/static/js/main.cf9aa567.chunk.js.map",
+    "main.css": "/static/css/main.f61eee89.chunk.css",
+    "main.js": "/static/js/main.aca39ad8.chunk.js",
+    "main.js.map": "/static/js/main.aca39ad8.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.062b8e80.js",
     "runtime-main.js.map": "/static/js/runtime-main.062b8e80.js.map",
     "static/js/2.3a561a50.chunk.js": "/static/js/2.3a561a50.chunk.js",
     "static/js/2.3a561a50.chunk.js.map": "/static/js/2.3a561a50.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.663394fb.chunk.css.map": "/static/css/main.663394fb.chunk.css.map",
+    "static/css/main.f61eee89.chunk.css.map": "/static/css/main.f61eee89.chunk.css.map",
     "static/js/2.3a561a50.chunk.js.LICENSE.txt": "/static/js/2.3a561a50.chunk.js.LICENSE.txt",
     "static/media/Morita-Pullquote1.53433f2a.mp4": "/static/media/Morita-Pullquote1.53433f2a.mp4",
     "static/media/Morita-Pullquote2.08528d59.mp4": "/static/media/Morita-Pullquote2.08528d59.mp4",
     "static/media/backend-process.51e435f3.jpg": "/static/media/backend-process.51e435f3.jpg",
-    "static/media/clientApp-1.8f0ebda5.jpg": "/static/media/clientApp-1.8f0ebda5.jpg",
-    "static/media/clientApp-2.3a65a379.jpg": "/static/media/clientApp-2.3a65a379.jpg",
-    "static/media/clientApp-3.e4591c18.png": "/static/media/clientApp-3.e4591c18.png",
-    "static/media/clientApp-4.8fa6d20b.png": "/static/media/clientApp-4.8fa6d20b.png",
+    "static/media/clientApp-1.61686e5c.jpg": "/static/media/clientApp-1.61686e5c.jpg",
+    "static/media/clientApp-2.5b18e5b6.jpg": "/static/media/clientApp-2.5b18e5b6.jpg",
+    "static/media/clientApp-3.86b20d40.png": "/static/media/clientApp-3.86b20d40.png",
+    "static/media/clientApp-4.cbd23fbb.png": "/static/media/clientApp-4.cbd23fbb.png",
     "static/media/clientApp-visual-01.5bd87524.png": "/static/media/clientApp-visual-01.5bd87524.png",
     "static/media/clientapp-1.416ec4e0.jpg": "/static/media/clientapp-1.416ec4e0.jpg",
     "static/media/clientapp-2.aabb9d4f.jpg": "/static/media/clientapp-2.aabb9d4f.jpg",
@@ -30,11 +30,11 @@
     "static/media/mishima.d6049d4c.jpg": "/static/media/mishima.d6049d4c.jpg",
     "static/media/miyanomori-outside-01.29b6d26f.jpg": "/static/media/miyanomori-outside-01.29b6d26f.jpg",
     "static/media/miyanomori-outside-02.93bb3d19.jpg": "/static/media/miyanomori-outside-02.93bb3d19.jpg",
+    "static/media/mmas-macbook.cd2ce9ac.jpg": "/static/media/mmas-macbook.cd2ce9ac.jpg",
     "static/media/mmas-mainview-1.9271f961.jpg": "/static/media/mmas-mainview-1.9271f961.jpg",
     "static/media/mmas-mainview-2.639160a5.jpg": "/static/media/mmas-mainview-2.639160a5.jpg",
     "static/media/mmas-mainview-3.23dd1fd1.jpg": "/static/media/mmas-mainview-3.23dd1fd1.jpg",
     "static/media/mmas-mainview-4.fa26b91d.jpg": "/static/media/mmas-mainview-4.fa26b91d.jpg",
-    "static/media/mockup-test.3d6f87eb.jpg": "/static/media/mockup-test.3d6f87eb.jpg",
     "static/media/morita-part3-snippet.170a19d1.jpg": "/static/media/morita-part3-snippet.170a19d1.jpg",
     "static/media/morita.6702330f.jpg": "/static/media/morita.6702330f.jpg",
     "static/media/morita_ipad.9844e2d0.jpg": "/static/media/morita_ipad.9844e2d0.jpg",
@@ -69,7 +69,7 @@
   "entrypoints": [
     "static/js/runtime-main.062b8e80.js",
     "static/js/2.3a561a50.chunk.js",
-    "static/css/main.663394fb.chunk.css",
-    "static/js/main.cf9aa567.chunk.js"
+    "static/css/main.f61eee89.chunk.css",
+    "static/js/main.aca39ad8.chunk.js"
   ]
 }

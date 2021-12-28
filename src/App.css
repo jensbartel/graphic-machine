@@ -1720,7 +1720,7 @@ form input[type=submit] {
     padding-bottom: 120% !important;
   }
 
-  .toki2-images .toki2-images-inner {
+  .toki-images .toki-images-inner {
     width: 100%;
   }
 
@@ -1728,6 +1728,10 @@ form input[type=submit] {
     margin-top: 2.5rem;
   }
   .suda-images .suda-inner {
+    width: 100%;
+  }
+
+  .client-app-images .client-app-inner {
     width: 100%;
   }
 }
