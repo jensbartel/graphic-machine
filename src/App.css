@@ -174,7 +174,7 @@ nav .language-switch button:hover {
   margin-right: 1.25rem;
 }
 .project-title p:first-child {
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Archivo", sans-serif;
   letter-spacing: 1px;
   font-size: 1.2rem;
   display: inline-block;
@@ -193,7 +193,7 @@ nav .language-switch button:hover {
 }
 .large-text-container h2, .headline h2 {
   margin: 4rem 0 2rem;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Archivo", sans-serif;
   font-weight: 400;
   letter-spacing: 1px;
   margin-top: 0;
@@ -425,7 +425,7 @@ nav .language-switch button:hover {
   margin: 4rem 8rem 0;
 }
 .further-projects strong {
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Archivo", sans-serif;
   font-size: 1.2rem;
   letter-spacing: 1px;
   font-weight: 400;
@@ -444,7 +444,7 @@ nav .language-switch button:hover {
 .bio strong {
   display: block;
   margin-bottom: 1rem;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Archivo", sans-serif;
   letter-spacing: 1px;
   font-size: 1.4rem;
   font-weight: 400;
@@ -525,13 +525,11 @@ form input[type=submit] {
   display: flex;
   justify-content: center;
   font-size: 2rem;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Archivo", sans-serif;
+  font-weight: 600;
   letter-spacing: 1px;
   color: #222;
   margin: 0 0 0.5rem 0;
-}
-.overview3 .overview3-container .container-inner .title p {
-  border-bottom: 1px dotted #000;
 }
 .overview3 .overview3-container .container-inner .description p {
   padding-left: 50%;
@@ -573,7 +571,7 @@ form input[type=submit] {
 .overview-toki-container .overview-toki-inner .title {
   display: inline-block;
   font-size: 2rem;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Archivo", sans-serif;
   letter-spacing: 1px;
   color: #222;
   margin: 0 0 0.5rem 0;
@@ -866,6 +864,7 @@ form input[type=submit] {
   transition: opacity 250ms ease-in-out 1450ms, transform 250ms ease-in-out 1450ms;
 }
 
+.transition-toki-3-enter-done,
 .transition-toki-4-enter-done,
 .transition-toki-5-enter-done,
 .transition-toki-6-enter-done {
