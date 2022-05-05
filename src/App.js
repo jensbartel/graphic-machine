@@ -4,20 +4,20 @@ import { useEffect, useContext } from 'react';
 import AnimationState from './context/animation/AnimationState';
 import LangContext from './context/langContext';
 
-import About from './components/pages/About';
+import About from './components/topLevelPages/About';
 import ClientApp from './components/projects/projectPages/ClientApp';
-import Footer from './components/layout/Footer';
+import Footer from './components/layoutItems/Footer';
 import Mishima from './components/projects/projectPages/Mishima';
 import MMAS from './components/projects/projectPages/MMAS';
 import Morita from './components/projects/projectPages/Morita';
-import Navbar from './components/layout/Navbar';
-import NotFound from './components/pages/NotFound';
+import Navbar from './components/layoutItems/Navbar';
+import NotFound from './components/topLevelPages/NotFound';
 import ResNet from './components/projects/projectPages/ResNet';
-import ScrollToTop from './components/layout/Scroll';
+import ScrollToTop from './components/layoutItems/Scroll';
 import Suda from './components/projects/projectPages/Suda';
 import Toki from './components/projects/projectPages/Toki';
-import WebappsOverview from './components/overviewPages/WebappsOverview';
-import WebpagesOverview from './components/overviewPages/WebpagesOverview';
+import WebappsOverview from './components/topLevelPages/WebappsOverview';
+import WebpagesOverview from './components/topLevelPages/WebpagesOverview';
 
 const App = () => {
     const langContext = useContext(LangContext);

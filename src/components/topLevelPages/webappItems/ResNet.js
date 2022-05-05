@@ -59,7 +59,7 @@ const OverviewPageItemResNet = props => {
     }
 
     return (
-        <div ref={ref} className='overview3-container'>
+        <div ref={ref} className='overview-container'>
             <div className='container-inner'>
                 {/* headline */}
                 <CSSTransition

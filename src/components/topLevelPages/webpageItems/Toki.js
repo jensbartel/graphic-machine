@@ -59,7 +59,7 @@ const OverviewPageItemToki = props => {
     }
 
     return (
-        <div ref={ref} className='overview3-container overview-toki-container'>
+        <div ref={ref} className='overview-container overview-toki-container'>
             <div className='container-inner'>
                 {/* headline */}
                 <CSSTransition

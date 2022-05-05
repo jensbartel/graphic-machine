@@ -59,7 +59,7 @@ const OverviewPageItemSuda = props => {
     }
 
     return (
-        <div ref={ref} className='overview3-container overview-suda-container'>
+        <div ref={ref} className='overview-container overview-suda-container'>
             <div className='container-inner'>
                 {/* headline */}
                 <CSSTransition

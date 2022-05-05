@@ -6,11 +6,13 @@ import { Link } from 'react-router-dom';
 import AnimationContext from '../../context/animation/animationContext';
 import LangContext from '../../context/langContext';
 
-const OverviewPageItem3 = props => {
+import sudaLeft from '../../img/overview/suda-left.jpg';
+import sudaRight from '../../img/overview/suda-right.jpg';
+
+const OverviewPageItemSuda = props => {
     const {
         id,
         data: { title, titleFR, description, desFR, date, dateFR, url },
-        image,
     } = props;
 
     const { ref, inView } = useInView({
@@ -35,7 +37,6 @@ const OverviewPageItem3 = props => {
         dateChoice = date;
     }
 
-    // the approach seems awkward but it appears to work
     let trigger = true;
     const animateArray = Object.values(animate);
     switch (id) {
@@ -56,15 +57,15 @@ const OverviewPageItem3 = props => {
     }
 
     return (
-        // remove the 'active' class later
-        <div ref={ref} className={inView ? 'overview3-container active' : 'overview3-container'}>
+        <div ref={ref} className='overview-container overview-suda-container'>
             <div className='container-inner'>
+                {/* headline */}
                 <CSSTransition
                     key={1}
                     in={inView && trigger}
                     appear={true}
                     timeout={350}
-                    classNames='anim-1'
+                    classNames='transition-toki-1'
                     unmountOnExit
                 >
                     <div className='title'>
@@ -73,12 +74,14 @@ const OverviewPageItem3 = props => {
                         </Link>
                     </div>
                 </CSSTransition>
+
+                {/* description & date */}
                 <CSSTransition
                     key={2}
                     in={inView && trigger}
                     appear={true}
                     timeout={700}
-                    classNames='anim-2'
+                    classNames='transition-toki-2'
                     unmountOnExit
                 >
                     <div className='description'>
@@ -88,28 +91,43 @@ const OverviewPageItem3 = props => {
                         </Link>
                     </div>
                 </CSSTransition>
-                <CSSTransition
-                    key={3}
-                    in={inView && trigger}
-                    appear={true}
-                    timeout={1050}
-                    classNames='anim-3'
-                    onEntered={() => {
-                        // setTimeout(() => {
-                        setAnimation(id);
-                        // }, 350);
-                    }}
-                    unmountOnExit
-                >
-                    <div className='image'>
-                        <Link to={url}>
-                            <img src={image} alt='' />
-                        </Link>
+
+                {/* images */}
+                <div className='suda-images'>
+                    <div className='suda-inner'>
+                        <CSSTransition
+                            key={3}
+                            in={inView && trigger}
+                            appear={true}
+                            timeout={950}
+                            classNames='transition-toki-3'
+                            unmountOnExit
+                        >
+                            <div className='suda-left-container'>
+                                <img src={sudaLeft} alt='' />
+                            </div>
+                        </CSSTransition>
+
+                        <CSSTransition
+                            key={4}
+                            in={inView && trigger}
+                            appear={true}
+                            timeout={1200}
+                            classNames='transition-toki-4'
+                            onEntered={() => {
+                                setAnimation(id);
+                            }}
+                            unmountOnExit
+                        >
+                            <div className='suda-right-container'>
+                                <img src={sudaRight} alt='' />
+                            </div>
+                        </CSSTransition>
                     </div>
-                </CSSTransition>
+                </div>
             </div>
         </div>
     );
 };
 
-export default OverviewPageItem3;
+export default OverviewPageItemSuda;

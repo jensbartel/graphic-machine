@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import BackToTop from '../projects/reuseComponents/BackToTop';
+import BackToTop from '../projectPages/reuseComponents/BackToTop';
 
 const Footer = () => {
     return (

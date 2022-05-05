@@ -1,0 +1,136 @@
+// TRANSITIONS -----------------------------------------------------------------
+
+$trans-duration: 350ms
+$trans-duration-long: $trans-duration * 2
+$trans-duration-short: 250ms
+
+.anim-1-appear, .anim-1-enter
+    opacity: 0
+    transform: translateY(2rem)
+.anim-1-appear-active, .anim-1-enter-active
+    opacity: 1
+    transform: translateY(0)
+    transition: opacity $trans-duration ease-in-out, transform $trans-duration ease-in-out
+.anim-1-appear-done, .anim-1-enter-done
+    opacity: 1
+
+.anim-1-exit
+    opacity: 1
+.anim-1-exit-active
+    opacity: 0
+    transition: opacity $trans-duration ease-in-out
+.anim-1-exit-done
+    opacity: 0
+
+// anim 2
+.anim-2-appear, .anim-2-enter
+    opacity: 0
+.anim-2-appear-active, .anim-2-enter-active
+    opacity: 1
+    transition: opacity $trans-duration ease-in-out $trans-duration
+.anim-2-appear-done, .anim-2-enter-done
+    opacity: 1
+
+.anim-2-exit
+    opacity: 1
+.anim-2-exit-active
+    opacity: 0
+    transition: opacity $trans-duration ease-in-out $trans-duration
+.anim-2-exit-done
+    opacity: 0
+
+// anim 3
+.anim-3-appear, .anim-3-enter
+    opacity: 0
+.anim-3-appear-active, .anim-3-enter-active
+    opacity: 1
+    transition: opacity $trans-duration ease-in-out $trans-duration*2
+.anim-3-appear-done, .anim-3-enter-done
+    opacity: 1
+
+.anim-3-exit
+    opacity: 1
+.anim-3-exit-active
+    opacity: 0
+    transition: opacity $trans-duration ease-in-out $trans-duration*2
+.anim-3-exit-done
+    opacity: 0
+
+.transition-toki-1-enter
+    opacity: 0
+    transform: translateY(2rem)
+.transition-toki-1-enter-active
+    opacity: 1
+    transform: translateY(0)
+    transition: opacity $trans-duration ease-in-out, transform $trans-duration ease-in-out
+.transition-toki-1-enter-done
+    opacity: 1
+    transform: translateY(0)
+
+.transition-toki-2-enter
+    opacity: 0
+.transition-toki-2-enter-active
+    opacity: 1
+    transition: opacity $trans-duration ease-in-out $trans-duration
+.transition-toki-2-enter-done
+    opacity: 1
+
+// four images
+.transition-toki-3-enter,
+.transition-toki-4-enter,
+.transition-toki-5-enter,
+.transition-toki-6-enter
+    opacity: 0
+    transform: scale(0.95)
+
+.transition-toki-3-enter-active
+    opacity: 1
+    transform: scale(1)
+    transition: opacity $trans-duration-short ease-in-out 700ms, transform $trans-duration-short ease-in-out 700ms
+
+.transition-toki-4-enter-active
+    opacity: 1
+    transform: scale(1)
+    transition: opacity $trans-duration-short ease-in-out 950ms, transform $trans-duration-short ease-in-out 950ms
+
+.transition-toki-5-enter-active
+    opacity: 1
+    transform: scale(1)
+    transition: opacity $trans-duration-short ease-in-out 1200ms, transform $trans-duration-short ease-in-out 1200ms
+
+.transition-toki-6-enter-active
+    opacity: 1
+    transform: scale(1)
+    transition: opacity $trans-duration-short ease-in-out 1450ms,transform $trans-duration-short ease-in-out 1450ms
+
+.transition-toki-3-enter-done,
+.transition-toki-4-enter-done,
+.transition-toki-5-enter-done,
+.transition-toki-6-enter-done
+    opacity: 1
+
+.transition-toki-7-enter
+    opacity: 0
+.transition-toki-7-enter-active
+    opacity: 1
+    transition: opacity $trans-duration-short ease-in-out 950ms
+.transition-toki-7-enter-done
+    opacity: 1
+
+.transition-toki-8-enter
+    opacity: 0
+    transform: scale(0.95)
+.transition-toki-8-enter-active
+    opacity: 1
+    transform: scale(1)
+    transition: opacity $trans-duration-short ease-in-out 1200ms, transform $trans-duration-short ease-in-out 1200ms
+.transition-toki-8-enter-done
+    opacity: 1
+
+.transition-toki-9-enter
+    opacity: 0
+.transition-toki-9-enter-active
+    opacity: 1
+    transition: opacity $trans-duration-short ease-in-out 1450ms
+.transition-toki-9-enter-done
+    opacity: 1

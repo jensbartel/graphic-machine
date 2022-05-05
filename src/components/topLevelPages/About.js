@@ -1,6 +1,6 @@
 import portrait from '../../img/about/portrait-1.jpg';
-import Bio from './Bio';
-import Inquiry from './Inquiry';
+import Bio from './aboutPageItems/Bio';
+import Inquiry from './aboutPageItems/Inquiry';
 
 const About = () => {
     return (
