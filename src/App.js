@@ -1,6 +1,7 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import { useEffect, useContext } from 'react';
+import AnimationState from './context/animation/AnimationState';
 import LangContext from './context/langContext';
 
 import About from './components/pages/About';
@@ -15,10 +16,8 @@ import ResNet from './components/projects/projectPages/ResNet';
 import ScrollToTop from './components/layout/Scroll';
 import Suda from './components/projects/projectPages/Suda';
 import Toki from './components/projects/projectPages/Toki';
-import WebpagesOverview from './components/overviewPages/WebpagesOverview';
-
-import AnimationState from './context/animation/AnimationState';
 import WebappsOverview from './components/overviewPages/WebappsOverview';
+import WebpagesOverview from './components/overviewPages/WebpagesOverview';
 
 const App = () => {
     const langContext = useContext(LangContext);
