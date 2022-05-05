@@ -33,22 +33,11 @@ const ResNet = {
     github: '',
 };
 
-const MMAS = {
-    id: 3,
-    title: 'Miyanomori Museum of Art, Sapporo',
-    titleFR: 'Miyanomori Museum of Art, Sapporo',
-    description: 'Collection management solution for private art museum',
-    desFR: `Système de management de collection pour un musée d'art moderne`,
-    tools: ['MERN', 'GCP'],
-    date: 'Jun 2020 (cancelled)',
-    dateFR: 'Juin 2020 (abandonné)',
-    url: '/webapps/mmas',
-    github: '',
-};
 
-const dataArray = [ClientApp, ResNet, MMAS];
 
-const data = { ClientApp, ResNet, MMAS };
+const dataArray = [ClientApp, ResNet ];
+
+const data = { ClientApp, ResNet };
 
 export const webApps = {
     intro: webAppsIntro,

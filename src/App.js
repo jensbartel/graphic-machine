@@ -8,7 +8,6 @@ import LangContext from './context/lang/langContext'
 import About from './components/topLevelPages/About'
 import ClientApp from './components/projectPages/ClientApp'
 import Footer from './components/layoutItems/Footer'
-import MMAS from './components/projectPages/MMAS'
 import Morita from './components/projectPages/Morita'
 import Navbar from './components/layoutItems/Navbar'
 import NotFound from './components/topLevelPages/NotFound'
@@ -54,7 +53,6 @@ const App = () => {
 
                             {/* project pages */}
                             <Route exact path='/webapps/clientapp' component={ClientApp} />
-                            <Route exact path='/webapps/mmas' component={MMAS} />
                             <Route exact path='/webpages/morita' component={Morita} />
                             <Route exact path='/webapps/resourcenet' component={ResNet} />
                             <Route exact path='/webpages/suda' component={Suda} />
