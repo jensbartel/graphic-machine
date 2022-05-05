@@ -3,8 +3,8 @@ import { useInView } from 'react-intersection-observer';
 import { CSSTransition } from 'react-transition-group';
 import { Link } from 'react-router-dom';
 
-import AnimationContext from '../../context/animation/animationContext';
-import LangContext from '../../context/langContext';
+import AnimationContext from '../../../context/animation/animationContext';
+import LangContext from '../../../context/lang/langContext';
 
 const OverviewPageItem = props => {
     const {

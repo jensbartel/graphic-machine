@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import LangContext from '../../../context/langContext';
+import LangContext from '../../../context/lang/langContext';
 
 const ProjectTitle = props => {
     const project = props.project;

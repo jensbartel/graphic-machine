@@ -3,13 +3,13 @@ import { useInView } from 'react-intersection-observer';
 import { CSSTransition } from 'react-transition-group';
 import { Link } from 'react-router-dom';
 
-import resnet1 from '../../img/overview/resnet2-1.jpg';
-import resnet2 from '../../img/overview/resnet2-2.jpg';
-import resnet3 from '../../img/overview/resnet2-3.jpg';
-import resnet4 from '../../img/overview/resnet2-4.jpg';
+import resnet1 from '../../../img/overview/resnet2-1.jpg';
+import resnet2 from '../../../img/overview/resnet2-2.jpg';
+import resnet3 from '../../../img/overview/resnet2-3.jpg';
+import resnet4 from '../../../img/overview/resnet2-4.jpg';
 
-import AnimationContext from '../../context/animation/animationContext';
-import LangContext from '../../context/langContext';
+import AnimationContext from '../../../context/animation/animationContext';
+import LangContext from '../../../context/lang/langContext';
 
 const OverviewPageItemResNet = props => {
     const {

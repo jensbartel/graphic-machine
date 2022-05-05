@@ -1,4 +1,4 @@
-import { SET_LANG, REMOVE_LANG } from './types';
+import { SET_LANG, REMOVE_LANG } from '../types';
 
 const langReducer = (state, action) => {
     switch (action.type) {

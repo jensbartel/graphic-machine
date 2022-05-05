@@ -1,20 +1,20 @@
 import { useEffect } from 'react';
 import html from 'react-html-parser';
 
-import OneImage from '../reuseComponents/OneImage';
-import ProjectTitle from '../reuseComponents/ProjectTitle';
-import TwoImages from '../reuseComponents/TwoImages';
+import LargeTextCenter from './reuseComponents/LargeTextCenter';
+import OneImage from './reuseComponents/OneImage';
+import ProjectTitle from './reuseComponents/ProjectTitle';
+import TwoImages from './reuseComponents/TwoImages';
 
-import miya1 from '../../../img/mmas/miyanomori-outside-01.jpg';
-import miya2 from '../../../img/mmas/miyanomori-outside-02.jpg';
-import miya3 from '../../../img/mmas/mmas-mainview-2.jpg';
-import miya4 from '../../../img/mmas/mmas-mainview-3.jpg';
-import miya5 from '../../../img/mmas/mmas-mainview-4.jpg';
-import miya6 from '../../../img/mmas/mmas-mainview-1.jpg';
+import miya1 from '../../img/mmas/miyanomori-outside-01.jpg';
+import miya2 from '../../img/mmas/miyanomori-outside-02.jpg';
+import miya3 from '../../img/mmas/mmas-mainview-2.jpg';
+import miya4 from '../../img/mmas/mmas-mainview-3.jpg';
+import miya5 from '../../img/mmas/mmas-mainview-4.jpg';
+import miya6 from '../../img/mmas/mmas-mainview-1.jpg';
 
-import { webApps } from '../../../data/projectOverviewData/WebAppObjects';
-import MMASData from '../../../data/projectData/MMASData';
-import LargeTextCenter from '../reuseComponents/LargeTextCenter';
+import { webApps } from '../../data/projectOverviewData/WebAppObjects';
+import MMASData from '../../data/projectData/MMASData';
 
 const MMAS = () => {
     const { projects } = webApps;

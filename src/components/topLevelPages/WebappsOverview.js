@@ -2,9 +2,9 @@ import { useEffect, useContext } from 'react';
 import { webApps } from '../../data/projectOverviewData/WebAppObjects';
 import AnimationContext from '../../context/animation/animationContext';
 
-import OverviewPageItem from '../topLevelPageItems/OverviewPageItem';
-import OverviewwPageItemClientApp from '../topLevelPageItems/OverviewPageItemClientApp';
-import OverviewPageItemResNet from '../topLevelPageItems/OverviewPageItemResNet';
+import DefaultWebpageItem from './webpageItems/DefaultWebpageItem';
+import ClientAppTop from './webappItems/ClientAppTop';
+import ResNetTop from './webappItems/ResNetTop';
 
 import mmas from '../../img/overview/mmas-macbook.jpg';
 
@@ -24,9 +24,9 @@ const WebappsOverview2 = () => {
 
     return (
         <div className='overview'>
-            <OverviewwPageItemClientApp id={1} data={ClientApp} />
-            <OverviewPageItemResNet id={2} data={ResNet} />
-            <OverviewPageItem id={3} data={MMAS} image={mmas} />
+            <ClientAppTop id={1} data={ClientApp} />
+            <ResNetTop id={2} data={ResNet} />
+            <DefaultWebpageItem id={3} data={MMAS} image={mmas} />
         </div>
     );
 };

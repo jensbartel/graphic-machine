@@ -1,19 +1,18 @@
 import { useEffect, useContext } from 'react';
 import { webPages } from '../../data/projectOverviewData/WebPageObjects';
-import AnimationContext from '../../context/animation/animationContext';
+import AnimationContext from '../../context/animation/animationContext'
 
-import OverviewPageItem from '../topLevelPageItems/OverviewPageItem';
-import OverviewPageItemSuda from '../topLevelPageItems/OverviewPageItemSuda';
-import OverviewPageItemToki from '../topLevelPageItems/OverviewPageItemToki';
+import DefaultWebpageItem from './webpageItems/DefaultWebpageItem'
+import SudaTop from './webpageItems/SudaTop'
+import TokiTop from './webpageItems/TokiTop'
 
 import moritaImage from '../../img/overview/morita.jpg';
-import mishimaImage from '../../img/overview/mishima.jpg';
 
 const WebpagesOverview3 = () => {
     const animationContext = useContext(AnimationContext);
     let { clearAnimation } = animationContext;
 
-    const { MoritaShiryu, Toki, Suda, Mishima } = webPages.projects;
+    const { MoritaShiryu, Toki, Suda } = webPages.projects;
 
     useEffect(() => {
         document.title = 'Grifold Studio | Web Pages';
@@ -25,10 +24,9 @@ const WebpagesOverview3 = () => {
     }, []);
     return (
         <div className='overview'>
-            <OverviewPageItem id={1} data={MoritaShiryu} image={moritaImage} />
-            <OverviewPageItemToki id={2} data={Toki} />
-            <OverviewPageItemSuda id={3} data={Suda} />
-            <OverviewPageItem id={4} data={Mishima} image={mishimaImage} />
+            <DefaultWebpageItem id={1} data={MoritaShiryu} image={moritaImage} />
+            <TokiTop id={2} data={Toki} />
+            <SudaTop id={3} data={Suda} />
         </div>
     );
 };

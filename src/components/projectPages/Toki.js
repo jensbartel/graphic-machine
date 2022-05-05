@@ -1,17 +1,17 @@
 import { useEffect } from 'react';
 import html from 'react-html-parser';
 
-import Headline from '../reuseComponents/Headline';
-import LargeTextCenter from '../reuseComponents/LargeTextCenter';
-import OneImage from '../reuseComponents/OneImage';
-import ProjectTitle from '../reuseComponents/ProjectTitle';
+import Headline from './reuseComponents/Headline';
+import LargeTextCenter from './reuseComponents/LargeTextCenter';
+import OneImage from './reuseComponents/OneImage';
+import ProjectTitle from './reuseComponents/ProjectTitle';
 
-import tokiImg1 from '../../../img/toki/toki-overview.jpg';
-import tokiImg2 from '../../../img/toki/toki-overview-2.jpg';
-import tokiImg3 from '../../../img/toki/backend-process.jpg';
+import tokiImg1 from '../../img/toki/toki-overview.jpg';
+import tokiImg2 from '../../img/toki/toki-overview-2.jpg';
+import tokiImg3 from '../../img/toki/backend-process.jpg';
 
-import TokiData from '../../../data/projectData/TokiData';
-import { webPages } from '../../../data/projectOverviewData/WebPageObjects';
+import TokiData from '../../data/projectData/TokiData';
+import { webPages } from '../../data/projectOverviewData/WebPageObjects';
 
 const Toki = () => {
     const { introText, introHeadline, caption1, caption2, backendExplanation } = TokiData;

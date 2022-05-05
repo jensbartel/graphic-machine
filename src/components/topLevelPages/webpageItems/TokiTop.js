@@ -3,15 +3,15 @@ import { useInView } from 'react-intersection-observer';
 import { CSSTransition } from 'react-transition-group';
 import { Link } from 'react-router-dom';
 
-import AnimationContext from '../../context/animation/animationContext';
-import LangContext from '../../context/langContext';
+import toki1 from '../../../img/overview/toki1.jpg';
+import toki2 from '../../../img/overview/toki2.jpg';
+import toki3 from '../../../img/overview/toki3.jpg';
+import toki4 from '../../../img/overview/toki4.jpg';
 
-import clientAppLeft from '../../img/overview/clientApp-2.jpg';
-import clientAppRight from '../../img/overview/clientApp-1.jpg';
-import clientAppTop from '../../img/overview/clientApp-3.png';
-import clientAppTopRight from '../../img/overview/clientApp-4.png';
+import AnimationContext from '../../../context/animation/animationContext';
+import LangContext from '../../../context/lang/langContext';
 
-const OverviewPageItemSuda = props => {
+const OverviewPageItemToki = props => {
     const {
         id,
         data: { title, titleFR, description, desFR, date, dateFR, url },
@@ -59,7 +59,7 @@ const OverviewPageItemSuda = props => {
     }
 
     return (
-        <div ref={ref} className='overview-container overview-suda-container'>
+        <div ref={ref} className='overview-container overview-toki-container'>
             <div className='container-inner'>
                 {/* headline */}
                 <CSSTransition
@@ -95,8 +95,8 @@ const OverviewPageItemSuda = props => {
                 </CSSTransition>
 
                 {/* images */}
-                <div className='client-app-images'>
-                    <div className='client-app-inner'>
+                <div className='toki-images'>
+                    <div className='toki-images-inner'>
                         <CSSTransition
                             key={3}
                             in={inView && trigger}
@@ -105,8 +105,8 @@ const OverviewPageItemSuda = props => {
                             classNames='transition-toki-3'
                             unmountOnExit
                         >
-                            <div className='client-app-left-container'>
-                                <img src={clientAppLeft} alt='' />
+                            <div className='toki-one-image'>
+                                <img src={toki1} alt='' />
                             </div>
                         </CSSTransition>
 
@@ -115,11 +115,11 @@ const OverviewPageItemSuda = props => {
                             in={inView && trigger}
                             appear={true}
                             timeout={1200}
-                            classNames='transition-toki-7'
+                            classNames='transition-toki-4'
                             unmountOnExit
                         >
-                            <div className='client-app-top'>
-                                <img src={clientAppTop} alt='' />
+                            <div className='toki-one-image'>
+                                <img src={toki2} alt='' />
                             </div>
                         </CSSTransition>
 
@@ -128,11 +128,11 @@ const OverviewPageItemSuda = props => {
                             in={inView && trigger}
                             appear={true}
                             timeout={1450}
-                            classNames='transition-toki-8'
+                            classNames='transition-toki-5'
                             unmountOnExit
                         >
-                            <div className='client-app-right-container'>
-                                <img src={clientAppRight} alt='' />
+                            <div className='toki-one-image'>
+                                <img src={toki3} alt='' />
                             </div>
                         </CSSTransition>
 
@@ -141,14 +141,14 @@ const OverviewPageItemSuda = props => {
                             in={inView && trigger}
                             appear={true}
                             timeout={1700}
-                            classNames='transition-toki-9'
+                            classNames='transition-toki-6'
                             onEntered={() => {
                                 setAnimation(id);
                             }}
                             unmountOnExit
                         >
-                            <div className='client-app-right'>
-                                <img src={clientAppTopRight} alt='' />
+                            <div className='toki-one-image'>
+                                <img src={toki4} alt='' />
                             </div>
                         </CSSTransition>
                     </div>
@@ -158,4 +158,4 @@ const OverviewPageItemSuda = props => {
     );
 };
 
-export default OverviewPageItemSuda;
+export default OverviewPageItemToki;

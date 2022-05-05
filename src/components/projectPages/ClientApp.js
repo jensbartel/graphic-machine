@@ -1,15 +1,15 @@
 import { useEffect } from 'react';
-import { webApps } from '../../../data/projectOverviewData/WebAppObjects';
+import { webApps } from '../../data/projectOverviewData/WebAppObjects';
 
-import Headline from '../reuseComponents/Headline';
-import OneImage from '../reuseComponents/OneImage';
-import ProjectTitle from '../reuseComponents/ProjectTitle';
-import TwoImages from '../reuseComponents/TwoImages';
+import Headline from './reuseComponents/Headline';
+import OneImage from './reuseComponents/OneImage';
+import ProjectTitle from './reuseComponents/ProjectTitle';
+import TwoImages from './reuseComponents/TwoImages';
 
-import backoffice1 from '../../../img/clientapp/clientapp-backoffice-1.jpg';
-import systemArchitecture from '../../../img/clientapp/clientApp-visual-01.png';
-import iOS1 from '../../../img/clientapp/clientapp-1.jpg';
-import iOS2 from '../../../img/clientapp/clientapp-2.jpg';
+import backoffice1 from '../../img/clientapp/clientapp-backoffice-1.jpg';
+import systemArchitecture from '../../img/clientapp/clientApp-visual-01.png';
+import iOS1 from '../../img/clientapp/clientapp-1.jpg';
+import iOS2 from '../../img/clientapp/clientapp-2.jpg';
 
 const ClientApp = () => {
     useEffect(() => {
@@ -31,6 +31,6 @@ const ClientApp = () => {
 
 export default ClientApp;
 
-// refasctor later
+// refactor later
 const capLeft = `Sign up view for clients on iPad.`;
 const capRight = `Staff view to add notes.`;

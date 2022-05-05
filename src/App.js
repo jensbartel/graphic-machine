@@ -1,23 +1,25 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import { useEffect, useContext } from 'react';
-import AnimationState from './context/animation/AnimationState';
-import LangContext from './context/langContext';
 
-import About from './components/topLevelPages/About';
-import ClientApp from './components/projects/projectPages/ClientApp';
-import Footer from './components/layoutItems/Footer';
-import Mishima from './components/projects/projectPages/Mishima';
-import MMAS from './components/projects/projectPages/MMAS';
-import Morita from './components/projects/projectPages/Morita';
-import Navbar from './components/layoutItems/Navbar';
-import NotFound from './components/topLevelPages/NotFound';
-import ResNet from './components/projects/projectPages/ResNet';
-import ScrollToTop from './components/layoutItems/Scroll';
-import Suda from './components/projects/projectPages/Suda';
-import Toki from './components/projects/projectPages/Toki';
+import AnimationState from './context/animation/AnimationState'
+import LangContext from './context/lang/langContext'
+
+import About from './components/topLevelPages/About'
+import ClientApp from './components/projectPages/ClientApp'
+import Footer from './components/layoutItems/Footer'
+import MMAS from './components/projectPages/MMAS'
+import Morita from './components/projectPages/Morita'
+import Navbar from './components/layoutItems/Navbar'
+import NotFound from './components/topLevelPages/NotFound'
+import ResNet from './components/projectPages/ResNet'
+import ScrollToTop from './components/layoutItems/Scroll'
+import Suda from './components/projectPages/Suda'
+import Toki from './components/projectPages/Toki'
+
 import WebappsOverview from './components/topLevelPages/WebappsOverview';
 import WebpagesOverview from './components/topLevelPages/WebpagesOverview';
+
 
 const App = () => {
     const langContext = useContext(LangContext);
@@ -52,7 +54,6 @@ const App = () => {
 
                             {/* project pages */}
                             <Route exact path='/webapps/clientapp' component={ClientApp} />
-                            <Route exact path='/webpages/mishima' component={Mishima} />
                             <Route exact path='/webapps/mmas' component={MMAS} />
                             <Route exact path='/webpages/morita' component={Morita} />
                             <Route exact path='/webapps/resourcenet' component={ResNet} />

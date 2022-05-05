@@ -3,15 +3,13 @@ import { useInView } from 'react-intersection-observer';
 import { CSSTransition } from 'react-transition-group';
 import { Link } from 'react-router-dom';
 
-import toki1 from '../../img/overview/toki1.jpg';
-import toki2 from '../../img/overview/toki2.jpg';
-import toki3 from '../../img/overview/toki3.jpg';
-import toki4 from '../../img/overview/toki4.jpg';
+import AnimationContext from '../../../context/animation/animationContext';
+import LangContext from '../../../context/lang/langContext';
 
-import AnimationContext from '../../context/animation/animationContext';
-import LangContext from '../../context/langContext';
+import sudaLeft from '../../../img/overview/suda-left.jpg';
+import sudaRight from '../../../img/overview/suda-right.jpg';
 
-const OverviewPageItemToki = props => {
+const OverviewPageItemSuda = props => {
     const {
         id,
         data: { title, titleFR, description, desFR, date, dateFR, url },
@@ -59,7 +57,7 @@ const OverviewPageItemToki = props => {
     }
 
     return (
-        <div ref={ref} className='overview-container overview-toki-container'>
+        <div ref={ref} className='overview-container overview-suda-container'>
             <div className='container-inner'>
                 {/* headline */}
                 <CSSTransition
@@ -95,8 +93,8 @@ const OverviewPageItemToki = props => {
                 </CSSTransition>
 
                 {/* images */}
-                <div className='toki-images'>
-                    <div className='toki-images-inner'>
+                <div className='suda-images'>
+                    <div className='suda-inner'>
                         <CSSTransition
                             key={3}
                             in={inView && trigger}
@@ -105,8 +103,8 @@ const OverviewPageItemToki = props => {
                             classNames='transition-toki-3'
                             unmountOnExit
                         >
-                            <div className='toki-one-image'>
-                                <img src={toki1} alt='' />
+                            <div className='suda-left-container'>
+                                <img src={sudaLeft} alt='' />
                             </div>
                         </CSSTransition>
 
@@ -116,39 +114,13 @@ const OverviewPageItemToki = props => {
                             appear={true}
                             timeout={1200}
                             classNames='transition-toki-4'
-                            unmountOnExit
-                        >
-                            <div className='toki-one-image'>
-                                <img src={toki2} alt='' />
-                            </div>
-                        </CSSTransition>
-
-                        <CSSTransition
-                            key={5}
-                            in={inView && trigger}
-                            appear={true}
-                            timeout={1450}
-                            classNames='transition-toki-5'
-                            unmountOnExit
-                        >
-                            <div className='toki-one-image'>
-                                <img src={toki3} alt='' />
-                            </div>
-                        </CSSTransition>
-
-                        <CSSTransition
-                            key={6}
-                            in={inView && trigger}
-                            appear={true}
-                            timeout={1700}
-                            classNames='transition-toki-6'
                             onEntered={() => {
                                 setAnimation(id);
                             }}
                             unmountOnExit
                         >
-                            <div className='toki-one-image'>
-                                <img src={toki4} alt='' />
+                            <div className='suda-right-container'>
+                                <img src={sudaRight} alt='' />
                             </div>
                         </CSSTransition>
                     </div>
@@ -158,4 +130,4 @@ const OverviewPageItemToki = props => {
     );
 };
 
-export default OverviewPageItemToki;
+export default OverviewPageItemSuda;

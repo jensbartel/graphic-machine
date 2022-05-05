@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
-import { webApps } from '../../../data/projectOverviewData/WebAppObjects';
-import ProjectTitle from '../reuseComponents/ProjectTitle';
-import OneImage from '../reuseComponents/OneImage';
-import bannerImg from '../../../img/overview/resnet.jpg';
+import { webApps } from '../../data/projectOverviewData/WebAppObjects';
+import ProjectTitle from './reuseComponents/ProjectTitle';
+import OneImage from './reuseComponents/OneImage';
+import bannerImg from '../../img/overview/resnet.jpg';
 
 const ResNet = () => {
     const { projects } = webApps;

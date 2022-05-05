@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
-import LangContext from '../../context/langContext';
+import LangContext from '../../context/lang/langContext';
 
 const Navbar = () => {
     const langContext = useContext(LangContext);

@@ -3,11 +3,13 @@ import { useInView } from 'react-intersection-observer';
 import { CSSTransition } from 'react-transition-group';
 import { Link } from 'react-router-dom';
 
-import AnimationContext from '../../context/animation/animationContext';
-import LangContext from '../../context/langContext';
+import AnimationContext from '../../../context/animation/animationContext';
+import LangContext from '../../../context/lang/langContext';
 
-import sudaLeft from '../../img/overview/suda-left.jpg';
-import sudaRight from '../../img/overview/suda-right.jpg';
+import clientAppLeft from '../../../img/overview/clientApp-2.jpg';
+import clientAppRight from '../../../img/overview/clientApp-1.jpg';
+import clientAppTop from '../../../img/overview/clientApp-3.png';
+import clientAppTopRight from '../../../img/overview/clientApp-4.png';
 
 const OverviewPageItemSuda = props => {
     const {
@@ -93,8 +95,8 @@ const OverviewPageItemSuda = props => {
                 </CSSTransition>
 
                 {/* images */}
-                <div className='suda-images'>
-                    <div className='suda-inner'>
+                <div className='client-app-images'>
+                    <div className='client-app-inner'>
                         <CSSTransition
                             key={3}
                             in={inView && trigger}
@@ -103,8 +105,8 @@ const OverviewPageItemSuda = props => {
                             classNames='transition-toki-3'
                             unmountOnExit
                         >
-                            <div className='suda-left-container'>
-                                <img src={sudaLeft} alt='' />
+                            <div className='client-app-left-container'>
+                                <img src={clientAppLeft} alt='' />
                             </div>
                         </CSSTransition>
 
@@ -113,14 +115,40 @@ const OverviewPageItemSuda = props => {
                             in={inView && trigger}
                             appear={true}
                             timeout={1200}
-                            classNames='transition-toki-4'
+                            classNames='transition-toki-7'
+                            unmountOnExit
+                        >
+                            <div className='client-app-top'>
+                                <img src={clientAppTop} alt='' />
+                            </div>
+                        </CSSTransition>
+
+                        <CSSTransition
+                            key={5}
+                            in={inView && trigger}
+                            appear={true}
+                            timeout={1450}
+                            classNames='transition-toki-8'
+                            unmountOnExit
+                        >
+                            <div className='client-app-right-container'>
+                                <img src={clientAppRight} alt='' />
+                            </div>
+                        </CSSTransition>
+
+                        <CSSTransition
+                            key={6}
+                            in={inView && trigger}
+                            appear={true}
+                            timeout={1700}
+                            classNames='transition-toki-9'
                             onEntered={() => {
                                 setAnimation(id);
                             }}
                             unmountOnExit
                         >
-                            <div className='suda-right-container'>
-                                <img src={sudaRight} alt='' />
+                            <div className='client-app-right'>
+                                <img src={clientAppTopRight} alt='' />
                             </div>
                         </CSSTransition>
                     </div>
