@@ -19,18 +19,16 @@ const Toki = () => {
     const project = projects.Toki;
 
     useEffect(() => {
-        document.title = 'Toki-no-Wasuremono';
+        document.title = 'Grifold Studio | Toki-no-Wasuremono';
     }, []);
 
     return (
         <>
             <ProjectTitle project={project} />
             <OneImage img1={tokiImg1} cssStyle='one-image' caption={caption1} />
-
             <OneImage img1={tokiImg2} cssStyle='one-image' caption={caption2} />
             <Headline headline='Migrating Old Content' />
             <OneImage img1={tokiImg3} cssStyle='one-image-variant-2' caption={html(backendExplanation)} />
-
             <LargeTextCenter headline={introHeadline} text={introText} />
         </>
     );

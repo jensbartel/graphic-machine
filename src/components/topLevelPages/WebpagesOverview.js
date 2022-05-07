@@ -8,7 +8,7 @@ import TokiTop from './webpageItems/TokiTop'
 
 import moritaImage from '../../img/overview/morita.jpg';
 
-const WebpagesOverview3 = () => {
+const WebpagesOverview = () => {
     const animationContext = useContext(AnimationContext);
     let { clearAnimation } = animationContext;
 
@@ -31,4 +31,4 @@ const WebpagesOverview3 = () => {
     );
 };
 
-export default WebpagesOverview3;
+export default WebpagesOverview;
