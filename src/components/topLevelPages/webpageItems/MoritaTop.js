@@ -6,12 +6,12 @@ import { Link } from 'react-router-dom';
 import AnimationContext from '../../../context/animation/animationContext';
 import LangContext from '../../../context/lang/langContext';
 
-const OverviewPageItem = props => {
-    const {
-        id,
-        data: { title, titleFR, description, desFR, date, dateFR, url },
-        image,
-    } = props;
+import { morita } from '../../../data/projectData.json'
+import moritaImage from '../../../img/overview/morita.jpg'
+
+const MoritaTop = props => {
+    const { title, titleFR, description, desFR, date, dateFR, url } = morita;
+    const { id } = props;
 
     const { ref, inView } = useInView({
         threshold: 0.25, // 1: element is fully visible, 0: element is not visible
@@ -103,7 +103,7 @@ const OverviewPageItem = props => {
                 >
                     <div className='image'>
                         <Link to={url}>
-                            <img src={image} alt='' />
+                            <img src={moritaImage} alt='' />
                         </Link>
                     </div>
                 </CSSTransition>
@@ -112,4 +112,4 @@ const OverviewPageItem = props => {
     );
 };
 
-export default OverviewPageItem;
+export default MoritaTop;

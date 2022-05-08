@@ -9,11 +9,11 @@ import LangContext from '../../../context/lang/langContext';
 import sudaLeft from '../../../img/overview/suda-left.jpg';
 import sudaRight from '../../../img/overview/suda-right.jpg';
 
-const OverviewPageItemSuda = props => {
-    const {
-        id,
-        data: { title, titleFR, description, desFR, date, dateFR, url },
-    } = props;
+import { suda } from '../../../data/projectData.json'
+
+const SudaTop = props => {
+    const { title, titleFR, description, desFR, date, dateFR, url } = suda;
+    const { id } = props;
 
     const { ref, inView } = useInView({
         threshold: 0.25, // 1: element is fully visible, 0: element is not visible
@@ -130,4 +130,4 @@ const OverviewPageItemSuda = props => {
     );
 };
 
-export default OverviewPageItemSuda;
+export default SudaTop;

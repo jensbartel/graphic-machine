@@ -1,26 +1,27 @@
 import { useEffect } from 'react';
-import { webApps } from '../../data/projectOverviewData/WebAppObjects';
 
+// components
 import Headline from './reuseComponents/Headline';
 import OneImage from './reuseComponents/OneImage';
 import ProjectTitle from './reuseComponents/ProjectTitle';
 import TwoImages from './reuseComponents/TwoImages';
 
+// images
 import backoffice1 from '../../img/clientapp/clientapp-backoffice-1.jpg';
 import systemArchitecture from '../../img/clientapp/clientApp-visual-01.png';
 import iOS1 from '../../img/clientapp/clientapp-1.jpg';
 import iOS2 from '../../img/clientapp/clientapp-2.jpg';
+
+import { clientApp } from '../../data/projectData.json'
 
 const ClientApp = () => {
     useEffect(() => {
         document.title = 'Grifold Studio | Client App';
     }, []);
 
-    const { projects } = webApps;
-    const project = projects.ClientApp;
     return (
         <>
-            <ProjectTitle project={project} />
+            <ProjectTitle project={clientApp} />
             <TwoImages imgLeft={iOS1} captionLeft={capLeft} imgRight={iOS2} captionRight={capRight} />
             <OneImage img1={backoffice1} cssStyle='one-image-variant-2' />
             <Headline headline='System Overview' />

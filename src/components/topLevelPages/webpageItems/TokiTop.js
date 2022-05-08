@@ -11,11 +11,11 @@ import toki4 from '../../../img/overview/toki4.jpg';
 import AnimationContext from '../../../context/animation/animationContext';
 import LangContext from '../../../context/lang/langContext';
 
-const OverviewPageItemToki = props => {
-    const {
-        id,
-        data: { title, titleFR, description, desFR, date, dateFR, url },
-    } = props;
+import { toki } from '../../../data/projectData.json';
+
+const TokiTop = (props) => {
+    const { title, titleFR, description, desFR, date, dateFR, url } = toki;
+    const { id } = props;
 
     const { ref, inView } = useInView({
         threshold: 0.25, // 1: element is fully visible, 0: element is not visible
@@ -158,4 +158,4 @@ const OverviewPageItemToki = props => {
     );
 };
 
-export default OverviewPageItemToki;
+export default TokiTop;

@@ -11,11 +11,11 @@ import clientAppRight from '../../../img/overview/clientApp-1.jpg';
 import clientAppTop from '../../../img/overview/clientApp-3.png';
 import clientAppTopRight from '../../../img/overview/clientApp-4.png';
 
+import { clientApp } from '../../../data/projectData.json'
+
 const OverviewPageItemSuda = props => {
-    const {
-        id,
-        data: { title, titleFR, description, desFR, date, dateFR, url },
-    } = props;
+    const { title, titleFR, description, desFR, date, dateFR, url } = clientApp;
+    const { id } = props;
 
     const { ref, inView } = useInView({
         threshold: 0.25, // 1: element is fully visible, 0: element is not visible

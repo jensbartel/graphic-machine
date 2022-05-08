@@ -1,12 +1,13 @@
 import html from 'react-html-parser';
 
 const LargeTextCenter = props => {
-    const { text, headline } = props;
+    const { text, headline, css } = props;
+    
     return (
         <>
             <div className='large-text-container'>
                 <h2>{headline}</h2>
-                {html(text)}
+                <p className={css}>{html(text)}</p>
             </div>
         </>
     );

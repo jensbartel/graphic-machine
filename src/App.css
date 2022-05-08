@@ -554,6 +554,14 @@ form input[type=submit] {
   cursor: pointer;
 }
 
+.project-details {
+  display: block;
+  color: #8f8f8f;
+  font-size: 0.7rem;
+  line-height: 1.2;
+  margin: -2rem 0 2rem;
+}
+
 .overview-toki-container {
   margin-top: 4rem;
   padding-bottom: 75%;
