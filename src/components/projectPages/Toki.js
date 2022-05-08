@@ -28,7 +28,6 @@ const Toki = () => {
     return (
         <>
             <ProjectTitle project={toki} />
-            {/* <FourImages /> */}
 
             <div className='four-images'>
                 <div className='left'>

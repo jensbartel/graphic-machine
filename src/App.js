@@ -15,6 +15,7 @@ import ResNet from './components/projectPages/ResNet'
 import ScrollToTop from './components/layoutItems/Scroll'
 import Suda from './components/projectPages/Suda'
 import Toki from './components/projectPages/Toki'
+import Wanobi from './components/projectPages/Wanobi'
 
 import WebappsOverview from './components/topLevelPages/WebappsOverview';
 import WebpagesOverview from './components/topLevelPages/WebpagesOverview';
@@ -57,6 +58,7 @@ const App = () => {
                             <Route exact path='/webapps/resourcenet' component={ResNet} />
                             <Route exact path='/webpages/suda' component={Suda} />
                             <Route exact path='/webpages/toki' component={Toki} />
+                            <Route exact path='/webpages/wanobi' component={Wanobi} />
 
                             <Route component={NotFound} />
                         </Switch>

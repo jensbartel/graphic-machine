@@ -60,6 +60,12 @@ strong {
   font-size: 0.75rem;
 }
 
+.not-found {
+  font-family: "Archivo", sans-serif;
+  margin: 2rem 8rem 0;
+  padding-bottom: 5rem;
+}
+
 nav {
   position: fixed;
   top: 0;
@@ -346,7 +352,7 @@ nav .language-switch button:hover {
 .four-images .left div:last-child {
   margin: 0 1.5rem 0;
 }
-.four-images .left div article:last-child {
+.four-images .left div article:not(.four-images .left div article:first-child) {
   margin-top: 4rem;
 }
 .four-images .right {
@@ -360,7 +366,7 @@ nav .language-switch button:hover {
 .four-images .right div:last-child {
   margin-left: 1.5rem;
 }
-.four-images .right div article:last-child {
+.four-images .right div article:not(.four-images .right div article:first-child) {
   margin-top: 4rem;
 }
 
@@ -414,9 +420,12 @@ nav .language-switch button:hover {
   bottom: 0;
   width: 100%;
   padding: 2rem 0 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   font-size: 0.7rem;
   color: #999;
-  text-align: center;
   font-family: "Archivo", sans-serif;
 }
 .footer p a {
@@ -436,8 +445,8 @@ nav .language-switch button:hover {
 
 .back-to-top {
   position: absolute;
-  bottom: 4.5rem;
-  right: 2rem;
+  top: 2rem;
+  right: 8rem;
   cursor: pointer;
   transition: 0.5s;
 }

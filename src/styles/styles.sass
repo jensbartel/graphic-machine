@@ -59,6 +59,12 @@ strong
     font-family: $font-text
     font-size: 0.75rem
 
+// NOT FOUND ------------------------------------------------------------------
+.not-found    
+    font-family: $font-text
+    margin: 2rem 8rem 0
+    padding-bottom: 5rem
+
 
 // NAVBAR ---------------------------------------------------------------------
 
@@ -318,8 +324,8 @@ $gutter: 1.5rem
             &:last-child
                 margin: 0 $gutter 0
             article
-                &:last-child
-                    margin-top: 4rem
+                &:not(&:first-child)                    
+                    margin-top: 4rem                                                       
     .right
         display: flex
         justify-content: space-between
@@ -330,7 +336,7 @@ $gutter: 1.5rem
             &:last-child
                 margin-left: $gutter
             article
-                &:last-child
+                &:not(&:first-child)                    
                     margin-top: 4rem
 
 
@@ -380,10 +386,16 @@ $gutter: 1.5rem
     position: absolute
     bottom: 0
     width: 100%
+    // margin: 0 8rem
     padding: 2rem 0 2rem
+    // background-color: pink
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
     font-size: 0.7rem
     color: $default-grey
-    text-align: center
+    // text-align: center
     font-family: $font-text
     p
         a
@@ -399,8 +411,8 @@ $gutter: 1.5rem
 
 .back-to-top
     position: absolute
-    bottom: 4.5rem
-    right: 2rem
+    top: 2rem
+    right: 8rem
     cursor: pointer
     transition: $default-transition
     &:hover

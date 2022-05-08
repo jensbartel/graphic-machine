@@ -1,6 +1,5 @@
 {
     "morita": {
-        "id": 1,
         "title": "Morita Shiryū Exhibition",
         "titleFR": "Éxposition Morita Shiryū",
         "description": "Webpage for an exhibition on a Japanese postwar calligrapher",
@@ -15,7 +14,6 @@
         "details": "Exhibition on view in January–February 2021 in Kyoto and Tokyo, Fall–Winter 2021: Paris.<br>Site online since December 2019. Tools: React, SASS, Git/Github. <br>Hosting: Google Cloud Platform. Installation view photo credits: H. Ichikawa."
     },
     "suda": {
-        "id": 2,
         "title": "Suda Kokuta: Abstractions",
         "titleFR": "Suda Kokuta: Abstractions",
         "description": "Webpage for an exhibition on a Japanese painter",
@@ -30,7 +28,6 @@
         "details": "Exhibition on view in August-September 2021 in Kyoto.<br>Tools: HTML/CSS/JS.'Parking Lot' installation concept: T. Yamauchi (work selection myself).<br />Installation view photo credits: H. Ichikawa. Chronology and exhibition history: T. Liao. <br/>Print catalog design: Myself."
     },
     "toki": {
-        "id": 3,
         "title": "Toki-no-Wasuremono Gallery",
         "titleFR": "Galerie Toki-no-Wasuremono",
         "description": "Mobile phone layout for a webpage of a Tokyo-based gallery",
@@ -45,8 +42,21 @@
         "caption2": "Left to right: Exhibition page, work page (below: work page with drop-down menu open), inquiry page (below: inquiry confirmation page), &ldquo;Past Exhibitions&rdquo; page (below: inquiry &ldquo;Thank you&rdquo; page).",
         "backendExplanation": "<strong>Comment: </strong>Toki-no-Wasuremono's homepage in 2015 was pure HTML/CSS with some PHP. I was there in a part-time position for webpage maintenance and volunteered to provide a mobile-friendly layout. Decision was made to not replace the existing site but use the mobile layout as an add-on; i.e. replicating the content in a new format, while keeping the old files intact. Process was as above: isolate artwork data and image url from existing files; consolidate data into a .csv file (which works as sort of a pseudo-database). I then created a utility in VB which accepted the data .csv and different types of template files to process them into new .html files with the revised layout."
     },
+    "wanobi": {
+        "title": "Wanobi: Shibunkaku Fine Arts Archive",
+        "titleFR": "Wanobi: Shibunkaku Fine Arts Archive",
+        "description": "Mobile phone layout for a gallery archive page",
+        "desFR": "Layout de téléphone portable d'un page d'archive d'un galerie",
+        "tools": ["HTML/CSS/JS", "PHP (Cake)"],
+        "date": "Mid-2022 (upcoming)",
+        "dateFR": "Mi-2022 (à venir)",
+        "url": "webpages/wanobi",
+        "livePage": "",
+        "github": "",
+        "outline": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lacinia quis augue sit amet hendrerit. Mauris porta, urna nec vehicula ultrices, risus felis tempus nulla, eu dignissim metus velit sed magna. Suspendisse pretium libero malesuada iaculis pulvinar. Pellentesque eget porttitor est. Etiam ultricies risus eu sem gravida rhoncus. Donec fermentum nisl id ornare porta. Nam tristique quam eu viverra tincidunt. Aenean congue interdum ornare. Sed a nunc risus.",
+        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lacinia quis augue sit amet hendrerit. Mauris porta, urna nec vehicula ultrices, risus felis tempus nulla, eu dignissim metus velit sed magna. Suspendisse pretium libero malesuada iaculis pulvinar. Pellentesque eget porttitor est. Etiam ultricies risus eu sem gravida rhoncus. Donec fermentum nisl id ornare porta. Nam tristique quam eu viverra tincidunt. Aenean congue interdum ornare. Sed a nunc risus."
+    },
     "clientApp": {
-        "id": 4,
         "title": "ClientApp",
         "titleFR": "ClientApp",
         "description": "Web/iOS app for iPad and web backoffice to register clients",
@@ -58,7 +68,6 @@
         "github": "https://github.com/jensbartel/clientapp-backoffice.git"
     },
     "resNet": {
-        "id": 5,
         "title": "ResourceNet",
         "titleFR": "ResourceNet",
         "description": "In-house library management app for publishing company",
@@ -70,7 +79,6 @@
         "github": ""
     },
     "sudaPrint": {
-        "id": 10,
         "title": "Suda Kokuta: Abstractions",
         "titleFR": "Suda Kokuta: Abstractions",
         "description": "28-page catalog for &ldquo;Suda Kokuta: Abstractions&rdquo; exhibition",
@@ -80,7 +88,6 @@
         "tools": ["InDesign", "Photoshop"]
     },
     "yamaguchiPrint": {
-        "id": 11,
         "title": "Yamaguchi Takeo: Watercolors",
         "titleFR": "Yamaguchi Takeo: Watercolors",
         "description": "44-page catalog for &ldquo;Yamaguchi Takeo: Watercolors&rdquo; exhibition",
@@ -91,7 +98,6 @@
         "_comment": "add the window decoration on item page!"
     },
     "yamaguchiPrint2": {
-        "id": 12,
         "title": "Yamaguchi Takeo: Watercolors (2)",
         "titleFR": "Yamaguchi Takeo: Watercolors (2)",
         "description": "32-page catalog for &ldquo;Yamaguchi Takeo: Watercolors (2)&rdquo; exhibition",
@@ -102,7 +108,6 @@
         "_comment": "add the window decoration on item page!"
     },
     "hayashiPrint": {
-        "id": 13,
         "title": "Hayashi Takeshi: She",
         "titleFR": "Hayashi Takeshi: She",
         "description": "28-page catalog for &ldquo;Hayashi Takeshi: She&rdquo; exhibition",
