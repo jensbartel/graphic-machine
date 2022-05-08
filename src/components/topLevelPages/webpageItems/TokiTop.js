@@ -18,7 +18,7 @@ const TokiTop = (props) => {
     const { id } = props;
 
     const { ref, inView } = useInView({
-        threshold: 0.25, // 1: element is fully visible, 0: element is not visible
+        threshold: 0, // 1: element is fully visible, 0: element is not visible
         triggerOnce: true,
     });
 

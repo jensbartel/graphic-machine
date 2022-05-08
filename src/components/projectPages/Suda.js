@@ -19,7 +19,7 @@ import sudaJP from '../../img/suda/suda-full-jp.jpg';
 import { suda } from '../../data/projectData.json';
 
 const SudaProject = () => {
-    const { details } = suda;
+    const { title, outline, details } = suda;
 
     useEffect(() => {
         document.title = 'Grifold Studio | Suda Kokuta';
@@ -33,6 +33,7 @@ const SudaProject = () => {
             <TwoImages imgLeft={sudaChronology} imgRight={sudaExhibitions} />
             <Headline headline='Bilingual: English &#38; Japanese Pages' />
             <TwoImages imgLeft={sudaWorksENG} imgRight={sudaJP} />
+            <LargeTextCenter headline={title} text={outline} />
             <LargeTextCenter text={details} css='project-details' />
         </>
     );
