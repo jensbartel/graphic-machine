@@ -1215,16 +1215,16 @@ form input[type=submit] {
     padding-left: 0;
   }
 
-  .overview3 {
+  .overview {
     margin: 1.5rem 7.5% 0;
   }
-  .overview3 .overview3-container {
+  .overview .overview-container {
     padding-bottom: 80%;
   }
-  .overview3 .overview3-container .container-inner .image {
+  .overview .overview-container .container-inner .image {
     margin: 1.5rem 0 0 0;
   }
-  .overview3 .overview3-container .container-inner .image img {
+  .overview .overview-container .container-inner .image img {
     width: 90%;
   }
 }
@@ -1429,16 +1429,16 @@ form input[type=submit] {
     padding-left: 0;
   }
 
-  .overview3 {
+  .overview {
     margin: 1.5rem 7.5% 0;
   }
-  .overview3 .overview3-container {
+  .overview .overview-container {
     padding-bottom: 80%;
   }
-  .overview3 .overview3-container .container-inner .image {
+  .overview .overview-container .container-inner .image {
     margin: 1.5rem 0 0 0;
   }
-  .overview3 .overview3-container .container-inner .image img {
+  .overview .overview-container .container-inner .image img {
     width: 90%;
   }
 }
@@ -1522,8 +1522,8 @@ form input[type=submit] {
   }
 
   .project-title {
-    padding: 1.5rem 5% 0;
-    margin-bottom: 1rem;
+    padding: 0 5% 0;
+    margin-bottom: 0;
   }
   .project-title .title-and-links {
     flex-direction: column-reverse;
@@ -1550,7 +1550,7 @@ form input[type=submit] {
   }
 
   .large-text-container {
-    margin-top: 2rem;
+    margin-top: 4rem;
   }
   .large-text-container h2 {
     margin: 2rem 0 1rem;
@@ -1803,6 +1803,38 @@ form input[type=submit] {
 
   .client-app-images .client-app-inner {
     width: 100%;
+  }
+
+  .four-images {
+    margin: 0 5% 0;
+    flex-direction: column;
+  }
+  .four-images div {
+    width: 100%;
+  }
+  .four-images .left {
+    margin-top: 2rem;
+  }
+  .four-images .left div:first-child {
+    margin-right: 0.5rem;
+  }
+  .four-images .left div:last-child {
+    margin: 0 0 0 0.5rem;
+  }
+  .four-images .left div article:not(.four-images .left div article:first-child) {
+    margin-top: 2rem;
+  }
+  .four-images .right {
+    margin-top: 2rem;
+  }
+  .four-images .right div:first-child {
+    margin: 0 0.5rem 0 0;
+  }
+  .four-images .right div:last-child {
+    margin-left: 0.5rem;
+  }
+  .four-images .right div article:not(.four-images .right div article:first-child) {
+    margin-top: 2rem;
   }
 }
 @media only screen and (max-device-width: 480px) {

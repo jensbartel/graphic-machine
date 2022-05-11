@@ -72,8 +72,8 @@ $default-phone-margin: 0 5%
                             color: $default-grey
 
     .project-title
-        padding: 1.5rem 5% 0
-        margin-bottom: 1rem
+        padding: 0 5% 0
+        margin-bottom: 0
         .title-and-links
             flex-direction: column-reverse
         p
@@ -93,7 +93,7 @@ $default-phone-margin: 0 5%
             margin: 2rem 0 1rem
 
     .large-text-container
-        margin-top: 2rem
+        margin-top: 4rem
         h2
             margin: 2rem 0 1rem
 
@@ -301,6 +301,36 @@ $default-phone-margin: 0 5%
     .client-app-images
         .client-app-inner
             width: 100%
+
+    $gutter: 0.5rem
+    .four-images
+        margin: 0 5% 0
+        flex-direction: column
+        div
+            width: 100%
+        .left
+            margin-top: 2rem
+            div
+                &:first-child
+                    margin-right: $gutter
+                &:last-child
+                    margin: 0 0 0 $gutter
+                article
+                    &:not(&:first-child)
+                        margin-top: 2rem
+                        
+        .right
+            margin-top: 2rem
+            div
+                &:first-child
+                    margin: 0 $gutter 0 0
+                &:last-child
+                    margin-left: $gutter
+                article
+                    &:not(&:first-child)
+                        margin-top: 2rem
+                        
+
 
 // iPhone 5 and similar
 @media only screen and (max-device-width: 480px)
