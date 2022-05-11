@@ -29,7 +29,7 @@ $font-text: 'Nunito', sans-serif
     .content-container
         margin-top: 0.5rem
         .project-title
-            margin: 0 7.5% 1.5rem
+            margin: 0 7.5% 0
             padding: 0.66rem 0 0 0
             a
                 &:hover
@@ -83,7 +83,7 @@ $font-text: 'Nunito', sans-serif
     .two-images
         margin: 0 7.5%
     .three-images
-        margin: 0 7.5%
+        margin: 2rem 7.5% 0
         justify-content: space-between
         img
             width: 55%
@@ -190,6 +190,32 @@ $font-text: 'Nunito', sans-serif
                     margin: 1.5rem 0 0 0
                     img
                         width: 90%
+
+    $gutter: .5rem
+    .four-images
+        margin: 0 7.5%
+        .left
+            margin-top: 2rem
+            div
+                &:first-child
+                    margin-right: $gutter
+                &:last-child
+                    margin: 0 $gutter 0 
+                article
+                    &:not(&:first-child)
+                        margin-top: 2rem
+                        
+        .right
+            margin-top: 2rem
+            div
+                &:first-child
+                    margin: 0 $gutter 0
+                &:last-child
+                    margin-left: $gutter
+                article
+                    &:not(&:first-child)
+                        margin-top: 2rem
+                        
 
 
 

@@ -1019,7 +1019,7 @@ form input[type=submit] {
     margin-top: 0.5rem;
   }
   .content-container .project-title {
-    margin: 0 7.5% 1.5rem;
+    margin: 0 7.5% 0;
     padding: 0.66rem 0 0 0;
   }
   .content-container .project-title a:hover {
@@ -1097,7 +1097,7 @@ form input[type=submit] {
   }
 
   .three-images {
-    margin: 0 7.5%;
+    margin: 2rem 7.5% 0;
     justify-content: space-between;
   }
   .three-images img {
@@ -1226,6 +1226,34 @@ form input[type=submit] {
   }
   .overview .overview-container .container-inner .image img {
     width: 90%;
+  }
+
+  .four-images {
+    margin: 0 7.5%;
+  }
+  .four-images .left {
+    margin-top: 2rem;
+  }
+  .four-images .left div:first-child {
+    margin-right: 0.5rem;
+  }
+  .four-images .left div:last-child {
+    margin: 0 0.5rem 0;
+  }
+  .four-images .left div article:not(.four-images .left div article:first-child) {
+    margin-top: 2rem;
+  }
+  .four-images .right {
+    margin-top: 2rem;
+  }
+  .four-images .right div:first-child {
+    margin: 0 0.5rem 0;
+  }
+  .four-images .right div:last-child {
+    margin-left: 0.5rem;
+  }
+  .four-images .right div article:not(.four-images .right div article:first-child) {
+    margin-top: 2rem;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 768px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
@@ -1233,7 +1261,7 @@ form input[type=submit] {
     margin-top: 0.5rem;
   }
   .content-container .project-title {
-    margin: 0 7.5% 1.5rem;
+    margin: 0 7.5% 0;
     padding: 0.66rem 0 0 0;
   }
   .content-container .project-title a:hover {
@@ -1311,7 +1339,7 @@ form input[type=submit] {
   }
 
   .three-images {
-    margin: 0 7.5%;
+    margin: 2rem 7.5% 0;
     justify-content: space-between;
   }
   .three-images img {
@@ -1440,6 +1468,34 @@ form input[type=submit] {
   }
   .overview .overview-container .container-inner .image img {
     width: 90%;
+  }
+
+  .four-images {
+    margin: 0 7.5%;
+  }
+  .four-images .left {
+    margin-top: 2rem;
+  }
+  .four-images .left div:first-child {
+    margin-right: 0.5rem;
+  }
+  .four-images .left div:last-child {
+    margin: 0 0.5rem 0;
+  }
+  .four-images .left div article:not(.four-images .left div article:first-child) {
+    margin-top: 2rem;
+  }
+  .four-images .right {
+    margin-top: 2rem;
+  }
+  .four-images .right div:first-child {
+    margin: 0 0.5rem 0;
+  }
+  .four-images .right div:last-child {
+    margin-left: 0.5rem;
+  }
+  .four-images .right div article:not(.four-images .right div article:first-child) {
+    margin-top: 2rem;
   }
 }
 @media only screen and (max-width: 568px) {
