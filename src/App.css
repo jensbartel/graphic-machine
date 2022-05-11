@@ -1762,23 +1762,23 @@ form input[type=submit] {
     padding-left: 0;
   }
 
-  .overview3 {
+  .overview {
     margin: 1rem 5% 0;
   }
-  .overview3 .overview3-container {
+  .overview .overview-container {
     padding-bottom: 110%;
     margin-bottom: 2rem;
   }
-  .overview3 .overview3-container .container-inner .title {
+  .overview .overview-container .container-inner .title {
     text-align: center;
   }
-  .overview3 .overview3-container .container-inner .description {
+  .overview .overview-container .container-inner .description {
     display: block;
   }
-  .overview3 .overview3-container .container-inner .image {
+  .overview .overview-container .container-inner .image {
     margin: 1rem 0 0 0;
   }
-  .overview3 .overview3-container .container-inner .image a img {
+  .overview .overview-container .container-inner .image a img {
     width: 100%;
   }
 

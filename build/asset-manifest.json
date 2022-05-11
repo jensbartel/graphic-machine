@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.01a195f9.chunk.css",
-    "main.js": "/static/js/main.45da9842.chunk.js",
-    "main.js.map": "/static/js/main.45da9842.chunk.js.map",
+    "main.css": "/static/css/main.a7bb2e45.chunk.css",
+    "main.js": "/static/js/main.f431eed0.chunk.js",
+    "main.js.map": "/static/js/main.f431eed0.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.062b8e80.js",
     "runtime-main.js.map": "/static/js/runtime-main.062b8e80.js.map",
     "static/js/2.f8ad4d4a.chunk.js": "/static/js/2.f8ad4d4a.chunk.js",
     "static/js/2.f8ad4d4a.chunk.js.map": "/static/js/2.f8ad4d4a.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.01a195f9.chunk.css.map": "/static/css/main.01a195f9.chunk.css.map",
+    "static/css/main.a7bb2e45.chunk.css.map": "/static/css/main.a7bb2e45.chunk.css.map",
     "static/js/2.f8ad4d4a.chunk.js.LICENSE.txt": "/static/js/2.f8ad4d4a.chunk.js.LICENSE.txt",
     "static/media/Morita-Pullquote1.53433f2a.mp4": "/static/media/Morita-Pullquote1.53433f2a.mp4",
     "static/media/Morita-Pullquote2.08528d59.mp4": "/static/media/Morita-Pullquote2.08528d59.mp4",
@@ -77,7 +77,7 @@
   "entrypoints": [
     "static/js/runtime-main.062b8e80.js",
     "static/js/2.f8ad4d4a.chunk.js",
-    "static/css/main.01a195f9.chunk.css",
-    "static/js/main.45da9842.chunk.js"
+    "static/css/main.a7bb2e45.chunk.css",
+    "static/js/main.f431eed0.chunk.js"
   ]
 }
