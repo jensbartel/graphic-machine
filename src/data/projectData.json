@@ -11,7 +11,7 @@
         "livePage": "https://moritashiryu-bokujin.com/english",
         "github": "https://github.com/jensbartel/morita_refactor-review",
         "outline": "Various efforts were taken to negotiate the hideous amount of text, like separating it into sections and making chapters accessible by quick links. Footnotes can be previewed by hovering over them. &ldquo;VIP pages&rdquo; that target art collectors are accessed by adding &ldquo;/vip&rdquo; to the URL. These pages are not linked from the main page for the sake of gallery discretion; instead URL was directly mailed to prospective clients. Media queries allow for desktop, large desktop, various tablet types and mobile phone.",
-        "details": "Exhibition on view in January–February 2021 in Kyoto and Tokyo, Fall–Winter 2021: Paris.<br>Site online since December 2019. Tools: React, SASS, Git/Github. <br>Hosting: Google Cloud Platform. Installation view photo credits: H. Ichikawa."
+        "details": "Exhibition on view in January-February 2021 in Kyoto and Tokyo, Fall-Winter 2021: Paris.<br>Site online since December 2019. Tools: React, SASS, Git/Github. <br>Hosting: Google Cloud Platform. Installation view photo credits: H. Ichikawa."
     },
     "suda": {
         "title": "Suda Kokuta: Abstractions",

@@ -3,18 +3,18 @@ import { useInView } from 'react-intersection-observer';
 import { CSSTransition } from 'react-transition-group';
 import { Link } from 'react-router-dom';
 
-import toki1 from '../../../img/overview/toki1.jpg';
-import toki2 from '../../../img/overview/toki2.jpg';
-import toki3 from '../../../img/overview/toki3.jpg';
-import toki4 from '../../../img/overview/toki4.jpg';
+import toki1 from '../../../img/overview/wanobi1.jpg';
+import toki2 from '../../../img/overview/wanobi2.jpg';
+import toki3 from '../../../img/overview/wanobi3.jpg';
+import toki4 from '../../../img/overview/wanobi4.jpg';
 
 import AnimationContext from '../../../context/animation/animationContext';
 import LangContext from '../../../context/lang/langContext';
 
-import { toki } from '../../../data/projectData.json';
+import { wanobi } from '../../../data/projectData.json';
 
-const TokiTop = (props) => {
-    const { title, titleFR, description, desFR, date, dateFR, url } = toki;
+const WanobiTop = (props) => {
+    const { title, titleFR, description, desFR, date, dateFR, url } = wanobi;
     const { id } = props;
 
     const { ref, inView } = useInView({
@@ -166,4 +166,4 @@ const TokiTop = (props) => {
     );
 };
 
-export default TokiTop;
+export default WanobiTop;

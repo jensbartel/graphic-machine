@@ -3,6 +3,7 @@ import AnimationContext from '../../context/animation/animationContext'
 import MoritaTop from './webpageItems/MoritaTop';
 import SudaTop from './webpageItems/SudaTop'
 import TokiTop from './webpageItems/TokiTop'
+import WanobiTop from './webpageItems/WanobiTop';
 
 const WebpagesOverview = () => {
     const animationContext = useContext(AnimationContext);
@@ -21,6 +22,7 @@ const WebpagesOverview = () => {
             <MoritaTop id={1} />
             <TokiTop id={2} />
             <SudaTop id={3} />
+            <WanobiTop id={4} />
         </div>
     );
 };
