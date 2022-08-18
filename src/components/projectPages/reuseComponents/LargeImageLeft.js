@@ -1,4 +1,4 @@
-import html from 'react-html-parser';
+import html from 'html-react-parser';
 import MMAS_banner from '../../../img/banner/morita_banner.png';
 import MoritaData from '../../../data/projectData/MoritaData';
 

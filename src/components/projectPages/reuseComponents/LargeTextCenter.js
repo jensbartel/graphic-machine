@@ -1,4 +1,4 @@
-import html from 'react-html-parser';
+import html from 'html-react-parser';
 
 const LargeTextCenter = props => {
     const { text, headline, css } = props;
