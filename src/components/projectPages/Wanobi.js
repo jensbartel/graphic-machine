@@ -1,6 +1,8 @@
-import { useEffect } from 'react';
+import { useEffect, useContext } from 'react';
 import ProjectTitle from './reuseComponents/ProjectTitle';
 import LargeTextCenter from './reuseComponents/LargeTextCenter';
+
+import LangContext from '../../context/lang/langContext';
 
 // images
 import img1 from '../../img/wanobi/artboard-wanobi--login.png';
@@ -23,11 +25,22 @@ import img15 from '../../img/wanobi/artboard-wanobi--works-advanced-search.png';
 import { wanobi } from '../../data/projectData.json';
 
 const Wanobi = () => {
-    const { title, outline, details } = wanobi;
+    const { title, outline, details, outlineFR, detailsFR } = wanobi;
+    const langContext = useContext(LangContext);
+    const { lang } = langContext;
 
     useEffect(() => {
         document.title = 'Grifold Studio | Wanobi';
     }, []);
+
+    let outlineChoice, detailsChoice;
+    if (lang.state === 'francais') {
+        outlineChoice = outlineFR;
+        detailsChoice = detailsFR;
+    } else {
+        outlineChoice = outline;
+        detailsChoice = details;
+    }
 
     return (
         <>
@@ -113,8 +126,8 @@ const Wanobi = () => {
                 </div>
             </div>
 
-            <LargeTextCenter headline={title} text={outline} />
-            <LargeTextCenter text={details} css='project-details' />
+            <LargeTextCenter headline={title} text={outlineChoice} />
+            <LargeTextCenter text={detailsChoice} css='project-details' />
         </>
     );
 };

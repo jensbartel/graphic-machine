@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { useEffect, useContext } from 'react';
 
 import AnimationState from './context/animation/AnimationState'
@@ -44,24 +44,26 @@ const App = () => {
                 <div className='page-container'>
                     <Navbar />
                     <div className='content-container'>
-                        <Switch>
-                            <Route exact path='/'>
+                        <Routes>
+                            {/* <Route exact path='/'>
                                 <Redirect to='./webpages' />
-                            </Route>
-                            <Route exact path='/webpages' component={WebpagesOverview} />
-                            <Route exact path='/webapps' component={WebappsOverview} />
-                            <Route exact path='/about' component={About} />
+                            </Route> */}
+                            <Route path='/' render={() => <Navigate to={'./webpages'} />} />
+
+                            <Route exact path='/webpages' element={<WebpagesOverview />} />
+                            <Route exact path='/webapps' element={<WebappsOverview />} />
+                            <Route exact path='/about' element={<About />} />
 
                             {/* project pages */}
-                            <Route exact path='/webapps/clientapp' component={ClientApp} />
-                            <Route exact path='/webpages/morita' component={Morita} />
-                            <Route exact path='/webapps/resourcenet' component={ResNet} />
-                            <Route exact path='/webpages/suda' component={Suda} />
-                            <Route exact path='/webpages/toki' component={Toki} />
-                            <Route exact path='/webpages/wanobi' component={Wanobi} />
+                            <Route exact path='/webapps/clientapp' element={<ClientApp />} />
+                            <Route exact path='/webpages/morita' element={<Morita />} />
+                            <Route exact path='/webapps/resourcenet' element={<ResNet />} />
+                            <Route exact path='/webpages/suda' element={<Suda />} />
+                            <Route exact path='/webpages/toki' element={<Toki />} />
+                            <Route exact path='/webpages/wanobi' element={<Wanobi />} />
 
-                            <Route component={NotFound} />
-                        </Switch>
+                            <Route element={<NotFound />} />
+                        </Routes>
                     </div>
                     <Footer />
                 </div>

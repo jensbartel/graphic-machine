@@ -22,21 +22,22 @@ const Navbar = () => {
 
             <section className='navbar'>
                 <div className='wordmark'>
-                    <NavLink to='/'>GRIFOLD STUDIO</NavLink>
+                    <NavLink to='/' style={{pointerEvents: 'none'}}>GRIFOLD STUDIO</NavLink>
                 </div>
                 <div className='menu'>
                     <div>
-                        <NavLink to='/webpages' activeStyle={active}>
+                        <NavLink to='/webpages' style={active}>
+                        {/* <NavLink to='/webpages' activeStyle={active} style={{pointerEvents: 'none'}}> */}
                             WEB PAGE<span>S</span>
                         </NavLink>
                     </div>
                     <div>
-                        <NavLink to='/webapps' activeStyle={active}>
+                        <NavLink to='/webapps' style={{pointerEvents: 'none'}}>
                             WEB APP<span>S</span>
                         </NavLink>
                     </div>
                     <div>
-                        <NavLink to='/about' activeStyle={active}>
+                        <NavLink to='/about' style={{pointerEvents: 'none'}}>
                             ABOU<span>T</span>
                         </NavLink>
                     </div>
@@ -57,9 +58,15 @@ const Navbar = () => {
 
 export default Navbar;
 
+// const active = {
+//     color: '#777',
+//     borderBottom: '1px dotted #777',
+    // lineHeight: '0.95',
+    // paddingTop: '0.2rem',
+// };
+
 const active = {
     color: '#777',
     borderBottom: '1px dotted #777',
-    // lineHeight: '0.95',
-    // paddingTop: '0.2rem',
+    pointerEvents: 'none'
 };

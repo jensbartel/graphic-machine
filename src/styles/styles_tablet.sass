@@ -4,7 +4,12 @@ $font-headline: 'Playfair Display', sans-serif
 $font-text: 'Nunito', sans-serif
 
 =iPadPro-portrait
-    nav
+    .content-container
+        margin-top: 1.5rem
+        .project-title
+            margin: 0 10% 0
+            padding: 0
+    nav        
         .navbar
             margin: 2rem auto 0
             padding: 0 10%
@@ -24,6 +29,31 @@ $font-text: 'Nunito', sans-serif
         row-gap: 4rem
         .category-top
             width: 100%
+    .large-text-container
+        padding: 0 20%
+    $gutter: .65rem
+    .four-images
+        margin: 0 10%
+        .left
+            margin-top: 2rem
+            div
+                &:first-child
+                    margin-right: $gutter
+                &:last-child
+                    margin: 0 $gutter 0 
+                article
+                    &:not(&:first-child)
+                        margin-top: 2rem
+        .right
+            margin-top: 2rem
+            div
+                &:first-child
+                    margin: 0 $gutter 0
+                &:last-child
+                    margin-left: $gutter
+                article
+                    &:not(&:first-child)
+                        margin-top: 2rem
 
 =iPad-portrait
     .content-container
@@ -222,10 +252,12 @@ $font-text: 'Nunito', sans-serif
 // iPad Pro
 @media only screen and (min-width: 1024px) and (max-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2)
     +iPadPro-portrait
+@media only screen and (min-width: 834px) and (max-width: 834px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2)
+    +iPadPro-portrait
 
 // @media only screen and (min-width: 1366px) and (max-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2)
 
-// iPad 7th, 8th gen
+// iPad 7th, 8th, 9th gen
 @media only screen and (min-width: 810px) and (max-width: 810px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2)
     +iPad-portrait
 
@@ -236,3 +268,7 @@ $font-text: 'Nunito', sans-serif
     +iPad-portrait
 
 // @media only screen and (min-width: 1024px) and (max-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2)
+
+// ipad 1st-2nd gen
+@media only screen and (min-width: 768px) and (max-width: 768px) and (orientation: portrait)
+    +iPad-portrait

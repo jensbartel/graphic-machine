@@ -1,6 +1,8 @@
-import { useEffect } from 'react';
+import { useEffect, useContext } from 'react';
 import LargeTextCenter from './reuseComponents/LargeTextCenter';
 import ProjectTitle from './reuseComponents/ProjectTitle';
+
+import LangContext from '../../context/lang/langContext';
 
 // images
 import img1 from '../../img/toki/toki-artboard--top.jpg';
@@ -19,11 +21,24 @@ import img11 from '../../img/toki/toki-artboard--inquiry-thanks.jpg'
 import { toki } from '../../data/projectData.json';
 
 const Toki = () => {
-    const { outline, details } = toki;
+    const { title, titleFR, outline, details, outlineFR, detailsFR } = toki;
+    const langContext = useContext(LangContext);
+    const { lang } = langContext;
 
     useEffect(() => {
         document.title = 'Grifold Studio | Toki-no-Wasuremono';
     }, []);
+
+    let titleChoice, outlineChoice, detailsChoice;
+    if (lang.state === 'francais') {
+        titleChoice = titleFR;
+        outlineChoice = outlineFR;
+        detailsChoice = detailsFR;
+    } else {
+        titleChoice = title;
+        outlineChoice = outline;
+        detailsChoice = details;
+    }
 
     return (
         <>
@@ -93,8 +108,8 @@ const Toki = () => {
                 </div>
             </div>
 
-            <LargeTextCenter headline='Toki-no-Wasuremono Gallery' text={outline} />
-            <LargeTextCenter text={details} css='project-details' />
+            <LargeTextCenter headline={titleChoice} text={outlineChoice} />
+            <LargeTextCenter text={detailsChoice} css='project-details' />
         </>
     );
 };

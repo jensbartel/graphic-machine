@@ -1,18 +1,24 @@
-import { useEffect, useContext } from 'react';
-import AnimationContext from '../../context/animation/animationContext';
+// import { useEffect, useContext } from 'react';
+import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+// import AnimationContext from '../../context/animation/animationContext';
 
 import ClientAppTop from './webappItems/ClientAppTop';
 import ResNetTop from './webappItems/ResNetTop';
 
 const WebappsOverview = () => {
-    const animationContext = useContext(AnimationContext);
-    let { clearAnimation } = animationContext;
+    // const animationContext = useContext(AnimationContext);
+    // let { clearAnimation } = animationContext;
+
+    const navigate = useNavigate();
 
     useEffect(() => {
-        document.title = 'Grifold Studio | Web Apps';
-        return () => {
-            clearAnimation();
-        };
+        // document.title = 'Grifold Studio | Web Apps';
+        // return () => {
+        //     clearAnimation();
+        // };
+
+        navigate(-1);
         // eslint-disable-next-line
     }, []);
 

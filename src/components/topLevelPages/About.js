@@ -1,8 +1,18 @@
+import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+
 import portrait from '../../img/about/portrait-1.jpg';
 import Bio from './aboutPageItems/Bio';
 import Inquiry from './aboutPageItems/Inquiry';
 
 const About = () => {
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        navigate(-1);
+        // eslint-disable-next-line
+    }, []);
+
     return (
         <>
             <section className='portrait-and-bio'>
@@ -16,9 +26,12 @@ const About = () => {
             <section className='further-projects'>
                 <strong>Further Projects</strong>
                 <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio sint ab corrupti officiis. Deleniti facere inventore et! Nisi aperiam, vitae
-                    praesentium corporis velit maiores, maxime harum impedit qui minima autem molestiae enim distinctio nesciunt eos architecto iusto?
-                    Accusantium, assumenda totam.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Optio sint ab corrupti officiis. Deleniti facere inventore
+                    et! Nisi aperiam, vitae praesentium corporis velit maiores,
+                    maxime harum impedit qui minima autem molestiae enim
+                    distinctio nesciunt eos architecto iusto? Accusantium,
+                    assumenda totam.
                 </p>
             </section>
 

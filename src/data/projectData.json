@@ -36,15 +36,17 @@
         "date": "February-May 2016",
         "dateFR": "Février-Mai 2016",
         "url": "webpages/toki",
-        "outline": "<!--Purpose of this project was to provide Toki-no-Wasuremono gallery (based in Tokyo) with a mobile-friendly layout for their webpage without replacing the existing pages altogether.<br><br>-->Toki-no-Wasuremono is specializing in 20th Japanese avant-garde art, photography and prints by major Japanese architects. Featured artists include Tadao Ando, Arata Isozaki, Gutai, Onosato Toshinobu, Miyawaki Aiko, Q-Ei, Nobuo Sekine, Eikoh Hosoe, Tamiko Nishimura etc. Finished page is bilingual Japanese/English",
+        "outline": "<!--Purpose of this project was to provide Toki-no-Wasuremono gallery (based in Tokyo) with a mobile-friendly layout for their webpage without replacing the existing pages altogether.<br><br>-->Toki-no-Wasuremono is specializing in 20th Japanese avant-garde art, photography and prints by major Japanese architects. Featured artists include Tadao Ando, Arata Isozaki, Gutai, Onosato Toshinobu, Miyawaki Aiko, Q-Ei, Nobuo Sekine, Eikoh Hosoe, Tamiko Nishimura etc. Finished page is bilingual Japanese/English.",
+        "outlineFR": "Toki-no-Wasuremono est spécialisé dans l'art d'avant-garde japonais du 20e siècle, la photographie et les gravures de grands architectes japonais. Parmi les artistes présentés figurent Tadao Ando, Arata Isozaki, Gutai, Onosato Toshinobu, Miyawaki Aiko, Q-Ei, Nobuo Sekine, Eikoh Hosoe, Tamiko Nishimura, etc. La page finie est bilingue japonais/anglais.",
         "details": "Concept: August 2015. Implementation: February-May 2016.<br>Tools: HTML/CSS/JS, PHP, Visual Basic.",
+        "detailsFR": "Concept : Août 2015. Mise en œuvre : Février-mai 2016.<br/>Outils : HTML/CSS/JS, PHP, Visual Basic.",
         "caption1": "Left to right: Landing page, &ldquo;Current Exhibition&rdquo; page, &ldquo;Main Artists&rdquo; page, &ldquo;All Artists&rdquo; page.",
         "caption2": "Left to right: Exhibition page, work page (below: work page with drop-down menu open), inquiry page (below: inquiry confirmation page), &ldquo;Past Exhibitions&rdquo; page (below: inquiry &ldquo;Thank you&rdquo; page).",
         "backendExplanation": "<strong>Comment: </strong>Toki-no-Wasuremono's homepage in 2015 was pure HTML/CSS with some PHP. I was there in a part-time position for webpage maintenance and volunteered to provide a mobile-friendly layout. Decision was made to not replace the existing site but use the mobile layout as an add-on; i.e. replicating the content in a new format, while keeping the old files intact. Process was as above: isolate artwork data and image url from existing files; consolidate data into a .csv file (which works as sort of a pseudo-database). I then created a utility in VB which accepted the data .csv and different types of template files to process them into new .html files with the revised layout."
     },
     "wanobi": {
-        "title": "Wanobi: Shibunkaku Fine Arts Archive",
-        "titleFR": "Wanobi: Shibunkaku Fine Arts Archive",
+        "title": "Wanobi: Fine Arts Archive by Shibunkaku",
+        "titleFR": "Wanobi: Fine Arts Archive by Shibunkaku",
         "description": "Mobile phone layout for a gallery archive page",
         "desFR": "Layout de téléphone portable d'un page d'archive d'un galerie",
         "tools": ["HTML/CSS/JS", "PHP (Cake)"],
@@ -53,8 +55,10 @@
         "url": "webpages/wanobi",
         "livePage": "",
         "github": "",
-        "outline": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lacinia quis augue sit amet hendrerit. Mauris porta, urna nec vehicula ultrices, risus felis tempus nulla, eu dignissim metus velit sed magna. Suspendisse pretium libero malesuada iaculis pulvinar. Pellentesque eget porttitor est. Etiam ultricies risus eu sem gravida rhoncus. Donec fermentum nisl id ornare porta. Nam tristique quam eu viverra tincidunt. Aenean congue interdum ornare. Sed a nunc risus.",
-        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lacinia quis augue sit amet hendrerit. Mauris porta, urna nec vehicula ultrices, risus felis tempus nulla, eu dignissim metus velit sed magna. Suspendisse pretium libero malesuada iaculis pulvinar. Pellentesque eget porttitor est. Etiam ultricies risus eu sem gravida rhoncus. Donec fermentum nisl id ornare porta. Nam tristique quam eu viverra tincidunt. Aenean congue interdum ornare. Sed a nunc risus."
+        "outline": "Wanobi: Fine Arts Archive by Shibunkaku is a members-only website to archive highlights from the gallery’s collection. It compiles works of Japanese (and sometimes Chinese, Korean or Western) art. Each featured work comes with a scholarly article and high-end photography taken at an exhibition site. This project adds a mobile phone layout to an existing site (this original site was designed for desktop only). ",
+        "outlineFR": "Wanobi : Fine Arts Archive by Shibunkaku est un site web réservé aux membres qui permet d'archiver les pièces maîtresses de la collection de la galerie. Il compile des œuvres d'art japonais (et parfois chinois, coréen ou occidental). Chaque œuvre présentée est accompagnée d'un article scientifique et d'une photographie haut de gamme prise sur le lieu de l'exposition. Ce projet ajoute une mise en page pour téléphone portable à un site existant (le site original était conçu pour un ordinateur de bureau uniquement).",
+        "details": "Concept: February 2022. Implementation planned for late 2022.<br/>Tools: Adobe XD, Photoshop.",
+        "detailsFR": "Concept : Février 2022. Mise en œuvre prévue pour la fin 2022.<br/>Outils : Adobe XD, Photoshop."
     },
     "clientApp": {
         "title": "ClientApp",
