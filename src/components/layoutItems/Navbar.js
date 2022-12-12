@@ -22,7 +22,8 @@ const Navbar = () => {
 
             <section className='navbar'>
                 <div className='wordmark'>
-                    <NavLink to='/' style={{pointerEvents: 'none'}}>GRIFOLD STUDIO</NavLink>
+                    <NavLink to='/' style={{pointerEvents: 'none'}}>GRAPHIC MACHINE STUDIOS</NavLink>
+                    {/* <NavLink to='/' style={{pointerEvents: 'none'}}>GRIFOLD STUDIO</NavLink> */}
                 </div>
                 <div className='menu'>
                     <div>

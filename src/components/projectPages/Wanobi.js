@@ -30,7 +30,7 @@ const Wanobi = () => {
     const { lang } = langContext;
 
     useEffect(() => {
-        document.title = 'Grifold Studio | Wanobi';
+        document.title = 'Graphic Machine | Wanobi';
     }, []);
 
     let outlineChoice, detailsChoice;

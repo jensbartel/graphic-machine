@@ -22,7 +22,7 @@ const SudaProject = () => {
     const { title, outline, details } = suda;
 
     useEffect(() => {
-        document.title = 'Grifold Studio | Suda Kokuta';
+        document.title = 'Graphic Machine | Suda Kokuta';
     }, []);
 
     return (

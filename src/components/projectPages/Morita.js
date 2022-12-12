@@ -24,7 +24,7 @@ const MoritaProject = () => {
     const { outline, details } = morita;
 
     useEffect(() => {
-        document.title = 'Grifold Studio | Morita Shiryū';
+        document.title = 'Graphic Machine | Morita Shiryū';
     }, []);
 
     return (

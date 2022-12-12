@@ -26,7 +26,7 @@ const Toki = () => {
     const { lang } = langContext;
 
     useEffect(() => {
-        document.title = 'Grifold Studio | Toki-no-Wasuremono';
+        document.title = 'Graphic Machine | Toki-no-Wasuremono';
     }, []);
 
     let titleChoice, outlineChoice, detailsChoice;

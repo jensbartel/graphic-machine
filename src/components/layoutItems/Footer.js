@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <div className='footer'>
             <p>
-                &#169; Grifold Studio 2021. All rights reserved.
+                &#169; Graphic Machine Studios 2022. All rights reserved.
                 <br />
                 For inquiries please use the contact form on the{' '}
                 <strong>
