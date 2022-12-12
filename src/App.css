@@ -991,13 +991,15 @@ form input[type=submit] {
     margin: 0 10% 0;
     padding: 0;
   }
-
   nav .navbar {
     margin: 2rem auto 0;
     padding: 0 10%;
   }
   nav .navbar .wordmark {
     font-size: 1.25rem;
+  }
+  nav .navbar .no-tablet {
+    display: none;
   }
   nav .navbar .menu div a {
     font-size: 0.75rem;
@@ -1006,7 +1008,6 @@ form input[type=submit] {
     margin: 0 auto;
     padding: 0 10% 1.5rem;
   }
-
   .section-intro {
     margin: 2rem auto 0;
     padding: 0 10%;
@@ -1014,12 +1015,10 @@ form input[type=submit] {
   .section-intro p {
     padding-right: 33%;
   }
-
   .page {
     margin: 0 auto;
     padding: 4rem 10% 4rem;
   }
-
   .grid-two {
     grid-template-columns: repeat(1, 1fr);
     row-gap: 4rem;
@@ -1027,11 +1026,9 @@ form input[type=submit] {
   .grid-two .category-top {
     width: 100%;
   }
-
   .large-text-container {
     padding: 0 20%;
   }
-
   .four-images {
     margin: 0 10%;
   }
@@ -1059,7 +1056,6 @@ form input[type=submit] {
   .four-images .right div article:not(.four-images .right div article:first-child) {
     margin-top: 2rem;
   }
-
   .back-to-top {
     right: 10%;
   }
@@ -1072,13 +1068,15 @@ form input[type=submit] {
     margin: 0 10% 0;
     padding: 0;
   }
-
   nav .navbar {
     margin: 2rem auto 0;
     padding: 0 10%;
   }
   nav .navbar .wordmark {
     font-size: 1.25rem;
+  }
+  nav .navbar .no-tablet {
+    display: none;
   }
   nav .navbar .menu div a {
     font-size: 0.75rem;
@@ -1087,7 +1085,6 @@ form input[type=submit] {
     margin: 0 auto;
     padding: 0 10% 1.5rem;
   }
-
   .section-intro {
     margin: 2rem auto 0;
     padding: 0 10%;
@@ -1095,12 +1092,10 @@ form input[type=submit] {
   .section-intro p {
     padding-right: 33%;
   }
-
   .page {
     margin: 0 auto;
     padding: 4rem 10% 4rem;
   }
-
   .grid-two {
     grid-template-columns: repeat(1, 1fr);
     row-gap: 4rem;
@@ -1108,11 +1103,9 @@ form input[type=submit] {
   .grid-two .category-top {
     width: 100%;
   }
-
   .large-text-container {
     padding: 0 20%;
   }
-
   .four-images {
     margin: 0 10%;
   }
@@ -1140,7 +1133,6 @@ form input[type=submit] {
   .four-images .right div article:not(.four-images .right div article:first-child) {
     margin-top: 2rem;
   }
-
   .back-to-top {
     right: 10%;
   }
@@ -1156,10 +1148,15 @@ form input[type=submit] {
   .content-container .project-title a:hover {
     color: #444;
   }
-
   nav .navbar {
     margin: 1.5rem auto 0;
     padding: 0 7.5%;
+  }
+  nav .navbar .wordmark {
+    font-size: unset;
+  }
+  nav .navbar .wordmark .no-tablet {
+    display: none;
   }
   nav .navbar .menu {
     margin-top: 0rem;
@@ -1186,7 +1183,6 @@ form input[type=submit] {
   nav .language-switch button:hover {
     color: #999;
   }
-
   .section-intro {
     margin: 2rem auto 0;
     padding: 0 10%;
@@ -1194,12 +1190,10 @@ form input[type=submit] {
   .section-intro p {
     padding-right: 0;
   }
-
   .page {
     margin: 0 auto;
     padding: 4rem 10% 4rem;
   }
-
   .grid-two {
     grid-template-columns: repeat(1, 1fr);
     row-gap: 4rem;
@@ -1207,26 +1201,21 @@ form input[type=submit] {
   .grid-two .category-top {
     width: 100%;
   }
-
   .one-image {
     margin: 0 7.5%;
   }
-
   .one-image-noBorder {
     margin: 0 7.5%;
   }
-
   .one-image-variant-2 {
     margin: 2rem 7.5% 0;
   }
   .one-image-variant-2 img {
     width: 100%;
   }
-
   .two-images {
     margin: 0 7.5%;
   }
-
   .three-images {
     margin: 2rem 7.5% 0;
     justify-content: space-between;
@@ -1242,49 +1231,39 @@ form input[type=submit] {
   .three-images img:nth-child(3) {
     width: 15%;
   }
-
   .three-images-2 {
     margin: 2rem 7.5%;
   }
-
   .large-text-container {
     padding: 0 22.5%;
   }
-
   .caption {
     margin: 0 7.5%;
   }
-
   .caption-comment {
     margin: 0 5%;
   }
-
   .video-2-container {
     flex-direction: column;
     align-items: center;
   }
-
   .image-collage-1 {
     margin: 4rem 7.5%;
     column-gap: 1rem;
   }
-
   .parallax-inner {
     margin: 0;
     padding: 0 7.5%;
   }
-
   .overview {
     margin: 0 7.5%;
   }
-
   .overview-group .text-container div:first-child a .title:hover {
     color: #000;
   }
   .overview-group .text-container div:last-child p:hover {
     color: #999;
   }
-
   .portrait-and-bio {
     margin: 1rem 7.5% 0;
   }
@@ -1295,11 +1274,9 @@ form input[type=submit] {
   .portrait-and-bio figure img {
     width: 100%;
   }
-
   .further-projects {
     margin: 2rem 7.5% 0;
   }
-
   .bio {
     width: 66%;
     font-size: 0.85rem;
@@ -1307,23 +1284,18 @@ form input[type=submit] {
   .bio .bio-item {
     font-size: 0.8rem;
   }
-
   form {
     margin: 2rem 7.5% 0;
   }
-
   .footer p a:hover {
     color: #999;
   }
-
   .back-to-top:hover {
     opacity: 1;
   }
-
   .overview2 {
     margin: 0 7.5%;
   }
-
   .overview-item-container:not(.overview-item-container:first-child) {
     margin-top: 4rem;
   }
@@ -1345,7 +1317,6 @@ form input[type=submit] {
   .overview-item-container .overview-inner .second-image a img {
     padding-left: 0;
   }
-
   .overview {
     margin: 1.5rem 7.5% 0;
   }
@@ -1358,7 +1329,6 @@ form input[type=submit] {
   .overview .overview-container .container-inner .image img {
     width: 90%;
   }
-
   .four-images {
     margin: 0 7.5%;
   }
@@ -1398,10 +1368,15 @@ form input[type=submit] {
   .content-container .project-title a:hover {
     color: #444;
   }
-
   nav .navbar {
     margin: 1.5rem auto 0;
     padding: 0 7.5%;
+  }
+  nav .navbar .wordmark {
+    font-size: unset;
+  }
+  nav .navbar .wordmark .no-tablet {
+    display: none;
   }
   nav .navbar .menu {
     margin-top: 0rem;
@@ -1428,7 +1403,6 @@ form input[type=submit] {
   nav .language-switch button:hover {
     color: #999;
   }
-
   .section-intro {
     margin: 2rem auto 0;
     padding: 0 10%;
@@ -1436,12 +1410,10 @@ form input[type=submit] {
   .section-intro p {
     padding-right: 0;
   }
-
   .page {
     margin: 0 auto;
     padding: 4rem 10% 4rem;
   }
-
   .grid-two {
     grid-template-columns: repeat(1, 1fr);
     row-gap: 4rem;
@@ -1449,26 +1421,21 @@ form input[type=submit] {
   .grid-two .category-top {
     width: 100%;
   }
-
   .one-image {
     margin: 0 7.5%;
   }
-
   .one-image-noBorder {
     margin: 0 7.5%;
   }
-
   .one-image-variant-2 {
     margin: 2rem 7.5% 0;
   }
   .one-image-variant-2 img {
     width: 100%;
   }
-
   .two-images {
     margin: 0 7.5%;
   }
-
   .three-images {
     margin: 2rem 7.5% 0;
     justify-content: space-between;
@@ -1484,49 +1451,39 @@ form input[type=submit] {
   .three-images img:nth-child(3) {
     width: 15%;
   }
-
   .three-images-2 {
     margin: 2rem 7.5%;
   }
-
   .large-text-container {
     padding: 0 22.5%;
   }
-
   .caption {
     margin: 0 7.5%;
   }
-
   .caption-comment {
     margin: 0 5%;
   }
-
   .video-2-container {
     flex-direction: column;
     align-items: center;
   }
-
   .image-collage-1 {
     margin: 4rem 7.5%;
     column-gap: 1rem;
   }
-
   .parallax-inner {
     margin: 0;
     padding: 0 7.5%;
   }
-
   .overview {
     margin: 0 7.5%;
   }
-
   .overview-group .text-container div:first-child a .title:hover {
     color: #000;
   }
   .overview-group .text-container div:last-child p:hover {
     color: #999;
   }
-
   .portrait-and-bio {
     margin: 1rem 7.5% 0;
   }
@@ -1537,11 +1494,9 @@ form input[type=submit] {
   .portrait-and-bio figure img {
     width: 100%;
   }
-
   .further-projects {
     margin: 2rem 7.5% 0;
   }
-
   .bio {
     width: 66%;
     font-size: 0.85rem;
@@ -1549,23 +1504,18 @@ form input[type=submit] {
   .bio .bio-item {
     font-size: 0.8rem;
   }
-
   form {
     margin: 2rem 7.5% 0;
   }
-
   .footer p a:hover {
     color: #999;
   }
-
   .back-to-top:hover {
     opacity: 1;
   }
-
   .overview2 {
     margin: 0 7.5%;
   }
-
   .overview-item-container:not(.overview-item-container:first-child) {
     margin-top: 4rem;
   }
@@ -1587,7 +1537,6 @@ form input[type=submit] {
   .overview-item-container .overview-inner .second-image a img {
     padding-left: 0;
   }
-
   .overview {
     margin: 1.5rem 7.5% 0;
   }
@@ -1600,7 +1549,6 @@ form input[type=submit] {
   .overview .overview-container .container-inner .image img {
     width: 90%;
   }
-
   .four-images {
     margin: 0 7.5%;
   }
@@ -1640,10 +1588,15 @@ form input[type=submit] {
   .content-container .project-title a:hover {
     color: #444;
   }
-
   nav .navbar {
     margin: 1.5rem auto 0;
     padding: 0 7.5%;
+  }
+  nav .navbar .wordmark {
+    font-size: unset;
+  }
+  nav .navbar .wordmark .no-tablet {
+    display: none;
   }
   nav .navbar .menu {
     margin-top: 0rem;
@@ -1670,7 +1623,6 @@ form input[type=submit] {
   nav .language-switch button:hover {
     color: #999;
   }
-
   .section-intro {
     margin: 2rem auto 0;
     padding: 0 10%;
@@ -1678,12 +1630,10 @@ form input[type=submit] {
   .section-intro p {
     padding-right: 0;
   }
-
   .page {
     margin: 0 auto;
     padding: 4rem 10% 4rem;
   }
-
   .grid-two {
     grid-template-columns: repeat(1, 1fr);
     row-gap: 4rem;
@@ -1691,26 +1641,21 @@ form input[type=submit] {
   .grid-two .category-top {
     width: 100%;
   }
-
   .one-image {
     margin: 0 7.5%;
   }
-
   .one-image-noBorder {
     margin: 0 7.5%;
   }
-
   .one-image-variant-2 {
     margin: 2rem 7.5% 0;
   }
   .one-image-variant-2 img {
     width: 100%;
   }
-
   .two-images {
     margin: 0 7.5%;
   }
-
   .three-images {
     margin: 2rem 7.5% 0;
     justify-content: space-between;
@@ -1726,49 +1671,39 @@ form input[type=submit] {
   .three-images img:nth-child(3) {
     width: 15%;
   }
-
   .three-images-2 {
     margin: 2rem 7.5%;
   }
-
   .large-text-container {
     padding: 0 22.5%;
   }
-
   .caption {
     margin: 0 7.5%;
   }
-
   .caption-comment {
     margin: 0 5%;
   }
-
   .video-2-container {
     flex-direction: column;
     align-items: center;
   }
-
   .image-collage-1 {
     margin: 4rem 7.5%;
     column-gap: 1rem;
   }
-
   .parallax-inner {
     margin: 0;
     padding: 0 7.5%;
   }
-
   .overview {
     margin: 0 7.5%;
   }
-
   .overview-group .text-container div:first-child a .title:hover {
     color: #000;
   }
   .overview-group .text-container div:last-child p:hover {
     color: #999;
   }
-
   .portrait-and-bio {
     margin: 1rem 7.5% 0;
   }
@@ -1779,11 +1714,9 @@ form input[type=submit] {
   .portrait-and-bio figure img {
     width: 100%;
   }
-
   .further-projects {
     margin: 2rem 7.5% 0;
   }
-
   .bio {
     width: 66%;
     font-size: 0.85rem;
@@ -1791,23 +1724,18 @@ form input[type=submit] {
   .bio .bio-item {
     font-size: 0.8rem;
   }
-
   form {
     margin: 2rem 7.5% 0;
   }
-
   .footer p a:hover {
     color: #999;
   }
-
   .back-to-top:hover {
     opacity: 1;
   }
-
   .overview2 {
     margin: 0 7.5%;
   }
-
   .overview-item-container:not(.overview-item-container:first-child) {
     margin-top: 4rem;
   }
@@ -1829,7 +1757,6 @@ form input[type=submit] {
   .overview-item-container .overview-inner .second-image a img {
     padding-left: 0;
   }
-
   .overview {
     margin: 1.5rem 7.5% 0;
   }
@@ -1842,7 +1769,6 @@ form input[type=submit] {
   .overview .overview-container .container-inner .image img {
     width: 90%;
   }
-
   .four-images {
     margin: 0 7.5%;
   }
@@ -1875,13 +1801,11 @@ form input[type=submit] {
   .overview {
     margin: 0 5%;
   }
-
   .content-container {
     margin-top: 0;
     margin-bottom: 0;
     padding-top: 0;
   }
-
   nav {
     position: relative;
   }
@@ -1914,7 +1838,6 @@ form input[type=submit] {
   nav .language-switch button:hover {
     color: #999;
   }
-
   .section-intro {
     margin: 3rem auto 0;
     padding: 0 10%;
@@ -1922,12 +1845,10 @@ form input[type=submit] {
   .section-intro p {
     padding-right: 0;
   }
-
   .page {
     margin: 0 auto;
     padding: 4rem 10% 0;
   }
-
   .overview-group .text-container {
     flex-direction: column-reverse;
   }
@@ -1949,7 +1870,6 @@ form input[type=submit] {
   .overview-group .text-container div:last-child p:hover {
     color: #999;
   }
-
   .project-title {
     padding: 0 5% 0;
     margin-bottom: 0;
@@ -1966,25 +1886,21 @@ form input[type=submit] {
   .project-title .project-links {
     margin-top: 0.25rem;
   }
-
   .large-text-container, .headline {
     padding: 0 5%;
   }
-
   .headline {
     margin: 0;
   }
   .headline h2 {
     margin: 2rem 0 1rem;
   }
-
   .large-text-container {
     margin-top: 4rem;
   }
   .large-text-container h2 {
     margin: 2rem 0 1rem;
   }
-
   .two-images {
     margin: 0 5%;
     flex-direction: column;
@@ -1995,30 +1911,24 @@ form input[type=submit] {
   .two-images div:first-child {
     margin-bottom: 1rem;
   }
-
   .one-image, .caption, .one-image-variant-2, .one-image-variant {
     margin: 0 5%;
   }
-
   .caption {
     margin-bottom: 2rem;
   }
-
   .one-image-variant-2 img, .one-image-variant img {
     width: 100%;
   }
-
   .one-image-noBorder {
     margin: 0 5%;
   }
-
   .caption-comment {
     margin: 0 5%;
   }
   .caption-comment p {
     width: 100%;
   }
-
   .video-2-container {
     flex-direction: column;
     padding: 0 5%;
@@ -2032,7 +1942,6 @@ form input[type=submit] {
     overflow-x: hidden;
     border: 1px solid #000;
   }
-
   .image-collage-1 {
     margin: 0 5%;
     display: block;
@@ -2040,7 +1949,6 @@ form input[type=submit] {
   .image-collage-1 div {
     margin-top: 1rem;
   }
-
   .three-images {
     margin: 0 5%;
     flex-direction: column;
@@ -2061,7 +1969,6 @@ form input[type=submit] {
   .three-images img:nth-child(3) {
     width: 60%;
   }
-
   .three-images-2 {
     margin: 0 5%;
     flex-direction: column;
@@ -2092,7 +1999,6 @@ form input[type=submit] {
   .three-images-2 .element img {
     width: 100%;
   }
-
   .grid-two {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -2103,7 +2009,6 @@ form input[type=submit] {
     font-size: 0.8rem;
     margin-left: 0.4rem;
   }
-
   .footer {
     font-size: 0.6rem;
     padding: 0 25% 1rem;
@@ -2111,7 +2016,6 @@ form input[type=submit] {
   .footer p a:hover {
     color: #999;
   }
-
   .back-to-top {
     right: 5%;
     bottom: 1rem;
@@ -2119,7 +2023,6 @@ form input[type=submit] {
   .back-to-top:hover {
     opacity: 1;
   }
-
   .portrait-and-bio {
     margin: 1rem 5% 0;
     flex-direction: column;
@@ -2127,11 +2030,9 @@ form input[type=submit] {
   .portrait-and-bio figure {
     width: 100%;
   }
-
   .further-projects {
     margin: 2rem 5% 0;
   }
-
   .bio {
     width: 100%;
     margin-top: 1rem;
@@ -2145,7 +2046,6 @@ form input[type=submit] {
   .bio .bio-item .bio-content {
     width: 70%;
   }
-
   form {
     margin: 4rem 5% 0;
   }
@@ -2158,11 +2058,9 @@ form input[type=submit] {
   form .form-for-name div:first-child {
     margin-bottom: 1rem;
   }
-
   .overview2 {
     margin: 0 5%;
   }
-
   .overview-item-container:not(.overview-item-container:first-child) {
     margin-top: 2rem;
   }
@@ -2190,7 +2088,6 @@ form input[type=submit] {
   .overview-item-container .overview-inner div > div > a img {
     padding-left: 0;
   }
-
   .overview {
     margin: 1rem 5% 0;
   }
@@ -2210,30 +2107,24 @@ form input[type=submit] {
   .overview .overview-container .container-inner .image a img {
     width: 100%;
   }
-
   .overview-suda-container {
     padding-bottom: 105% !important;
   }
-
   .overview-toki-container {
     padding-bottom: 120% !important;
   }
-
   .toki-images .toki-images-inner {
     width: 100%;
   }
-
   .suda-images {
     margin-top: 2.5rem;
   }
   .suda-images .suda-inner {
     width: 100%;
   }
-
   .client-app-images .client-app-inner {
     width: 100%;
   }
-
   .four-images {
     margin: 0 5% 0;
     flex-direction: column;
