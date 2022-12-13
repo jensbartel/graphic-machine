@@ -1357,6 +1357,226 @@ form input[type=submit] {
     margin-top: 2rem;
   }
 }
+@media only screen and (min-width: 820px) and (max-width: 820px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  .content-container {
+    margin-top: 0.5rem;
+  }
+  .content-container .project-title {
+    margin: 0 7.5% 0;
+    padding: 0.66rem 0 0 0;
+  }
+  .content-container .project-title a:hover {
+    color: #444;
+  }
+  nav .navbar {
+    margin: 1.5rem auto 0;
+    padding: 0 7.5%;
+  }
+  nav .navbar .wordmark {
+    font-size: unset;
+  }
+  nav .navbar .no-tablet {
+    display: none;
+  }
+  nav .navbar .menu {
+    margin-top: 0rem;
+    display: flex;
+    align-items: flex-end;
+  }
+  nav .navbar .menu div {
+    margin-left: 1.25rem;
+  }
+  nav .navbar .menu div a {
+    font-size: 0.75rem;
+  }
+  nav .navbar .menu div a:first-child {
+    margin-left: 0;
+  }
+  nav .navbar .menu div a:hover {
+    color: #000;
+    border-bottom: none;
+  }
+  nav .language-switch {
+    margin: 0 auto;
+    padding: 0 7.5% 1.5rem;
+  }
+  nav .language-switch button:hover {
+    color: #999;
+  }
+  .section-intro {
+    margin: 2rem auto 0;
+    padding: 0 10%;
+  }
+  .section-intro p {
+    padding-right: 0;
+  }
+  .page {
+    margin: 0 auto;
+    padding: 4rem 10% 4rem;
+  }
+  .grid-two {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 4rem;
+  }
+  .grid-two .category-top {
+    width: 100%;
+  }
+  .one-image {
+    margin: 0 7.5%;
+  }
+  .one-image-noBorder {
+    margin: 0 7.5%;
+  }
+  .one-image-variant-2 {
+    margin: 2rem 7.5% 0;
+  }
+  .one-image-variant-2 img {
+    width: 100%;
+  }
+  .two-images {
+    margin: 0 7.5%;
+  }
+  .three-images {
+    margin: 2rem 7.5% 0;
+    justify-content: space-between;
+  }
+  .three-images img {
+    width: 55%;
+    margin-right: 0;
+  }
+  .three-images img:nth-child(2) {
+    margin-right: 0;
+    width: 24%;
+  }
+  .three-images img:nth-child(3) {
+    width: 15%;
+  }
+  .three-images-2 {
+    margin: 2rem 7.5%;
+  }
+  .large-text-container {
+    padding: 0 22.5%;
+  }
+  .caption {
+    margin: 0 7.5%;
+  }
+  .caption-comment {
+    margin: 0 5%;
+  }
+  .video-2-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .image-collage-1 {
+    margin: 4rem 7.5%;
+    column-gap: 1rem;
+  }
+  .parallax-inner {
+    margin: 0;
+    padding: 0 7.5%;
+  }
+  .overview {
+    margin: 0 7.5%;
+  }
+  .overview-group .text-container div:first-child a .title:hover {
+    color: #000;
+  }
+  .overview-group .text-container div:last-child p:hover {
+    color: #999;
+  }
+  .portrait-and-bio {
+    margin: 1rem 7.5% 0;
+  }
+  .portrait-and-bio figure {
+    width: 33%;
+    margin-right: 2rem;
+  }
+  .portrait-and-bio figure img {
+    width: 100%;
+  }
+  .further-projects {
+    margin: 2rem 7.5% 0;
+  }
+  .bio {
+    width: 66%;
+    font-size: 0.85rem;
+  }
+  .bio .bio-item {
+    font-size: 0.8rem;
+  }
+  form {
+    margin: 2rem 7.5% 0;
+  }
+  .footer p a:hover {
+    color: #999;
+  }
+  .back-to-top:hover {
+    opacity: 1;
+  }
+  .overview2 {
+    margin: 0 7.5%;
+  }
+  .overview-item-container:not(.overview-item-container:first-child) {
+    margin-top: 4rem;
+  }
+  .overview-item-container:first-child {
+    margin-top: 2rem;
+  }
+  .overview-item-container .overview-inner a p:not(.title) {
+    font-size: 0.6rem;
+  }
+  .overview-item-container .overview-inner div a img {
+    width: 85%;
+  }
+  .overview-item-container .overview-inner .first-image img {
+    margin-bottom: 15%;
+  }
+  .overview-item-container .overview-inner .second-image a {
+    align-items: flex-end;
+  }
+  .overview-item-container .overview-inner .second-image a img {
+    padding-left: 0;
+  }
+  .overview {
+    margin: 1.5rem 7.5% 0;
+  }
+  .overview .overview-container {
+    padding-bottom: 80%;
+  }
+  .overview .overview-container .container-inner .image {
+    margin: 1.5rem 0 0 0;
+  }
+  .overview .overview-container .container-inner .image img {
+    width: 90%;
+  }
+  .four-images {
+    margin: 0 7.5%;
+  }
+  .four-images .left {
+    margin-top: 2rem;
+  }
+  .four-images .left div:first-child {
+    margin-right: 0.5rem;
+  }
+  .four-images .left div:last-child {
+    margin: 0 0.5rem 0;
+  }
+  .four-images .left div article:not(.four-images .left div article:first-child) {
+    margin-top: 2rem;
+  }
+  .four-images .right {
+    margin-top: 2rem;
+  }
+  .four-images .right div:first-child {
+    margin: 0 0.5rem 0;
+  }
+  .four-images .right div:last-child {
+    margin-left: 0.5rem;
+  }
+  .four-images .right div article:not(.four-images .right div article:first-child) {
+    margin-top: 2rem;
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 768px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
   .content-container {
     margin-top: 0.5rem;
