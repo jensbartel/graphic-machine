@@ -1155,7 +1155,7 @@ form input[type=submit] {
   nav .navbar .wordmark {
     font-size: unset;
   }
-  nav .navbar .wordmark .no-tablet {
+  nav .navbar .no-tablet {
     display: none;
   }
   nav .navbar .menu {
@@ -1375,7 +1375,7 @@ form input[type=submit] {
   nav .navbar .wordmark {
     font-size: unset;
   }
-  nav .navbar .wordmark .no-tablet {
+  nav .navbar .no-tablet {
     display: none;
   }
   nav .navbar .menu {
@@ -1595,7 +1595,7 @@ form input[type=submit] {
   nav .navbar .wordmark {
     font-size: unset;
   }
-  nav .navbar .wordmark .no-tablet {
+  nav .navbar .no-tablet {
     display: none;
   }
   nav .navbar .menu {
